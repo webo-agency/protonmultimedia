@@ -53,7 +53,7 @@ services:
     # We should not care about WP core files
     volumes: 
       - ./public:/var/www/html      
-      - ./theme:/var/www/html/wp-content/themes/swistak-theme
+      - ./theme:/var/www/html/wp-content/themes/protonmultimedia-theme
     # Add environment variables
     # https://docs.docker.com/compose/compose-file/#environment
     environment:

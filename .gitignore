@@ -1,0 +1,32 @@
+## Server
+
+# Old CGI catalog
+cgi-bin
+
+# Added with Softaculous Apps Installer
+public/wp-content/plugins/akismet
+
+## Custom
+
+# Node modules
+node_modules/
+
+# Log files and databases
+*.log
+*.sql
+*.sqlite
+
+# Composer dependencies
+vendor
+
+## Public
+public/*
+
+## Enviroment
+.env
+
+## Configuration
+config/wp-config.production.php
+
+## Build assets
+theme/assets/public

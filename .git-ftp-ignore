@@ -1,0 +1,6 @@
+.git*
+.env
+vendor
+composer*
+node_modules
+theme/node_modules
