@@ -63,7 +63,6 @@ services:
     # Ports mapping
     ports:
       - 80:80
-      - 443:443
     # List of networks to join
     networks:
       - wp
