@@ -29,7 +29,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/swiper.min.css' ?>">
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.esm.browser.js"></script>
 	
 	<?php wp_head(); ?>
 </head>
