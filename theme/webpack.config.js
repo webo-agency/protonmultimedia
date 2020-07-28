@@ -3,15 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const jsConfig = {
     entry: {
-        Main: ['./assets/js/script.js'],
-        FadeInBottom: ['./assets/js/FadeAnimation/FadeInBottom.js'],
-        FormLabel: ['./assets/js/Form/FormLabel/FormLabel.js'],
-        FormRodo: ['./assets/js/Form/FormRodo/FormRodo.js'],
-        HeaderPosition: ['./assets/js/HeaderPosition/HeaderPosition.js'],
-        StringLimitation: ['./assets/js/StringLimitation/StringLimitation.js'],
-        SwiperCarousels: ['./assets/js/SwiperCarousels/SwiperCarousels.js'],
-        VideoHandler: ['./assets/js/Video/VideoHandler.js'],
-        WaveStore: ['./assets/js/WaveDecoration/WaveStore/WaveStore.js'],
+        Main: ['./assets/js/index.js'],
     },
     output: {
         path: path.resolve(__dirname, 'assets/public/dist/js'),

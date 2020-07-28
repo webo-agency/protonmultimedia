@@ -8,6 +8,10 @@
 get_header();
 
 ?>
-	TEST
+	<section class="pm-baner">
+		<div class="pm-container">
+		
+		</div>
+	</section>
 <?php
 get_footer();
