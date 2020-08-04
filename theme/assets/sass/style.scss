@@ -6,6 +6,7 @@
 @import './global/wpadminbar';
 @import './global/typography';
 @import './global/layout';
+@import './global/list';
 @import './global/header';
 @import './global/menuToggler';
 @import './global/button';
@@ -24,10 +25,9 @@
 @import './global/swiper-pagination';
 @import './global/overlay';
 @import './global/popup';
-@import './global/decoration';
+@import './global/text-frame';
 @import './global/utils';
 
-@import './pages/home';
 @import './pages/page';
 
 @import './animated/fade';
