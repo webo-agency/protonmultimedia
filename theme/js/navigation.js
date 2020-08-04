@@ -12,7 +12,7 @@
 		return;
 	}
 
-	button = container.getElementsByTagName( 'button' )[0];
+	button = document.querySelector( '.pm-menu-toggler' );
 	if ( 'undefined' === typeof button ) {
 		return;
 	}
@@ -33,32 +33,17 @@
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
 			container.className = container.className.replace( ' toggled', '' );
 			button.setAttribute( 'aria-expanded', 'false' );
-			button.classList.remove('ks-menu-toggler--active');
+			button.classList.remove('pm-menu-toggler--active');
 		} else {
 			container.className += ' toggled';
 			button.setAttribute( 'aria-expanded', 'true' );
-			button.classList.add('ks-menu-toggler--active');
+			button.classList.add('pm-menu-toggler--active');
 		}
 	}
 
 	button.onclick = function() {
 		toggleMenuContainer();
 	};
-
-	var contactMenuButton = document.querySelector('.ks-button--primary .scroll');
-	contactMenuButton.addEventListener('click', function() {
-		toggleMenuContainer();
-	})
-
-	// Close small menu when user clicks outside
-	document.addEventListener( 'click', function( event ) {
-		var isClickInside = container.contains( event.target );
-
-		if ( ! isClickInside ) {
-			container.className = container.className.replace( ' toggled', '' );
-			button.setAttribute( 'aria-expanded', 'false' );
-		}
-	} );
 
 	// Get all the link elements within the menu.
 	links = menu.getElementsByTagName( 'a' );
