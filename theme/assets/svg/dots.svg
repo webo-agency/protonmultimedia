@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 139 139" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-1773,-991)">
+        <g id="Strona-Główna" serif:id="Strona Główna" transform="matrix(1,0,0,0.999248,0,0)">
+            <rect x="0" y="0" width="1920" height="6188" style="fill:none;"/>
+            <clipPath id="_clip1">
+                <rect x="0" y="0" width="1920" height="6188"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g id="Baner" transform="matrix(1,0,0,1.00075,0,0)">
+                    <g id="Elipsa-1-kopia-24" serif:id="Elipsa 1 kopia 24" transform="matrix(1,-0,-0,1,1773,991.001)">
+                        <use xlink:href="#_Image2" x="4" y="3.999" width="131px" height="131px"/>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1.00075,294,-5224.3)">
+                    <g id="Nagłówek">
+                        <g id="Grupa-8-kopia" serif:id="Grupa 8 kopia">
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1.00075,1109.6,-2645.71)">
+                    <g id="O-nas" serif:id="O nas">
+                        <g id="Button">
+                        </g>
+                    </g>
+                </g>
+                <g id="Realizacje">
+                </g>
+                <g transform="matrix(1,0,0,1.00075,0,127.456)">
+                    <g id="Newsy">
+                        <g id="Grupa-8-kopia1" serif:id="Grupa 8 kopia">
+                        </g>
+                    </g>
+                </g>
+                <g id="CTA" transform="matrix(1,0,0,1.00075,0,127.456)">
+                    <g id="Grupa-8-kopia2" serif:id="Grupa 8 kopia">
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1.46514,0,-1714.22)">
+                    <g id="Prowadnice">
+                        <rect id="Prostokąt-13-kopia-3" serif:id="Prostokąt 13 kopia 3" x="1846" y="1170" width="1" height="1168" style="fill:rgb(17,13,37);"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <image id="_Image2" width="131px" height="131px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIMAAACDCAYAAACunahmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE4ElEQVR4nO3dz4ocVRTH8e856fgnzhP0qwRciEslBVmYheAiCgWKrnQh3QTpjisxS3GhqLhSCDdLN9n5Kj5BDBHJOS5uT7rDYPX0rU3V8PtAyGzmcKpyYQLz5bbZwz+W6b7GvcOsYGx4562/OJH/8nBJ5pqMjshimZvnd987ec71b75fErGG7AgKEZt/v/zk5DmvfPH1EnJtkR2RBWLzz7f3Tp7z2oef7/fJLASbZz8/OHnOjdsfLUnWZHaQhcjN00c/njznjbfvLCHXBJ1lFIzNk8e/nzzn7OatJbAGOqAAmwWZK4voE8C9Bwvg41OH474iogcHjz6DpjlpvjKnJwI8e/C2fcxWJH06GPRE4xxY4V73MXo8G+fYCsseDJIeb3s/58+FJxneW0b7c0G/+7oHwncnHouACOrJbeB0uIMZmINb2xyjS3NwB6zObZyDGWCkW/s+7t3u77qPtc6hq98Pu72a5tjBc+GQ5m37cOG9dk5EgeTgQJS22VZwODgQbXPMCwYHB6JxjpWDF0966xxK3YNx++D1/ewPRPNz2cFz4TTuc+H7yoJgC5G4dyTFIu5nw+Q021qSeHbghYj7TSuabcEToku8mNM255pveR4J2YEVsnGO2Rayvp+IgnvbHLct4YlHR1jBsmlOwtbM0sguxzwXbOu4F/9naJ0jIiIiIiIiIiIiIiIiMo5d++7XJWZrzDrcCm6b53fvnFzOqJgaNodiakHmvniJWrzQUs6omDpm8sWUk7V0evEnGksnFVPDZlBMuUWUlw5DZls5o2LqyJzpF1MLMrcWkVlPbnvxomLqEvtcyWJKREREREREREREREREZBy7/tWDJe7r+nt6LxhNRZCKqWFzKKZq6XRQFpGNJY+KqWEzKKacpJZOERAJRFuBo2Lq6JypF1NOZiHh4EA0lTMqpo7NmX4xtSBzd7eP7X52NJZFKqaGXdFiSkRERERERERERERERGQ0e/Wze/VTzMw6jIJZU4GjYmrYHIqpBRG1nMkErIfGckbF1PA6MyimvJ6w2G2ckI0lj4qpYTMophyyWOz+EaG9UFIxdWTM9IupWjoZaUGXjChnVEwNu6rFlIiIiIiIiIiIiIiIiMhY9vr7n+7KIro0K5htnv10+h1BKqaGzaGYWkDWTzHDMLLP1rJIxdSwGRRTvrvt67xywhqLIBVTR8ygmNrd6ZQcHIjGIkjF1JGNJl9MHdzpRP1Z31rOqJgaXueqFlMiIiIiIiIiIiIiIiIiY9mNdz+oRRC2K3ls87T8cHI5o2Jq2ByKqYUlqyR7jPopZq1FkIqpo3OmXkw5mZ2dxyQ14mgvi1RMDQ2afDHlQCGTgwMxolBSMfW/ZlBM7e50siSzM6wkjZ9ipmJq2FUtpkRERERERERERERERETGsrM3by/xWiiBlTTb/P34t5PLGRVTw+ZQTC0wVkT2uIFlb9lWzqiYusSciRdT9U4no9ZACfUmjwYqpo7MmX4xtb/TaX8gGgscFVND5lBMLYzcZp4XSlaIEaWTiqnBOVeymBIREREREREREREREREZy85u3qpFEJz/Nm3z5M9HJ5czKqaGzaGYWgD7AocRBY6KqSPrTL+YcrhQALWXPCqmBvaZfjFV73R62bhCScXUwD5MuphaAPuyaESBo2LqsvtMt5j6D10yhUWIh7NbAAAAAElFTkSuQmCC"/>
+    </defs>
+</svg>
