@@ -8,39 +8,39 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Swistak_Theme
+ * @package ProtonMultimedia_Theme
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses swistak_theme_header_style()
+ * @uses protonmultimedia_theme_header_style()
  */
-function swistak_theme_custom_header_setup() {
+function protonmultimedia_theme_custom_header_setup() {
 	add_theme_support(
 		'custom-header',
 		apply_filters(
-			'swistak_theme_custom_header_args',
+			'protonmultimedia_theme_custom_header_args',
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
 				'width'              => 1000,
 				'height'             => 250,
 				'flex-height'        => true,
-				'wp-head-callback'   => 'swistak_theme_header_style',
+				'wp-head-callback'   => 'protonmultimedia_theme_header_style',
 			)
 		)
 	);
 }
-add_action( 'after_setup_theme', 'swistak_theme_custom_header_setup' );
+add_action( 'after_setup_theme', 'protonmultimedia_theme_custom_header_setup' );
 
-if ( ! function_exists( 'swistak_theme_header_style' ) ) :
+if ( ! function_exists( 'protonmultimedia_theme_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see swistak_theme_custom_header_setup().
+	 * @see protonmultimedia_theme_custom_header_setup().
 	 */
-	function swistak_theme_header_style() {
+	function protonmultimedia_theme_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

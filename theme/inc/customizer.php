@@ -1,8 +1,8 @@
 <?php
 /**
- * Swistak Theme Theme Customizer
+ * ProtonMultimedia Theme Customizer
  *
- * @package Swistak_Theme
+ * @package ProtonMultimedia
  */
 
 /**
@@ -10,7 +10,7 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function swistak_theme_customize_register( $wp_customize ) {
+function protonmultimedia_theme_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
@@ -20,26 +20,26 @@ function swistak_theme_customize_register( $wp_customize ) {
 			'blogname',
 			array(
 				'selector'        => '.site-title a',
-				'render_callback' => 'swistak_theme_customize_partial_blogname',
+				'render_callback' => 'protonmultimedia_theme_customize_partial_blogname',
 			)
 		);
 		$wp_customize->selective_refresh->add_partial(
 			'blogdescription',
 			array(
 				'selector'        => '.site-description',
-				'render_callback' => 'swistak_theme_customize_partial_blogdescription',
+				'render_callback' => 'protonmultimedia_theme_customize_partial_blogdescription',
 			)
 		);
 	}
 }
-add_action( 'customize_register', 'swistak_theme_customize_register' );
+add_action( 'customize_register', 'protonmultimedia_theme_customize_register' );
 
 /**
  * Render the site title for the selective refresh partial.
  *
  * @return void
  */
-function swistak_theme_customize_partial_blogname() {
+function protonmultimedia_theme_customize_partial_blogname() {
 	bloginfo( 'name' );
 }
 
@@ -48,14 +48,14 @@ function swistak_theme_customize_partial_blogname() {
  *
  * @return void
  */
-function swistak_theme_customize_partial_blogdescription() {
+function protonmultimedia_theme_customize_partial_blogdescription() {
 	bloginfo( 'description' );
 }
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function swistak_theme_customize_preview_js() {
+function protonmultimedia_theme_customize_preview_js() {
 	wp_enqueue_script( 'swistak-theme-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
-add_action( 'customize_preview_init', 'swistak_theme_customize_preview_js' );
+add_action( 'customize_preview_init', 'protonmultimedia_theme_customize_preview_js' );
