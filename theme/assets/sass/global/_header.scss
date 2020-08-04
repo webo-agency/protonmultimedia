@@ -1,3 +1,102 @@
 .pm-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    z-index: 100;
+    margin-top: 10px;
+
+    .custom-logo {
+        height: 40px;
+        width: 110px;
+    }
+
+    .site-branding {
+        margin-bottom: 40px;
+
+        @include media-screen(tablet) {
+            margin-bottom: 0;
+        }
+
+        &--mobile {
+
+            @include media-screen(tablet) {
+                display: none;
+            }
+        }
+    }
+
+    .main-navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: 30px 20px 20px;
+        transform: translateX(-125%);
+        transition-duration: .4s;
+        background-color: $color-dark-blue;
+        z-index: 9999;
+        @include filter-shadow($drop-shadow-size-1, $color-shadow);
+
+        @include media-screen(tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            width: auto;
+            height: auto;
+            padding-left: 0;
+            padding-top: 0;
+            transform: translateX(0);
+            background-color: transparent;
+            filter: none;
+        }
+
+        &.toggled {
+            transform: translateX(0);
+        }
     
+        .menu {
+            text-align: left;
+    
+            &-item {
+                margin-bottom: 20px;
+    
+                @include media-screen(tablet) {
+                    display: inline-block;
+                    margin-bottom: 0;
+                    margin-right: 10px;
+                }
+    
+                @include media-screen(desktop) {
+                    margin-right: 22px;
+                }
+    
+                a {
+                    display: inline-block;
+                    color: $color-white;
+                    font-size: $size-big;
+                    font-weight: $weight-semi-bold;
+                    text-transform: uppercase;
+                    transition: color .1s ease-out;
+
+                    &:hover {
+                        color: $color-primary;
+                    }
+                }
+    
+                &.current-page-item {
+    
+                    a {
+                        color: $color-primary;
+                    }
+                }
+            }
+        }
+    }
 }
