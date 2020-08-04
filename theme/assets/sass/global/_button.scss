@@ -1,3 +1,40 @@
 .pm-button {
-    
+    border: none;
+    background: transparent;
+    padding: 0;
+    border-radius: $base-border-radius;
+    transition: background .3s;
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+
+    &--small {
+        padding: 10px;
+        font-size: $size-normal;
+    }
+
+    &--large {
+        padding: 15px 20px;
+    }
+
+    &--primary {
+        background: $color-primary;
+        color: $color-white;
+        font-size: $size-small-2;
+        text-transform: uppercase;
+
+        a {
+            padding: 16px 26px;
+            display: block;
+            color: $color-white;
+        }
+
+        &:hover {
+            background: darken($color-primary, 10%);
+        }
+    }
+
+    &[disabled] {
+        background: $color-gray-3;
+    }
 }
