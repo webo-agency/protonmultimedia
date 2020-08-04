@@ -6,16 +6,16 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Swistak_Theme
+ * @package ProtonMultimedia_Theme
  */
 
  function getPageClassName() {
 	$classname;
 	if ( is_front_page() ) {
-		$classname = 'ks-front-page';
+		$classname = 'pm-front-page';
 	}
 	else {
-		$classname = 'ks-page';
+		$classname = 'pm-page';
 	}
 	return $classname;
  }
@@ -27,19 +27,43 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/swiper.min.css' ?>">
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	
+
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+
 <div id="page" class="<?php echo getPageClassName(); ?> site">
-	<div class="ks-header" data-header>
-		<header id="masthead" class="ks-container site-header">
-			
+	<div class="pm-header" data-header>
+		<header id="masthead" class="pm-container site-header">
+			<div class="site-branding site-branding--mobile">
+				<?php the_custom_logo(); ?>
+			</div><!-- .site-branding -->
+			<button class="menu-toggle pm-menu-toggler" aria-controls="primary-menu" aria-expanded="false">
+				<span class="pm-sr-only">Menu</span>
+				<div class="pm-menu-toggler__line"></div>
+				<div class="pm-menu-toggler__line"></div>
+				<div class="pm-menu-toggler__line"></div>
+			</button>
+			<nav id="site-navigation" class="main-navigation">
+				<div class="site-branding">
+					<?php the_custom_logo(); ?>
+				</div><!-- .site-branding -->
+				<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-2',
+							'menu_id'        => 'primary-menu',
+						)
+					);
+				?>
+				<a class="pm-button pm-button--primary pm-button--small" href="#kontakt">Skontaktuj się</a>
+			</nav><!-- #site-navigation -->
 		</header><!-- #masthead -->
 	</div>
 
