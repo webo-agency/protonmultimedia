@@ -30,6 +30,7 @@ h1 {
     font-size: $size-large-2;
     font-weight: $weight-extra-bold;
     line-height: $line-height-large;
+    font-family: $second-font-family;
     position: relative;
     margin-bottom: 80px;
 
@@ -43,11 +44,19 @@ h2 {
     font-size: $size-large;
     line-height: $line-height-big;
     font-weight: $weight-extra-bold;
+    font-family: $second-font-family;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     
-    @include media-screen(tablet-wide) {
+    @include media-screen(tablet) {
+        font-size: $size-large-2;
+        line-height: $line-height-medium;
+        margin-bottom: 50px;
+    }
+
+    @include media-screen(desktop) {
         font-size: $size-large-2;
         line-height: $line-height-large;
+        margin-bottom: 50px;
     }
 }
