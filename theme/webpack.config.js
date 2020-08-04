@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const jsConfig = {
     entry: {
-        Main: ['./assets/js/index.js'],
+        Main: ['./assets/js/main.js'],
     },
     output: {
         path: path.resolve(__dirname, 'assets/public/dist/js'),
