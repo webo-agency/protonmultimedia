@@ -25,7 +25,8 @@ $weight-extra-bold: 800;
 
 $line-height-normal: 25px;
 $line-height-big: 35px;
-$line-height-large: 50px;
+$line-height-medium: 50px;
+$line-height-large: 80px;
 
 //
 // Fonts sizes.
@@ -37,9 +38,10 @@ $size-normal: 16px;
 $size-big: 20px;
 $size-large: 30px;
 $size-large-2: 40px;
-$size-large-3: 50px;
+$size-large-3: 80px;
 
-$base-font-family:                  'Poppins', Arial, sans-serif;
+$base-font-family:                  'Open Sans', Arial, sans-serif;
+$second-font-family:                'Rajdhani', sans-serif;
 $base-font-weight:                  $weight-regular;
 $base-font-size:                    $size-normal;
 $base-line-height:                  $line-height-normal;
