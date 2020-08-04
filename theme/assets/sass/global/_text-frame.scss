@@ -1,0 +1,28 @@
+.pm-text-frame {
+    display: inline-block;
+    position: relative;
+
+    &__drop {
+        position: absolute;
+        height: 100%;
+        width: 215%;
+        left: 0;
+        z-index: -1;
+        transform: translateX(-64%);
+    }
+
+    &--primary {
+
+        .pm-text-frame__drop {
+            background: $color-primary;
+        }
+    }
+
+    &--dark {
+
+        .pm-text-frame__drop {
+            background: $color-dark-blue-2;
+        }
+    }
+    
+}
