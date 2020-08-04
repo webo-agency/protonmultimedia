@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Swistak_Theme
+ * @package ProtonMultimedia
  */
 
 get_header();

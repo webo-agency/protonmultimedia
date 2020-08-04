@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Swistak_Theme
+ * @package ProtonMultimedia
  */
 
 /*
@@ -28,8 +28,8 @@ if ( post_password_required() ) {
 		?>
 		<h2 class="comments-title">
 			<?php
-			$swistak_theme_comment_count = get_comments_number();
-			if ( '1' === $swistak_theme_comment_count ) {
+			$protonmultimedia_theme_comment_count = get_comments_number();
+			if ( '1' === $protonmultimedia_theme_comment_count ) {
 				printf(
 					/* translators: 1: title. */
 					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'swistak-theme' ),
@@ -38,8 +38,8 @@ if ( post_password_required() ) {
 			} else {
 				printf( 
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $swistak_theme_comment_count, 'comments title', 'swistak-theme' ) ),
-					number_format_i18n( $swistak_theme_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $protonmultimedia_theme_comment_count, 'comments title', 'swistak-theme' ) ),
+					number_format_i18n( $protonmultimedia_theme_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 				);
 			}

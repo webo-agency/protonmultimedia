@@ -6,14 +6,14 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Swistak_Theme
+ * @package ProtonMultimedia
  */
 
 ?>
 
 	</div>
 
-	<footer id="kontakt" class="site-footer ks-footer ks-fade">
+	<footer class="site-footer pm-footer pm-fade">
 		
 	</footer>
 </div>
