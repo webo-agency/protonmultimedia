@@ -3,6 +3,7 @@
   "description": "Webo - Proton Multimedia Theme",
   "license": "proprietary",
   "prefer-stable": true,
+  "minimum-stability": "dev",
   "repositories": [
     {
       "type": "composer",
@@ -41,16 +42,19 @@
     }
   ],
   "require": {
-    "johnpbloch/wordpress" : "^5.0.0",
+    "johnpbloch/wordpress" : "^5.4.2",
     "advanced-custom-fields/advanced-custom-fields-pro": "^5.8.9",
-    "wpackagist-plugin/litespeed-cache": "^2.9.9.2",
+    "wpackagist-plugin/litespeed-cache": "^3.2.4",
     "wpackagist-plugin/cloudguard": "^1.4.2",
-    "wpackagist-plugin/acf-extended":"^0.8.5.5",
-    "wpackagist-plugin/disable-comments":"^1.9.0",
+    "wpackagist-plugin/acf-extended":"^0.8.7",
+    "wpackagist-plugin/disable-comments":"^1.10.3",
     "vlucas/phpdotenv": "^4.1",
-    "slowprog/composer-copy-file": "^0.3.1",
-    "webo/swistak-theme": "1.0.0",
-    "wpackagist-plugin/svg-support": "^2.3"
+    "slowprog/composer-copy-file": "^0.3.3",
+    "webo/protonmultimedia-theme": "^0",
+    "wpackagist-plugin/svg-support": "^2.3",
+    "wpackagist-theme/twentytwenty":"^1.4",
+    "full/composer-rm-plugin": "^1.0",
+    "wp-cli/wp-cli": "^2.4"
   },
   "scripts": {
     "post-install-cmd": [
@@ -71,5 +75,13 @@
     "copy-file": {
       "config/": "public/"
     }
+  },
+  "config": {
+    "rm-paths": [
+      "../public/wp-content/plugins/hello.php",
+      "../public/wp-content/plugins/akismet",
+      "../public/wp-content/themes/twentynineteen",
+			"../public/wp-content/themes/twentyseventeen"
+    ]
   }
 }

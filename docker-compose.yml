@@ -12,6 +12,10 @@ services:
     # Image name (optinally version)
     # https://docs.docker.com/compose/compose-file/#image
     image: mysql:5.7
+    #command:
+    # - mysql -u root -ppassword wordpress < /var/sql/development-wordpress.sql
+    # - mysqld --user=root
+    #  - cd /var/sql && mysqldump --add-drop-table -u root wordpress -ppassword > development-wordpress.sql # For export
     # Define restart policy
     # https://docs.docker.com/compose/compose-file/#restart
     restart: always
@@ -20,6 +24,7 @@ services:
     # https://nickjanetakis.com/blog/docker-tip-28-named-volumes-vs-path-based-volumes
     volumes:
       - db_data:/var/lib/mysql
+      - ./sql:/docker-entrypoint-initdb.d
     # Add environment variables
     # https://docs.docker.com/compose/compose-file/#environment
     environment:
@@ -41,9 +46,11 @@ services:
     # https://docs.docker.com/compose/compose-file/#image
     # Feel free to add a version of WordPress
     # I.e. wordpress:5.2.0
-    image: wordpress
+    image: wordpress:latest
     # Define restart policy
     # https://docs.docker.com/compose/compose-file/#restart
+    command:  
+      - dev-wp-init.sh
     restart: always
     # Volumes definition
     # https://docs.docker.com/compose/compose-file/#volumes
@@ -54,12 +61,15 @@ services:
     volumes: 
       - ./public:/var/www/html      
       - ./theme:/var/www/html/wp-content/themes/protonmultimedia-theme
+      - ./dev-wp-init.sh:/usr/local/bin/dev-wp-init.sh
     # Add environment variables
     # https://docs.docker.com/compose/compose-file/#environment
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_USER: test
+      WORDPRESS_PASSWORD: test
     # Ports mapping
     ports:
       - 80:80
