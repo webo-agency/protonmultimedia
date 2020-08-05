@@ -28,7 +28,7 @@ get_header();
 										alt="<?php echo $front_slider_image['alt']; ?>"
 										title="<?php echo $front_slider_image['title']; ?>"
 									/> -->
-									<div class="pm-container pm-swiper--hero-swiper__content-container">
+									<div class="pm-container pm-container--indented pm-swiper--hero-swiper__content-container">
 										<?php echo $heading; ?>
 										<div class="pm-swiper--hero-swiper__content-wrapper">
 											<div class="pm-swiper--hero-swiper__content" data-hero-content>
@@ -56,7 +56,7 @@ get_header();
 					endif;
 				?>
 				</ul>
-				<div class="pm-container">
+				<div class="pm-container pm-container--indented">
 					<div class="swiper-pagination pm-swiper--hero-swiper__swiper-pagination"></div>
 				</div>
 			</div>
