@@ -2,6 +2,23 @@
     
     &--hero-swiper {
 
+        &__lines {
+            display: none;
+
+            @include media-screen(tablet) {
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                z-index: 99;
+            }
+        }
+
+        &__container {
+            position: relative;
+        }        
+
         .swiper-wrapper {
             height: 100vh;
 

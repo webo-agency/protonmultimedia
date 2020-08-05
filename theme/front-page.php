@@ -11,6 +11,7 @@ get_header();
 	<section class="pm-baner">	
 		<div class="pm-swiper pm-swiper--hero-swiper">
 			<div class="swiper-container pm-swiper--hero-swiper__container" data-slider-hero>
+			<img class="pm-swiper--hero-swiper__lines" src="<?php echo get_template_directory_uri() . '/assets/svg/banner-lines.svg' ?>" />
 				<ul class="swiper-wrapper">
 				<?php
 					if( have_rows('front_slider_slide') ):
@@ -56,9 +57,9 @@ get_header();
 				?>
 				</ul>
 				<div class="pm-container">
-			<div class="swiper-pagination pm-swiper--hero-swiper__swiper-pagination"></div>
-			</div>
+					<div class="swiper-pagination pm-swiper--hero-swiper__swiper-pagination"></div>
 				</div>
+			</div>
 		</div>
 	</section>
 
