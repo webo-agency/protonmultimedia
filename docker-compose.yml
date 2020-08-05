@@ -13,8 +13,6 @@ services:
     # https://docs.docker.com/compose/compose-file/#image
     image: mysql:5.7
     #command:
-    # - mysql -u root -ppassword wordpress < /var/sql/development-wordpress.sql
-    # - mysqld --user=root
     #  - cd /var/sql && mysqldump --add-drop-table -u root wordpress -ppassword > development-wordpress.sql # For export
     # Define restart policy
     # https://docs.docker.com/compose/compose-file/#restart
