@@ -45,13 +45,14 @@
             }
 
             p {  
+                margin-bottom: 60px;
+                
                 @include media-screen(tablet) {
                     width: 40%;
-                    margin-bottom: 50px;
                 }
 
                 @include media-screen(desktop) {
-                    font-size: $size-big;
+                    font-size: $size-normal;
                     margin-bottom: 80px;
                 }
             }

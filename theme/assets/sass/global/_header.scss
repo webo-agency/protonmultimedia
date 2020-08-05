@@ -41,7 +41,7 @@
         transition-duration: .4s;
         background-color: $color-dark-blue;
         z-index: 9999;
-        @include filter-shadow($drop-shadow-size-1, $color-shadow);
+        @include filter-shadow($drop-shadow-size-1, $color-dark-blue);
 
         @include media-screen(tablet) {
             flex-direction: row;
@@ -80,7 +80,7 @@
                 a {
                     display: inline-block;
                     color: $color-white;
-                    font-size: $size-big;
+                    font-size: $size-normal;
                     font-weight: $weight-semi-bold;
                     text-transform: uppercase;
                     transition: color .1s ease-out;
