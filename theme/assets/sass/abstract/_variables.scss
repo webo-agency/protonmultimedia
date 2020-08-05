@@ -2,7 +2,7 @@
 $base-spacing:                      20px;
 $base-border-radius:                5px;
 $base-easing-function:              cubic-bezier(0.0, 0.0, 0.2, 1);
-$base-box-shadow:                   20px 20px 50px 5px $color-gray-light-5;
+$base-box-shadow:                   20px 20px 50px 5px $color-gray;
 
 $drop-shadow-size-1: 0px 20px 25px;
 $drop-shadow-size-2: 0px 5px 7.5px;
@@ -23,9 +23,9 @@ $weight-extra-bold: 800;
 // Line height
 //
 
-$line-height-normal: 25px;
-$line-height-big: 35px;
-$line-height-medium: 50px;
+$line-height-normal: 21px;
+$line-height-big: 41px;
+$line-height-medium: 62px;
 $line-height-large: 80px;
 
 //
@@ -33,11 +33,10 @@ $line-height-large: 80px;
 //
 
 $size-small: 12px;
-$size-small-2: 15px;
-$size-normal: 16px;
-$size-big: 20px;
-$size-large: 30px;
-$size-large-2: 40px;
+$size-small-2: 16px;
+$size-normal: 20px;
+$size-large: 40px;
+$size-large-2: 60px;
 $size-large-3: 80px;
 
 $base-font-family:                  'Open Sans', Arial, sans-serif;

@@ -13,4 +13,24 @@
     @include media-screen(desktop) {
         width: 1140px;
     }
+
+    @include media-screen(full-hd) {
+        width: 1772px;
+    }
+
+    &--indented {
+        padding-left: 30px;
+
+        @include media-screen(tablet-wide) {
+            padding-left: 80px;
+        }
+
+        @include media-screen(desktop) {
+            padding-left: 100px;
+        }
+
+        @include media-screen(full-hd) {
+            padding-left: 175px;
+        }
+    }
 }

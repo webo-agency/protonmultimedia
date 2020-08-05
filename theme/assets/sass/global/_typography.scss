@@ -3,7 +3,7 @@ body {
     font-weight: $base-font-weight;
     font-size: $size-small;
     line-height: $base-line-height;
-    color: $color-dark;
+    color: $color-white;
 
     @include media-screen(tablet-wide) {
         font-size: $base-font-size;

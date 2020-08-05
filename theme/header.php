@@ -40,7 +40,7 @@
 
 <div id="page" class="<?php echo getPageClassName(); ?> site">
 	<div class="pm-header" data-header>
-		<header id="masthead" class="pm-container site-header">
+		<header id="masthead" class="pm-container pm-container--indented site-header">
 			<div class="site-branding site-branding--mobile">
 				<?php the_custom_logo(); ?>
 			</div><!-- .site-branding -->
