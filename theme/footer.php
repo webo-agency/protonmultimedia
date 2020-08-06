@@ -42,16 +42,16 @@
 				</div>
 				</div>
 			</div>
-			<div class="pm-util-flex-column">
+			<div class="pm-util-flex-column pm-w-100">
 				<?php
 					$locations = get_nav_menu_locations();
 					$menuFooterHome = wp_get_nav_menu_object($locations['menu-4']);
 					$menuFooterBusiness = wp_get_nav_menu_object($locations['menu-5']);
 				?> 
-				<h4 class="pm-util-text-semi-bold pm-mb-30">Usługi</h4>
+				<h4 class="pm-util-text-bold pm-mb-30">Usługi</h4>
 				<div class="pm-footer__menus">
 					<div class="pm-footer__sub-menu pm-footer__sub-menu--home-menu">
-						<h5 class="pm-util-text-semi-bold pm-mb-20"><?php echo $menuFooterHome->name; ?></h5>
+						<h5 class="pm-util-text-bold pm-mb-20"><?php echo $menuFooterHome->name; ?></h5>
 						<?php
 						wp_nav_menu(
 							array(
@@ -62,8 +62,8 @@
 					?>
 					</div>
 
-					<div class="pm-footer__sub-menu pm-footer__sub-menu--ervices-menu">
-						<h5 class="pm-util-text-semi-bold pm-mb-20"><?php echo $menuFooterBusiness->name; ?></h5>
+					<div class="pm-footer__sub-menu pm-footer__sub-menu--business-menu">
+						<h5 class="pm-util-text-bold pm-mb-20"><?php echo $menuFooterBusiness->name; ?></h5>
 						<?php
 						wp_nav_menu(
 							array(
