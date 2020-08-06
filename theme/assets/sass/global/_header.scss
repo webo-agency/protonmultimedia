@@ -79,15 +79,9 @@
     
                 a {
                     display: inline-block;
-                    color: $color-white;
                     font-size: $size-normal;
-                    font-weight: $weight-semi-bold;
+                    font-weight: $weight-bold;
                     text-transform: uppercase;
-                    transition: color .1s ease-out;
-
-                    &:hover {
-                        color: $color-primary;
-                    }
                 }
     
                 &.current-page-item {
