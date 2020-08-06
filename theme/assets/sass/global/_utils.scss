@@ -17,6 +17,10 @@
     color: $color-primary;
 }
 
+.pm-util-text-bold {
+    font-weight: $weight-bold;
+}
+
 .pm-util-text-semi-bold {
     font-weight: $weight-semi-bold;
 }
@@ -31,4 +35,8 @@
 
 .pm-mb-30 {
     margin-bottom: 30px;
+}
+
+.pm-w-100 {
+    width: 100%;
 }
