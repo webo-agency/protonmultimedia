@@ -14,6 +14,10 @@
         width: 1140px;
     }
 
+    @include media-screen(desktop-wide) {
+        width: 1400px;
+    }
+
     @include media-screen(full-hd) {
         width: 1772px;
     }
@@ -26,6 +30,10 @@
 
         @include media-screen(desktop) {
             padding-left: 70px;
+        }
+
+        @include media-screen(desktop-wide) {
+            padding-left: 110px;
         }
 
         @include media-screen(full-hd) {
