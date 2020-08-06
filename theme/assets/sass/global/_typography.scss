@@ -23,7 +23,15 @@ p {
 }
 
 a {
+    color: $color-white;
+    transition: color .1s ease-out;
     text-decoration: none;
+
+    &:not(.pm-button) {
+        &:hover {
+            color: $color-primary;
+        }
+    }
 }
 
 h1 {
@@ -50,7 +58,7 @@ h2 {
     
     @include media-screen(tablet) {
         font-size: $size-large-2;
-        line-height: $line-height-medium;
+        line-height: $line-height-bigger;
         margin-bottom: 50px;
     }
 
