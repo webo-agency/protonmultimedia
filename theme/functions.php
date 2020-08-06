@@ -51,7 +51,10 @@ if ( ! function_exists( 'protonmultimedia_theme_setup' ) ) :
 
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'protonmultimedia-theme' ),
+				'menu-2' => esc_html__( 'Primary', 'protonmultimedia-theme' ),
+				'menu-3' => esc_html__( 'Footer Main', 'protonmultimedia-theme' ),
+				'menu-4' => esc_html__( 'Footer Home Services', 'protonmultimedia-theme' ),
+				'menu-5' => esc_html__( 'Footer Business Services', 'protonmultimedia-theme' ),
 			)
 		);
 
@@ -131,4 +134,7 @@ function proton_theme_styles_and_scripts() {
 add_action('wp_enqueue_scripts', 'proton_theme_styles_and_scripts');
 
 
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+}
 ?>
