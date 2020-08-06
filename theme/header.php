@@ -45,7 +45,7 @@
 				<?php the_custom_logo(); ?>
 			</div><!-- .site-branding -->
 			<button class="menu-toggle pm-menu-toggler" aria-controls="primary-menu" aria-expanded="false">
-				<span class="pm-sr-only">Menu</span>
+				<span class="pm-util-sr-only">Menu</span>
 				<div class="pm-menu-toggler__line"></div>
 				<div class="pm-menu-toggler__line"></div>
 				<div class="pm-menu-toggler__line"></div>

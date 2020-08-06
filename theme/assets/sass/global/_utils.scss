@@ -1,4 +1,4 @@
-.pm-sr-only{
+.pm-util-sr-only {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -7,4 +7,28 @@
     overflow: hidden;
     clip: rect(0,0,0,0);
     border: 0;
+}
+
+.pm-util-text-small-2 {
+    font-size: $size-small-2;
+}
+
+.pm-util-text-primary {
+    color: $color-primary;
+}
+
+.pm-util-text-semi-bold {
+    font-weight: $weight-semi-bold;
+}
+
+.pm-util-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.pm-mb-20 {
+    margin-bottom: 20px;
+}
+
+.pm-mb-30 {
+    margin-bottom: 30px;
 }
