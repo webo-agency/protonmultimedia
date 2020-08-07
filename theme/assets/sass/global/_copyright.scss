@@ -1,3 +1,37 @@
 .pm-copyright {
+    font-size: 12px;
+    padding: 30px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @include media-screen(phablet) {
+            flex-direction: row;
+        }
+
+        div {
+            &:last-of-type {
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
     
+                    @include media-screen(phablet) {
+                        margin-top: 0;
+                    }
+
+                    svg {
+                        margin-left: 10px;
+                    }
+                }
+
+                @include media-screen(tablet-wide) {
+                    margin-right: 170px;
+                }
+            }
+        }
+    }
 }
