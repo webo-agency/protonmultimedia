@@ -1,0 +1,51 @@
+[data-rolldown] {
+
+    [data-rolldown-trigger] {
+        display: flex;
+        align-items: center;
+
+        i {
+            margin-left: 15px;
+            transition: transform .4s;
+
+            &.active {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &[data-rolldown-mobile-only="true"] {
+        @include media-screen(tablet, max) {
+            overflow: hidden;
+
+            [data-rolldown-target] {
+                transition: max-height .7s;
+                max-height: 1000px;
+            }
+
+            &[rolldown-expanded] {
+                
+                [data-rolldown-target] {
+                    max-height: 0;
+                }
+            }
+        }
+    }
+
+    &[data-rolldown-mobile-only="false"] {
+        @include media-screen(tablet) {
+
+            [data-rolldown-target] {
+                transition: max-height .7s;
+                max-height: 1000px;
+            }
+
+            &[rolldown-expanded] {
+                
+                [data-rolldown-target] {
+                    max-height: 0;
+                }
+            }
+        }
+    }
+}
