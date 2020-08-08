@@ -102,22 +102,31 @@
     }
 
     &__menus {
-        display: flex;
-        flex-direction: column;
 
         @include media-screen(tablet) {
+            display: flex;
             flex-direction: row;
         }
     }
 
     &__sub-menu {
+        overflow: visible;
 
         &:not(:last-of-type) {
-            margin-bottom: 40px;
+            
+            .menu {
+                margin-bottom: 40px;
+
+                @include media-screen(tablet) {
+                    margin-bottom: 0;
+                }
+            }
         }
 
-        @include media-screen(tablet) {
-            margin-bottom: 0;
+        i {
+            @include media-screen(tablet) {
+                display: none;
+            }
         }
 
         &--home-menu {
