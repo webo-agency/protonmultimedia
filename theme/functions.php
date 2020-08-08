@@ -129,6 +129,7 @@ function proton_theme_styles_and_scripts() {
 	wp_enqueue_style('custom-styles');
 	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.min.js', array (), 1.5, true);
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/public/dist/js/Main.js', array("swiper"), 1.5, true);
+	wp_enqueue_script( 'rolldown', get_template_directory_uri() . '/assets/public/dist/js/Rolldown.js', array(), 1.5, true);
 }
 
 add_action('wp_enqueue_scripts', 'proton_theme_styles_and_scripts');

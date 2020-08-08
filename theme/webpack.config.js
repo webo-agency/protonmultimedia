@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const jsConfig = {
     entry: {
         Main: ['./assets/js/main.js'],
+        Rolldown: ['./assets/js/rolldown.js'],
     },
     output: {
         path: path.resolve(__dirname, 'assets/public/dist/js'),
