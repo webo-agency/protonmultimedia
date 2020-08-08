@@ -6,7 +6,9 @@
  * in this file.
  *
  */
-  
+
+define( 'WP_HOME', 'http://localhost' );
+define( 'WP_SITEURL', 'http://localhost' );
 
 // 
 // FROM PRODUCTION SET - REPLACE WITH LOCAL WERSION

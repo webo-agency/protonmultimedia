@@ -1037,15 +1037,15 @@
         },
         {
             "name": "wpackagist-plugin/litespeed-cache",
-            "version": "3.2.4",
+            "version": "3.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/litespeed-cache/",
-                "reference": "tags/3.2.4"
+                "reference": "tags/3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/litespeed-cache.3.2.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/litespeed-cache.3.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"

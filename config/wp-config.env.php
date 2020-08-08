@@ -24,7 +24,7 @@ $env = [
         'ssl'    => true,
     ],
     'development' => [
-        'domain' => '',
+        'domain' => 'localhost',
         'path'   => '',
         'ssl'    => false,
     ],
