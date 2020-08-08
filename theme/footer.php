@@ -51,28 +51,32 @@
 				?> 
 				<h4 class="pm-util-text-bold pm-mb-30">Usługi</h4>
 				<div class="pm-footer__menus">
-					<div class="pm-footer__sub-menu pm-footer__sub-menu--home-menu">
-						<h5 class="pm-util-text-bold pm-mb-20"><?php echo $menuFooterHome->name; ?></h5>
-						<?php
-						wp_nav_menu(
-							array(
-								'theme_location' => 'menu-4',
-								'menu_id'        => 'footer-home-services',
-							)
-						);
-					?>
+					<div class="pm-footer__sub-menu pm-footer__sub-menu--home-menu" data-rolldown data-rolldown-mobile-only="true" rolldown-expanded>
+						<h5 class="pm-util-text-bold pm-mb-20" data-rolldown-trigger><?php echo $menuFooterHome->name; ?> <i class="fas fa-angle-down"></i></h5>
+						<div data-rolldown-target>
+							<?php
+								wp_nav_menu(
+									array(
+										'theme_location' => 'menu-4',
+										'menu_id'        => 'footer-home-services',
+									)
+								);
+							?>
+						</div>
 					</div>
 
-					<div class="pm-footer__sub-menu pm-footer__sub-menu--business-menu">
-						<h5 class="pm-util-text-bold pm-mb-20"><?php echo $menuFooterBusiness->name; ?></h5>
-						<?php
-						wp_nav_menu(
-							array(
-								'theme_location' => 'menu-5',
-								'menu_id'        => 'footer-business-services',
-							)
-						);
-					?>
+					<div class="pm-footer__sub-menu pm-footer__sub-menu--business-menu" data-rolldown data-rolldown-mobile-only="true" rolldown-expanded>
+						<h5 class="pm-util-text-bold pm-mb-20" data-rolldown-trigger="mobile"><?php echo $menuFooterBusiness->name; ?> <i class="fas fa-angle-down"></i></h5>
+						<div data-rolldown-target>
+							<?php
+								wp_nav_menu(
+									array(
+										'theme_location' => 'menu-5',
+										'menu_id'        => 'footer-business-services',
+									)
+								);
+							?>
+						</div>
 					</div>
 				</div>
 			</div>
