@@ -1,5 +1,5 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const jsConfig = {
     entry: {
@@ -22,7 +22,7 @@ const jsConfig = {
                         plugins: ['@babel/transform-runtime', "@babel/plugin-proposal-class-properties"]
                     }
                 }
-            },
+            }
         ]
     },
     devServer: {
@@ -34,6 +34,7 @@ const jsConfig = {
 const scssConfig = {
     entry: {
         style: ['./assets/sass/style.scss'],
+        index: ['./assets/css/index.css'],
     },
     output: {
         path: path.resolve(__dirname, 'assets/public/dist/css'),
@@ -46,6 +47,21 @@ const scssConfig = {
                 options: {
                     outputPath: 'images',
                 },
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    process.env.NODE_ENV === "development"
+                      ? "style-loader"
+                      : MiniCssExtractPlugin.loader,
+                    {
+                      loader: "css-loader",
+                      options: { importLoaders: 1 }
+                    },
+                    {
+                      loader: "postcss-loader"
+                    }
+                ]
             },
             {
                 test: /\.s[ac]ss$/i,
