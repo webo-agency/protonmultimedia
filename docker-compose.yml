@@ -59,6 +59,7 @@ services:
     volumes: 
       - ./public:/var/www/html      
       - ./theme:/var/www/html/wp-content/themes/protonmultimedia-theme
+      - ./test/data:/var/www/html/wp-content/uploads    
       - ./dev-wp-init.sh:/usr/local/bin/dev-wp-init.sh
     # Add environment variables
     # https://docs.docker.com/compose/compose-file/#environment

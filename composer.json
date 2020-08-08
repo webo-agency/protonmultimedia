@@ -43,7 +43,7 @@
   ],
   "require": {
     "johnpbloch/wordpress" : "^5.4.2",
-    "advanced-custom-fields/advanced-custom-fields-pro": "^5.8.9",
+    "advanced-custom-fields/advanced-custom-fields-pro": "^5.8.12",
     "wpackagist-plugin/litespeed-cache": "^3.3",
     "wpackagist-plugin/cloudguard": "^1.4.2",
     "wpackagist-plugin/acf-extended":"^0.8.7",
