@@ -22,12 +22,6 @@ get_header();
 							$front_slider_image = get_sub_field('front_slider_image');
 							?>	
 								<li class="swiper-slide" style="background: url(<?php echo $front_slider_image['url'] ?>) center center no-repeat; background-size: cover">
-									<!-- <img
-										class="swiper-lazy"
-										data-src="<?php echo $front_slider_image['url']; ?>"
-										alt="<?php echo $front_slider_image['alt']; ?>"
-										title="<?php echo $front_slider_image['title']; ?>"
-									/> -->
 									<div class="pm-container pm-container--indented pm-swiper--hero-swiper__content-container">
 										<?php echo $heading; ?>
 										<div class="pm-swiper--hero-swiper__content-wrapper">
@@ -61,10 +55,6 @@ get_header();
 				</div>
 			</div>
 		</div>
-	</section>
-
-	<section style="padding: 100px 0; background: #110D25;">
-	
 	</section>
 <?php
 get_footer();
