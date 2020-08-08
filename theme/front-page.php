@@ -8,6 +8,9 @@
 get_header();
 
 ?>
+
+	<?php get_template_part( 'template-parts/section', 'baner' ); ?>
+
 	<section class="pm-baner">	
 		<div class="pm-swiper pm-swiper--hero-swiper">
 			<div class="swiper-container pm-swiper--hero-swiper__container" data-slider-hero>

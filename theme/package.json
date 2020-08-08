@@ -34,6 +34,7 @@
     "style-loader": "^1.2.1",
     "swiper": "^5.3.8",
     "vanilla-lazyload": "^17.1.0",
+    "vue": "^2.6.11",
     "webpack": "^4.32.2",
     "webpack-dev-server": "^3.4.1"
   },

@@ -1,3 +1,22 @@
+import Vue from 'vue';
+
+new Vue({
+    template: '#app',
+    data: {
+        content: null
+    }
+});
+
+Vue.component('v-baner', {
+    data() {
+        return { checked: false, title: 'Check me' }
+    },
+    methods: {
+        check() { this.checked = !this.checked; }
+    }
+});
+
+
 const heroswiper = new Swiper('.pm-swiper--hero-swiper__container', {
     // Disable preloading of all images
     preloadImages: false,
