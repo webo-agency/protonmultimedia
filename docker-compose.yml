@@ -12,6 +12,7 @@ services:
     # Image name (optinally version)
     # https://docs.docker.com/compose/compose-file/#image
     image: mysql:5.7
+    container_name: mysql_database
     #command:
     #  - cd /var/sql && mysqldump --add-drop-table -u root wordpress -ppassword > development-wordpress.sql # For export
     # Define restart policy
@@ -23,6 +24,7 @@ services:
     volumes:
       - db_data:/var/lib/mysql
       - ./test/sql:/docker-entrypoint-initdb.d
+      - ./dev-wp-dump.sh:/bin/dev-wp-dump.sh
     # Add environment variables
     # https://docs.docker.com/compose/compose-file/#environment
     environment:

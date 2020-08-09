@@ -11,7 +11,7 @@ $sections_path = 'template-parts/section';
 
 	<?php get_template_part( $sections_path, 'baner' ); ?>
 
-	<?php get_template_part( $sections_path, 'offers' ); ?>
+	<?php get_template_part( $sections_path, 'offer' ); ?>
 
 	<?php get_template_part( $sections_path, 'about-us' ); ?>
 

@@ -1,0 +1,1 @@
+<?php echo file_get_contents( get_stylesheet_directory_uri() . '/assets/svg/call-to-action.svg' ); ?>
