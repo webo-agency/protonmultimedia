@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 const jsConfig = {
     entry: {
@@ -22,9 +23,23 @@ const jsConfig = {
                         plugins: ['@babel/transform-runtime', "@babel/plugin-proposal-class-properties"]
                     }
                 }
-            }
+            },
+            {
+                test: /\.vue$/,
+                use: {
+                    loader: 'vue-loader',
+                }
+            },
         ]
     },
+    resolve: {
+        alias: {
+          'vue$': 'vue/dist/vue.esm.js'
+        }
+    },
+    plugins: [
+        new VueLoaderPlugin()
+    ],
     devServer: {
         contentBase: path.resolve(__dirname, 'assets'),
         publicPath: '/public/dist/js/'
@@ -51,6 +66,7 @@ const scssConfig = {
             {
                 test: /\.css$/,
                 use: [
+                    'vue-style-loader',
                     process.env.NODE_ENV === "development"
                       ? "style-loader"
                       : MiniCssExtractPlugin.loader,

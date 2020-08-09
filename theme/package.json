@@ -58,6 +58,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.11",
     "webpack-cli": "^3.3.12"
   }
 }

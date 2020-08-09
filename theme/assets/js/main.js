@@ -1,20 +1,10 @@
 import Vue from 'vue';
+import SectionBaner from '../vue/section-baner.vue';
 
-new Vue({
-    template: '#app',
-    data: {
-        content: null
-    }
-});
+Vue.component('section-baner', SectionBaner);
 
-Vue.component('v-baner', {
-    data() {
-        return { checked: false, title: 'Check me' }
-    },
-    methods: {
-        check() { this.checked = !this.checked; }
-    }
-});
+new Vue({ el: '#content' });
+
 
 
 const heroswiper = new Swiper('.pm-swiper--hero-swiper__container', {
