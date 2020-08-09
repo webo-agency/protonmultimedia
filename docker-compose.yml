@@ -22,7 +22,7 @@ services:
     # https://nickjanetakis.com/blog/docker-tip-28-named-volumes-vs-path-based-volumes
     volumes:
       - db_data:/var/lib/mysql
-      - ./sql:/docker-entrypoint-initdb.d
+      - ./test/sql:/docker-entrypoint-initdb.d
     # Add environment variables
     # https://docs.docker.com/compose/compose-file/#environment
     environment:
