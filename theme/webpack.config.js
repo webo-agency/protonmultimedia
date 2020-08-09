@@ -3,9 +3,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 const jsConfig = {
+    target: "web",
     entry: {
         Main: ['./assets/js/main.js'],
-        Rolldown: ['./assets/js/rolldown.js'],
+        Rolldown: ['./assets/js/rolldown.js']
     },
     output: {
         path: path.resolve(__dirname, 'assets/public/dist/js'),
@@ -41,8 +42,14 @@ const jsConfig = {
         new VueLoaderPlugin()
     ],
     devServer: {
+        writeToDisk: true,
         contentBase: path.resolve(__dirname, 'assets'),
-        publicPath: '/public/dist/js/'
+        publicPath: '/public/dist/js/',
+        host: '0.0.0.0',
+        watchContentBase: true,
+        compress: true,
+        port: 9001,
+        headers: { "Access-Control-Allow-Origin": "*" }
     }
 }
 
