@@ -11,6 +11,9 @@ module.exports = {
   theme: {
     container: {
       center: true,
+      padding: {
+        default: '1rem',
+      }
     },
     extend: {
       fontSize: {
@@ -23,6 +26,9 @@ module.exports = {
        '0': 0,
        '1/2': '50%',
        '60px': '60px',
+      },
+      minHeight: {
+        '700px': '700px',
       }
     },
   },

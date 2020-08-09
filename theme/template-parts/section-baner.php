@@ -4,7 +4,7 @@
         src="<?php echo get_template_directory_uri() . '/assets/svg/banner-lines.svg' ?>" 
         alt="Decorations"
     />
-    <ul class="swiper-wrapper h-screen">
+    <ul class="swiper-wrapper h-screen min-h-700px">
         <?php
             if( have_rows('front_slider') ):
                 while ( have_rows('front_slider') ) : the_row();
