@@ -9,6 +9,9 @@ module.exports = {
     ],
   },
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       fontSize: {
         '8xl': ['80px', '80px']

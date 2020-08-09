@@ -15,7 +15,7 @@ import VueAwesomeSwiper from "vue-awesome-swiper/dist/ssr";
 Vue.use(VueAwesomeSwiper);
 
 export default {
-    name: 'frontpage-slider',
+    name: 'baner-slider',
     props: {
       mainTag: {
         type: String,

@@ -1,7 +1,7 @@
 import Vue from 'vue';
-import FrontPageSlider from '../vue/frontpage-slider.vue';
+import BanerSlider from '../vue/baner-slider.vue';
 
-Vue.component('frontpage-slider', FrontPageSlider);
+Vue.component('baner-slider', BanerSlider);
 
 new Vue({ el: '#content' });
 
