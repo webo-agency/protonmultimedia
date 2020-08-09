@@ -30,3 +30,8 @@ config/wp-config.production.php
 
 ## Build assets
 theme/assets/public
+
+## Test data include
+!test/
+!test/data
+!test/sql/*.sql
