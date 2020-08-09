@@ -1,11 +1,11 @@
 {
     "key": "group_5f245f0e95185",
-    "title": "Front slider",
+    "title": "Baner",
     "fields": [
         {
             "key": "field_5f245f91d7fa0",
-            "label": "Front slider slide",
-            "name": "front_slider_slide",
+            "label": "Slider",
+            "name": "front_slider",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -54,7 +54,7 @@
                     "key": "field_5f245fcdd7fa2",
                     "label": "Front slide heading",
                     "name": "front_slide_heading",
-                    "type": "wysiwyg",
+                    "type": "textarea",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -65,10 +65,11 @@
                     },
                     "acfe_permissions": "",
                     "default_value": "",
-                    "tabs": "all",
-                    "toolbar": "full",
-                    "media_upload": 1,
-                    "delay": 0
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 3,
+                    "new_lines": "br",
+                    "acfe_textarea_code": 0
                 },
                 {
                     "key": "field_5f245fe0d7fa3",
@@ -134,5 +135,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1596651821
+    "modified": 1596935694
 }
