@@ -14,7 +14,7 @@
 
 get_header();
 
-get_template_part( 'template-parts/section', 'baner' );
+	get_template_part( 'template-parts/section', 'baner' );
 ?>
 
 	<div id="primary" class="content-area">
