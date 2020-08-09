@@ -68,7 +68,7 @@
                     "placeholder": "",
                     "maxlength": "",
                     "rows": 3,
-                    "new_lines": "br",
+                    "new_lines": "",
                     "acfe_textarea_code": 0
                 },
                 {
@@ -135,5 +135,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1596970592
+    "modified": 1596973015
 }

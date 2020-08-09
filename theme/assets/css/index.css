@@ -2,6 +2,27 @@ body{
   background-color: #110D25;
 }
 
+.line-decorated{
+  position: relative;
+  display: inline-block;
+  line-height: 63px;
+  background: #01B9C3;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.line-decorated:after{
+  content: '';
+  display: block;
+  position: absolute;
+  background: inherit;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translate(-100%, 0);
+}
+
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
