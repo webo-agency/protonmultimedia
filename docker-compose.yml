@@ -48,6 +48,7 @@ services:
     # Define restart policy
     # https://docs.docker.com/compose/compose-file/#restart
     command:  
+      - docker-entrypoint.sh
       - dev-wp-init.sh
     restart: always
     # Volumes definition
