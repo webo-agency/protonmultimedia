@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 echo "------------ Installation in DEV mode ------------ "
 
 export WP_ENV=development
