@@ -21,12 +21,9 @@
                                     $lines = explode(PHP_EOL, get_sub_field('front_slide_heading'));
                                     if ( !empty($lines) ) {
                                       $lines_number = count($lines) - 1;
-                                      foreach ( $lines as $index => $line) {
-                                          if($lines_number === $index){
-                                            echo '<span class="line-decorated">'. trim( $line ) .'</span>';
-                                          } else {
-                                            echo trim( $line ) .'</br>';
-                                          }
+                                      foreach ( $lines as $line) {
+                                        echo '</br>';
+                                        echo preg_replace("/[*]\b(.*?)\b[*]/", '<span class="line-decorated">$1</span>', $line);
                                       }
                                     } else {
                                         echo '<span>'. trim( get_sub_field('front_slide_heading') ) .'</span>';
