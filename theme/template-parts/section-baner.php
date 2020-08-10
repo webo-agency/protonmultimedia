@@ -18,16 +18,12 @@
                             <div class="container absolute left-0 right-0 top-1/2 transform -translate-y-1/2 text-white">
                                 <h2 class="font-bold uppercase text-4xl md:text-8xl mb-14">
                                     <?php 
-                                    $lines = explode(PHP_EOL, get_sub_field('front_slide_heading'));
-                                    if ( !empty($lines) ) {
-                                      $lines_number = count($lines) - 1;
-                                      foreach ( $lines as $line) {
-                                        echo '</br>';
-                                        echo preg_replace("/[*]\b(.*?)\b[*]/", '<span class="line-decorated">$1</span>', $line);
-                                      }
-                                    } else {
-                                        echo '<span>'. trim( get_sub_field('front_slide_heading') ) .'</span>';
-                                    } ?>
+                                        $lines = explode(PHP_EOL, get_sub_field('front_slide_heading'));
+                                        foreach ( $lines as $line) {
+                                            echo '</br>';
+                                            echo preg_replace("/[*]\b(.*?)\b[*]/", '<span class="line-decorated">$1</span>', $line);
+                                        }
+                                    ?>
                                 </h2>
                                 <div class="w-full sm:w1/3 md:w-1/2 leading-relaxed mb-14">
                                     <div class="lg:text-xl lg:mb-5" data-hero-content>
