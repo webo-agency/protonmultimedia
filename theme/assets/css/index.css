@@ -10,4 +10,4 @@ body{
 
 @import "tailwindcss/utilities";
 
-@import "../public/dist/css/style.css";
+@import "pm-button.css"
