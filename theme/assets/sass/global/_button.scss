@@ -1,16 +1,16 @@
 .pm-button {
-    border: none;
-    background: transparent;
-    padding: 0;
-    border-radius: $base-border-radius;
+    @apply border-none;
+    @apply bg-transparent;
+    @apply p-0;
+    @apply relative;
+    @apply block;
+    @apply leading-none;
+    @apply rounded;
     transition: background .3s;
-    position: relative;
-    display: inline-block;
-    line-height: 1;
 
     &--small {
+        @apply text-base;
         padding: 10px;
-        font-size: $size-normal;
     }
 
     &--large {
@@ -18,15 +18,15 @@
     }
 
     &--primary {
-        background: $color-primary;
-        color: $color-white;
-        font-size: $size-small-2;
-        text-transform: uppercase;
+        @apply text-sm-2;
+        @apply bg-primary;
+        @apply text-white;
+        @apply uppercase;
 
         a {
             padding: 16px 26px;
-            display: block;
-            color: $color-white;
+            @apply block;
+            @apply text-white;
         }
 
         &:hover {
@@ -35,6 +35,6 @@
     }
 
     &[disabled] {
-        background: $color-gray-2;
+        @apply bg-gray-2;
     }
 }
