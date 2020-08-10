@@ -9,3 +9,5 @@ body{
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+
+@import "../public/dist/css/style.css";
