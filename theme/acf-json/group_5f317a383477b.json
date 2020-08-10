@@ -6,8 +6,8 @@
             "key": "field_5f317ebef9c56",
             "label": "CTA title",
             "name": "cta_title",
-            "type": "text",
-            "instructions": "",
+            "type": "textarea",
+            "instructions": "*text* - tekst wyróżniony",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -18,9 +18,10 @@
             "acfe_permissions": "",
             "default_value": "",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "acfe_textarea_code": 0
         },
         {
             "key": "field_5f317f17f9c57",
@@ -64,5 +65,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1597079812
+    "modified": 1597083105
 }
