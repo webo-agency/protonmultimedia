@@ -86,6 +86,7 @@
 			<div class="pm-container pm-container--indented">
 				<div class="pm-copyright__inner">
 					<div>
+						&copy; <?php echo date("Y"); ?> 
 						<?php echo $footer_copyright; ?>
 					</div>
 					<div>
