@@ -1,6 +1,6 @@
 
-<section class="pm-cta relative pt-10 desktop-wide:pt-20">
-    <div class="pm-container relative pb-10 desktop-wide:pb-20">
+<section class="pm-cta pm-container relative pt-10 desktop-wide:pt-20">
+    <div class="relative pb-10 desktop-wide:pb-20">
         <img 
             class="hidden desktop:block absolute bottom-0 left-0 h-full z-50" 
             src="<?php echo get_template_directory_uri() . '/assets/svg/lines-right.svg' ?>" 
@@ -13,7 +13,7 @@
                     $cta_button = get_field('cta_button', 'option');
                 
                 ?>
-                <div class="desktop:max-w-60% desktop:flex-60% full-hd:max-w-1/2 full-hd:flex-1/2 mb-10 desktop:mb-0">
+                <div class="pm-cta__column mb-10 desktop:mb-0">
                     <h3> 
                         <?php 
                             $lines = explode(PHP_EOL, $cta_title);
@@ -24,7 +24,7 @@
                         ?>
                     </h3>
                 </div>
-                <div class="desktop:max-w-60% desktop:flex-60%  full-hd:max-w-1/2 full-hd:flex-1/2">
+                <div class="pm-cta__column">
                     <a
                         class="pm-button pm-button--primary pm-button--large"
                         href="<?php echo $cta_button['url'] ?>"

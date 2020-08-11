@@ -1,9 +1,12 @@
 .pm-cta {
+    background: url('../images/bg-cta.jpg') center center no-repeat;
+    background-size: cover;
 
     h3 {
         @apply text-base;
         @apply leading-normal;
         @apply font-weight-bold;
+        font-family: 'Rajdhani', sans-serif;;
 
         @screen phone-wide {
             @apply text-md;
@@ -28,11 +31,28 @@
 
         @screen tablet {
             @apply flex-row;
-            @apply w-85%;
+            width: 85%;;
+        }
+    }
+
+    &__column {
+
+        @screen desktop {
+
+            &:first-of-type {
+                max-width: 60%;
+                flex: 0 0 60%;
+            }
+
+            &:last-of-type {
+                max-width: 40%;
+                flex: 0 0 40%;
+            }
         }
 
-        @screen desktop-wide {
-            @apply w-85%;
+        @screen full-hd {
+            @apply max-w-1/2;
+            @apply flex-1/2;
         }
     }
 }
