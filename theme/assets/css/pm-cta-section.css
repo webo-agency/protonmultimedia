@@ -1,0 +1,38 @@
+.pm-cta {
+
+    h3 {
+        @apply text-base;
+        @apply leading-normal;
+        @apply font-weight-bold;
+
+        @screen phone-wide {
+            @apply text-md;
+        }
+
+        @screen tablet {
+            @apply text-lg;
+        }
+
+        @screen desktop-wide {
+            @apply text-xl;
+            @apply leading-line-height-xl;
+        }
+    }
+
+    &__block {
+        @apply flex;
+        @apply flex-col;
+        @apply justify-between;
+        @apply items-center;
+        @apply mx-auto;
+
+        @screen tablet {
+            @apply flex-row;
+            @apply w-85%;
+        }
+
+        @screen desktop-wide {
+            @apply w-85%;
+        }
+    }
+}
