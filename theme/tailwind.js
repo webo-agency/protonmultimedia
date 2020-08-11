@@ -15,6 +15,17 @@ module.exports = {
         default: '1rem',
       }
     },
+    screens: {
+      'phone': '320px',
+      'phone-wide': '480px',
+      'phablet': '560px',
+      'tablet-small': '640px',
+      'tablet': '768px',
+      'tablet-wide': '1024px',
+      'desktop': '1248px',
+      'desktop-wide': '1440px',
+      'full-hd': '1920px'
+    },
     extend: {
       fontSize: {
         'sm': '12px',
@@ -22,9 +33,25 @@ module.exports = {
         'base': '20px',
         'md': '25px',
         'lg': '40px',
-        'xl': '60px',
+        'xl': ['60px', '62px'],
         'xxl': '80px',
         '8xl': ['80px', '80px']
+      },
+      fontWeight: {
+        'weight-extra-light': 200,
+        'weight-light': 300,
+        'weight-regular': 400,
+        'weight-medium': 500,
+        'weight-bold': 600,
+        'weight-semi-bold': 700,
+        'weight-extra-bold': 800,
+      },
+      lineHeight: {
+        'line-height-normal': '21px',
+        'line-height-md': '26px',
+        'line-height-lg': '41px',
+        'line-height-xl': '62px',
+        'line-height-xxl': '80px',
       },
       borderRadius: {
         default: '5px',
@@ -61,6 +88,21 @@ module.exports = {
         'dark-blue-2': '#171131',
         'dark-font': '#130E29',
       },
+      flex: {
+        '1/2': '0 0 50%',
+        '60%': '0 0 60%',
+      },
+      maxWidth: {
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
+      },
+      spacing: {
+        '85%': '85%',
+        '1/2': '50%',
+        '60%': '60%',
+        '40%': '40%',
+      }
     },
   },
   variants: {},
