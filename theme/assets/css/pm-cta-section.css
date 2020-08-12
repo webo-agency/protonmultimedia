@@ -6,7 +6,7 @@
         @apply text-base;
         @apply leading-normal;
         @apply font-weight-bold;
-        font-family: 'Rajdhani', sans-serif;;
+        @apply font-special;
 
         @screen phone-wide {
             @apply text-md;
