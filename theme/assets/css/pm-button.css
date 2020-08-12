@@ -1,5 +1,6 @@
 .pm-button {
   @apply border-none;
+  @apply border-none;
   @apply bg-transparent;
   @apply p-0;
   @apply relative;
@@ -7,6 +8,12 @@
   @apply leading-none;
   @apply rounded;
   transition: background .3s;
+
+  &:after{
+    content: '—';
+    font-weight: 700;
+    padding-left: 10px;
+  }
 
   &--small {
       @apply text-base;

@@ -13,20 +13,20 @@
                             <img 
                                 src="<?php echo get_sub_field('front_slider_image')['url'] ?>" 
                                 alt="Background"
-                                class="object-cover absolute left-0 top-0 right-0 bottom-0 h-full w-full"
+                                class="object-cover absolute left-0 top-0 right-0 bottom-0 h-full w-full pointer-events-none"
                             />
                             <div class="pm-container pm-container--indented absolute left-0 right-0 top-1/2 transform -translate-y-1/2 text-white">
-                                <h2 class="font-bold uppercase text-4xl md:text-8xl mb-14">
+                                <h2 class="font-bold uppercase text-4xl tablet:text-8xl mb-14 leading-tight">
                                     <?php 
                                         $lines = explode(PHP_EOL, get_sub_field('front_slide_heading'));
                                         foreach ( $lines as $line) {
-                                            echo '</br>';
                                             echo preg_replace("/[*]\b(.*?)\b[*]/", '<span class="line-decorated">$1</span>', $line);
+                                            echo '</br>';
                                         }
                                     ?>
                                 </h2>
-                                <div class="w-full sm:w1/3 md:w-1/2 leading-relaxed mb-14">
-                                    <div class="tablet-wide:text-xl tablet-wide:mb-5" data-hero-content>
+                                <div class="w-full sm:w1/3 tablet:w-1/2 leading-relaxed mb-14">
+                                    <div class="font-sans text-base tablet-wide:text-md tablet-wide:mb-5" data-hero-content>
                                         <?php the_sub_field('front_slide_content'); ?>
                                     </div>
                                 </div>
