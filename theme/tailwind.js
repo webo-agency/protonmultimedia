@@ -51,6 +51,7 @@ module.exports = {
         'weight-extra-bold': 800,
       },
       lineHeight: {
+        'line-height-sm': '12px',
         'line-height-normal': '21px',
         'line-height-md': '26px',
         'line-height-lg': '41px',
@@ -82,6 +83,17 @@ module.exports = {
         'dark-font': '#130E29',
       },
       backgroundColor: {
+        'transparent': 'transparent',
+        'white': '#fff',
+        'black': '#000',
+        'gray': '#dfdfdf',
+        'gray-2': '#c9c9c9',
+        'primary': '#01B9C3',
+        'dark-blue': '#110D25',
+        'dark-blue-2': '#171131',
+        'dark-font': '#130E29',
+      },
+      borderColor: {
         'transparent': 'transparent',
         'white': '#fff',
         'black': '#000',
