@@ -16,7 +16,7 @@
             "require": {
                 "composer/installers": "^1.4",
                 "ffraenz/private-composer-installer": "^4.0",
-                "johnpbloch/wordpress": "^5.0.0"
+                "johnpbloch/wordpress": "^5.5.0"
             },
             "type": "wordpress-plugin"
         },
@@ -144,16 +144,6 @@
                 "yawik",
                 "zend",
                 "zikula"
-            ],
-            "funding": [
-                {
-                    "url": "https://packagist.com",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
-                    "type": "tidelift"
-                }
             ],
             "time": "2020-04-07T06:57:05+00:00"
         },
@@ -805,7 +795,7 @@
             "dist": {
                 "type": "path",
                 "url": "theme",
-                "reference": "08e8735c128a52ffd7f6df2ae89473307e247413"
+                "reference": "2ba14e6634eddb507f1c8fa3afd421a0a8ed70ec"
             },
             "require": {
                 "composer/installers": "^1.4",
@@ -817,8 +807,7 @@
             ],
             "description": "Theme",
             "transport-options": {
-                "symlink": false,
-                "relative": true
+                "symlink": false
             }
         },
         {
