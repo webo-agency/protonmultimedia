@@ -18,10 +18,10 @@
                 <article class="relative pm-news-article">
                     <img class="object-cover w-full" src="<?php echo $post_image; ?>" alt="<?php echo esc_html( $title ); ?>" title="<?php echo esc_html( $title ); ?>" />
                     <div class="absolute bottom-0 left-0 post-info">
-                        <span class="text-primary text-sm desktop:text-base leading-line-height-normal block mb-4"><?php echo $post_date; ?></span>
-                        <h3 class="text-base tablet:text-md desktop:text-lg leading-line-height-normal tablet:leading-line-height-md desktop:leading-line-height-lg mb-4 desktop:mb-10 font-weight-bold"><?php echo esc_html( $title ); ?></h3>
+                        <span class="text-primary text-sm tablet:text-base leading-line-height-normal block mb-4"><?php echo $post_date; ?></span>
+                        <h3 class="text-base tablet:text-md desktop:text-lg leading-line-height-normal tablet:leading-line-height-md desktop:leading-line-height-lg mb-4 full-hd:mb-10 font-weight-bold"><?php echo esc_html( $title ); ?></h3>
                         <div class="pm-news-article__teaser">
-                            <div class="hidden tablet:block mb-6 desktop:mb-20">
+                            <div class="hidden tablet:block mb-6 full-hd:mb-20">
                                 <?php if($tags) {foreach( $tags as $tag ): 
                                     $term = get_term( $tag, $taxonomy );
                                     $tag_link = get_field('tag_link', $term->taxonomy.'_'.$term->term_id);
@@ -32,7 +32,7 @@
                                 <?php endforeach;
                                 } ?>
                             </div>
-                            <div class="hidden desktop:block mb-6 desktop:mb-20 text-black">
+                            <div class="hidden text-sm full-hd:text-base desktop:block mb-6 full-hd:mb-20 text-black">
                                 <?php echo $excerpt; ?>
                             </div>
                             <a class="text-primary font-weight-bold" href="<?php echo esc_url( $permalink ); ?>">Czytaj całość -</a>
