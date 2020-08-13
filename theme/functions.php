@@ -138,8 +138,4 @@ function proton_theme_styles_and_scripts() {
 
 add_action('wp_enqueue_scripts', 'proton_theme_styles_and_scripts');
 
-
-if( function_exists('acf_add_options_page') ) {
-	acf_add_options_page();
-}
 ?>
