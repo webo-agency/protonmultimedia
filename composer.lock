@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "07ae54eddaf8b544d41003305c99895e",
+    "content-hash": "a2fcd1065da8743f39a25b636e59066f",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -1000,60 +1000,6 @@
             "homepage": "https://wordpress.org/plugins/acf-extended/"
         },
         {
-            "name": "wpackagist-plugin/cloudguard",
-            "version": "1.4.2",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/cloudguard/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cloudguard.zip?timestamp=1596449758"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/cloudguard/"
-        },
-        {
-            "name": "wpackagist-plugin/disable-comments",
-            "version": "1.10.3",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/disable-comments/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.zip?timestamp=1596006377"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/disable-comments/"
-        },
-        {
-            "name": "wpackagist-plugin/litespeed-cache",
-            "version": "3.3.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/litespeed-cache/",
-                "reference": "tags/3.3.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/litespeed-cache.3.3.1.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/litespeed-cache/"
-        },
-        {
             "name": "wpackagist-plugin/svg-support",
             "version": "2.3.18",
             "source": {
@@ -1070,6 +1016,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/svg-support/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-importer",
+            "version": "0.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-importer/",
+                "reference": "tags/0.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-importer.0.7.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-importer/"
         },
         {
             "name": "wpackagist-theme/twentytwenty",
