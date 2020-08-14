@@ -1,0 +1,5 @@
+.first-line-decorated{
+  &:first-line{
+    @apply bg-dark-blue-2;
+  }  
+}

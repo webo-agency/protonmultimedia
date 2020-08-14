@@ -1,0 +1,21 @@
+.box-overlay{
+  @apply block;
+  @apply relative;
+
+  &:after{
+    content: '';
+    @apply absolute;
+    @apply inset-0;
+    @apply bg-gradient-b-transparent-primary-offset;
+    @apply z-10;
+  }
+
+  &:hover:after{
+    @apply bg-primary;
+    @apply opacity-50;
+  }
+
+  &>*{
+    @apply z-20;
+  }
+}

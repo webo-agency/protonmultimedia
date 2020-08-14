@@ -1,7 +1,9 @@
 import Vue from 'vue';
 import BanerSlider from '../vue/baner-slider.vue';
+import RealizationSlider from '../vue/realization-slider.vue';
 
 Vue.component('baner-slider', BanerSlider);
+Vue.component('realization-slider', RealizationSlider);
 
 new Vue({ el: '#content' });
 

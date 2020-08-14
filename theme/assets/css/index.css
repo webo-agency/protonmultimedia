@@ -2,14 +2,15 @@ body{
   background-color: #110D25;
 }
 
-@import "line-decorated.css";
-
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
 
+@import "line-decorated.css";
+@import "first-line-decorated.css";
+@import "box-overlay.css";
 @import "pm-button.css";
 @import "pm-cta-section.css";
 @import "pm-news-article.css";

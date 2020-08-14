@@ -65,6 +65,7 @@ module.exports = {
       },
       margin: {
         '14': '3.75rem',
+        '17': '4.375rem'
       },
       inset: {
        '0': 0,
@@ -95,6 +96,9 @@ module.exports = {
         'dark-blue-2': '#171131',
         'dark-font': '#130E29',
       },
+      linearGradientColors: { // defaults to {}
+        'transparent-primary-offset': ['transparent', 'transparent 50%', '#01B9C3'],
+      },
       borderColor: {
         'transparent': 'transparent',
         'white': '#fff',
@@ -120,5 +124,7 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    require('tailwindcss-gradients'),
+  ],
 }
