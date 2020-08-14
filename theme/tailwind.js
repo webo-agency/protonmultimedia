@@ -9,10 +9,23 @@ module.exports = {
     ],
   },
   theme: {
+    screens: {
+      'phone': '320px',
+      'phone-wide': '480px',
+      'phablet': '560px',
+      'tablet-small': '640px',
+      'tablet': '768px',
+      'tablet-wide': '1024px',
+      'desktop': '1248px',
+      'desktop-wide': '1440px',
+      'full-hd': '1920px'
+    },
     container: {
       center: true,
       padding: {
         default: '1rem',
+        'desktop-wide': '7rem',
+        'full-hd': '7rem',
       }
     },
     extend: {
@@ -20,23 +33,12 @@ module.exports = {
         'sans': ['Open Sans', 'sans-serif'],
         'special': ['Rajdhani', 'sans-serif'],
       },
-      screens: {
-        'phone': '320px',
-        'phone-wide': '480px',
-        'phablet': '560px',
-        'tablet-small': '640px',
-        'tablet': '768px',
-        'tablet-wide': '1024px',
-        'desktop': '1248px',
-        'desktop-wide': '1440px',
-        'full-hd': '1920px'
-      },
       fontSize: {
         'sm': '12px',
         'sm-2': '16px',
-        'base': '20px',
+        'base': ['20px', '30px'],
         'md': '25px',
-        'lg': '40px',
+        'lg': ['40px', '40px'],
         'xl': ['60px', '62px'],
         'xxl': '80px',
         '8xl': ['80px', '80px']

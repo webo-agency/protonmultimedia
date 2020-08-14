@@ -1,8 +1,9 @@
 <template>
   <component
+    id="baner"
     :is="mainTag"
     :class="mainClass"
-    v-swiper:logos="sliderOptions"
+    v-swiper:baner="sliderOptions"
   >
     <slot />
   </component>
@@ -24,7 +25,7 @@ export default {
       },
       mainClass: {
         type: String,
-        default: "swiper-container relative",
+        default: "swiper-container relative overflow-hidden",
         required: false
       },
     },
@@ -33,7 +34,7 @@ export default {
         sliderOptions: {
           preloadImages: false,
           pagination: {
-              el: '[data-swiper-pagination]',
+              el: '#baner [data-swiper-pagination]',
               clickable: true,
           },
           autoplay: 2000,

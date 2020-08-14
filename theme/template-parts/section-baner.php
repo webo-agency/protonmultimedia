@@ -1,7 +1,9 @@
 <baner-slider>
     <img 
-        class="hidden tablet-wide:block absolute top-0 right-0 h-full z-50" 
+        class="hidden tablet-wide:block absolute top-0 right-0 h-full z-50 w-auto" 
         src="<?php echo get_template_directory_uri() . '/assets/svg/banner-lines.svg' ?>" 
+        width="540px"
+        height="700px"
         alt="Decorations"
     />
     <ul class="swiper-wrapper h-screen min-h-700px">
@@ -15,7 +17,7 @@
                                 alt="Background"
                                 class="object-cover absolute left-0 top-0 right-0 bottom-0 h-full w-full pointer-events-none"
                             />
-                            <div class="pm-container pm-container--indented absolute left-0 right-0 top-1/2 transform -translate-y-1/2 text-white">
+                            <div class="container absolute left-0 right-0 top-1/2 transform -translate-y-1/2 text-white">
                                 <h2 class="font-bold uppercase text-4xl tablet:text-8xl mb-14 leading-tight">
                                     <?php 
                                         $lines = explode(PHP_EOL, get_sub_field('front_slide_heading'));
@@ -53,7 +55,7 @@
             endif;
         ?>
     </ul>
-    <div class="pm-container pm-container--indented">
+    <div class="container">
         <div class="swiper-pagination bottom-60px align-left" data-swiper-pagination></div>
     </div>
 </baner-slider>
