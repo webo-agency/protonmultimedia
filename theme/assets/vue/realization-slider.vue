@@ -3,7 +3,7 @@
     id="realization"
     :is="mainTag"
     :class="mainClass"
-    v-swiper:logos="sliderOptions"
+    v-swiper:realization="sliderOptionsBaner"
   >
     <slot />
   </component>
@@ -26,7 +26,7 @@ export default {
     },
     data() {
       return {
-        sliderOptions: {
+        sliderOptionsBaner: {
           preloadImages: false,
           pagination: {
               el: '#realization [data-swiper-pagination]',
