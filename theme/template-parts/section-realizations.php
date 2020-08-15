@@ -29,7 +29,7 @@
         <realization-slider class="swiper-container relative overflow-hidden mx-17">
             <ul class="swiper-wrapper">
                 <?php while ( $loop->have_posts() ) : $loop->the_post(); $_post = get_post(); ?>
-                    <li class="swiper-slide overflow-hidden">
+                    <li class="w-1/4 swiper-slide overflow-hidden">
                         <a
                             href="<?php echo get_permalink($_post); ?>"
                             class="box-overlay text-white hover:text-white"

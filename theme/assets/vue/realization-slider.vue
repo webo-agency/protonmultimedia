@@ -42,7 +42,7 @@ export default {
             prevEl: '#realization [data-swiper-button-prev]',
           },
           autoplay: 2000,
-          slidesPerView: 4,
+          slidesPerView: 'auto',
           loopedSlides: 4,
           loop: true
         }
