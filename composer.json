@@ -53,7 +53,8 @@
     "full/composer-rm-plugin": "^1.0",
     "wp-cli/wp-cli": "^2.4",
     "wpackagist-plugin/wordpress-importer": "^0.7.0",
-    "wpackagist-plugin/radio-buttons-for-taxonomies": "^2.0"
+    "wpackagist-plugin/radio-buttons-for-taxonomies": "^2.0",
+    "wpackagist-plugin/default-featured-image": "^1.6"
   },
   "scripts": {
     "post-install-cmd": [

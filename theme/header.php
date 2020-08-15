@@ -34,10 +34,10 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('bg-dark-blue'); ?>>
 <?php wp_body_open(); ?>
 
-<div id="page" class="<?php echo getPageClassName(); ?> site">
+<div id="page" class="<?php echo getPageClassName(); ?> site relative">
 	<div class="pm-header" data-header>
 		<header id="masthead" class="pm-container pm-container--indented site-header">
 			<div class="site-branding site-branding--mobile">

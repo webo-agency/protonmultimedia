@@ -9,6 +9,16 @@ module.exports = {
     ],
   },
   theme: {
+    colors: {
+      'white': '#fff',
+      'black': '#000',
+      'gray': '#dfdfdf',
+      'gray-2': '#c9c9c9',
+      'primary': '#01B9C3',
+      'dark-blue': '#110D25',
+      'dark-blue-2': '#171131',
+      'dark-font': '#130E29',
+    },
     screens: {
       'phone': '320px',
       'phone-wide': '480px',
@@ -75,40 +85,14 @@ module.exports = {
       minHeight: {
         '700px': '700px',
       },
-      textColor: {
-        'white': '#fff',
-        'black': '#000',
-        'gray': '#dfdfdf',
-        'gray-2': '#c9c9c9',
-        'primary': '#01B9C3',
-        'dark-blue': '#110D25',
-        'dark-blue-2': '#171131',
-        'dark-font': '#130E29',
-      },
       backgroundColor: {
         'transparent': 'transparent',
-        'white': '#fff',
-        'black': '#000',
-        'gray': '#dfdfdf',
-        'gray-2': '#c9c9c9',
-        'primary': '#01B9C3',
-        'dark-blue': '#110D25',
-        'dark-blue-2': '#171131',
-        'dark-font': '#130E29',
       },
       linearGradientColors: { // defaults to {}
         'transparent-primary-offset': ['transparent', 'transparent 50%', '#01B9C3'],
       },
       borderColor: {
         'transparent': 'transparent',
-        'white': '#fff',
-        'black': '#000',
-        'gray': '#dfdfdf',
-        'gray-2': '#c9c9c9',
-        'primary': '#01B9C3',
-        'dark-blue': '#110D25',
-        'dark-blue-2': '#171131',
-        'dark-font': '#130E29',
       },
       flex: {
         '1/2': '0 0 50%',

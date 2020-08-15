@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "81ff9bbef5207f407a5ef83ab7cb692d",
+    "content-hash": "052cff37c6fa56274a46143ce2ddfab3",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -16,7 +16,7 @@
             "require": {
                 "composer/installers": "^1.4",
                 "ffraenz/private-composer-installer": "^4.0",
-                "johnpbloch/wordpress": "^5.5.0"
+                "johnpbloch/wordpress": "^5.0.0"
             },
             "type": "wordpress-plugin"
         },
@@ -144,6 +144,16 @@
                 "yawik",
                 "zend",
                 "zikula"
+            ],
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-04-07T06:57:05+00:00"
         },
@@ -795,7 +805,7 @@
             "dist": {
                 "type": "path",
                 "url": "theme",
-                "reference": "2ba14e6634eddb507f1c8fa3afd421a0a8ed70ec"
+                "reference": "08e8735c128a52ffd7f6df2ae89473307e247413"
             },
             "require": {
                 "composer/installers": "^1.4",
@@ -807,7 +817,8 @@
             ],
             "description": "Theme",
             "transport-options": {
-                "symlink": false
+                "symlink": false,
+                "relative": true
             }
         },
         {
@@ -987,6 +998,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/acf-extended/"
+        },
+        {
+            "name": "wpackagist-plugin/default-featured-image",
+            "version": "1.6.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/default-featured-image/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/default-featured-image.zip?timestamp=1594667826"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/default-featured-image/"
         },
         {
             "name": "wpackagist-plugin/radio-buttons-for-taxonomies",
