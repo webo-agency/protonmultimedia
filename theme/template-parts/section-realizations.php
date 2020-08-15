@@ -1,4 +1,4 @@
-<section>
+<section id="realizations">
     <header class="container mt-24">
         <h2 class="uppercase mb-10 text-lg font-weight-bold">
             Nasze wybrane<br/>
@@ -26,7 +26,7 @@
         ));
     ?>
     <?php if( $loop->have_posts() ): ?>
-        <realization-slider class="swiper-container relative overflow-hidden mx-17">
+        <realization-slider>
             <ul class="swiper-wrapper">
                 <?php while ( $loop->have_posts() ) : $loop->the_post(); $_post = get_post(); ?>
                     <li class="w-1/4 swiper-slide overflow-hidden">
@@ -48,7 +48,7 @@
                 <?php endwhile; ?>
             </ul>
             <div class="flex items-center justify-between">
-                <div class="flex-initial px-4 py-8" data-swiper-button-prev>
+                <div class="flex-initial px-4 py-8" data-realization-button-prev>
                     <img 
                         class="block" 
                         width="20px"
@@ -57,8 +57,8 @@
                         alt="Left arrow"
                     />  
                 </div>
-                <div class="flex-1 px-4 py-8 relative h-10 flex items-center justify-center"><div class="swiper-pagination" data-swiper-pagination></div></div>
-                <div class="flex-initial px-4 py-8" data-swiper-button-next>
+                <div class="flex-1 px-4 py-8 relative h-10 flex items-center justify-center"><div class="swiper-pagination" data-realization-pagination></div></div>
+                <div class="flex-initial px-4 py-8" data-realization-button-next>
                     <img 
                         class="block transform scale-x-flip scale-y-1" 
                         width="20px"

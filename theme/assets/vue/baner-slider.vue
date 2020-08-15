@@ -1,6 +1,5 @@
 <template>
   <component
-    id="baner"
     :is="mainTag"
     :class="mainClass"
     v-swiper:baner="sliderOptionsBaner"
@@ -29,7 +28,7 @@ export default {
         sliderOptionsBaner: {
           preloadImages: false,
           pagination: {
-              el: '#baner [data-swiper-pagination]',
+              el: '[data-baner-pagination]',
               clickable: true,
           },
           autoplay: 2000,

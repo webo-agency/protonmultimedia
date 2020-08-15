@@ -5,15 +5,22 @@ import VueAwesomeSwiper from "vue-awesome-swiper/dist/ssr";
 
 Vue.use(VueAwesomeSwiper);
 
+Vue.component('baner-slider', BanerSlider);
+Vue.component('realization-slider', RealizationSlider);
+
 new Vue({ 
-    el: '#content',
+    el: '#baner',
     components: {
         BanerSlider,
-        RealizationSlider
     }
 });
 
-
+new Vue({ 
+    el: '#realization',
+    components: {
+        RealizationSlider,
+    }
+});
 
 const heroswiper = new Swiper('.pm-swiper--hero-swiper__container', {
     // Disable preloading of all images

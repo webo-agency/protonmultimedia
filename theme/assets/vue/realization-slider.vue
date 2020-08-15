@@ -1,6 +1,5 @@
 <template>
   <component
-    id="realization"
     :is="mainTag"
     :class="mainClass"
     v-swiper:realization="sliderOptionsBaner"
@@ -20,7 +19,7 @@ export default {
       },
       mainClass: {
         type: String,
-        default: "swiper-container relative overflow-hidden",
+        default: "swiper-container relative overflow-hidden mx-17",
         required: false
       },
     },
@@ -29,12 +28,12 @@ export default {
         sliderOptionsBaner: {
           preloadImages: false,
           pagination: {
-              el: '#realization [data-swiper-pagination]',
+              el: '[data-realization-pagination]',
               clickable: true,
           },
           navigation: {
-            nextEl: '#realization [data-swiper-button-next]',
-            prevEl: '#realization [data-swiper-button-prev]',
+            nextEl: '[data-realization-button-next]',
+            prevEl: '[data-realization-button-prev]',
           },
           autoplay: 2000,
           slidesPerView: 'auto',
