@@ -10,16 +10,10 @@ Vue.component('realization-slider', RealizationSlider);
 
 document.addEventListener('DOMContentLoaded', function() {
     new Vue({ 
-        el: '#baner',
+        el: '#content',
         components: {
             BanerSlider,
-        }
-    });
-
-    new Vue({ 
-        el: '#realization',
-        components: {
-            RealizationSlider,
+            RealizationSlider
         }
     });
 });
