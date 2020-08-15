@@ -81,7 +81,9 @@
       "../public/wp-content/plugins/hello.php",
       "../public/wp-content/plugins/akismet",
       "../public/wp-content/themes/twentynineteen",
-			"../public/wp-content/themes/twentyseventeen"
+      "../public/wp-content/themes/twentyseventeen",
+      "../public/wp-content/themes/twentytwenty/package.json",
+      "../public/wp-content/themes/twentytwenty/package-lock.json"
     ]
   }
 }

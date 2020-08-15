@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"name": "Project",
+			"path": "."
+		},
+		{
+			"name": "Theme",
+			"path": "theme"
+		}
+	],
+	"settings": {
+		"window.zoomLevel": 0.1,
+    "files.autoSave": "afterDelay"
+	},
+	"extensions": {
+    "recommendations": [
+			"eg2.vscode-npm-script",
+			"dbaeumer.vscode-eslint",
+			"bmewburn.vscode-intelephense-client",
+			"mikestead.dotenv",
+			"ms-azuretools.vscode-docker",
+			"exodiusstudios.comment-anchors"
+    ]
+  }
+}
