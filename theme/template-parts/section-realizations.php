@@ -43,7 +43,12 @@
                         </a>
                         <div class="absolute left-0 right-0 bottom-0 p-8 overflow-hidden z-20">
                             <h2 class="font-bold uppercase text-4xl first-line-decorated leading-tight">
-                                <?php echo get_the_title( $_post ); ?> 
+                                <a
+                                    href="<?php echo get_permalink($_post); ?>"
+                                    class="text-white hover:text-white"
+                                >
+                                    <?php echo get_the_title( $_post ); ?> 
+                                </a>
                             </h2>
                             <div class="invisible h-0 opacity-0 group-hover:visible group-hover:h-auto group-hover:opacity-100">
                                 <?php echo the_content(); ?> 
