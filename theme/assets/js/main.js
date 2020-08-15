@@ -8,18 +8,20 @@ Vue.use(VueAwesomeSwiper);
 Vue.component('baner-slider', BanerSlider);
 Vue.component('realization-slider', RealizationSlider);
 
-new Vue({ 
-    el: '#baner',
-    components: {
-        BanerSlider,
-    }
-});
+document.addEventListener('DOMContentLoaded', function() {
+    new Vue({ 
+        el: '#baner',
+        components: {
+            BanerSlider,
+        }
+    });
 
-new Vue({ 
-    el: '#realization',
-    components: {
-        RealizationSlider,
-    }
+    new Vue({ 
+        el: '#realization',
+        components: {
+            RealizationSlider,
+        }
+    });
 });
 
 const heroswiper = new Swiper('.pm-swiper--hero-swiper__container', {
