@@ -8,6 +8,7 @@
     @apply inset-0;
     @apply bg-gradient-b-transparent-primary-offset;
     @apply z-10;
+    @apply pointer-events-none;
   }
 
   &:before{
@@ -18,6 +19,7 @@
     @apply z-0;
     @apply transition;
     @apply duration-300;
+    @apply pointer-events-none;
   }
 
   &:hover:before{
