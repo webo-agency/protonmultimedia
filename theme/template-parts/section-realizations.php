@@ -40,7 +40,7 @@
                                     array( 'class' => 'w-full h-auto' )
                                 ); 
                             ?>
-                            <h2 class="absolute left-0 right-0 bottom-0 font-bold uppercase text-4xl md:text-8xl p-8 first-line-decorated leading-tight">
+                            <h2 class="absolute left-0 right-0 bottom-0 font-bold uppercase text-4xl p-8 first-line-decorated leading-tight">
                                 <?php echo get_the_title( $_post ); ?>
                             </h2>
                         </a>
