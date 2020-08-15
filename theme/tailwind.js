@@ -110,7 +110,11 @@ module.exports = {
       }
     },
   },
-  variants: {},
+  variants: {
+    visibility: ['responsive', 'hover', 'focus', 'group-hover'],
+    height: ['responsive', 'group-hover'],
+    opacity: ['responsive', 'hover', 'focus', 'active', 'group-hover']
+  },
   plugins: [
     require('tailwindcss-gradients'),
   ],

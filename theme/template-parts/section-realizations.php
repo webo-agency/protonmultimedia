@@ -29,10 +29,10 @@
         <realization-slider>
             <ul class="swiper-wrapper">
                 <?php while ( $loop->have_posts() ) : $loop->the_post(); $_post = get_post(); ?>
-                    <li class="w-1/4 swiper-slide overflow-hidden">
+                    <li class="w-1/4 swiper-slide group overflow-hidden box-overlay">
                         <a
                             href="<?php echo get_permalink($_post); ?>"
-                            class="box-overlay text-white hover:text-white"
+                            class="text-white hover:text-white"
                         >
                             <?php echo get_the_post_thumbnail( 
                                     $_post->ID, 
@@ -40,10 +40,40 @@
                                     array( 'class' => 'w-full h-auto' )
                                 ); 
                             ?>
-                            <h2 class="absolute left-0 right-0 bottom-0 font-bold uppercase text-4xl p-8 first-line-decorated leading-tight">
-                                <?php echo get_the_title( $_post ); ?> 
-                            </h2>
                         </a>
+                        <div class="absolute left-0 right-0 bottom-0 p-8 overflow-hidden z-20">
+                            <h2 class="font-bold uppercase text-4xl first-line-decorated leading-tight">
+                                <a
+                                    href="<?php echo get_permalink($_post); ?>"
+                                >
+                                    <?php echo get_the_title( $_post ); ?> 
+                                </a>
+                            </h2>
+                            <div class="invisible h-0 opacity-0 group-hover:visible group-hover:h-auto group-hover:opacity-100">
+                                <?php echo the_content(); ?> 
+
+                                <?php if(is_array(get_field('services', $_post))): ?>
+                                    <?php foreach(get_field('services', $_post) as $service): ?>
+                                        <ul class="mt-4">
+                                            <li>
+                                                <a href="<?php echo get_permalink($service); ?>" class="mb-4 mr-4 rounded-md px-2 text-sm bg-white text-black inline-block">
+                                                    <?php echo get_the_title( $service ); ?>
+                                                </a>
+                                            </li>
+                                            <?php foreach ( (get_the_category($service)) as $category ): ?>
+                                                <?php echo $category->term_id; if($category->term_id !== 1): ?>
+                                                    <li class="bg-primary">
+                                                        <a href="<?php echo get_category_link($category); ?>" class="mb-4 mr-4 rounded-md px-2 text-sm bg-white text-black inline-block">
+                                                            <?php echo get_cat_name($category); ?>
+                                                        </a>
+                                                    </li>
+                                                <?php endif; ?>
+                                            <?php endforeach; ?>
+                                        </ul>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
+                            </div>
+                        </div>
                     </li>
                 <?php endwhile; ?>
             </ul>
@@ -69,5 +99,5 @@
                 </div>
             </div>
         </realization-slider>
-    <?php endif; ?>
+    <?php endif; wp_reset_postdata(); ?>
 </section>
