@@ -10,7 +10,17 @@
     @apply z-10;
   }
 
-  &:hover:after{
+  &:before{
+    content: '';
+    @apply absolute;
+    @apply inset-0;
+    @apply bg-transparent;
+    @apply z-0;
+    @apply transition;
+    @apply duration-300;
+  }
+
+  &:hover:before{
     @apply bg-primary;
     @apply opacity-50;
   }

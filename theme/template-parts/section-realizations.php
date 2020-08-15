@@ -47,8 +47,26 @@
                     </li>
                 <?php endwhile; ?>
             </ul>
-            <div class="flex text-center">
-                <div class="swiper-pagination align-left" data-swiper-pagination></div>
+            <div class="flex items-center justify-between">
+                <div class="flex-initial px-4 py-8" data-swiper-button-prev>
+                    <img 
+                        class="block" 
+                        width="20px"
+                        height="20px"
+                        src="<?php echo get_template_directory_uri() . '/assets/svg/arrow.svg' ?>" 
+                        alt="Left arrow"
+                    />  
+                </div>
+                <div class="flex-1 px-4 py-8 relative h-10 flex items-center justify-center"><div class="swiper-pagination" data-swiper-pagination></div></div>
+                <div class="flex-initial px-4 py-8" data-swiper-button-next>
+                    <img 
+                        class="block transform scale-x-flip scale-y-1" 
+                        width="20px"
+                        height="20px"
+                        src="<?php echo get_template_directory_uri() . '/assets/svg/arrow.svg' ?>" 
+                        alt="Right arrow"
+                    />  
+                </div>
             </div>
         </realization-slider>
     <?php endif; ?>

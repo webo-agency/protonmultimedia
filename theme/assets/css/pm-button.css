@@ -44,4 +44,8 @@
   &[disabled] {
       @apply bg-gray-2;
   }
+
+  &:hover{
+      @apply text-white;
+  }
 }

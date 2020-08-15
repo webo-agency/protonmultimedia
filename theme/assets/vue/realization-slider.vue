@@ -37,6 +37,10 @@ export default {
               el: '#realization [data-swiper-pagination]',
               clickable: true,
           },
+          navigation: {
+            nextEl: '#realization [data-swiper-button-next]',
+            prevEl: '#realization [data-swiper-button-prev]',
+          },
           autoplay: 2000,
           slidesPerView: 4,
           loopedSlides: 4,

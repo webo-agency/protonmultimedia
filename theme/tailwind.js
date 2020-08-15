@@ -39,6 +39,9 @@ module.exports = {
       }
     },
     extend: {
+      scale: {
+        'flip': '-1',
+      },
       fontFamily: {
         'sans': ['Open Sans', 'sans-serif'],
         'special': ['Rajdhani', 'sans-serif'],
