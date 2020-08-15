@@ -3,7 +3,7 @@
     id="baner"
     :is="mainTag"
     :class="mainClass"
-    v-swiper:baner="sliderOptions"
+    v-swiper:baner="sliderOptionsBaner"
   >
     <slot />
   </component>
@@ -26,7 +26,7 @@ export default {
     },
     data() {
       return {
-        sliderOptions: {
+        sliderOptionsBaner: {
           preloadImages: false,
           pagination: {
               el: '#baner [data-swiper-pagination]',

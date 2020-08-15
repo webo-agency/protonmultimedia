@@ -5,10 +5,13 @@ import VueAwesomeSwiper from "vue-awesome-swiper/dist/ssr";
 
 Vue.use(VueAwesomeSwiper);
 
-Vue.component('baner-slider', BanerSlider);
-Vue.component('realization-slider', RealizationSlider);
-
-new Vue({ el: '#content' });
+new Vue({ 
+    el: '#content',
+    components: {
+        BanerSlider,
+        RealizationSlider
+    }
+});
 
 
 
