@@ -104,6 +104,8 @@ if ( ! function_exists( 'protonmultimedia_theme_setup' ) ) :
 				'flex-height' => true,
 			)
 		);
+
+		add_image_size( 'slider-block', 700, 443, true );
 	}
 endif;
 add_action( 'after_setup_theme', 'protonmultimedia_theme_setup' );

@@ -1,11 +1,28 @@
 import Vue from 'vue';
 import BanerSlider from '../vue/baner-slider.vue';
+import RealizationSlider from '../vue/realization-slider.vue';
+import VueAwesomeSwiper from "vue-awesome-swiper/dist/ssr";
+
+Vue.use(VueAwesomeSwiper);
 
 Vue.component('baner-slider', BanerSlider);
+Vue.component('realization-slider', RealizationSlider);
 
-new Vue({ el: '#content' });
+document.addEventListener('DOMContentLoaded', function() {
+    new Vue({ 
+        el: '#baner',
+        components: {
+            BanerSlider,
+        }
+    });
 
-
+    new Vue({ 
+        el: '#realization',
+        components: {
+            RealizationSlider,
+        }
+    });
+});
 
 const heroswiper = new Swiper('.pm-swiper--hero-swiper__container', {
     // Disable preloading of all images

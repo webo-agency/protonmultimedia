@@ -2,7 +2,7 @@
   <component
     :is="mainTag"
     :class="mainClass"
-    v-swiper:baner="sliderOptionsBaner"
+    v-swiper:realization="sliderOptionsBaner"
   >
     <slot />
   </component>
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-    name: 'baner-slider',
+    name: 'realization-slider',
     props: {
       mainTag: {
         type: String,
@@ -19,7 +19,7 @@ export default {
       },
       mainClass: {
         type: String,
-        default: "swiper-container relative overflow-hidden",
+        default: "swiper-container relative overflow-hidden mx-17",
         required: false
       },
     },
@@ -28,11 +28,16 @@ export default {
         sliderOptionsBaner: {
           preloadImages: false,
           pagination: {
-              el: '[data-baner-pagination]',
+              el: '[data-realization-pagination]',
               clickable: true,
           },
+          navigation: {
+            nextEl: '[data-realization-button-next]',
+            prevEl: '[data-realization-button-prev]',
+          },
           autoplay: 2000,
-          slidesPerView: 1,
+          slidesPerView: 'auto',
+          loopedSlides: 4,
           loop: true
         }
       };

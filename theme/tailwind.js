@@ -9,34 +9,49 @@ module.exports = {
     ],
   },
   theme: {
+    colors: {
+      'white': '#fff',
+      'black': '#000',
+      'gray': '#dfdfdf',
+      'gray-2': '#c9c9c9',
+      'primary': '#01B9C3',
+      'dark-blue': '#110D25',
+      'dark-blue-2': '#171131',
+      'dark-font': '#130E29',
+    },
+    screens: {
+      'phone': '320px',
+      'phone-wide': '480px',
+      'phablet': '560px',
+      'tablet-small': '640px',
+      'tablet': '768px',
+      'tablet-wide': '1024px',
+      'desktop': '1248px',
+      'desktop-wide': '1440px',
+      'full-hd': '1920px'
+    },
     container: {
       center: true,
       padding: {
         default: '1rem',
+        'desktop-wide': '7rem',
+        'full-hd': '7rem',
       }
     },
     extend: {
+      scale: {
+        'flip': '-1',
+      },
       fontFamily: {
         'sans': ['Open Sans', 'sans-serif'],
         'special': ['Rajdhani', 'sans-serif'],
       },
-      screens: {
-        'phone': '320px',
-        'phone-wide': '480px',
-        'phablet': '560px',
-        'tablet-small': '640px',
-        'tablet': '768px',
-        'tablet-wide': '1024px',
-        'desktop': '1248px',
-        'desktop-wide': '1440px',
-        'full-hd': '1920px'
-      },
       fontSize: {
         'sm': '12px',
         'sm-2': '16px',
-        'base': '20px',
+        'base': ['20px', '30px'],
         'md': '25px',
-        'lg': '40px',
+        'lg': ['40px', '40px'],
         'xl': ['60px', '62px'],
         'xxl': '80px',
         '8xl': ['80px', '80px']
@@ -63,6 +78,7 @@ module.exports = {
       },
       margin: {
         '14': '3.75rem',
+        '17': '4.375rem'
       },
       inset: {
        '0': 0,
@@ -72,37 +88,14 @@ module.exports = {
       minHeight: {
         '700px': '700px',
       },
-      textColor: {
-        'white': '#fff',
-        'black': '#000',
-        'gray': '#dfdfdf',
-        'gray-2': '#c9c9c9',
-        'primary': '#01B9C3',
-        'dark-blue': '#110D25',
-        'dark-blue-2': '#171131',
-        'dark-font': '#130E29',
-      },
       backgroundColor: {
         'transparent': 'transparent',
-        'white': '#fff',
-        'black': '#000',
-        'gray': '#dfdfdf',
-        'gray-2': '#c9c9c9',
-        'primary': '#01B9C3',
-        'dark-blue': '#110D25',
-        'dark-blue-2': '#171131',
-        'dark-font': '#130E29',
+      },
+      linearGradientColors: { // defaults to {}
+        'transparent-primary-offset': ['transparent', 'transparent 50%', '#01B9C3'],
       },
       borderColor: {
         'transparent': 'transparent',
-        'white': '#fff',
-        'black': '#000',
-        'gray': '#dfdfdf',
-        'gray-2': '#c9c9c9',
-        'primary': '#01B9C3',
-        'dark-blue': '#110D25',
-        'dark-blue-2': '#171131',
-        'dark-font': '#130E29',
       },
       flex: {
         '1/2': '0 0 50%',
@@ -118,5 +111,7 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    require('tailwindcss-gradients'),
+  ],
 }

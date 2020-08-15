@@ -13,12 +13,12 @@
                     $cta_button = get_field('cta_button', 'option');
                 
                 ?>
-                <div class="pm-cta__column mb-10 desktop:mb-0">
+                <div class="pm-cta__column mb-10 desktop:mb-0 uppercase">
                     <h3> 
                         <?php 
                             $lines = explode(PHP_EOL, $cta_title);
                             foreach ( $lines as $line) {
-                                echo preg_replace("/[*]\b(.*?)\b[*]/", '<span class="text-primary">$1</span>', $line);
+                                echo preg_replace("/\*(.+)\*/", '<span class="text-primary">$1</span>', $line);
                                 echo '</br>';
                             }
                         ?>

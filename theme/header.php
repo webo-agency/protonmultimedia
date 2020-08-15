@@ -30,14 +30,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/swiper.min.css' ?>">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/node_modules/@fortawesome/fontawesome-free/css/all.min.css' ?>" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/all.min.css' ?>" />
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('bg-dark-blue'); ?>>
 <?php wp_body_open(); ?>
 
-<div id="page" class="<?php echo getPageClassName(); ?> site">
+<div id="page" class="<?php echo getPageClassName(); ?> site relative">
 	<div class="pm-header" data-header>
 		<header id="masthead" class="pm-container pm-container--indented site-header">
 			<div class="site-branding site-branding--mobile">
