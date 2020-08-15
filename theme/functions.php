@@ -125,17 +125,13 @@ add_action( 'wp_enqueue_scripts', 'protonmultimedia_theme_theme_scripts' );
 
 
 function proton_theme_styles_and_scripts() {
-	wp_register_style('swiper-styles', get_template_directory_uri().'/assets/css/swiper.min.css');
-	wp_enqueue_style('swiper-styles');
-	wp_register_style('custom-styles', get_template_directory_uri().'/assets/public/dist/css/style.css');
-	wp_enqueue_style('custom-styles');
+	wp_enqueue_style('swiper-styles', get_template_directory_uri() . '/assets/css/swiper.min.css', array(), filemtime(get_template_directory() . '/assets/css/swiper.min.css'), false);
+	wp_enqueue_style('custom-styles', get_template_directory_uri() . '/assets/public/dist/css/style.css', array(), filemtime(get_template_directory() . '/assets/public/dist/css/style.css'), false);
+	wp_enqueue_style('custom-styles-tailwind', get_template_directory_uri().'/assets/public/dist/css/index.css', array('custom-styles'), filemtime(get_template_directory() . '/assets/public/dist/css/index.css'), false);
 
-	wp_register_style('custom-styles-tailwind', get_template_directory_uri().'/assets/public/dist/css/index.css');
-	wp_enqueue_style('custom-styles-tailwind');
-
-	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.min.js', array (), 1.5, true);
-	wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/public/dist/js/Main.js', array("swiper"), 1.6, true);
-	wp_enqueue_script( 'rolldown', get_template_directory_uri() . '/assets/public/dist/js/Rolldown.js', array(), 1.6, true);
+	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.min.js', array (), filemtime(get_template_directory() . '/assets/js/swiper.min.js'), true);
+	wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/public/dist/js/Main.js', array("swiper"), filemtime( get_template_directory() . '/assets/public/dist/js/Main.js'), true);
+	wp_enqueue_script( 'rolldown', get_template_directory_uri() . '/assets/public/dist/js/Rolldown.js', array(), filemtime( get_template_directory() . '/assets/public/dist/js/Rolldown.js'), true);
 }
 
 add_action('wp_enqueue_scripts', 'proton_theme_styles_and_scripts');
