@@ -48,8 +48,8 @@
                     <article class="relative pm-news-article">
                         <img class="object-cover w-full" src="<?php echo $post_image; ?>" alt="<?php echo esc_html( $title ); ?>" title="<?php echo esc_html( $title ); ?>" />
                         <div class="absolute bottom-0 left-0 post-info">
-                            <span class="text-primary text-sm tablet:text-base leading-line-height-normal block mb-1 tablet:mb-2 tablet-wide:mb-4"><?php echo $post_date; ?></span>
-                            <h3 class="text-base tablet:text-md desktop:text-lg leading-line-height-normal tablet:leading-line-height-md desktop:leading-line-height-lg mb-4 full-hd:mb-10 font-weight-bold"><?php echo esc_html( $title ); ?></h3>
+                            <span class="text-primary text-sm tablet:text-base leading-line-height-normal block mb-1 tablet:mb-2"><?php echo $post_date; ?></span>
+                            <h3 class="text-base tablet:text-md desktop:text-lg leading-line-height-normal tablet:leading-line-height-md desktop:leading-line-height-lg mb-4 full-hd:mb-6 font-weight-bold"><?php echo esc_html( $title ); ?></h3>
                             <div class="pm-news-article__teaser">
                                 <div class="hidden desktop:block mb-6 full-hd:mb-20">
                                     <?php 
@@ -79,7 +79,7 @@
 
                                             foreach($post_taxonomies as $post_taxonomy) {
                                                 ?>
-                                                <a class="rounded border-primary border-2 border-solid text-white desktop:text-black text-sm leading-line-height-sm p-2 inline-block" href="<?php echo $post_taxonomy->link; ?>" title="<?php echo $post_taxonomy->name; ?>">
+                                                <a class="pm-taxonomy-pill" href="<?php echo $post_taxonomy->link; ?>" title="<?php echo $post_taxonomy->name; ?>">
                                                     <?php echo $post_taxonomy->name; ?>
                                                 </a>
                                                 <?php
@@ -87,7 +87,7 @@
                                         }
                                     }?>
                                 </div>
-                                <div class="hidden text-sm full-hd:text-base desktop:block mb-6 full-hd:mb-20 text-black">
+                                <div class="hidden text-sm full-hd:text-base desktop:block mb-6 full-hd:mb-14 text-black">
                                     <?php echo $excerpt; ?>
                                 </div>
                                 <a class="text-primary font-weight-bold" href="<?php echo esc_url( $permalink ); ?>">Czytaj całość -</a>
@@ -100,5 +100,16 @@
             </ul>
         <?php endif; ?>
     <?php wp_reset_postdata(); ?>
+        <div class="pm-container relative py-10">
+            <img    
+                class="hidden desktop:block absolute top-0 left-0 z-50" 
+                src="<?php echo get_template_directory_uri() . '/assets/svg/news-dots-2.svg' ?>" 
+                alt="Decorations"
+                style="max-width: 168px;"
+            />
+            <div class="mx-auto max-w-885px">
+                <a class="pm-button pm-button--outline w-full text-center" href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" title="Zobacz kolejne wpisy">ZOBACZ KOLEJNE WPISY</a>
+            </div>
+        </div>
     </div>
 </section>
