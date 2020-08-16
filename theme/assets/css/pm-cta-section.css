@@ -40,13 +40,13 @@
         @screen desktop {
 
             &:first-of-type {
-                max-width: 60%;
-                flex: 0 0 60%;
+                max-width: 55%;
+                flex: 0 0 55%;
             }
 
             &:last-of-type {
-                max-width: 40%;
-                flex: 0 0 40%;
+                max-width: 45%;
+                flex: 0 0 45%;
             }
         }
 

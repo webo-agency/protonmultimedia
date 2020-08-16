@@ -1,0 +1,15 @@
+.pm-taxonomy-pill {
+    @apply rounded;
+    @apply border-primary;
+    @apply border;
+    @apply border-solid;
+    @apply text-white;
+    @apply text-sm;
+    @apply leading-line-height-sm;
+    @apply inline-block;
+    padding: 0.3rem .5rem;
+
+    @screen desktop {
+        @apply text-black;
+    }
+}
