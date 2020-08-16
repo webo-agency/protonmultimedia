@@ -4,7 +4,7 @@
 
 @import "tailwindcss/utilities";
 
-
+@import "typography.css";
 @import "main-menu.css";
 @import "line-decorated.css";
 @import "first-line-decorated.css";
@@ -13,3 +13,5 @@
 @import "pm-cta-section.css";
 @import "pm-news-article.css";
 @import "pm-taxonomy-pill.css";
+@import "pm-about.css";
+@import "pm-lead.css";

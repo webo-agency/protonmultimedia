@@ -49,6 +49,11 @@
     @apply bg-transparent;
   }
 
+  &--transparent {
+    @apply bg-transparent;
+    @apply text-primary;
+  }
+
   &[disabled] {
       @apply bg-gray-2;
   }

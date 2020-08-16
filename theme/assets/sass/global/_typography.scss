@@ -4,10 +4,6 @@ body {
     font-size: $size-small;
     line-height: $base-line-height;
     color: $color-white;
-
-    @include media-screen(tablet-wide) {
-        font-size: $base-font-size;
-    }
 }
 
 p {

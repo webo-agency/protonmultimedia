@@ -1,20 +1,4 @@
-.pm-news {    
-
-    h2 {
-        @apply text-md;
-        @apply leading-line-height-md;
-        @apply font-weight-bold;
-        @apply font-special;
-
-        @screen tablet {
-            @apply text-lg;
-        }
-
-        @screen desktop-wide {
-            @apply text-xl;
-            @apply leading-line-height-xl;
-        }
-    }
+.pm-news {
 
     p {
         max-width: 450px;

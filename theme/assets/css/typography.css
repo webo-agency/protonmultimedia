@@ -1,0 +1,20 @@
+body{
+
+    @screen desktop {
+        @apply text-base;
+    }
+
+    h2 {
+        @apply text-lg;
+        @apply leading-line-height-lg;
+        @apply font-weight-bold;
+        @apply font-special;
+        @apply mb-10;
+
+        @screen desktop {
+            @apply text-xl;
+            @apply leading-line-height-xl;
+            @apply mb-20;
+        }
+    }
+}

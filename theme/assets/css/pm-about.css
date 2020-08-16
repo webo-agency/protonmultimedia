@@ -1,0 +1,14 @@
+.pm-about {
+    padding-top: 30px;
+    padding-bottom: 25px;
+
+    @screen tablet {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    @screen desktop {
+        padding-top: 130px;
+        padding-bottom: 115px;
+    }
+}
