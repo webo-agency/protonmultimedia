@@ -84,6 +84,7 @@ module.exports = {
        '0': 0,
        '1/2': '50%',
        '60px': '60px',
+       '100px': '100px',
       },
       minHeight: {
         '550px': '550px',
