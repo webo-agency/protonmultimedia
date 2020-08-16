@@ -15,7 +15,7 @@
             alt="Decorations"
             style="max-width: 95px;"
         />
-        <h2 class="mb-10 tablet:mb-20">
+        <h2>
             <?php
                 $news_title = get_field('news_title');
                 $news_lines = explode(PHP_EOL, $news_title);
