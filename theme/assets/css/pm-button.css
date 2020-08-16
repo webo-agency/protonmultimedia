@@ -1,13 +1,19 @@
 .pm-button {
   @apply border-none;
-  @apply border-none;
   @apply bg-transparent;
-  @apply p-0;
+  @apply p-4;
   @apply relative;
   @apply inline-block;
   @apply leading-none;
   @apply rounded;
+  @apply font-weight-bold;
+  font-family: 'Rajdhani', sans-serif;
   transition: background .3s;
+
+  @screen tablet {
+    @apply text-base;
+    padding: 22px 35px;
+  }
 
   &:after{
     content: '—';
@@ -20,12 +26,7 @@
       padding: 10px;
   }
 
-  &--large {
-      padding: 15px 20px;
-  }
-
   &--primary {
-      @apply text-sm-2;
       @apply bg-primary;
       @apply text-white;
       @apply uppercase;
@@ -39,6 +40,13 @@
       &:hover {
           background: darken($color-primary, 10%);
       }
+  }
+
+  &--outline {
+    @apply border-primary;
+    @apply border;
+    @apply border-solid;
+    @apply bg-transparent;
   }
 
   &[disabled] {
