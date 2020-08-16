@@ -86,6 +86,7 @@ module.exports = {
        '60px': '60px',
       },
       minHeight: {
+        '550px': '550px',
         '700px': '700px',
       },
       backgroundColor: {
