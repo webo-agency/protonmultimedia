@@ -6,7 +6,7 @@
     ) );
   ?>
   
-  <div class="bg-dark-blue-2 mb-16">
+  <div class="bg-dark-blue-2">
     <div class="container flex flex-row flex-wrap py-16 px-0">
       <?php foreach($terms as $term): ?>
         <div class="w-full tablet:w-1/2 relative overflow-hidden">
