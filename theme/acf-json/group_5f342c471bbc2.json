@@ -43,47 +43,14 @@
             "rows": "",
             "new_lines": "",
             "acfe_textarea_code": 0
-        },
-        {
-            "key": "field_5f3435bd5045c",
-            "label": "News items",
-            "name": "news_items",
-            "type": "relationship",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "acfe_permissions": "",
-            "post_type": [
-                "post"
-            ],
-            "taxonomy": "",
-            "filters": [
-                "search",
-                "post_type",
-                "taxonomy"
-            ],
-            "elements": [
-                "featured_image"
-            ],
-            "min": 4,
-            "max": 4,
-            "return_format": "object",
-            "acfe_bidirectional": {
-                "acfe_bidirectional_enabled": "0"
-            }
         }
     ],
     "location": [
         [
             {
-                "param": "page",
+                "param": "page_type",
                 "operator": "==",
-                "value": "28"
+                "value": "front_page"
             }
         ]
     ],
@@ -103,5 +70,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1597261055
+    "modified": 1597509337
 }
