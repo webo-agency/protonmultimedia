@@ -8,9 +8,9 @@
     content: '';
     @apply absolute;
     @apply bg-dark-blue-2;
-    left: 0;
+    top: 0;
     right: auto;
-    top: 2rem;
+    left: -5rem;
     bottom: auto;
     height: 2.8rem;
     z-index: -1;
