@@ -18,7 +18,7 @@
             "acfe_permissions": "",
             "acfe_uploader": "wp",
             "acfe_thumbnail": 1,
-            "return_format": "url",
+            "return_format": "id",
             "preview_size": "medium",
             "library": "all",
             "min_width": "",
@@ -63,15 +63,17 @@
                 "id": ""
             },
             "acfe_permissions": "",
-            "return_format": "array",
+            "acfe_uploader": "wp",
+            "acfe_thumbnail": 0,
+            "return_format": "id",
             "preview_size": "medium",
             "library": "all",
-            "min_width": 0,
-            "min_height": 0,
-            "min_size": 0,
-            "max_width": 0,
-            "max_height": 0,
-            "max_size": 0,
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
             "mime_types": ""
         }
     ],
@@ -100,5 +102,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1597500558
+    "modified": 1597526671
 }

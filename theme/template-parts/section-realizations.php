@@ -29,7 +29,7 @@
         <realization-slider>
             <ul class="swiper-wrapper">
                 <?php while ( $loop->have_posts() ) : $loop->the_post(); $_post = get_post(); ?>
-                    <li class="w-1/4 swiper-slide group overflow-hidden box-overlay">
+                    <li class="w-1/4 swiper-slide group overflow-hidden box-gradient-overlay">
                         <a
                             href="<?php echo get_permalink($_post); ?>"
                             class="text-white hover:text-white"
