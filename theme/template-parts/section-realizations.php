@@ -70,4 +70,5 @@
             </div>
         </realization-slider>
     <?php endif; ?>
+    <?php wp_reset_postdata(); ?>
 </section>
