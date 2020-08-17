@@ -44,53 +44,57 @@
                 $post_image = get_the_post_thumbnail_url($featured_post->ID,'medium_large');
             ?>
                 
-                <li class="phone-wide:flex-1/2 tablet:max-w-1/2 mb-10 tablet:mb-0">
-                    <article class="relative pm-news-article">
-                        <img class="object-cover w-full" src="<?php echo $post_image; ?>" alt="<?php echo esc_html( $title ); ?>" title="<?php echo esc_html( $title ); ?>" />
-                        <div class="absolute bottom-0 left-0 post-info">
-                            <span class="text-primary text-sm tablet:text-base leading-line-height-normal block mb-1 tablet:mb-2"><?php echo $post_date; ?></span>
-                            <h3 class="text-base tablet:text-md desktop:text-lg leading-line-height-normal tablet:leading-line-height-md desktop:leading-line-height-lg mb-4 full-hd:mb-6 font-weight-bold"><?php echo esc_html( $title ); ?></h3>
-                            <div class="pm-news-article__teaser">
-                                <div class="hidden desktop:block mb-6 full-hd:mb-20">
-                                    <?php 
-                                    
-                                    $post_services = get_field( 'services', $featured_post->ID );
-                                    if($post_services) {
-                                        foreach($post_services as $post_service) {
-                        
-                                            $service = get_post($post_service);
-                                            $service_title = get_the_title( $service->ID );
-                                            $service_link = get_permalink($service->ID);
+                <li class="phone-wide:flex-1/2 tablet:max-w-1/2 mb-10 tablet:mb-0 relative">
+                    <img class="object-cover h-full w-full" src="<?php echo $post_image; ?>" alt="<?php echo esc_html( $title ); ?>" title="<?php echo esc_html( $title ); ?>" />
+                    <article class="absolute left-0 top-0 flex pm-news-article group post-info min-h-200px full-hd:min-h-550px h-full w-full">
+                        <div class="h-full w-full relative">
+                            <div class="flex flex-col justify-end group-hover:justify-between z-10 absolute h-full w-full">
+                                <div>
+                                    <span class="text-primary text-sm tablet:text-base leading-line-height-normal block mb-1 tablet:mb-2"><?php echo $post_date; ?></span>
+                                    <h3 class="text-base tablet:text-md desktop:text-lg leading-line-height-normal tablet:leading-line-height-md desktop:leading-line-height-lg mb-4 full-hd:mb-6 font-weight-bold"><?php echo esc_html( $title ); ?></h3>
+                                </div>
+                                <div class="desktop:max-h-0 group-hover:max-h-100%">
+                                    <div class="hidden opacity-0 group-hover:opacity-100 desktop:block mb-6">
+                                        <?php 
+                                        
+                                        $post_services = get_field( 'services', $featured_post->ID );
+                                        if($post_services) {
+                                            foreach($post_services as $post_service) {
+                            
+                                                $service = get_post($post_service);
+                                                $service_title = get_the_title( $service->ID );
+                                                $service_link = get_permalink($service->ID);
 
-                                            $service_tag = new stdClass;
-                                            $service_tag->name = $service_title;
-                                            $service_tag->link = $service_link;
+                                                $service_tag = new stdClass;
+                                                $service_tag->name = $service_title;
+                                                $service_tag->link = $service_link;
 
-                                            $service_categories = wp_get_post_terms($post_service, 'services_category', array("fields" => "all"));
-                                            $post_taxonomies = array();
-                                            
-                                            if ( $service_categories ) {
-                                                foreach($service_categories as $category) {
-                                                    $category->link = get_term_link( $category->term_id );
-                                                    array_push($post_taxonomies, $category);
+                                                $service_categories = wp_get_post_terms($post_service, 'services_category', array("fields" => "all"));
+                                                $post_taxonomies = array();
+                                                
+                                                if ( $service_categories ) {
+                                                    foreach($service_categories as $category) {
+                                                        $category->link = get_term_link( $category->term_id );
+                                                        array_push($post_taxonomies, $category);
+                                                    }
+                                                }
+                                                array_push($post_taxonomies, $service_tag);
+
+                                                foreach($post_taxonomies as $post_taxonomy) {
+                                                    ?>
+                                                    <a class="pm-taxonomy-pill" href="<?php echo $post_taxonomy->link; ?>" title="<?php echo $post_taxonomy->name; ?>">
+                                                        <?php echo $post_taxonomy->name; ?>
+                                                    </a>
+                                                    <?php
                                                 }
                                             }
-                                            array_push($post_taxonomies, $service_tag);
-
-                                            foreach($post_taxonomies as $post_taxonomy) {
-                                                ?>
-                                                <a class="pm-taxonomy-pill" href="<?php echo $post_taxonomy->link; ?>" title="<?php echo $post_taxonomy->name; ?>">
-                                                    <?php echo $post_taxonomy->name; ?>
-                                                </a>
-                                                <?php
-                                            }
-                                        }
-                                    }?>
+                                        }?>
+                                    </div>
                                 </div>
-                                <div class="hidden text-sm full-hd:text-base desktop:block mb-6 full-hd:mb-14 text-black">
-                                    <?php echo $excerpt; ?>
+                                <div class="desktop:max-h-0 group-hover:max-h-100% overflow-hidden opacity-0 group-hover:opacity-100 flex-1 hidden text-sm full-hd:text-base desktop:block text-black">
+                                    <p class="mb-6 full-hd:mb-14"><?php echo $excerpt; ?></p>
                                 </div>
-                                <a class="text-primary font-weight-bold" href="<?php echo esc_url( $permalink ); ?>">Czytaj całość -</a>
+                                <a class="desktop:max-h-0 group-hover:max-h-100% text-primary font-weight-bold desktop:opacity-0 group-hover:opacity-100" href="<?php echo esc_url( $permalink ); ?>">Czytaj całość -</a>
                             </div>
                         </div>
                         <div class="hidden desktop:block pm-news-article__backlayer">
