@@ -1,4 +1,4 @@
-<section>
+<section class="relative">
     <header class="container mt-24">
         <h2 class="uppercase mb-10 text-lg font-weight-bold">
             Nasze wybrane<br/>
