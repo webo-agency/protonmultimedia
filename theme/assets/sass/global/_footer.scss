@@ -139,12 +139,6 @@
             }
         }
 
-        i {
-            @include media-screen(tablet) {
-                display: none;
-            }
-        }
-
         &--home-menu {
             max-width: 400px;
             flex: 0 0 400px;
