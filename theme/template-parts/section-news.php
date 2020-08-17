@@ -94,7 +94,7 @@
                                 <div class="desktop:max-h-0 group-hover:max-h-100% overflow-hidden opacity-0 group-hover:opacity-100 flex-1 hidden text-sm full-hd:text-base desktop:block text-black">
                                     <p class="mb-6 full-hd:mb-14"><?php echo $excerpt; ?></p>
                                 </div>
-                                <a class="desktop:max-h-0 group-hover:max-h-100% text-primary font-weight-bold desktop:opacity-0 group-hover:opacity-100" href="<?php echo esc_url( $permalink ); ?>">Czytaj całość -</a>
+                                <a class="desktop:max-h-0 group-hover:max-h-100% pm-button pm-button--text-primary desktop:opacity-0 group-hover:opacity-100" href="<?php echo esc_url( $permalink ); ?>">Czytaj całość</a>
                             </div>
                         </div>
                         <div class="hidden desktop:block pm-news-article__backlayer">
