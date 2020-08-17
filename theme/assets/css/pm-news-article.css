@@ -46,21 +46,18 @@
                 }
             }
         }
+    }
     
-        .post-info {
-            padding: 20px;
-            z-index: 10;
-    
-            @screen desktop {
-                padding: 30px 50px;
-            }
-    
-            @screen desktop-wide {
-                padding: 60px 215px 60px 50px;
-            }
+    .post-info {
+        padding: 20px;
+        z-index: 10;
+
+        @screen desktop {
+            padding: 30px 50px;
+        }
+
+        @screen desktop-wide {
+            padding: 60px 215px 60px 50px;
         }
     }
-}
-.pm-news-article {
-
 }
