@@ -1,20 +1,23 @@
 import Vue from 'vue';
 import BanerSlider from '../vue/baner-slider.vue';
 import RealizationSlider from '../vue/realization-slider.vue';
+import SideHeading from '../vue/side-heading.vue';
 import VueAwesomeSwiper from "vue-awesome-swiper/dist/ssr";
 
 Vue.use(VueAwesomeSwiper);
 
 Vue.component('baner-slider', BanerSlider);
 Vue.component('realization-slider', RealizationSlider);
+Vue.component('side-heading', SideHeading);
 
 document.addEventListener('DOMContentLoaded', function() {
     new Vue({ 
         el: '#content',
         components: {
             BanerSlider,
-            RealizationSlider
-        }
+            RealizationSlider,
+            SideHeading,
+        },
     });
 });
 
