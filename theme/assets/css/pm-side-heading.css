@@ -1,10 +1,15 @@
 .pm-side-heading {
     @apply hidden;
+    font-family: 'Rajdhani', sans-serif;
 
     @screen desktop {
         @apply block;
     }
-
+    @apply absolute;
+    left: 20px;
+    @apply top-1/2;
+    @apply transform;
+    @apply -translate-y-1/2;
     @apply text-base;
     @apply text-center;
     @apply font-weight-semi-bold;
