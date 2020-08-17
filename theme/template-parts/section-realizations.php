@@ -1,4 +1,7 @@
 <section class="relative">
+    <side-heading>
+        <?php echo get_field('side_headings', 'option')[2]['side_heading']; ?>
+    </side-heading>
     <header class="container mt-24">
         <h2 class="uppercase mb-10 text-lg font-weight-bold">
             Nasze wybrane<br/>

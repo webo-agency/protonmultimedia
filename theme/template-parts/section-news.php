@@ -1,6 +1,9 @@
 
 
 <section class="pm-news relative">
+    <side-heading>
+        <?php echo get_field('side_headings', 'option')[3]['side_heading']; ?>
+    </side-heading>
     <div class="pm-container pm-container--indented relative pt-40">
         <img    
             class="hidden desktop:block absolute top-0 right-0 z-50" 
