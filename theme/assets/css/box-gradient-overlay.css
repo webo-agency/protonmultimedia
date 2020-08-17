@@ -30,4 +30,16 @@
   &>*{
     @apply z-20;
   }
+
+  &--dark-blue-2 {
+
+    &:after{
+      @apply bg-gradient-b-transparent-dark-blue-2-offset;
+    }
+
+    &:hover:before {
+      @apply bg-dark-blue-2;
+      @apply opacity-50;
+    }
+  }
 }

@@ -109,6 +109,7 @@ module.exports = {
       },
       linearGradientColors: { // defaults to {}
         'transparent-primary-offset': ['transparent', 'transparent 50%', '#01B9C3'],
+        'transparent-dark-blue-2-offset': ['transparent', 'transparent 50%', '#171131'],
       },
       borderColor: {
         'transparent': 'transparent',

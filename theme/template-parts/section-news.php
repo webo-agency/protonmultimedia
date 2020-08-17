@@ -48,6 +48,7 @@
             ?>
                 
                 <li class="phone-wide:flex-1/2 tablet:max-w-1/2 mb-10 tablet:mb-0 relative">
+                <div class="box-gradient-overlay box-gradient-overlay--dark-blue-2 absolute bottom-0 left-0 w-full h-60%"></div>
                     <img class="object-cover h-full w-full" src="<?php echo $post_image; ?>" alt="<?php echo esc_html( $title ); ?>" title="<?php echo esc_html( $title ); ?>" />
                     <article class="absolute left-0 top-0 flex pm-news-article group post-info min-h-200px full-hd:min-h-550px h-full w-full">
                         <div class="h-full w-full relative">
