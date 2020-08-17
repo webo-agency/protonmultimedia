@@ -28,7 +28,15 @@ module.exports = {
       'tablet-wide': '1024px',
       'desktop': '1248px',
       'desktop-wide': '1440px',
-      'full-hd': '1920px'
+      'full-hd': '1920px',
+      'max-phone-wide': {'max': '479px'},
+      'max-phablet': {'max': '559px'},
+      'max-tablet-small': {'max': '639px'},
+      'max-tablet': {'max': '767px'},
+      'max-tablet-wide': {'max': '1023px'},
+      'max-desktop': {'max': '1247px'},
+      'max-desktop-wide': {'max': '1439px'},
+      'max-full-hd': {'max': '1919px'}
     },
     container: {
       center: true,
@@ -87,8 +95,14 @@ module.exports = {
        '100px': '100px',
       },
       minHeight: {
+        '200px': '200px',
         '550px': '550px',
         '700px': '700px',
+      },
+      maxHeight: {
+        '550px': '550px',
+        '0': '0',
+        '100%': '100%',
       },
       backgroundColor: {
         'transparent': 'transparent',
@@ -110,12 +124,18 @@ module.exports = {
       },
       spacing: {
         '1/2': '50%',
+        '35%': '35%',
+        '60%': '60%',
+      },
+      transitionProperty: {
+        'max-h': 'max-height',
       }
     },
   },
   variants: {
     visibility: ['responsive', 'hover', 'focus', 'group-hover'],
     height: ['responsive', 'group-hover'],
+    maxHeight: ['responsive', 'group-hover'],
     opacity: ['responsive', 'hover', 'focus', 'active', 'group-hover']
   },
   plugins: [
