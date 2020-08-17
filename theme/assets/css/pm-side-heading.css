@@ -1,0 +1,17 @@
+.pm-side-heading {
+    @apply hidden;
+
+    @screen desktop {
+        @apply block;
+    }
+
+    @apply text-base;
+    @apply text-center;
+    @apply font-weight-semi-bold;
+    @apply uppercase;
+    width: 25px;
+
+    div {
+        @apply leading-line-height-normal;
+    }
+}
