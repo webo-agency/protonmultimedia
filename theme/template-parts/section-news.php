@@ -1,6 +1,6 @@
 
 
-<section class="pm-news relative">
+<section class="pm-news relative bg-dark-blue-2">
     <side-heading>
         <?php echo get_field('side_headings', 'option')[3]['side_heading']; ?>
     </side-heading>
