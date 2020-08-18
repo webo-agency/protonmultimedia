@@ -2,7 +2,7 @@
     <side-heading>
         <?php echo get_field('side_headings', 'option')[2]['side_heading']; ?>
     </side-heading>
-    <header class="container mt-24 realizations">
+    <header class="container mt-24 relative">
         <h2 class="uppercase mb-10 text-lg font-weight-bold">
             Nasze wybrane<br/>
             <span class="text-primary">realizacje</span>
