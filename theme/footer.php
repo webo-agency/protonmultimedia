@@ -86,7 +86,7 @@
 			<div class="pm-container pm-container--indented">
 				<div class="pm-copyright__inner">
 					<div>
-						<?php echo $footer_copyright; ?>
+						&copy; <?php echo date("Y"); echo $footer_copyright; ?>
 					</div>
 					<div>
 						<a id="webo" href="https://www.webo.pl" rel="noopener noreferrer nofollow" target="_blank">Realizacja - Webo
