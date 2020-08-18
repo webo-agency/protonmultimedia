@@ -8,7 +8,7 @@
   <side-heading>
     <?php echo get_field('side_headings', 'option')[0]['side_heading']; ?>
   </side-heading>
-  <div class="bg-dark-blue-2">
+  <div>
     <div class="pm-container">
       <div class="container flex flex-row flex-wrap py-16 px-0">
         <?php foreach($terms as $term): ?>
