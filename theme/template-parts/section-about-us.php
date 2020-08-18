@@ -21,7 +21,7 @@
         <h4 class="pm-lead"><?php echo get_field('about_lead'); ?></h4>
         <p><?php echo get_field('about_description'); ?></p>
       </div>
-      <div class="flex items-end justify-end flex-1/2 desktop-wide:pr-64">
+      <div class="flex items-end justify-end flex-1/2 desktop-wide:pr-80">
       <?php $about_link = get_field('about_link'); ?>
         <a
             class="pm-button pm-button--transparent"

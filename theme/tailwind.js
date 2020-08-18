@@ -129,6 +129,8 @@ module.exports = {
         '1/2': '50%',
         '35%': '35%',
         '60%': '60%',
+        '72': '18rem',
+        '80': '20rem',
       },
       transitionProperty: {
         'max-h': 'max-height',
