@@ -133,9 +133,6 @@ module.exports = {
       transitionProperty: {
         'max-h': 'max-height',
       },
-      boxShadow: {
-        'section-top': '0px 0px 40px 30px #171131',
-      },
     },
   },
   variants: {

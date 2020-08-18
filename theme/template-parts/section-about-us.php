@@ -1,4 +1,4 @@
-<section class="bg-dark-blue-2 relative shadow-section-top">
+<section class="bg-dark-blue-2 relative filter-shadow-top">
   <side-heading>
     <?php echo get_field('side_headings', 'option')[1]['side_heading']; ?>
   </side-heading>
