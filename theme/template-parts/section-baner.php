@@ -1,12 +1,12 @@
-<section id="baner">
+<section id="baner" class="relative">
+    <img 
+        class="hidden tablet-wide:block absolute top-0 right-0 h-full z-50 w-auto" 
+        src="<?php echo get_template_directory_uri() . '/assets/svg/banner-lines.svg' ?>" 
+        width="540px"
+        height="700px"
+        alt="Decorations"
+    />
     <baner-slider>
-        <img 
-            class="hidden tablet-wide:block absolute top-0 right-0 h-full z-50 w-auto" 
-            src="<?php echo get_template_directory_uri() . '/assets/svg/banner-lines.svg' ?>" 
-            width="540px"
-            height="700px"
-            alt="Decorations"
-        />
         <ul class="swiper-wrapper h-screen min-h-700px">
             <?php
                 if( have_rows('front_slider') ):
