@@ -19,7 +19,7 @@
                                     alt="Background"
                                     class="object-cover absolute left-0 top-0 right-0 bottom-0 h-full w-full pointer-events-none"
                                 />
-                                <div class="container absolute left-0 right-0 top-1/2 transform -translate-y-1/2 text-white">
+                                <div class="container absolute left-0 right-0 top-1/2 transform -translate-y-1/2 text-white z-10">
                                     <h2 class="font-bold uppercase text-4xl tablet:text-8xl mb-14 leading-tight">
                                         <?php 
                                             $lines = explode(PHP_EOL, get_sub_field('front_slide_heading'));
