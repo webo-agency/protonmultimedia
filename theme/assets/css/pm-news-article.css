@@ -57,6 +57,10 @@
         }
 
         @screen desktop-wide {
+            padding: 30px 125px 30px 50px;
+        }
+
+        @screen full-hd {
             padding: 60px 215px 60px 50px;
         }
     }
