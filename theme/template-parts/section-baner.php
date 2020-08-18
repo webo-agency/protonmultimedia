@@ -13,6 +13,7 @@
                     while ( have_rows('front_slider') ) : the_row();
                         ?>	
                             <li class="swiper-slide overflow-hidden">
+                            <div class="box-gradient-overlay box-gradient-overlay--dark-blue absolute bottom-0 left-0 w-full h-60%"></div>
                                 <img 
                                     src="<?php echo get_sub_field('front_slider_image')['url'] ?>" 
                                     alt="Background"
