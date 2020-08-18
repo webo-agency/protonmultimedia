@@ -111,6 +111,7 @@ module.exports = {
       linearGradientColors: { // defaults to {}
         'transparent-primary-offset': ['transparent', 'transparent 50%', '#01B9C3'],
         'transparent-dark-blue-2-offset': ['transparent', 'transparent 50%', '#171131'],
+        'transparent-dark-blue-offset': ['transparent', 'transparent 50%', '#110D25'],
       },
       borderColor: {
         'transparent': 'transparent',
@@ -131,7 +132,10 @@ module.exports = {
       },
       transitionProperty: {
         'max-h': 'max-height',
-      }
+      },
+      boxShadow: {
+        'section-top': '0px 0px 40px 30px #171131',
+      },
     },
   },
   variants: {
