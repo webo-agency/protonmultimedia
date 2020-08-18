@@ -2,25 +2,25 @@
     <side-heading>
         <?php echo get_field('side_headings', 'option')[2]['side_heading']; ?>
     </side-heading>
-    <header class="container mt-24">
+    <header class="container mt-24 realizations">
         <h2 class="uppercase mb-10 text-lg font-weight-bold">
             Nasze wybrane<br/>
             <span class="text-primary">realizacje</span>
         </h2>
-        <p class="mb-12">
+        <p class="pb-12">
             Lorem ipsum dolor sit amet, consectetur adipiscing <br/>
             elit, sed do eiusmod tempor incididunt ut labore et <br/>
             dolore magna aliqua.
         </p>
-    </header>
 
-    <img 
-        class="hidden desktop:block absolute bottom-0 left-1/2 z-50 pointer-events-none mt-5" 
-        width="170px"
-        height="116px"
-        src="<?php echo get_template_directory_uri() . '/assets/svg/dots-footer.svg' ?>" 
-        alt="Decorations"
-    />  
+        <img 
+            class="hidden desktop:block absolute bottom-0 left-1/2 z-50 pointer-events-none mt-5" 
+            width="170px"
+            height="116px"
+            src="<?php echo get_template_directory_uri() . '/assets/svg/dots-footer.svg' ?>" 
+            alt="Decorations"
+        />  
+    </header>
 
     <?php
         $loop = new WP_Query( array(
