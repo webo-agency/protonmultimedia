@@ -55,7 +55,7 @@
                             <div class="flex flex-col justify-end group-hover:justify-between z-10 absolute h-full w-full">
                                 <div>
                                     <span class="text-primary text-sm tablet:text-base leading-line-height-normal block mb-1 tablet:mb-2"><?php echo $post_date; ?></span>
-                                    <h3 class="text-base tablet:text-md desktop:text-lg leading-line-height-normal tablet:leading-line-height-md desktop:leading-line-height-lg mb-4 full-hd:mb-6 font-weight-bold"><?php echo esc_html( $title ); ?></h3>
+                                    <h3 class="text-base tablet:text-md desktop-wide:text-lg leading-line-height-normal tablet:leading-line-height-md desktop-wide:leading-line-height-lg mb-4 full-hd:mb-6 font-weight-bold"><?php echo esc_html( $title ); ?></h3>
                                 </div>
                                 <div class="desktop:max-h-0 group-hover:max-h-100%">
                                     <div class="hidden opacity-0 group-hover:opacity-100 desktop:block mb-6">
