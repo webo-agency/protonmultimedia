@@ -19,7 +19,7 @@ export default {
       },
       mainClass: {
         type: String,
-        default: "swiper-container relative overflow-hidden mx-17",
+        default: "swiper-container relative overflow-hidden mx-0",
         required: false
       },
     },
