@@ -1,5 +1,4 @@
 .box-gradient-overlay{
-  @apply block;
   @apply relative;
 
   &:after{
@@ -16,7 +15,7 @@
     @apply absolute;
     @apply inset-0;
     @apply bg-transparent;
-    @apply z-0;
+    @apply z-20;
     @apply transition;
     @apply duration-300;
     @apply pointer-events-none;
