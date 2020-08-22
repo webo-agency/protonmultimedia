@@ -3,19 +3,19 @@
         <?php echo get_field('side_headings', 'option')[2]['side_heading']; ?>
     </side-heading>
     <header class="container mt-24 relative">
-        <h2 class="uppercase mb-10 text-lg font-weight-bold">
+        <h2 class="uppercase mb-10 text-lg font-weight-bold text-white">
             Nasze wybrane<br/>
             <span class="text-primary">realizacje</span>
         </h2>
 
-        <p class="pb-12">
+        <p class="pb-12 text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing <br/>
             elit, sed do eiusmod tempor incididunt ut labore et <br/>
             dolore magna aliqua.
         </p>
 
         <img 
-            class="hidden desktop:block absolute bottom-0 left-1/2 z-50 pointer-events-none mt-5 ml-40" 
+            class="hidden tablet:block absolute bottom-0 left-1/2 z-50 pointer-events-none mt-5 ml-40" 
             width="170px"
             height="116px"
             src="<?php echo get_template_directory_uri() . '/assets/svg/dots-footer.svg' ?>" 
@@ -42,12 +42,12 @@
                                 ); 
                             ?>
                             <div class="relative p-8 overflow-hidden z-30">
-                                <h2 class="font-bold uppercase text-4xl first-line-decorated leading-tight mb-6">
+                                <h2 class="font-bold uppercase text-4xl first-line-decorated leading-tight mb-6 text-white">
                                     <?php echo get_the_title( $_post ); ?> 
                                 </h2>
                                 <div class="invisible h-auto max-h-0 opacity-0 transition-all duration-300 group-hover:visible group-hover:max-h-full group-hover:opacity-100">
                                     
-                                    <div class="text-base leading-tight">
+                                    <div class="text-base leading-tight text-white">
                                         <?php echo the_content(); ?>
                                     </div>
 

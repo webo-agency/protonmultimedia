@@ -14,7 +14,7 @@
                 
                 ?>
                 <div class="pm-cta__column mb-10 desktop:mb-0 uppercase">
-                    <h3> 
+                    <h3 class="text-white"> 
                         <?php 
                             $lines = explode(PHP_EOL, $cta_title);
                             foreach ( $lines as $line) {

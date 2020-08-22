@@ -13,11 +13,11 @@
       <?php foreach($terms as $term): ?>
         <div class="w-full tablet:w-1/2 relative overflow-hidden border border-solid border-dark-blue-2">
           <div class="relative flex flex-col items-start min-h-550px z-20 py-20 px-12">
-            <h2 class="flex-initial mb-8 uppercase text-lg tablet:text-xl font-weight-bold leading-tight tablet:leading-none">
+            <h2 class="flex-initial mb-8 uppercase text-lg tablet:text-xl font-weight-bold leading-tight tablet:leading-none text-white">
               <?php echo implode('<br/><span class="line-decorated bg-dark-blue-2 leading-tight">', explode(' ', trim($term->name) . ' </span>', 2)); ?>
             </h2>
 
-            <div class="flex items-center flex-1 mb-8">
+            <div class="flex items-center flex-1 mb-8 text-white">
               <?php echo term_description($term); ?>
             </div>
 
