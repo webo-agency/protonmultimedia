@@ -121,6 +121,7 @@ add_action( 'wp_enqueue_scripts', 'protonmultimedia_theme_theme_scripts' );
 
 function proton_theme_styles_and_scripts() {
 	wp_enqueue_style('swiper-styles', get_template_directory_uri() . '/assets/css/swiper.min.css', array(), filemtime(get_template_directory() . '/assets/css/swiper.min.css'), false);
+	wp_enqueue_style('swiper-styles', get_template_directory_uri() . '/assets/css/all.min.css', array(), filemtime(get_template_directory() . '/assets/css/all.min.css'), false);
 	wp_enqueue_style('custom-styles', get_template_directory_uri() . '/assets/public/dist/css/style.css', array(), filemtime(get_template_directory() . '/assets/public/dist/css/style.css'), false);
 	wp_enqueue_style('custom-styles-tailwind', get_template_directory_uri().'/assets/public/dist/css/index.css', array('custom-styles'), filemtime(get_template_directory() . '/assets/public/dist/css/index.css'), false);
 
@@ -131,4 +132,18 @@ function proton_theme_styles_and_scripts() {
 
 add_action('wp_enqueue_scripts', 'proton_theme_styles_and_scripts');
 
-?>
+function proton_theme_add_google_fonts() {
+	wp_enqueue_style( 'proton-theme-google-fonts', 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap', array(), null );
+}
+	
+add_action( 'wp_enqueue_scripts', 'proton_theme_add_google_fonts' );
+
+add_action( 'wp_head', 'add_viewport_meta_tag' , -999);
+
+function add_viewport_meta_tag() {
+		?>
+			<meta charset="<?php bloginfo( 'charset' ); ?>">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			<link rel="profile" href="https://gmpg.org/xfn/11">
+		<?php
+}
