@@ -42,8 +42,10 @@ module.exports = {
       center: true,
       padding: {
         default: '1rem',
-        'desktop-wide': '7rem',
-        'full-hd': '7rem',
+        'tablet-wide': '4.5625rem',
+        'desktop': '4.5625rem',
+        'desktop-wide': '4.5625rem',
+        'full-hd': '4.5625rem',
       }
     },
     extend: {
@@ -91,7 +93,6 @@ module.exports = {
       inset: {
         '0': 0,
         '1/2': '50%',
-        '60px': '60px',
         '100px': '100px',
         'full': '100%'
       },
@@ -100,6 +101,7 @@ module.exports = {
         '430px': '430px',
         '550px': '550px',
         '700px': '700px',
+        '900px': '900px',
       },
       maxHeight: {
         '550px': '550px',

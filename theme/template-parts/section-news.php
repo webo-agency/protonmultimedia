@@ -4,41 +4,47 @@
     <side-heading>
         <?php echo get_field('side_headings', 'option')[3]['side_heading']; ?>
     </side-heading>
-    <div class="pm-container pm-container--indented relative pt-40">
-        <img    
-            class="hidden desktop:block absolute top-0 right-0 z-50" 
-            src="<?php echo get_template_directory_uri() . '/assets/svg/news-lines.svg' ?>" 
-            alt="Decorations"
-            style="max-width: 285px;"
-        />
+    <div class="container tablet:max-w-full tablet:px-12 mt-12">
+        <div class="flex flex-row">
+            <img    
+                class="hidden desktop-wide:block flex-initial mb-0 mt-auto" 
+                src="<?php echo get_template_directory_uri() . '/assets/svg/news-dots.svg' ?>" 
+                alt="Decorations"
+                style="max-width: 95px;"
+            />
 
-        <img    
-            class="hidden desktop-wide:block absolute bottom-0 left-0 z-50" 
-            src="<?php echo get_template_directory_uri() . '/assets/svg/news-dots.svg' ?>" 
-            alt="Decorations"
-            style="max-width: 95px;"
-        />
-        <h2>
-            <?php
-                $news_title = get_field('news_title');
-                $news_lines = explode(PHP_EOL, $news_title);
-                foreach ( $news_lines as $line) {
-                    echo preg_replace("/\*(.+)\*/", '<span class="text-primary">$1</span>', $line);
-                    echo '</br>';
-                }
-            ?>
-        </h2>
-        <p class="pb-10 tablet:pb-16"><?php echo get_field('news_description'); ?></p>
-    </div>
+            <div class="container flex-auto">
+                <h2 class="uppercase mb-14 mt-20 desktop:mt-40">
+                    <?php
+                        $news_title = get_field('news_title');
+                        $news_lines = explode(PHP_EOL, $news_title);
+                        foreach ( $news_lines as $line) {
+                            echo preg_replace("/\*(.+)\*/", '<span class="text-primary">$1</span>', $line);
+                            echo '</br>';
+                        }
+                    ?>
+                </h2>
+                <p class="pb-10 tablet:pb-16">
+                    <?php echo get_field('news_description'); ?>
+                </p>
+            </div>
 
-    <div class="pm-container">
+            <img    
+                class="hidden desktop:block flex-initial mb-auto mt-0" 
+                src="<?php echo get_template_directory_uri() . '/assets/svg/news-lines.svg' ?>" 
+                alt="Decorations"
+                width="352px"
+                height="379px"
+            />
+        </div>
+
         <?php
         $post_list = get_posts( array(
             'sort_order' => 'desc',
             'numberposts' => 4,
         ) );
         if( $post_list ): ?>
-            <ul class="flex flex-col tablet:flex-row tablet:flex-wrap">
+            <ul class="w-full flex-auto flex flex-col tablet:flex-row tablet:flex-wrap">
             <?php foreach( $post_list as $featured_post ): 
                 $post_date = get_the_date( 'd / m / Y' ); 
                 $permalink = get_permalink( $featured_post->ID );
