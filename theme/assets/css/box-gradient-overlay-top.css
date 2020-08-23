@@ -1,0 +1,16 @@
+.box-gradient-overlay-top{
+  @apply relative;
+
+  &:after{
+    content: '';
+    @apply absolute;
+    @apply inset-0;
+    @apply bg-gradient-b-primary-transparent-offset;
+    @apply z-10;
+    @apply pointer-events-none;
+  }
+  
+  &>*{
+    @apply z-20;
+  }
+}

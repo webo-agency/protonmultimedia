@@ -11,7 +11,7 @@
   <div>
     <div class="container flex flex-row flex-wrap py-16 px-4 bg-gradient-b-dark-blue">
       <?php foreach($terms as $term): ?>
-        <div class="w-full tablet:w-1/2 relative overflow-hidden border border-solid border-dark-blue-2">
+        <div class="w-full desktop:w-1/2 relative overflow-hidden border border-solid border-dark-blue-2">
           <div class="relative flex flex-col items-start min-h-550px z-20 py-20 px-12">
             <h2 class="flex-initial mb-8 uppercase text-lg tablet:text-xl font-weight-bold leading-tight tablet:leading-none text-white">
               <?php echo implode('<br/><span class="line-decorated bg-dark-blue-2 leading-tight">', explode(' ', trim($term->name) . ' </span>', 2)); ?>
@@ -32,7 +32,7 @@
               }
             ?>
           </div>
-          <div class="absolute inset-0 w-full h-auto box-overlay">
+          <div class="absolute inset-0 w-full h-auto box-gradient-overlay-top">
             <?php
               if( $image = get_field('service_category_featured_image',$term)) {
                 echo wp_get_attachment_image( $image, array('9999', '550'), "", array('class' => 'w-full h-full object-cover') );
