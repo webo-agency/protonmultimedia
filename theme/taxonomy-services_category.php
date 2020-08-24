@@ -13,8 +13,7 @@ $sections_path = 'template-parts/section';
     array( 
       'title_string' => single_term_title('', false), 
       'description_string' => term_description(get_queried_object()->term_id),
-      'background_id' => get_field('service_category_featured_image', get_queried_object()),
-      'service_category_icon_id' => get_field('service_category_icon', get_queried_object()),
+      'background_id' => get_field('service_category_featured_image', get_queried_object())
     )
   ); ?>
 
