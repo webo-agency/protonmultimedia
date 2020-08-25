@@ -41,9 +41,17 @@ $sections_path = 'template-parts/section';
       );
       
       if(!is_wp_error( $terms_post ) && !empty( $terms_post ) && is_array($terms_post)){
+        $filtered_cats_term_post = array_filter(
+          $terms_post,
+          function ($val, $key){
+            return $val->parent !== 0;
+          },
+          ARRAY_FILTER_USE_BOTH
+      );
+
         $cats_terms_all = array_merge(
-          $cats_terms_all, 
-          $terms_post
+          $cats_terms_all , 
+          $filtered_cats_term_post
         );
       }
     }
