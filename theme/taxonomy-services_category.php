@@ -35,7 +35,7 @@ $sections_path = 'template-parts/section';
     $terms_all = [];
 
     foreach ($posts as $key => $post) {
-      if($terms_post = get_the_terms($post->ID, array('services_tags'))){
+      if($terms_post = wp_get_post_terms($post->ID, array('services_tags'))){
         $terms_all = array_unique(array_merge($terms_all, (array) $terms_post));
       }
     }
