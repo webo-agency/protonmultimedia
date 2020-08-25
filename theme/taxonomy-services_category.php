@@ -36,7 +36,7 @@ $sections_path = 'template-parts/section';
 
     foreach ($posts as $key => $post) {
       if($terms_post = get_the_terms($post, array('services_tags'))){
-        $terms_all = array_unique(array_merge($terms_all, $terms_post));
+        $terms_all = array_unique(array_merge($terms_all, (array) $terms_post));
       }
     }
 
