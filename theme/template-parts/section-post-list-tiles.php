@@ -20,11 +20,11 @@
         <?php
 
           if( $image = get_field('service_list_icon')) {
-            echo wp_get_attachment_image( $image, array('9999', '550'), "", array('class' => 'w-full h-full object-cover') );
+           //Uncomment, working //echo wp_get_attachment_image( $image, array('9999', '550'), "", array('class' => 'w-full h-full object-cover') );
           }
 
           $permalink = get_permalink( $post->ID );
-          $title = get_the_title( $post->ID );
+          echo $title = get_the_title( $post->ID );
           $excerpt = get_the_excerpt( $post->ID);
           $post_image = get_the_post_thumbnail_url($post->ID,'medium_large');
         ?>
