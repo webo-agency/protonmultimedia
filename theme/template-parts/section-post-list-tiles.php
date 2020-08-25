@@ -12,7 +12,7 @@
       <?php endforeach; ?>
     </ul>
   <?php endif; ?>
-
+        -----
   <?php if(count($args['list_post_array'])): ?>
     <ul>
       <?php foreach ($args['list_post_array'] as $index => $post): ?>

@@ -32,25 +32,28 @@ $sections_path = 'template-parts/section';
       )
     ));
 
-    $terms_all = [];
+    $cats_terms_all = [];
 
     foreach ($posts as $key => $post) {
-      $terms_post = get_the_terms($post, 'services_tags');
-      if(!is_wp_error( $terms_post ) && is_array($terms_post)){
-        
-        $terms_all = array_merge(
-          $terms_all, 
+      $terms_post = wp_get_post_terms(
+        $post->ID, 
+        'services_category'
+      );
+      
+      if(!is_wp_error( $terms_post ) && !empty( $terms_post ) && is_array($terms_post)){
+        $cats_terms_all = array_merge(
+          $cats_terms_all, 
           $terms_post
         );
       }
     }
 
-    $terms_all = array_map("unserialize", array_unique(array_map("serialize", $terms_all)));
+    $cats_terms_all = array_map("unserialize", array_unique(array_map("serialize", $cats_terms_all)));
 
     get_template_part( $sections_path, 'post-list-tiles', array(
       'section_name_string' => 'Oferta',
       'list_post_array' => $posts,
-      'filters_array' => $terms_all
+      'filters_array' => $cats_terms_all
     )); 
   ?>
 

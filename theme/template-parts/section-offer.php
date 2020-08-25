@@ -1,6 +1,7 @@
 <section class="relative">
   <?php
     $terms = get_terms( array(
+      'parent' => 0,
       'taxonomy' => 'services_category',
       'hide_empty' => false,
     ) );

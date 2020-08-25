@@ -8,7 +8,7 @@
             "name": "service_category_featured_image",
             "type": "image",
             "instructions": "",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -35,7 +35,7 @@
             "name": "service_category_button_title",
             "type": "text",
             "instructions": "",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -102,5 +102,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1598272791
+    "modified": 1598361797
 }
