@@ -45,6 +45,8 @@ $sections_path = 'template-parts/section';
       }
     }
 
+    $terms_all = array_map("unserialize", array_unique(array_map("serialize", $terms_all)));
+
     get_template_part( $sections_path, 'post-list-tiles', array(
       'section_name_string' => 'Oferta',
       'list_post_array' => $posts,
