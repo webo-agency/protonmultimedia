@@ -1,6 +1,7 @@
 .pm-side-heading {
     @apply hidden;
     font-family: 'Rajdhani', sans-serif;
+    @apply mb-0;
 
     @screen desktop {
         @apply block;
@@ -18,5 +19,9 @@
 
     div {
         @apply leading-line-height-normal;
+    }
+
+    * {
+        font-size: inherit;
     }
 }
