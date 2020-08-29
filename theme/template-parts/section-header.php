@@ -1,4 +1,4 @@
-<header class="relative min-h-200px tablet:min-h-430px mb-12">
+<header class="relative min-h-300px tablet:min-h-430px mb-12">
     <?php
       if( $image = $args['background_id']) {
         echo wp_get_attachment_image( $image, array('9999', '550'), "", array('class' => 'absolute left-0 top-0 w-full h-full object-cover') );
