@@ -1,13 +1,13 @@
 {
-    "key": "group_5f342c471bbc2",
-    "title": "News",
+    "key": "group_5f4876303f0ab",
+    "title": "Nowości - nagłówek",
     "fields": [
         {
-            "key": "field_5f3433b9de5db",
-            "label": "News title",
+            "key": "field_5f48763b435da",
+            "label": "Tytuł",
             "name": "news_title",
             "type": "textarea",
-            "instructions": "",
+            "instructions": "*text* - tekst wyróżniony",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -24,10 +24,10 @@
             "acfe_textarea_code": 0
         },
         {
-            "key": "field_5f3433cbde5dc",
-            "label": "News description",
+            "key": "field_5f487649435db",
+            "label": "Opis",
             "name": "news_description",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -38,19 +38,18 @@
             },
             "acfe_permissions": "",
             "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": "",
-            "acfe_textarea_code": 0
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
         }
     ],
     "location": [
         [
             {
-                "param": "page_type",
+                "param": "options_page",
                 "operator": "==",
-                "value": "front_page"
+                "value": "acf-options"
             }
         ]
     ],
@@ -70,5 +69,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1597509337
+    "modified": 1598584750
 }

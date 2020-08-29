@@ -1,5 +1,11 @@
 
 
+<?php
+    $count_posts = 4;
+    if(is_array($args)){
+        $count_posts = $args['count_posts'];
+    }
+?>
 <section class="pm-news relative bg-dark-blue-2">
     <side-heading>
         <?php echo get_field('side_headings', 'option')[3]['side_heading']; ?>
@@ -16,7 +22,7 @@
             <div class="container flex-auto">
                 <h2 class="uppercase mb-14 mt-20 desktop:mt-40">
                     <?php
-                        $news_title = get_field('news_title');
+                        $news_title = get_field('news_title', 'option');
                         $news_lines = explode(PHP_EOL, $news_title);
                         foreach ( $news_lines as $line) {
                             echo preg_replace("/\*(.+)\*/", '<span class="text-primary">$1</span>', $line);
@@ -24,9 +30,9 @@
                         }
                     ?>
                 </h2>
-                <p class="pb-10 tablet:pb-16">
-                    <?php echo get_field('news_description'); ?>
-                </p>
+                <div class="pb-10 tablet:pb-16">
+                    <?php echo get_field('news_description', 'option'); ?>
+                </div>
             </div>
 
             <img    
@@ -41,8 +47,9 @@
         <?php
         $post_list = get_posts( array(
             'sort_order' => 'desc',
-            'numberposts' => 4,
-        ) );
+            'numberposts' => $count_posts,
+        ));
+
         if( $post_list ): ?>
             <ul class="w-full flex-auto flex flex-col tablet:flex-row tablet:flex-wrap">
             <?php foreach( $post_list as $featured_post ): 

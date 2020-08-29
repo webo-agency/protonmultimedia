@@ -10,22 +10,20 @@
 							'menu_id'        => 'footer-menu-main',
 						)
 					);
-					
-					$footer_title = get_field('footer_title', 'option');
-					$footer_content = get_field('footer_content', 'option');
-					$footer_phone_number = get_field('footer_phone_number', 'option');
-					$footer_email_address = get_field('footer_email_address', 'option');
-					$footer_copyright = get_field('footer_copyright', 'option');
 				?>	
 				<div class="pm-util-flex-column">
-					<h3><?php echo $footer_title; ?></h3>
-					<?php echo $footer_content; ?>
-					<a class="pm-footer__contact-item" href="<?php echo $footer_phone_number['url']; ?>">
-						<?php echo $footer_phone_number['title']; ?>
-					</a>
-					<a class="pm-footer__contact-item" href="<?php echo $footer_email_address['url']; ?>">
-						<?php echo $footer_email_address['title']; ?>
-					</a>
+					<h3><?php echo get_field('footer_title', 'option'); ?></h3>
+					<?php echo get_field('footer_content', 'option'); ?>
+					<?php if($footer_phone_number = get_field('footer_phone_number', 'option')): ?>
+						<a class="pm-footer__contact-item" href="<?php echo $footer_phone_number['url']; ?>">
+							<?php echo $footer_phone_number['title']; ?>
+						</a>
+					<?php endif; ?>
+					<?php if($footer_email_address = get_field('footer_email_address', 'option')): ?>
+						<a class="pm-footer__contact-item" href="<?php echo $footer_email_address['url']; ?>">
+							<?php echo $footer_email_address['title']; ?>
+						</a>
+					<?php endif; ?>
 				</div>
 				</div>
 			</div>
@@ -71,7 +69,7 @@
 			<div class="pm-container pm-container--indented">
 				<div class="pm-copyright__inner">
 					<div>
-						&copy; <?php echo date("Y"); echo $footer_copyright; ?>
+						&copy; <?php echo date("Y"); echo get_field('footer_copyright', 'option'); ?>
 					</div>
 					<div>
 						<a id="webo" href="https://www.webo.pl" rel="noopener noreferrer nofollow" target="_blank">Realizacja - Webo

@@ -11,7 +11,7 @@
         height="400px"
         alt="Decorations"
     />
-  <div class="container absolute left-0 right-0 top-50px tablet:top-1/2 transform tablet:-translate-y-1/2">
+  <div class="container absolute left-0 right-0 top-50px tablet:top-1/2 transform tablet:-translate-y-1/2 mt-40 mb-40">
     <h2 class="font-bold uppercase text-4xl tablet:text-8xl mb-4 tablet:mb-14 leading-tight">
       <?php 
         $lines = explode(' ', $args['title_string']);
