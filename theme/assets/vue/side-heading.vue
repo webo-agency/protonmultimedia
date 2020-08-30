@@ -1,9 +1,10 @@
 <template>
   <component
     :is="mainTag"
+    class="pm-side-heading"
     :class="mainClass"
-  >
-    <slot />
+    >
+    <span class="block" v-for="letter in letters" :key="letter">{{ letter }}</span>
   </component>
 </template>
 
@@ -18,35 +19,25 @@ export default {
       },
       mainClass: {
         type: String,
-        default: "pm-side-heading",
+        default: "",
+        required: false
+      },
+      title: {
+        type: String,
+        default: "",
         required: false
       },
     },
     data() {
         return {
-            heading: '',
             letters: [],
         }
     },
     mounted() {
-        this.getArrayFromSlotContent();
-        this.renderSingleSlotLetters();
-        this.renderVerticalHeading();
+      if(this.$attrs['data-title']){
+        this.letters = this.$attrs['data-title'].trim().split("");
+      }
     },
-    methods: {
-        getArrayFromSlotContent() {
-            const slotContent = this.$slots.default[0].elm.textContent;
-            this.heading = slotContent.split('');
-        },
-        renderSingleSlotLetters() {
-            return this.heading.map(letter => {
-                this.letters.push(`<div ${letter === ' ' ? `class="mb-2"` : ''}>${letter}</div>`);
-            })
-        },
-        renderVerticalHeading() {
-            this.$slots.default[0].elm.innerHTML = this.letters.join('');
-        }
-    }
 }
 </script>
 

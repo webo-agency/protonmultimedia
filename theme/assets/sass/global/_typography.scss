@@ -1,22 +1,22 @@
 body {
-    font-family: $base-font-family;
-    font-weight: $base-font-weight;
-    font-size: $size-small;
-    line-height: $base-line-height;
-    color: $color-white;
+    // font-family: $base-font-family;
+    // font-weight: $base-font-weight;
+    // font-size: $size-small;
+    // line-height: $base-line-height;
+    // color: $color-white;
 }
 
-p {
-    margin-bottom: 10px;
+// p {
+//     margin-bottom: 10px;
 
-    @include media-screen(tablet) {
-        margin-bottom: 15px;
-    }
+//     @include media-screen(tablet) {
+//         margin-bottom: 15px;
+//     }
 
-    @include media-screen(desktop) {
-        margin-bottom: 25px;
-    }
-}
+//     @include media-screen(desktop) {
+//         margin-bottom: 25px;
+//     }
+// }
 
 a {
     color: $color-white;
@@ -33,7 +33,7 @@ a {
 h1 {
     font-size: $size-large-2;
     font-weight: $weight-extra-bold;
-    line-height: $line-height-large;
+    // line-height: $line-height-large;
     font-family: $second-font-family;
     position: relative;
     margin-bottom: 80px;
@@ -46,7 +46,7 @@ h1 {
 
 h2 {
     font-size: $size-large;
-    line-height: $line-height-big;
+    // line-height: $line-height-big;
     font-weight: $weight-extra-bold;
     font-family: $second-font-family;
     position: relative;
@@ -54,13 +54,13 @@ h2 {
     
     @include media-screen(tablet) {
         font-size: $size-large-2;
-        line-height: $line-height-bigger;
+        // line-height: $line-height-bigger;
         margin-bottom: 50px;
     }
 
     @include media-screen(desktop) {
         font-size: $size-large-2;
-        line-height: $line-height-large;
+        // line-height: $line-height-large;
         margin-bottom: 50px;
     }
 }

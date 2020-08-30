@@ -6,9 +6,13 @@
       'hide_empty' => false,
     ) );
   ?>
-  <side-heading>
-    <?php echo get_field('side_headings', 'option')[0]['side_heading']; ?>
-  </side-heading>
+
+  <?php if(get_field('side_headings', 'option')[0]['side_heading']): ?>
+    <side-heading
+      data-text="<?php echo get_field('side_headings', 'option')[0]['side_heading']; ?>"
+    ></side-heading>
+  <?php endif; ?>
+
   <div class="container max-w-none flex flex-row flex-wrap pb-16">
     <?php foreach($terms as $term): ?>
       <div class="w-full desktop:w-1/2 relative overflow-hidden border border-solid border-dark-blue-2">

@@ -16,7 +16,7 @@
 <head>
 	<?php wp_head(); ?>
 </head>
-<body <?php body_class('bg-dark-blue'); ?>>
+<body <?php body_class('font-regular text-base bg-dark-blue text-white'); ?>>
 	<?php wp_body_open(); ?>
 
 	<div id="page" class="<?php echo is_front_page() ? 'pm-front-page' : 'pm-page'; ?> site relative">

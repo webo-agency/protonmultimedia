@@ -1,0 +1,415 @@
+{
+    "key": "group_5f4aa81bf2181",
+    "title": "Treść podstrony - sekcje",
+    "fields": [
+        {
+            "acfe_flexible_advanced": 0,
+            "acfe_flexible_stylised_button": 0,
+            "acfe_flexible_hide_empty_message": 0,
+            "acfe_flexible_empty_message": "",
+            "acfe_flexible_disable_ajax_title": 0,
+            "acfe_flexible_layouts_thumbnails": 0,
+            "acfe_flexible_layouts_settings": 0,
+            "acfe_flexible_layouts_ajax": 0,
+            "acfe_flexible_layouts_templates": 0,
+            "acfe_flexible_layouts_previews": 0,
+            "acfe_flexible_layouts_placeholder": 0,
+            "acfe_flexible_title_edition": 0,
+            "acfe_flexible_clone": 0,
+            "acfe_flexible_copy_paste": 0,
+            "acfe_flexible_toggle": 0,
+            "acfe_flexible_close_button": 0,
+            "acfe_flexible_remove_add_button": 0,
+            "acfe_flexible_remove_duplicate_button": 0,
+            "acfe_flexible_remove_delete_button": 0,
+            "acfe_flexible_lock": 0,
+            "acfe_flexible_modal_edition": 0,
+            "acfe_flexible_modal": {
+                "acfe_flexible_modal_enabled": false,
+                "acfe_flexible_modal_title": false,
+                "acfe_flexible_modal_col": "4",
+                "acfe_flexible_modal_categories": false
+            },
+            "acfe_flexible_layouts_state": "",
+            "acfe_flexible_layouts_remove_collapse": 0,
+            "key": "field_5f4aa8778f4c8",
+            "label": "Sekcja",
+            "name": "section",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "layouts": {
+                "layout_5f4aa8861d93c": {
+                    "key": "layout_5f4aa8861d93c",
+                    "name": "featured_right",
+                    "label": "Wyróżnione - boczne",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f4aa9c28f4cb",
+                            "label": "Tytuł",
+                            "name": "title",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br",
+                            "acfe_textarea_code": 0
+                        },
+                        {
+                            "key": "field_5f4aa9e48f4cc",
+                            "label": "Opis",
+                            "name": "description",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br",
+                            "acfe_textarea_code": 0
+                        },
+                        {
+                            "key": "field_5f4aa9fa8f4cd",
+                            "label": "Wyróżnione punkty",
+                            "name": "highlighted",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "acfe_repeater_stylised_button": 0,
+                            "collapsed": "field_5f4aaa2c8f4ce",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "row",
+                            "button_label": "Dodaj punkt",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5f4aaa2c8f4ce",
+                                    "label": "Tytuł",
+                                    "name": "highlighted_title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_permissions": "",
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5f4aaa418f4cf",
+                                    "label": "Ikona",
+                                    "name": "highlighted_icon",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_permissions": "",
+                                    "acfe_uploader": "wp",
+                                    "acfe_thumbnail": 0,
+                                    "return_format": "id",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5f4ac8192f716",
+                            "label": "Boczny opis",
+                            "name": "side_description",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5f4ac8663c7d6"
+                            ],
+                            "display": "group",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_seamless_style": 0,
+                            "acfe_clone_modal": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": false,
+                    "acfe_flexible_category": false,
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_5f4aa9208f4ca": {
+                    "key": "layout_5f4aa9208f4ca",
+                    "name": "featured_center",
+                    "label": "Wyróżnione - centralny",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f4aaa7d8f4d0",
+                            "label": "Tytuł",
+                            "name": "title",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br",
+                            "acfe_textarea_code": 0
+                        },
+                        {
+                            "key": "field_5f4aaa8e8f4d1",
+                            "label": "Opis",
+                            "name": "description",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br",
+                            "acfe_textarea_code": 0
+                        },
+                        {
+                            "key": "field_5f4aaaa78f4d2",
+                            "label": "Ikona w środku",
+                            "name": "highlighted_icon_center",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "acfe_uploader": "wp",
+                            "acfe_thumbnail": 0,
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5f4aaad38f4d3",
+                            "label": "Tło",
+                            "name": "background",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "acfe_uploader": "wp",
+                            "acfe_thumbnail": 0,
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5f4aaade8f4d4",
+                            "label": "Wyróżnione punkty",
+                            "name": "highlighted",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "acfe_repeater_stylised_button": 0,
+                            "collapsed": "field_5f4aab6e8f4d6",
+                            "min": 4,
+                            "max": 5,
+                            "layout": "row",
+                            "button_label": "Dodaj punkt",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5f4aab6e8f4d6",
+                                    "label": "Tytuł",
+                                    "name": "highlighted_title",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_permissions": "",
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": "br",
+                                    "acfe_textarea_code": 0
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5f4ac8362f717",
+                            "label": "Boczny opis",
+                            "name": "side_description",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5f4ac8663c7d6"
+                            ],
+                            "display": "group",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_seamless_style": 0,
+                            "acfe_clone_modal": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": false,
+                    "acfe_flexible_category": false,
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium"
+                }
+            },
+            "button_label": "Dodaj sekcję",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "services"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1598736785
+}

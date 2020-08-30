@@ -9,9 +9,13 @@
           height="275px"
       />
     </div>
-    <side-heading class="">
-      <?php echo get_field('side_headings', 'option')[1]['side_heading']; ?>
-    </side-heading>
+
+    <?php if(get_field('side_headings', 'option')[1]['side_heading']): ?>
+      <side-heading
+        data-text="<?php echo get_field('side_headings', 'option')[1]['side_heading']; ?>"
+      ></side-heading>
+    <?php endif; ?>
+    
       <img    
           class="hidden tablet:block absolute top-0 desktop:bottom-100px desktop:top-auto desktop-wide:bottom-0 right-0 z-50 origin-top-right transform scale-75 desktop-wide:scale-100" 
           src="<?php echo get_template_directory_uri() . '/assets/svg/about-lines.svg' ?>" 

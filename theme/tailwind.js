@@ -9,6 +9,10 @@ module.exports = {
     ],
   },
   theme: {
+    fontFamily: {
+      'body': ['Open Sans', 'system-ui', '-apple-system', 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue", 'Arial', "Noto Sans", 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
+      'special': ['Rajdhani', 'sans-serif'],
+    },
     colors: {
       'white': '#fff',
       'black': '#000',
@@ -28,41 +32,29 @@ module.exports = {
       'tablet-wide': '1024px',
       'desktop': '1248px',
       'desktop-wide': '1440px',
-      'full-hd': '1920px',
-      'max-phone-wide': {'max': '479px'},
-      'max-phablet': {'max': '559px'},
-      'max-tablet-small': {'max': '639px'},
-      'max-tablet': {'max': '767px'},
-      'max-tablet-wide': {'max': '1023px'},
-      'max-desktop': {'max': '1247px'},
-      'max-desktop-wide': {'max': '1439px'},
-      'max-full-hd': {'max': '1919px'}
+      'full-hd': '1920px'
     },
     container: {
       center: true,
       padding: {
         default: '1rem',
-        'tablet-wide': '4.5625rem',
-        'desktop': '4.5625rem',
-        'desktop-wide': '4.5625rem',
-        'full-hd': '4.5625rem',
-      }
+        'tablet-wide': '4.6875rem',
+        'desktop': '4.6875rem',
+        'desktop-wide': '4.6875rem',
+        'full-hd': '4.6875rem',
+      },
     },
     extend: {
       scale: {
         'flip': '-1',
       },
-      fontFamily: {
-        'sans': ['Open Sans', 'sans-serif'],
-        'special': ['Rajdhani', 'sans-serif'],
-      },
       fontSize: {
         'sm': '12px',
         'sm-2': '16px',
-        'base': ['20px', '30px'],
+        'base': '20px',
         'md': '25px',
-        'lg': ['40px', '40px'],
-        'xl': ['60px', '62px'],
+        'lg': '40px',
+        'xl': '60px',
         'xxl': '80px',
         '8xl': ['80px', '80px']
       },
@@ -142,6 +134,12 @@ module.exports = {
       transitionProperty: {
         'max-h': 'max-height',
       },
+      rotate: {
+        '-61': '-61deg'
+      },
+      padding: {
+        'smaller-container': '15.625rem'
+      }
     },
   },
   variants: {
@@ -150,7 +148,67 @@ module.exports = {
     maxHeight: ['responsive', 'group-hover'],
     opacity: ['responsive', 'hover', 'focus', 'active', 'group-hover']
   },
+  corePlugins: {
+    container: false
+  },
   plugins: [
     require('tailwindcss-gradients'),
+    function ({ addComponents }) {
+      addComponents({
+        '.container': {
+          width: '100%',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          paddingLeft: '1rem',
+          paddingRight: '1rem',
+
+          '@screen phone': {
+            maxWidth: '100%',
+            paddingLeft: '1rem',
+            paddingRight: '1rem',
+          },
+          '@screen phone-wide': {
+            maxWidth: '100%',
+            paddingLeft: '1rem',
+            paddingRight: '1rem',
+          },
+          '@screen phablet': {
+            maxWidth: '100%',
+            paddingLeft: '1rem',
+            paddingRight: '1rem',
+          },
+          '@screen tablet-small': {
+            maxWidth: '640px',
+            paddingLeft: '1rem',
+            paddingRight: '1rem',
+          },
+          '@screen tablet': {
+            maxWidth: '768px',
+            paddingLeft: '1rem',
+            paddingRight: '1rem',
+          },
+          '@screen tablet-wide': {
+            maxWidth: '1024px',
+            paddingLeft: '4.6875rem',
+            paddingRight: '4.6875rem',
+          },
+          '@screen desktop': {
+            maxWidth: '1248px',
+            paddingLeft: '4.6875rem',
+            paddingRight: '4.6875rem',
+          },
+          '@screen desktop-wide': {
+            maxWidth: '1772px',
+            paddingLeft: '4.6875rem',
+            paddingRight: '4.6875rem',
+          },
+          '@screen full-hd': {
+            maxWidth: '1920px',
+            paddingLeft: '4.6875rem',
+            paddingRight: '4.6875rem',
+          },
+        }
+      })
+    }
   ],
 }

@@ -17,7 +17,9 @@ $sections_path = 'template-parts/section';
 
 	<?php get_template_part( $sections_path, 'realizations' ); ?>
 
-	<?php get_template_part( $sections_path, 'news' ); ?>
+	<?php get_template_part( $sections_path, 'news', array(
+		'count_posts_int' => 4
+	)); ?>
 
 	<?php get_template_part( $sections_path, 'call-to-action' ); ?>
 

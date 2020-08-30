@@ -24,9 +24,37 @@ $sections_path = 'template-parts/section';
     )
   ); ?>
 
-	<?php get_template_part( $sections_path, 'benefit' ); ?>
+	<?php if( have_rows('section') ): ?>
+			<?php while( have_rows('section') ): the_row(); ?>
+					<?php if( get_row_layout() == 'featured_right' ): ?>
+						
+						<?php get_template_part( $sections_path, 'featured-right',
+							array(
+								'title_string' => get_sub_field('title'),
+								'description_string' => get_sub_field('description'),
+								'highlighted_array' => get_sub_field('highlighted'),
+								'side_description_string' => get_sub_field('side_description')['side_field_title'],
+							)
+						); ?>
+							
+					<?php elseif( get_row_layout() == 'featured_center' ):  ?>
+							
+							<?php get_template_part( $sections_path, 'featured-center',
+								array(
+									'title_string' => get_sub_field('title'),
+									'description_string' => get_sub_field('description'),
+									'highlighted_icon_center_id' => get_sub_field('highlighted_icon_center'),
+									'background_id' => get_sub_field('background'),
+									'highlighted_array' => get_sub_field('highlighted'),
+									'side_description_string' => get_sub_field('side_description')['side_field_title'],
+								)
+							); ?>
 
-	<?php get_template_part( $sections_path, 'service' ); ?>
+					<?php endif; ?>
+			<?php endwhile; ?>
+	<?php endif; ?>
+
+	<?php get_template_part( $sections_path, 'realizations' ); ?>
 
 	<?php get_template_part( $sections_path, 'news' , array('count_posts' => 2)); ?>
 

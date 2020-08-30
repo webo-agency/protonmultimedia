@@ -1,5 +1,5 @@
 <div class="<?php echo is_front_page() ? 'absolute' : 'fixed'; ?> pm-header top-0 left-0 right-0 bg-transparent z-50 <?php echo is_admin_bar_showing() ? 'mt-10' : 'mt-2'; ?>" data-header>
-		<header id="masthead" class="pm-container pm-container--indented site-header">
+		<header id="masthead" class="container desktop-wide:px-smaller-container site-header">
 			<div class="site-branding site-branding--mobile">
 				<?php the_custom_logo(); ?>
 			</div><!-- .site-branding -->

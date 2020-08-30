@@ -1,8 +1,11 @@
 <section class="relative">
-    <side-heading>
-        <?php echo get_field('side_headings', 'option')[2]['side_heading']; ?>
-    </side-heading>
-    <header class="container mt-24 relative">
+    <?php if(get_field('side_headings', 'option')[2]['side_heading']): ?>
+      <side-heading
+        data-text="<?php echo get_field('side_headings', 'option')[2]['side_heading']; ?>"
+      ></side-heading>
+    <?php endif; ?>
+
+    <header class="container desktop-wide:pl-smaller-container mt-24 relative">
         <h2 class="uppercase mb-10 text-lg font-weight-bold text-white">
             Nasze wybrane<br/>
             <span class="text-primary">realizacje</span>
@@ -29,7 +32,7 @@
             'posts_per_page' => -1
         ));
     ?>
-    <div class="container tablet:max-w-full tablet:px-12">
+    <div class="container">
         <?php if( $loop->have_posts() ): ?>
             <realization-slider>
                 <ul class="swiper-wrapper">

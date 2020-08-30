@@ -1,16 +1,12 @@
-
-
-<?php
-    $count_posts = 4;
-    if(is_array($args)){
-        $count_posts = $args['count_posts'];
-    }
-?>
 <section class="pm-news relative bg-dark-blue-2">
-    <side-heading>
-        <?php echo get_field('side_headings', 'option')[3]['side_heading']; ?>
+    <?php if(get_field('side_headings', 'option')[2]['side_heading']): ?>
+      <side-heading
+        data-text="<?php echo get_field('side_headings', 'option')[2]['side_heading']; ?>"
+      ></side-heading>
+    <?php endif; ?>
+        
     </side-heading>
-    <div class="container tablet:max-w-full tablet:px-12 mt-12">
+    <div class="container mt-12">
         <div class="flex flex-row">
             <img    
                 class="hidden desktop-wide:block flex-initial mb-0 mt-auto" 
@@ -47,7 +43,7 @@
         <?php
         $post_list = get_posts( array(
             'sort_order' => 'desc',
-            'numberposts' => $count_posts,
+            'numberposts' => $args['count_posts_int'],
         ));
 
         if( $post_list ): ?>

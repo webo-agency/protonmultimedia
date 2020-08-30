@@ -1,5 +1,5 @@
-<footer class="site-footer pm-footer pm-fade">
-		<div class="pm-container pm-container--indented pm-footer__content">
+<footer class="site-footer pm-footer pm-fade container">
+		<div class="pm-container pm-container--indented pm-footer__content mx-0 w-full">
 		<img class="pm-footer__dots" src="<?php echo get_template_directory_uri() . '/assets/svg/dots-footer.svg' ?>" />
 			<div class="pm-footer__info">
 				<div class="pm-footer__info-inner">
