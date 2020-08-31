@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container relative z-50">
     <side-heading>
       <h2><?php echo $args['section_name_string']; ?></h2>
     </side-heading>
@@ -18,7 +18,7 @@
   <?php endif; ?>
   
   <?php if(count($args['list_post_array'])): ?>
-    <ul class="grid grid-cols-1 phone-wide:grid-cols-2">
+    <ul class="grid grid-cols-1 phone-wide:grid-cols-2 pt-12 tablet:pt-18 mb-10">
       <?php foreach ($args['list_post_array'] as $index => $post): ?>
         <li>
         <?php
