@@ -3,7 +3,9 @@
     @apply items-center;
     @apply border-2;
     @apply border-dark-blue;
+    @apply bg-dark-blue;
     @apply border-solid;
+    @apply relative;
     border-top-color: transparent;
     border-left-color: transparent;
     border-right-color: transparent;
@@ -14,7 +16,8 @@
         @apply block;
         width: 20px;
         height: 2px;
-        @apply mr-10;
+        @apply absolute;
+        right: 30px;
     }
 
     &:hover {
@@ -46,7 +49,7 @@
         @apply text-sm;
         @apply font-weight-bold;
         @apply bg-dark-blue;
-        @apply px-4;
+        @apply p-4;
         @apply w-full;
 
         @screen tablet {
@@ -54,7 +57,7 @@
         }
 
         @screen desktop {
-            @apply px-8;
+            @apply p-10;
             @apply text-md;
         }
 
