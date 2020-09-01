@@ -57,15 +57,6 @@ module.exports = {
         'xl': ['60px', '60px'],
         'baner': ['80px', '80px']
       },
-      fontWeight: {
-        'weight-extra-light': 200,
-        'weight-light': 300,
-        'weight-regular': 400,
-        'weight-medium': 500,
-        'weight-bold': 600,
-        'weight-semi-bold': 700,
-        'weight-extra-bold': 800,
-      },
       lineHeight: {
         'line-height-sm': '12px',
         'line-height-normal': '21px',

@@ -5,7 +5,7 @@
   @apply inline-block;
   @apply leading-none;
   @apply rounded;
-  @apply font-weight-bold;
+  @apply font-semibold;
   @apply uppercase;
   font-family: 'Rajdhani', sans-serif;
   transition: background .3s;

@@ -46,7 +46,7 @@
 
     &__title {
         @apply text-sm;
-        @apply font-weight-bold;
+        @apply font-semibold;
         @apply bg-dark-blue;
         @apply px-4;
         @apply w-full;

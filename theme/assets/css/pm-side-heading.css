@@ -13,7 +13,7 @@
     @apply -translate-y-1/2;
     @apply text-base;
     @apply text-center;
-    @apply font-weight-semi-bold;
+    @apply font-bold;
     @apply uppercase;
     width: 25px;
 

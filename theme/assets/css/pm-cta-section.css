@@ -5,8 +5,6 @@
     h3 {
         @apply text-base;
         @apply leading-normal;
-        @apply font-weight-bold;
-        @apply font-special;
 
         @screen phone-wide {
             @apply text-md;

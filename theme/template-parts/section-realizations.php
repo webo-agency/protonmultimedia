@@ -6,7 +6,7 @@
     <?php endif; ?>
 
     <header class="desktop-wide:px-smaller-container mt-24 relative">
-        <h2 class="uppercase mb-10 text-lg font-weight-bold text-white">
+        <h2 class="uppercase mb-10 text-white">
             <?php 
                 $lines = explode(PHP_EOL, get_field('realization_title', 'option'));
                 foreach ( $lines as $line) {
