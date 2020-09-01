@@ -19,6 +19,7 @@
 							array(
 								'theme_location' => 'menu-2',
 								'menu_id'        => 'primary-menu',
+								'add_li_class' => 'font-special'
 							)
 						);
 					?>

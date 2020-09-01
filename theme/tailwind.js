@@ -54,7 +54,7 @@ module.exports = {
         'base': ['20px', '30px'],
         'md': '25px',
         'lg': '40px',
-        'xl': '60px',
+        'xl': ['60px', '60px'],
         'baner': ['80px', '80px']
       },
       fontWeight: {
