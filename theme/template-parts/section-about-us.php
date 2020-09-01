@@ -25,7 +25,7 @@
       <div class="pm-about desktop-wide:px-smaller-container relative">
         <div class="flex flex-col tablet:flex-row">
           <div class="w-full desktop:w-1/2">
-            <h2 class="uppercase mb-16">
+            <h2 class="uppercase mb-20">
               <?php echo get_field('about_title'); ?>
             </h2>
             <h3 class="mb-17">

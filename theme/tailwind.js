@@ -53,7 +53,7 @@ module.exports = {
         'sm-2': '16px',
         'base': ['20px', '30px'],
         'md': '25px',
-        'lg': '40px',
+        'lg': ['40px', '40px'],
         'xl': ['60px', '60px'],
         'baner': ['80px', '80px']
       },
