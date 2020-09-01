@@ -49,7 +49,7 @@
                             <div class="relative p-8 overflow-hidden z-30">
                                 <h3 class="relative mb-6 text-white">
                                     <?php 
-                                        $lines = explode(PHP_EOL, get_the_title( $_post ));
+                                        $lines = explode(PHP_EOL, get_field('title_box') || get_the_title( $_post ));
                                         foreach ( $lines as $line) {
                                             echo preg_replace("/\*(.+)\*/", '<span class="line-decorated bg-dark-blue-2">$1</span>', $line);
                                         }
