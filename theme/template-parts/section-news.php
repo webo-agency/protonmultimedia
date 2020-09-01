@@ -1,4 +1,4 @@
-<section class="pm-news relative bg-dark-blue-2">
+<section class="pm-news container relative bg-dark-blue-2">
 
     <?php if(get_field('news_side_title', 'option')): ?>
       <side-heading
@@ -6,16 +6,16 @@
       ></side-heading>
     <?php endif; ?>
         
-    <div class="container mt-12">
-        <div class="flex flex-row">
+    <div class="mt-12">
+        <div class="relative desktop-wide:px-smaller-container flex flex-row">
             <img    
-                class="hidden desktop-wide:block flex-initial mb-0 mt-auto" 
+                class="hidden desktop-wide:block absolute left-0 bottom-0 flex-initial mb-0 mt-auto" 
                 src="<?php echo get_template_directory_uri() . '/assets/svg/news-dots.svg' ?>" 
                 alt="Decorations"
                 style="max-width: 95px;"
             />
 
-            <div class="container flex-auto">
+            <div class="flex-auto">
                 <h2 class="uppercase mb-14 mt-20 desktop:mt-40">
                     <?php
                         $news_title = get_field('news_title', 'option');
@@ -116,7 +116,7 @@
             </ul>
         <?php endif; ?>
     <?php wp_reset_postdata(); ?>
-        <div class="pm-container relative py-10">
+        <div class="container relative py-10">
             <img    
                 class="hidden desktop:block absolute top-0 left-0 z-50" 
                 src="<?php echo get_template_directory_uri() . '/assets/svg/news-dots-2.svg' ?>" 

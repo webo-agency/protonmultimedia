@@ -6,7 +6,7 @@
             src="<?php echo get_template_directory_uri() . '/assets/svg/lines-right.svg' ?>" 
             alt="Decorations"
         />
-        <div class="pm-container pm-container--indented">
+        <div class="container">
             <div class="pm-cta__block">
                 <?php
                     $cta_title = get_field('cta_title', 'option');

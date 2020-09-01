@@ -2,7 +2,7 @@
   <div class="flex flex-row">
     <div class="flex-initial flex flex-row items-center">
       <img    
-          class="hidden desktop-wide:block" 
+          class="hidden desktop-wide:block absolute ml-container left-0" 
           src="<?php echo get_template_directory_uri() . '/assets/svg/about-dots.svg' ?>" 
           alt="Decorations"
           width="85px"
@@ -22,7 +22,7 @@
           alt="Decorations"
           style="max-width: 340px;"
       />
-      <div class="pm-about container relative">
+      <div class="pm-about desktop-wide:px-smaller-container relative">
         <div class="flex flex-col tablet:flex-row">
           <div class="w-full desktop:w-1/2">
             <h2 class="uppercase mb-16">

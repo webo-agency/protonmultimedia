@@ -1,11 +1,11 @@
-<section class="relative">
+<section class="container relative">
     <?php if(get_field('realization_side_title', 'option')): ?>
       <side-heading
         data-text="<?php echo get_field('realization_side_title', 'option'); ?>"
       ></side-heading>
     <?php endif; ?>
 
-    <header class="container desktop-wide:pl-smaller-container mt-24 relative">
+    <header class="desktop-wide:px-smaller-container mt-24 relative">
         <h2 class="uppercase mb-10 text-lg font-weight-bold text-white">
             <?php 
                 $lines = explode(PHP_EOL, get_field('realization_title', 'option'));
@@ -34,7 +34,7 @@
             'posts_per_page' => -1
         ));
     ?>
-    <div class="container">
+    <div class="">
         <?php if( $loop->have_posts() ): ?>
             <realization-slider>
                 <ul class="swiper-wrapper">
@@ -47,7 +47,7 @@
                                 ); 
                             ?>
                             <div class="relative p-8 overflow-hidden z-30">
-                                <h2 class="font-bold uppercase text-4xl first-line-decorated leading-tight mb-6 text-white">
+                                <h2 class="relative font-bold uppercase text-4xl first-line-decorated leading-tight mb-6 text-white">
                                     <?php echo get_the_title( $_post ); ?> 
                                 </h2>
                                 <div class="invisible h-auto max-h-0 opacity-0 transition-all duration-300 group-hover:visible group-hover:max-h-full group-hover:opacity-100">

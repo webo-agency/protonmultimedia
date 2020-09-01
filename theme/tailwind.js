@@ -131,6 +131,7 @@ module.exports = {
         '60%': '60%',
         '72': '18rem',
         '80': '20rem',
+        'container': '4.6875rem',
       },
       transitionProperty: {
         'max-h': 'max-height',
@@ -139,7 +140,7 @@ module.exports = {
         '-61': '-61deg'
       },
       padding: {
-        'smaller-container': '15.625rem'
+        'smaller-container': '10.3125rem'
       }
     },
   },
