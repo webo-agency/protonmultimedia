@@ -1,7 +1,6 @@
 .line-decorated{
   @apply relative;
   @apply inline-block;
-  line-height: 63px;
   padding-right: 10px;
   padding-top: 5px;
 
