@@ -56,7 +56,7 @@ module.exports = {
         'lg': '40px',
         'xl': '60px',
         'xxl': '80px',
-        '8xl': ['80px', '80px']
+        'baner': ['80px', '80px']
       },
       fontWeight: {
         'weight-extra-light': 200,

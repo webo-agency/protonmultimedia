@@ -20,7 +20,7 @@
                                 />
                                 <div class="container absolute left-0 right-0 top-1/2 transform -translate-y-1/2 text-white z-10">
                                     <div class="desktop-wide:px-smaller-container">
-                                        <h2 class="font-bold uppercase text-4xl tablet:text-8xl mb-14 leading-tight">
+                                        <h2 class="font-bold uppercase text-4xl tablet:text-baner mb-14 leading-tight">
                                             <?php 
                                                 $lines = explode(PHP_EOL, get_sub_field('front_slide_heading'));
                                                 foreach ( $lines as $line) {
