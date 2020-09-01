@@ -6,7 +6,7 @@
     <?php endif; ?>
 
     <header class="desktop-wide:px-smaller-container mt-24 relative">
-        <h2 class="uppercase text-lg mb-20 text-white">
+        <h2 class="h3 uppercase mb-20 text-white">
             <?php 
                 $lines = explode(PHP_EOL, get_field('realization_title', 'option'));
                 foreach ( $lines as $line) {
@@ -47,9 +47,9 @@
                                 ); 
                             ?>
                             <div class="relative p-8 overflow-hidden z-30">
-                                <h2 class="relative font-bold uppercase text-4xl first-line-decorated leading-tight mb-6 text-white">
+                                <h3 class="relative uppercase first-line-decorated mb-6 text-white">
                                     <?php echo get_the_title( $_post ); ?> 
-                                </h2>
+                                </h3>
                                 <div class="invisible h-auto max-h-0 opacity-0 transition-all duration-300 group-hover:visible group-hover:max-h-full group-hover:opacity-100">
                                     
                                     <div class="text-base leading-tight text-white">

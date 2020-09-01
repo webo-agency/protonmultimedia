@@ -20,14 +20,14 @@
                                 />
                                 <div class="container absolute left-0 right-0 top-1/2 transform -translate-y-1/2 text-white z-10">
                                     <div class="desktop-wide:px-smaller-container">
-                                        <h2 class="font-bold uppercase text-4xl tablet:text-baner mb-14 leading-tight">
+                                        <h1 class="font-bold uppercase text-4xl tablet:text-baner mb-14 leading-tight">
                                             <?php 
                                                 $lines = explode(PHP_EOL, get_sub_field('front_slide_heading'));
                                                 foreach ( $lines as $line) {
                                                     echo preg_replace("/\*(.+)\*/", '<span class="line-decorated bg-primary">$1</span>', $line);
                                                 }
                                             ?>
-                                        </h2>
+                                        </h1>
                                         <div class="w-full sm:w1/3 tablet:w-1/2 leading-relaxed mb-14">
                                             <p class="text-base tablet-wide:mb-5" data-hero-content>
                                                 <?php the_sub_field('front_slide_content'); ?>

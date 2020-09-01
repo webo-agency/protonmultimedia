@@ -14,14 +14,14 @@
                 
                 ?>
                 <div class="pm-cta__column mb-10 desktop:mb-0 uppercase">
-                    <h3 class="text-white"> 
+                    <h2 class="text-white"> 
                         <?php 
                             $lines = explode(PHP_EOL, $cta_title);
                             foreach ( $lines as $line) {
                                 echo preg_replace("/\*(.+)\*/", '<span class="text-primary">$1</span>', $line);
                             }
                         ?>
-                    </h3>
+                    </h2>
                 </div>
                 <div class="pm-cta__column">
                     <a
