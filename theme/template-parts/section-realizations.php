@@ -47,8 +47,13 @@
                                 ); 
                             ?>
                             <div class="relative p-8 overflow-hidden z-30">
-                                <h3 class="relative uppercase first-line-decorated mb-6 text-white">
-                                    <?php echo get_the_title( $_post ); ?> 
+                                <h3 class="relative mb-6 text-white">
+                                    <?php 
+                                        $lines = explode(PHP_EOL, get_the_title( $_post ));
+                                        foreach ( $lines as $line) {
+                                            echo preg_replace("/\*(.+)\*/", '<span class="line-decorated bg-dark-blue-2">$1</span>', $line);
+                                        }
+                                    ?>
                                 </h3>
                                 <div class="invisible h-auto max-h-0 opacity-0 transition-all duration-300 group-hover:visible group-hover:max-h-full group-hover:opacity-100">
                                     
