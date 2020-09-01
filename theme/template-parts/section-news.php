@@ -22,7 +22,6 @@
                         $news_lines = explode(PHP_EOL, $news_title);
                         foreach ( $news_lines as $line) {
                             echo preg_replace("/\*(.+)\*/", '<span class="text-primary">$1</span>', $line);
-                            echo '</br>';
                         }
                     ?>
                 </h2>

@@ -19,7 +19,6 @@
                             $lines = explode(PHP_EOL, $cta_title);
                             foreach ( $lines as $line) {
                                 echo preg_replace("/\*(.+)\*/", '<span class="text-primary">$1</span>', $line);
-                                echo '</br>';
                             }
                         ?>
                     </h3>

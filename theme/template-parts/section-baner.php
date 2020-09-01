@@ -24,7 +24,6 @@
                                             $lines = explode(PHP_EOL, get_sub_field('front_slide_heading'));
                                             foreach ( $lines as $line) {
                                                 echo preg_replace("/\*(.+)\*/", '<span class="line-decorated bg-primary">$1</span>', $line);
-                                                echo '</br>';
                                             }
                                         ?>
                                     </h2>
