@@ -38,10 +38,10 @@ module.exports = {
       center: true,
       padding: {
         default: '1rem',
-        'tablet-wide': '4.6875rem',
-        'desktop': '4.6875rem',
-        'desktop-wide': '4.6875rem',
-        'full-hd': '4.6875rem',
+        'tablet-wide': '4.625rem',
+        'desktop': '4.625rem',
+        'desktop-wide': '4.625rem',
+        'full-hd': '4.625rem',
       },
     },
     extend: {
@@ -140,7 +140,7 @@ module.exports = {
         '-61': '-61deg'
       },
       padding: {
-        'smaller-container': '10.3125rem'
+        'smaller-container': '11rem'
       }
     },
   },
@@ -191,23 +191,23 @@ module.exports = {
           },
           '@screen tablet-wide': {
             maxWidth: '1024px',
-            paddingLeft: '4.6875rem',
-            paddingRight: '4.6875rem',
+            paddingLeft: '4.625rem',
+            paddingRight: '4.625rem',
           },
           '@screen desktop': {
             maxWidth: '1248px',
-            paddingLeft: '4.6875rem',
-            paddingRight: '4.6875rem',
+            paddingLeft: '4.625rem',
+            paddingRight: '4.625rem',
           },
           '@screen desktop-wide': {
             maxWidth: '1772px',
-            paddingLeft: '4.6875rem',
-            paddingRight: '4.6875rem',
+            paddingLeft: '4.625rem',
+            paddingRight: '4.625rem',
           },
           '@screen full-hd': {
             maxWidth: '1920px',
-            paddingLeft: '4.6875rem',
-            paddingRight: '4.6875rem',
+            paddingLeft: '4.625rem',
+            paddingRight: '4.625rem',
           },
         }
       })
