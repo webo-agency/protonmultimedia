@@ -28,9 +28,9 @@
             <h2 class="uppercase mb-16">
               <?php echo get_field('about_title'); ?>
             </h2>
-            <h4 class="text-md leading-line-height-md mb-10 desktop:text-lg desktop:leading-line-height-lg desktop:mb-14">
+            <h3 class="mb-17">
               <?php echo get_field('about_lead'); ?>
-            </h4>
+            </h3>
             <p>
               <?php echo get_field('about_description'); ?>
             </p>
