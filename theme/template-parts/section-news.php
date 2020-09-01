@@ -1,11 +1,11 @@
 <section class="pm-news relative bg-dark-blue-2">
-    <?php if(get_field('side_headings', 'option')[2]['side_heading']): ?>
+
+    <?php if(get_field('news_side_title', 'option')): ?>
       <side-heading
-        data-text="<?php echo get_field('side_headings', 'option')[2]['side_heading']; ?>"
+        data-text="<?php echo get_field('news_side_title', 'option'); ?>"
       ></side-heading>
     <?php endif; ?>
         
-    </side-heading>
     <div class="container mt-12">
         <div class="flex flex-row">
             <img    

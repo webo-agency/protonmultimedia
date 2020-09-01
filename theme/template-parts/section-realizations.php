@@ -1,20 +1,22 @@
 <section class="relative">
-    <?php if(get_field('side_headings', 'option')[2]['side_heading']): ?>
+    <?php if(get_field('realization_side_title', 'option')): ?>
       <side-heading
-        data-text="<?php echo get_field('side_headings', 'option')[2]['side_heading']; ?>"
+        data-text="<?php echo get_field('realization_side_title', 'option'); ?>"
       ></side-heading>
     <?php endif; ?>
 
     <header class="container desktop-wide:pl-smaller-container mt-24 relative">
         <h2 class="uppercase mb-10 text-lg font-weight-bold text-white">
-            Nasze wybrane<br/>
-            <span class="text-primary">realizacje</span>
+            <?php 
+                $lines = explode(PHP_EOL, get_field('realization_title', 'option'));
+                foreach ( $lines as $line) {
+                    echo preg_replace("/\*(.+)\*/", '<span class="text-primary">$1</span>', $line);
+                }
+            ?>
         </h2>
 
         <p class="pb-12 text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing <br/>
-            elit, sed do eiusmod tempor incididunt ut labore et <br/>
-            dolore magna aliqua.
+            <?php echo get_field('realization_description', 'option'); ?>
         </p>
 
         <img 

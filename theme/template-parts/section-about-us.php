@@ -10,9 +10,9 @@
       />
     </div>
 
-    <?php if(get_field('side_headings', 'option')[1]['side_heading']): ?>
+    <?php if(get_field('about_us_side_title', 'option')): ?>
       <side-heading
-        data-text="<?php echo get_field('side_headings', 'option')[1]['side_heading']; ?>"
+        data-text="<?php echo get_field('about_us_side_title', 'option'); ?>"
       ></side-heading>
     <?php endif; ?>
     
