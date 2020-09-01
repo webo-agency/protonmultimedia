@@ -43,7 +43,7 @@
         <?php
         $post_list = get_posts( array(
             'sort_order' => 'desc',
-            'numberposts' => $args['count_posts_int'],
+            'posts_per_page' => $args['count_posts_int'],
         ));
 
         if( $post_list ): ?>
