@@ -1,6 +1,6 @@
 <section class="relative flex flex-col bg-white text-black">
   <side-heading 
-      data-title="<?php echo $args['side_description_string']; ?>"
+      data-text="<?php echo $args['side_description_string']; ?>"
   ></side-heading>
 
   <div class="container desktop-wide:pl-smaller-container flex flex-col items-center py-20">

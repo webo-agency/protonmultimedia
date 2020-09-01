@@ -22,7 +22,7 @@ export default {
         default: "",
         required: false
       },
-      title: {
+      text: {
         type: String,
         default: "",
         required: false
@@ -34,8 +34,8 @@ export default {
         }
     },
     mounted() {
-      if(this.$attrs['data-title']){
-        this.letters = this.$attrs['data-title'].trim().split("");
+      if(this.$attrs['data-text']){
+        this.letters = this.$attrs['data-text'].trim().split("");
       }
     },
 }
