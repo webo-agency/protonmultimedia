@@ -1,17 +1,5 @@
-<header class="relative">
-    <?php
-      if( $image = $args['background_id']) {
-        echo wp_get_attachment_image( $image, array('9999', '550'), "", array('class' => 'absolute left-0 top-0 w-full h-full object-cover') );
-      }
-    ?>
-    <img 
-        class="hidden tablet-wide:block absolute -bottom-40% right-0 h-full z-50 w-auto pointer-events-none" 
-        src="<?php echo get_template_directory_uri() . '/assets/svg/header-lines.svg' ?>" 
-        width="540px"
-        height="400px"
-        alt="Decorations"
-    />
-  <div class="container relative pt-40 pb-4">
+<header class="relative overflow-hidden">
+  <div class="container desktop-wide:px-smaller-container relative flex flex-col justify-center pt-40 pb-40 z-30 min-h-200px tablet:min-h-430px desktop:min-h-900px">
     <h2 class="font-bold uppercase text-4xl tablet:text-8xl mb-4 tablet:mb-14 leading-tight">
       <?php 
         $lines = explode(' ', $args['title_string']);
@@ -30,4 +18,16 @@
       </div>
     </div>
   </div>
+  <?php
+    if( $image = $args['background_id']) {
+      echo wp_get_attachment_image( $image, array('9999', '550'), "", array('class' => 'absolute left-0 top-0 w-full h-full object-cover z-10') );
+    }
+  ?>
+  <img 
+      class="hidden tablet-wide:block absolute top-0 bottom-1/2 right-0 h-full transform -rotate-61 pointer-events-none z-20 -mt-64" 
+      src="<?php echo get_template_directory_uri() . '/assets/svg/header-lines.svg' ?>" 
+      width="400px"
+      height="400px"
+      alt="Decorations"
+  />
 </header>
