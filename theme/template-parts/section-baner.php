@@ -29,9 +29,9 @@
                                             ?>
                                         </h2>
                                         <div class="w-full sm:w1/3 tablet:w-1/2 leading-relaxed mb-14">
-                                            <div class="text-base tablet-wide:text-md tablet-wide:mb-5" data-hero-content>
+                                            <p class="text-base tablet-wide:mb-5" data-hero-content>
                                                 <?php the_sub_field('front_slide_content'); ?>
-                                            </div>
+                                            </p>
                                         </div>
                                         <?php
                                             if( $front_slide_button = get_sub_field('front_slide_button')):
