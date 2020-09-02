@@ -22,14 +22,15 @@ function show_image( $image_id, $size = null, $attributes = null ) {
     </side-heading>
 
   <?php if(count($args['filters_array'])): ?>
+  <tag-filter>
     <ul class="flex">
     
-        <li class="mr-2">
-          <a class="pm-taxonomy-pill text-white" href="#<?php echo $term->slug; ?>">Wszystkie</a>
+        <li class="mr-2" data-term="all">
+          <span class="pm-taxonomy-pill text-white">Wszystkie</span>
         </li>
       <?php foreach ($args['filters_array'] as $index => $term): ?>
-        <li class="mr-2">
-          <a class="pm-taxonomy-pill text-white" href="#<?php echo $term->slug; ?>"><?php echo $term->name; ?></a>
+        <li class="mr-2" data-term="<?php echo $term->term_id; ?>">
+          <span class="pm-taxonomy-pill text-white"><?php echo $term->name; ?></span>
         </li>
       <?php endforeach; ?>
     </ul>
@@ -38,9 +39,14 @@ function show_image( $image_id, $size = null, $attributes = null ) {
   <?php if(count($args['list_post_array'])): ?>
     <ul class="grid grid-cols-1 phone-wide:grid-cols-2 pt-12 tablet:pt-18 mb-10">
       <?php foreach ($args['list_post_array'] as $index => $post): ?>
-        <li>
+        <li
+          data-terms="<?php $allterms = wp_get_post_terms( $post->ID, 'services_category'); 
+              foreach($allterms as $term) {
+                echo $term->term_id.',';
+              }
+          ?>"
+        >
         <?php
-
           $permalink = get_permalink( $post->ID );
           $title = get_the_title( $post->ID );
           $excerpt = get_the_excerpt( $post->ID);
@@ -63,5 +69,6 @@ function show_image( $image_id, $size = null, $attributes = null ) {
         </li>
       <?php endforeach; ?>
     </ul>
+  </tag-filter>
   <?php endif; ?>
 </section>
