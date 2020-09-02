@@ -1,0 +1,11 @@
+.guides{
+  @apply absolute;
+  @apply left-auto;
+  @apply right-auto;
+  @apply top-0;
+  @apply bottom-0;
+  width: 1px;
+  @apply z-20;
+  @apply bg-primary;
+  @apply mx-container;
+}

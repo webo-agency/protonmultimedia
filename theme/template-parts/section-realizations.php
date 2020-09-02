@@ -5,6 +5,8 @@
       ></side-heading>
     <?php endif; ?>
 
+    <div class="guides left-1 right-auto bg-dark-purple"></div>
+
     <header class="desktop-wide:px-smaller-container mt-24 relative">
         <h2 class="h3 uppercase mb-20 text-white">
             <?php 
@@ -115,4 +117,6 @@
             </realization-slider>
         <?php endif; wp_reset_postdata(); ?>
     </div>
+
+    <div class="guides right-1 left-auto bg-dark-purple"></div>
 </section>

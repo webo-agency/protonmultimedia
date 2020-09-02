@@ -1,5 +1,7 @@
 
 <section class="pm-cta container relative pt-10 desktop-wide:pt-20">
+    <div class="guides left-1 right-auto bg-dark-purple"></div>
+
     <div class="relative pb-10 desktop-wide:pb-20">
         <img 
             class="hidden desktop:block absolute bottom-0 left-0 h-full z-50" 
@@ -34,4 +36,6 @@
         
         </div>
     </div>
+
+    <div class="guides right-1 left-auto bg-dark-purple"></div>
 </section>

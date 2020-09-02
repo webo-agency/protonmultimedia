@@ -1,5 +1,8 @@
 <section id="baner" class="relative">
-    <baner-slider>
+
+   
+
+    <baner-slider class="z-40">
         <ul class="swiper-wrapper h-screen min-h-900px">
             <?php
                 if( have_rows('front_slider') ):
@@ -18,7 +21,8 @@
                                     height="700px"
                                     alt="Decorations"
                                 />
-                                <div class="container absolute left-0 right-0 top-1/2 transform -translate-y-1/2 text-white z-10">
+                                <div class="guides left-1 right-auto bg-dark-blue"></div>
+                                <div class="container absolute left-0 right-0 top-1/2 transform -translate-y-1/2 text-white z-30">
                                     <div class="desktop-wide:px-smaller-container">
                                         <h1 class="font-bold uppercase text-4xl tablet:text-baner mb-14 leading-tight">
                                             <?php 
@@ -51,6 +55,7 @@
                                         <div class="relative flex items-start swiper-pagination" data-baner-pagination></div>
                                     </div>
                                 </div>
+                                <div class="guides right-1 left-auto bg-dark-blue"></div>
                             </li>
                         <?php
                     endwhile;

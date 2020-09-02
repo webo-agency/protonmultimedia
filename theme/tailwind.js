@@ -22,6 +22,7 @@ module.exports = {
       'dark-blue': '#110D25',
       'dark-blue-2': '#171131',
       'dark-font': '#130E29',
+      'dark-purple': '#0F0B1F'
     },
     screens: {
       'phone': '320px',
@@ -73,7 +74,8 @@ module.exports = {
         '17': '4.375rem'
       },
       inset: {
-        '0': 0,
+        '0': '0',
+        '1px': '1px',
         '-40%': '-40%',
         '1/2': '50%',
         '50px': '50px',

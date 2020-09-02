@@ -13,6 +13,8 @@
     ></side-heading>
   <?php endif; ?>
 
+  <div class="guides left-1 right-auto bg-dark-blue"></div>
+
   <div class="container max-w-none flex flex-row flex-wrap pb-16">
     <?php foreach($terms as $term): ?>
       <div class="w-full desktop:w-1/2 relative overflow-hidden border border-solid border-dark-blue-2">
@@ -46,4 +48,6 @@
       </div>
     <?php endforeach; ?>
   </div>
+
+  <div class="guides right-1 left-auto bg-dark-blue"></div>
 </section>

@@ -1,6 +1,7 @@
 <template>
   <component
     :is="mainTag"
+    class="swiper-container relative overflow-hidden"
     :class="mainClass"
     v-swiper:baner="sliderOptionsBaner"
   >
@@ -19,7 +20,7 @@ export default {
       },
       mainClass: {
         type: String,
-        default: "swiper-container relative overflow-hidden",
+        default: "",
         required: false
       },
     },
