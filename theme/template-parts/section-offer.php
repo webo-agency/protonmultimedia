@@ -23,7 +23,7 @@
             <?php echo implode('<br/><span class="line-decorated bg-dark-blue-2 leading-tight">', explode(' ', trim($term->name) . ' </span>', 2)); ?>
           </h2>
 
-          <div class="flex items-center flex-1 mb-8 text-white">
+          <div class="desktop:w-3/4 flex items-center flex-1 text-white">
             <?php echo term_description($term); ?>
           </div>
 

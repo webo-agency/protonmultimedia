@@ -1,4 +1,5 @@
 .guides{
+  @apply hidden;
   @apply absolute;
   @apply left-auto;
   @apply right-auto;
@@ -8,4 +9,8 @@
   @apply z-20;
   @apply bg-primary;
   @apply mx-container;
+
+  @screen desktop{
+    @apply block;
+  }
 }
