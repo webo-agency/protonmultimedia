@@ -16,7 +16,7 @@
       ></side-heading>
     <?php endif; ?>
     
-    <div class="guides left-1px right-auto bg-dark-blue"></div>
+    <div class="guides left-minus-px right-auto bg-dark-blue"></div>
 
     <img    
         class="hidden tablet:block absolute top-0 desktop:bottom-100px desktop:top-auto desktop-wide:bottom-0 right-0 z-50 origin-top-right transform scale-75 desktop-wide:scale-100" 
@@ -52,5 +52,5 @@
     </div>
   </div>
 
-  <div class="guides right-1px left-auto bg-dark-blue"></div>
+  <div class="guides right-minus-px left-auto bg-dark-blue"></div>
 </section>

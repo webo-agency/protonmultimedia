@@ -21,7 +21,7 @@
                                     height="700px"
                                     alt="Decorations"
                                 />
-                                <div class="guides left-1px right-auto bg-dark-blue"></div>
+                                <div class="guides left-minus-px right-auto bg-dark-blue"></div>
                                 <div class="container absolute left-0 right-0 top-1/2 transform -translate-y-1/2 text-white z-30">
                                     <div class="desktop-wide:px-smaller-container">
                                         <h1 class="font-bold uppercase text-4xl tablet:text-baner mb-14 leading-tight">
@@ -55,7 +55,7 @@
                                         <div class="relative flex items-start swiper-pagination" data-baner-pagination></div>
                                     </div>
                                 </div>
-                                <div class="guides right-1px left-auto bg-dark-blue"></div>
+                                <div class="guides right-minus-px left-auto bg-dark-blue"></div>
                             </li>
                         <?php
                     endwhile;

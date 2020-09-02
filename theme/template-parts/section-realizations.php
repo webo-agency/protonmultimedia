@@ -5,7 +5,7 @@
       ></side-heading>
     <?php endif; ?>
 
-    <div class="guides left-1px right-auto bg-dark-purple"></div>
+    <div class="guides left-minus-px right-auto bg-dark-purple"></div>
 
     <header class="desktop-wide:px-smaller-container pt-24 relative">
         <h2 class="h3 uppercase mb-20 text-white">
@@ -118,5 +118,5 @@
         <?php endif; wp_reset_postdata(); ?>
     </div>
 
-    <div class="guides right-1px left-auto bg-dark-purple"></div>
+    <div class="guides right-minus-px left-auto bg-dark-purple"></div>
 </section>
