@@ -1,17 +1,17 @@
 @import "tailwindcss/base";
 
-.h1, h1,
-.h2, h2{
+h1,
+h2{
   @apply text-xl;
   @apply font-semibold;
   @apply font-special;
   @apply mb-17;
 }
 
-.h3, h3,
-.h4, h4,
-.h5, h5,
-.h6, h6{
+h3,
+h4,
+h5,
+h6{
   @apply text-lg;
   @apply font-semibold;
   @apply font-special;
@@ -21,6 +21,32 @@
 p {
   @apply text-base;
   @apply mb-12;
+}
+
+
+@responsive {
+  .h1,
+  .h2{
+    @apply text-xl;
+    @apply font-semibold;
+    @apply font-special;
+    @apply mb-17;
+  }
+  
+  .h3,
+  .h4,
+  .h5,
+  .h6{
+    @apply text-lg;
+    @apply font-semibold;
+    @apply font-special;
+    @apply mb-17;
+  }
+  
+  .p {
+    @apply text-base;
+    @apply mb-12;
+  }
 }
 
 @import "tailwindcss/components";
