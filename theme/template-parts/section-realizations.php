@@ -71,15 +71,15 @@
                                     <?php if(is_array(get_field('services', $_post))): ?>
                                         <?php foreach(get_field('services', $_post) as $service): ?>
                                             <ul class="mt-4">
-                                                <li>
-                                                    <a href="<?php echo get_permalink($service); ?>" class="mb-4 mr-4 rounded-md px-2 text-sm bg-white text-black inline-block hover:text-black">
+                                                <li class="">
+                                                    <a href="<?php echo get_permalink($service); ?>" class="mb-4 mr-4 rounded-md px-2 text-sm bg-white text-black inline-block hover:text-black float-left">
                                                         <?php echo get_the_title( $service ); ?>
                                                     </a>
                                                 </li>
                                                 <?php foreach ( (get_the_category($service)) as $category ): ?>
                                                     <?php echo $category->term_id; if($category->term_id !== 1): ?>
                                                         <li class="bg-primary">
-                                                            <a href="<?php echo get_category_link($category); ?>" class="mb-4 mr-4 rounded-md px-2 text-sm bg-white text-black inline-block hover:text-black">
+                                                            <a href="<?php echo get_category_link($category); ?>" class="mb-4 mr-4 rounded-md px-2 text-sm bg-white text-black inline-block hover:text-black float-left">
                                                                 <?php echo get_cat_name($category); ?>
                                                             </a>
                                                         </li>
