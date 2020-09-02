@@ -1,4 +1,4 @@
-<section class="container max-w-none bg-dark-blue-2 relative filter-shadow-top">
+<section class="container max-w-none bg-dark-blue-2 relative filter-shadow-top overflow-hidden">
   <div class="flex flex-row">
     <div class="flex-initial flex flex-row items-center">
       <img    
