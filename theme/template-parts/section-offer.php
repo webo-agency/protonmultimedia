@@ -13,7 +13,7 @@
     ></side-heading>
   <?php endif; ?>
 
-  <div class="guides left-1 right-auto bg-dark-blue"></div>
+  <div class="guides left-1px right-auto bg-dark-blue"></div>
 
   <div class="container max-w-none flex flex-row flex-wrap pb-16">
     <?php foreach($terms as $term): ?>
@@ -49,5 +49,5 @@
     <?php endforeach; ?>
   </div>
 
-  <div class="guides right-1 left-auto bg-dark-blue"></div>
+  <div class="guides right-1px left-auto bg-dark-blue"></div>
 </section>
