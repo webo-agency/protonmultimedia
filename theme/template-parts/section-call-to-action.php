@@ -15,7 +15,7 @@
             
             ?>
             <div class="flex-initial desktop-wide:w-7/12 mb-10 desktop:mb-0 uppercase">
-                <h2 class="mb-0 desktop:h2 desktop:flex desktop:flex-col text-white"> 
+                <h2 class="mb-0 desktop:h2 desktop:flex desktop:flex-col text-white desktop:mb-0"> 
                     <?php 
                         $lines = explode(PHP_EOL, $cta_title);
                         foreach ( $lines as $line) {
