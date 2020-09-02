@@ -15,11 +15,8 @@
     @apply text-center;
     @apply font-bold;
     @apply uppercase;
-    width: 25px;
-
-    div {
-        @apply leading-line-height-normal;
-    }
+    width: 30px;
+    line-height: 22px;
 
     * {
         font-size: inherit;
