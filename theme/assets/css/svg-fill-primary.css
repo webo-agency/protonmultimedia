@@ -1,5 +1,5 @@
 .svg-fill-primary{
-  fill{
-    @apply text-primary;
+  svg {
+    fill: #01B9C3;
   }
 }
