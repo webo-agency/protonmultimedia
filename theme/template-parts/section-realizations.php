@@ -7,7 +7,7 @@
 
     <div class="guides left-1px right-auto bg-dark-purple"></div>
 
-    <header class="desktop-wide:px-smaller-container mt-24 relative">
+    <header class="desktop-wide:px-smaller-container pt-24 relative">
         <h2 class="h3 uppercase mb-20 text-white">
             <?php 
                 $lines = explode(PHP_EOL, get_field('realization_title', 'option'));
@@ -38,7 +38,7 @@
     ?>
     <div class="">
         <?php if( $loop->have_posts() ): ?>
-            <realization-slider>
+            <realization-slider class="z-20">
                 <ul class="swiper-wrapper">
                     <?php while ( $loop->have_posts() ) : $loop->the_post(); $_post = get_post(); ?>
                         <li class="w-full tablet:w-1/2 desktop:w-1/4 swiper-slide group overflow-hidden flex flex-col justify-end box-gradient-overlay min-h-700px">

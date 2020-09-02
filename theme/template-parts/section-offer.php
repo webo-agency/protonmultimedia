@@ -15,7 +15,7 @@
 
   <div class="guides left-1px right-auto bg-dark-blue"></div>
 
-  <div class="container max-w-none flex flex-row flex-wrap pb-16">
+  <div class="relative container max-w-none flex flex-row flex-wrap pb-16 z-30">
     <?php foreach($terms as $term): ?>
       <div class="w-full desktop:w-1/2 relative overflow-hidden border border-solid border-dark-blue-2">
         <div class="relative flex flex-col items-start min-h-550px z-20 py-20 px-12">
