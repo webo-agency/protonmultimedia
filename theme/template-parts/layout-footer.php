@@ -11,7 +11,7 @@
 						)
 					);
 				?>	
-				<div class="pm-util-flex-column">
+				<div class="flex flex-col">
 					<h3><?php echo get_field('footer_title', 'option'); ?></h3>
 					<?php echo get_field('footer_content', 'option'); ?>
 					<?php if($footer_phone_number = get_field('footer_phone_number', 'option')): ?>
@@ -27,16 +27,16 @@
 				</div>
 				</div>
 			</div>
-			<div class="pm-util-flex-column pm-w-100">
+			<div class="flex flex-col w-full">
 				<?php
 					$locations = get_nav_menu_locations();
 					$menuFooterHome = wp_get_nav_menu_object($locations['menu-4']);
 					$menuFooterBusiness = wp_get_nav_menu_object($locations['menu-5']);
 				?> 
-				<h4 class="pm-util-text-bold pm-mb-30">Usługi</h4>
+				<h4 class="font-semibold pm-mb-30">Usługi</h4>
 				<div class="pm-footer__menus">
 					<div class="pm-footer__sub-menu pm-footer__sub-menu--home-menu" data-rolldown data-rolldown-mobile-only="true" rolldown-expanded>
-						<h5 class="pm-util-text-bold pm-mb-20" data-rolldown-trigger><?php echo $menuFooterHome->name; ?> <img style="width: 25px;" class="tablet:hidden" src="<?php echo get_template_directory_uri() . '/assets/svg/angle-down.svg' ?>" alt="roll-down" /></h5>
+						<h5 class="font-semibold mb-5" data-rolldown-trigger><?php echo $menuFooterHome->name; ?> <img style="width: 25px;" class="tablet:hidden" src="<?php echo get_template_directory_uri() . '/assets/svg/angle-down.svg' ?>" alt="roll-down" /></h5>
 						<div data-rolldown-target>
 							<?php
 								wp_nav_menu(
@@ -50,7 +50,7 @@
 					</div>
 
 					<div class="pm-footer__sub-menu pm-footer__sub-menu--business-menu" data-rolldown data-rolldown-mobile-only="true" rolldown-expanded>
-						<h5 class="pm-util-text-bold pm-mb-20" data-rolldown-trigger="mobile"><?php echo $menuFooterBusiness->name; ?> <img style="width: 25px;" class="tablet:hidden" src="<?php echo get_template_directory_uri() . '/assets/svg/angle-down.svg' ?>" alt="roll-down" /></h5>
+						<h5 class="font-semibold mb-5" data-rolldown-trigger="mobile"><?php echo $menuFooterBusiness->name; ?> <img style="width: 25px;" class="tablet:hidden" src="<?php echo get_template_directory_uri() . '/assets/svg/angle-down.svg' ?>" alt="roll-down" /></h5>
 						<div data-rolldown-target>
 							<?php
 								wp_nav_menu(
