@@ -1,3 +1,21 @@
+<?php
+/*** Function to show images whether SVG or non SVG ***/
+/*** $size & $attribute both can hold array if you want ***/
+function show_image( $image_id, $size = null, $attributes = null ) {
+	//first lets get the file info sto understand what kind of file it is
+	//as for svg file we will take different approach
+	$file_info = pathinfo( wp_get_attachment_url( $image_id ) );
+
+	//so, if the file type is SVG
+	if ( $file_info['extension'] === 'svg' ) {
+		return file_get_contents( wp_get_attachment_url( $image_id ) );
+	} else {
+		//for any other type of images i.e. JPG, PNG, GIF
+		//we can just simply use the wp_get_attachment_image() stock function
+		return wp_get_attachment_image( $image_id, $size, false, $attributes );
+	}
+}
+?>
 <section class="container relative z-50">
     <side-heading>
       <h2><?php echo $args['section_name_string']; ?></h2>
@@ -32,9 +50,9 @@
             <?php
               if( $image = get_field('service_list_icon')) {
               ?>
-              <span class="pm-category-item__img">
+              <span class="pm-category-item__img svg-fill-primary">
                 <?php
-                  echo wp_get_attachment_image( $image, array('9999', '550'), "", array('class' => 'w-full h-full object-cover') );
+                  echo show_image( $image, array('9999', '550'), "", array('class' => 'w-full h-full object-cover') );
                 ?>
               </span>
               <?php
