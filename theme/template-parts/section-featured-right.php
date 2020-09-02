@@ -1,5 +1,15 @@
 <section class="relative flex flex-col bg-white text-black">
 
+  <div class="flex-initial flex flex-row items-center">
+    <img    
+        class="hidden desktop-wide:block absolute ml-container left-0" 
+        src="<?php echo get_template_directory_uri() . '/assets/svg/about-dots.svg' ?>" 
+        alt="Decorations"
+        width="85px"
+        height="275px"
+    />
+  </div>
+
   <side-heading 
     data-text="<?php echo $args['side_description_string']; ?>"
   ></side-heading>
@@ -23,7 +33,7 @@
     <?php if(count($args['highlighted_array'])): ?>
       <ul class="desktop:w-1/2 flex flex-row flex-wrap">
         <?php foreach ($args['highlighted_array'] as $index => $value): ?>   
-          <li class="flex flex-col items-start w-full tablet:w-1/2 tablet:pr-12 desktop:pr-0 mb-14">
+          <li class="flex flex-col items-start w-full tablet:w-1/2 tablet:pr-20 mb-14">
             <?php echo wp_get_attachment_image( 
               $value["highlighted_icon"], 
               array('9999', '70'), 
