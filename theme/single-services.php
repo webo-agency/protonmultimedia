@@ -37,7 +37,7 @@ $sections_path = 'template-parts/section';
 							)
 						); ?>
 							
-					<?php elseif( get_row_layout() == 'featured_center' ):  ?>
+					<?php else if( get_row_layout() == 'featured_center' ):  ?>
 							
 							<?php get_template_part( $sections_path, 'featured-center',
 								array(
