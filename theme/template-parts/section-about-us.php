@@ -2,7 +2,7 @@
   <div class="flex flex-row">
     <div class="flex-initial flex flex-row items-center">
       <img    
-          class="hidden desktop-wide:block absolute ml-container left-0" 
+          class="hidden desktop-wide:block absolute ml-container left-0 z-30"
           src="<?php echo get_template_directory_uri() . '/assets/svg/about-dots.svg' ?>" 
           alt="Decorations"
           width="85px"
