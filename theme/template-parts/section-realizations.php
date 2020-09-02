@@ -62,7 +62,7 @@
                                         }
                                     ?>
                                 </h3>
-                                <div class="invisible flex-auto h-auto max-h-0 opacity-0 transition-all duration-300 group-hover:visible group-hover:max-h-full group-hover:opacity-100 flex flex-col">
+                                <div class="invisible flex-auto h-auto max-h-0 opacity-0 transition-all duration-300 group-hover:visible group-hover:max-h-full group-hover:opacity-100">
                                     
                                     <div class="text-base leading-tight text-white">
                                         <?php echo the_content(); ?>
