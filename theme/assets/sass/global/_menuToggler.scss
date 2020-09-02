@@ -8,6 +8,9 @@
     color: $color-white;
     width: 40px;
     height: 43px;
+    display: flex;
+    align-items: center;
+    height: auto;
 
     @include media-screen(tablet) {
         display: none;
