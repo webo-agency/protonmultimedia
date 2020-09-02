@@ -2,6 +2,7 @@ import Vue from 'vue';
 import BanerSlider from '../vue/baner-slider.vue';
 import RealizationSlider from '../vue/realization-slider.vue';
 import SideHeading from '../vue/side-heading.vue';
+import Filter from '../vue/filter.vue';
 import VueAwesomeSwiper from "vue-awesome-swiper/dist/ssr";
 
 Vue.use(VueAwesomeSwiper);
@@ -9,6 +10,7 @@ Vue.use(VueAwesomeSwiper);
 Vue.component('baner-slider', BanerSlider);
 Vue.component('realization-slider', RealizationSlider);
 Vue.component('side-heading', SideHeading);
+Vue.component('tag-filter', Filter);
 
 document.addEventListener('DOMContentLoaded', function() {
     new Vue({ 
