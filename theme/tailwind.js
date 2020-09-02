@@ -140,7 +140,8 @@ module.exports = {
     translate: ['responsive', 'hover', 'focus', 'group-hover'],
     visibility: ['responsive', 'hover', 'focus', 'group-hover'],
     maxHeight: ['responsive', 'group-hover'],
-    opacity: ['responsive', 'hover', 'focus', 'active', 'group-hover']
+    opacity: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+    justifyContent: ['responsive', 'hover', 'focus', 'group-hover'],
   },
   corePlugins: {
     container: false

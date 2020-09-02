@@ -48,8 +48,8 @@
                                     array( 'class' => 'absolute right-0 bottom-0 z-10 w-auto min-w-full h-full object-cover max-w-none left-1/2 transform -translate-x-1/2' )
                                 ); 
                             ?>
-                            <div class="relative p-8 overflow-hidden z-30">
-                                <h3 class="relative mb-6 text-white">
+                            <div class="relative flex-auto flex flex-col flex-end p-8 overflow-hidden z-30 justify-end group-hover:justify-start">
+                                <h3 class="relative mb-6 text-white mt-24">
                                     <?php 
                                         if(get_field('title_box')){
                                             $lines = explode(PHP_EOL, get_field('title_box'));
@@ -62,7 +62,7 @@
                                         }
                                     ?>
                                 </h3>
-                                <div class="invisible h-auto max-h-0 opacity-0 transition-all duration-300 group-hover:visible group-hover:max-h-full group-hover:opacity-100">
+                                <div class="invisible flex-auto h-auto max-h-0 opacity-0 transition-all duration-300 group-hover:visible group-hover:max-h-full group-hover:opacity-100 flex flex-col">
                                     
                                     <div class="text-base leading-tight text-white">
                                         <?php echo the_content(); ?>
