@@ -1,6 +1,6 @@
-<header class="relative overflow-hidden">
-  <div class="container desktop-wide:px-smaller-container relative flex flex-col justify-center pt-40 pb-40 z-30 min-h-200px tablet:min-h-430px desktop:min-h-900px">
-    <h2 class="font-bold uppercase text-4xl tablet:text-8xl mb-4 tablet:mb-14 leading-tight">
+<header class="relative container overflow-hidden">
+  <div class="desktop-wide:px-smaller-container relative max-w-5xl flex flex-col justify-center pt-40 pb-40 z-30">
+    <h2 class="font-bold uppercase mb-4 tablet:mb-14 leading-tight">
       <?php 
         $lines = explode(' ', $args['title_string']);
         $firstWord = array_slice($lines, 0, 1);
@@ -12,7 +12,7 @@
         }
       ?>
     </h2>
-    <div class="w-full leading-relaxed mb-14">
+    <div class="w-full leading-relaxed">
       <div class="text-base tablet-wide:text-md tablet-wide:mb-5">
         <?php echo $args['description_string']; ?>
       </div>

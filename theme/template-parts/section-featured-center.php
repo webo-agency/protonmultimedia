@@ -3,7 +3,9 @@
       data-text="<?php echo $args['side_description_string']; ?>"
   ></side-heading>
 
-  <div class="container desktop-wide:pl-smaller-container flex flex-col items-center py-20">
+  <div class="guides left-minus-px right-auto bg-gray-light"></div>
+
+  <div class="container flex flex-col items-center py-20">
     <div class="desktop:max-w-1/2 flex flex-col justify-center flex-wrap flex-auto text-center pr-16 mb-12 desktop:mb-0">
       <h2 class="uppercase">
         <?php 
@@ -28,4 +30,5 @@
     <!-- next after 4 -->
   </div>
 
+  <div class="guides right-minus-px left-auto bg-gray-light"></div>
 </section>
