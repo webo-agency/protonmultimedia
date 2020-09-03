@@ -1,4 +1,4 @@
-<header class="relative container overflow-hidden">
+<header class="relative container overflow-hidden overlay-dark">
   <div class="desktop-wide:px-smaller-container relative max-w-5xl flex flex-col justify-center pt-40 pb-40 z-30">
     <h2 class="font-bold uppercase mb-4 tablet:mb-14 leading-tight">
       <?php 

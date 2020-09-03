@@ -1,0 +1,16 @@
+.overlay-dark{
+  @apply relative;
+
+  &:after{
+    content: '';
+    @apply absolute;
+    @apply inset-0;
+    background-image: linear-gradient(transparent 20%, rgb(23, 17, 49, 0.8) 100%);
+    @apply z-10;
+    @apply pointer-events-none;
+  }
+
+  &>*{
+    @apply z-20;
+  }
+}
