@@ -6,7 +6,7 @@
   <div class="guides left-minus-px right-auto bg-gray-light"></div>
 
   <div class="container flex flex-col items-center py-20">
-    <div class="desktop:max-w-1/2 flex flex-col justify-center flex-wrap flex-auto text-center pr-16 mb-12 desktop:mb-0">
+    <div class="desktop:max-w-1/2 flex flex-col justify-center flex-wrap flex-auto text-center pr-16 desktop:mb-0">
       <h2 class="uppercase">
         <?php 
           $lines = explode(PHP_EOL, $args['title_string']);
@@ -26,13 +26,13 @@
     <?php if( is_array($args['highlighted_array']) && !empty($args['highlighted_array']) ): ?>
       <ul class="w-full flex flex-row flex-wrap">
         <?php $i = 0; foreach ($args['highlighted_array'] as $key => $field): $i++; if($i>4){ break; } ?>
-          <li class="flex flex-row w-full desktop:w-1/2 items-center 
-            <?php echo ($i % 2) ? 'text-right' : 'text-left flex-row-reverse'; ?>  
-            <?php echo ($i == 1) ? 'pr-20 pb-12' : ''; ?> 
-            <?php echo ($i == 2) ? 'pl-20 pb-24' : ''; ?> 
-            <?php echo ($i == 3) ? 'pr-20 pb-10 pt-20' : ''; ?> 
-            <?php echo ($i == 4) ? 'pl-20 pt-0 pb-8' : ''; ?>">
-            <h3 class="w-full mb-0 font-normal">
+          <li class="flex flex-row-reverse desktop:flex-row w-full desktop:w-1/2 items-center mb-10 desktop:mb-0 justify-end
+            <?php echo ($i % 2) ? 'text-right' : 'text-left desktop:flex-row-reverse'; ?>  
+            <?php echo ($i == 1) ? 'desktop:pr-20 desktop:pb-12' : ''; ?> 
+            <?php echo ($i == 2) ? 'desktop:pl-20 desktop:pb-24' : ''; ?> 
+            <?php echo ($i == 3) ? 'desktop:pr-20 desktop:pb-10 desktop:pt-20' : ''; ?> 
+            <?php echo ($i == 4) ? 'desktop:pl-20 desktop:pt-0 desktop:pb-8' : ''; ?>">
+            <h3 class="desktop:w-full mb-0 font-normal">
               <?php 
                 $lines = explode(PHP_EOL, $field['highlighted_title']);
                 foreach ( $lines as $line) {
@@ -44,7 +44,7 @@
           </li>
         <?php endforeach; ?>
       </ul>
-      <div class="container absolute inset-0 m-auto flex items-center justify-center pointer-events-none">
+      <div class="container absolute inset-0 m-auto items-center justify-center pointer-events-none hidden desktop:flex">
         <?php echo wp_get_attachment_image( 
                 $args["highlighted_icon_center_id"], 
                 array('9999', '374'), 
