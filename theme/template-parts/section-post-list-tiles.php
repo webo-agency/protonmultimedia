@@ -38,7 +38,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
     <?php endif; ?>
     
     <?php if(count($args['list_post_array'])): ?>
-      <ul class="grid grid-cols-1 phone-wide:grid-cols-2 pt-12 tablet:pt-18 mb-10">
+      <ul class="relative grid grid-cols-1 phone-wide:grid-cols-2 pt-12 tablet:pt-18 mb-10 z-50">
         <?php foreach ($args['list_post_array'] as $index => $post): ?>
           <li
             data-terms="<?php $allterms = wp_get_post_terms( $post->ID, 'services_category'); 

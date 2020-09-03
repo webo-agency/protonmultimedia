@@ -33,7 +33,7 @@ $sections_path = 'template-parts/section';
 								'title_string' => get_sub_field('title'),
 								'description_string' => get_sub_field('description'),
 								'highlighted_array' => get_sub_field('highlighted'),
-								'side_description_string' => get_sub_field('side_description_title'),
+								'side_description_string' => empty(get_sub_field('side_description')) ? get_sub_field('title') : get_sub_field('side_description')['title'],
 							)
 						); ?>
 							
@@ -46,7 +46,7 @@ $sections_path = 'template-parts/section';
 									'highlighted_icon_center_id' => get_sub_field('highlighted_icon_center'),
 									'background_id' => get_sub_field('background'),
 									'highlighted_array' => get_sub_field('highlighted'),
-									'side_description_string' => get_sub_field('side_description'),
+									'side_description_string' => empty(get_sub_field('side_description')) ? get_sub_field('title') : get_sub_field('side_description')['title'],
 								)
 							); ?>
 
