@@ -22,8 +22,38 @@
     </div>
   </div>
 
-  <div class="flex flex-row">
-    <!-- <img src="" class="absolute"/> -->
+  <div class="relative container flex flex-row mb-20">
+    <?php if( is_array($args['highlighted_array']) && !empty($args['highlighted_array']) ): ?>
+      <ul class="w-full flex flex-row flex-wrap">
+        <?php $i = 0; foreach ($args['highlighted_array'] as $key => $field): $i++; if($i>4){ break; } ?>
+          <li class="flex flex-row w-full desktop:w-1/2 items-center 
+            <?php echo ($i % 2) ? 'text-right' : 'text-left flex-row-reverse'; ?>  
+            <?php echo ($i == 1) ? 'pr-20 pb-12' : ''; ?> 
+            <?php echo ($i == 2) ? 'pl-20 pb-24' : ''; ?> 
+            <?php echo ($i == 3) ? 'pr-20 pb-10 pt-20' : ''; ?> 
+            <?php echo ($i == 4) ? 'pl-20 pt-0 pb-8' : ''; ?>">
+            <h3 class="w-full mb-0 font-normal">
+              <?php 
+                $lines = explode(PHP_EOL, $field['highlighted_title']);
+                foreach ( $lines as $line) {
+                    echo preg_replace("/\*(.+)\*/", '<span class="font-bold">$1</span>', $line);
+                }
+              ?>
+            </h3>
+            <div class="w-6 h-2 bg-primary mx-4"></div>
+          </li>
+        <?php endforeach; ?>
+      </ul>
+      <div class="container absolute inset-0 m-auto flex items-center justify-center pointer-events-none">
+        <?php echo wp_get_attachment_image( 
+                $args["highlighted_icon_center_id"], 
+                array('9999', '374'), 
+                "", 
+                array('class' => 'object-cover') ); 
+              ?>
+      </div>
+    <?php endif; ?>
+
   </div>
 
   <div>
