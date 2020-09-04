@@ -29,5 +29,6 @@
       width="400px"
       height="400px"
       alt="Decorations"
+      role="presentation"
   />
 </header>

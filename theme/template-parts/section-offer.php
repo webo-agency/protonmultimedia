@@ -34,14 +34,14 @@
         <div class="absolute inset-0 z-10">
           <?php
             if( $image = get_field('service_category_icon',$term)) {
-              echo wp_get_attachment_image( $image, array('9999', '550'), "", array('class' => 'w-full h-full object-cover') );
+              echo wp_get_attachment_image( $image, array('9999', '550'), "", array('class' => 'w-full h-full object-cover', 'role' => 'presentation') );
             }
           ?>
         </div>
         <div class="absolute inset-0 w-full h-auto box-gradient-overlay-top">
           <?php
             if( $image = get_field('service_category_featured_image',$term)) {
-              echo wp_get_attachment_image( $image, array('9999', '550'), "", array('class' => 'w-full h-full object-cover') );
+              echo wp_get_attachment_image( $image, array('9999', '550'), "", array('class' => 'w-full h-full object-cover', 'role' => 'presentation') );
             }
           ?>
         </div>

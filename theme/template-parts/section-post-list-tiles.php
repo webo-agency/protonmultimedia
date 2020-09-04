@@ -21,7 +21,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
     <h2><?php echo $args['section_name_string']; ?></h2>
   </side-heading>
 
-  <div class="guides left-minus-px right-auto bg-dark-blue"></div>
+  <div class="guides left-minus-px right-auto bg-dark-blue" role="presentation"></div>
 
   <?php if(count($args['filters_array'])): ?>
     <tag-filter>
@@ -73,5 +73,5 @@ function show_image( $image_id, $size = null, $attributes = null ) {
     </tag-filter>
   <?php endif; ?>
 
-  <div class="guides right-minus-px left-auto bg-dark-blue"></div>
+  <div class="guides right-minus-px left-auto bg-dark-blue" role="presentation"></div>
 </section>

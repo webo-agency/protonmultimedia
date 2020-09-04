@@ -3,7 +3,7 @@
       data-text="<?php echo $args['side_description_string']; ?>"
   ></side-heading>
 
-  <div class="guides left-minus-px right-auto bg-gray-light"></div>
+  <div class="guides left-minus-px right-auto bg-gray-light" role="presentation"></div>
 
   <div class="container flex flex-col items-center py-20">
     <div class="desktop:max-w-1/2 flex flex-col justify-center flex-wrap flex-auto text-center pr-16 desktop:mb-0">
@@ -49,7 +49,7 @@
                 $args["highlighted_icon_center_id"], 
                 array('9999', '374'), 
                 "", 
-                array('class' => 'object-cover') ); 
+                array('class' => 'object-cover', 'role' => 'presentation') ); 
               ?>
       </div>
     <?php endif; ?>
@@ -60,5 +60,5 @@
     <!-- next after 4 -->
   </div>
 
-  <div class="guides right-minus-px left-auto bg-gray-light"></div>
+  <div class="guides right-minus-px left-auto bg-gray-light" role="presentation"></div>
 </section>

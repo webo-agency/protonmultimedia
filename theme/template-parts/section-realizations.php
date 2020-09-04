@@ -5,7 +5,7 @@
       ></side-heading>
     <?php endif; ?>
 
-    <div class="guides left-minus-px right-auto bg-dark-purple"></div>
+    <div class="guides left-minus-px right-auto bg-dark-purple" role="presentation"></div>
 
     <header class="desktop-wide:px-smaller-container pt-24 relative">
         <h2 class="h3 uppercase mb-20 text-white">
@@ -27,6 +27,7 @@
             height="116px"
             src="<?php echo get_template_directory_uri() . '/assets/svg/dots-footer.svg' ?>" 
             alt="Decorations"
+            role="presentation"
         />  
     </header>
 
@@ -118,5 +119,5 @@
         <?php endif; wp_reset_postdata(); ?>
     </div>
 
-    <div class="guides right-minus-px left-auto bg-dark-purple"></div>
+    <div class="guides right-minus-px left-auto bg-dark-purple" role="presentation"></div>
 </section>

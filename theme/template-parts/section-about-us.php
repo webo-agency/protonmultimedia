@@ -7,6 +7,7 @@
           alt="Decorations"
           width="85px"
           height="275px"
+          role="presentation"
       />
     </div>
 
@@ -16,13 +17,14 @@
       ></side-heading>
     <?php endif; ?>
     
-    <div class="guides left-minus-px right-auto bg-dark-blue"></div>
+    <div class="guides left-minus-px right-auto bg-dark-blue" role="presentation"></div>
 
     <img    
         class="hidden tablet:block absolute top-0 desktop:bottom-100px desktop:top-auto desktop-wide:bottom-0 right-0 z-50 origin-top-right transform scale-75 desktop-wide:scale-100" 
         src="<?php echo get_template_directory_uri() . '/assets/svg/about-lines.svg' ?>" 
         alt="Decorations"
         style="max-width: 340px;"
+        role="presentation"
     />
     <div class="pm-about desktop-wide:px-smaller-container relative">
       <div class="flex flex-col tablet:flex-row">
@@ -52,5 +54,5 @@
     </div>
   </div>
 
-  <div class="guides right-minus-px left-auto bg-dark-blue"></div>
+  <div class="guides right-minus-px left-auto bg-dark-blue" role="presentation"></div>
 </section>

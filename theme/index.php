@@ -17,7 +17,7 @@ get_header();
 	
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			<div class="ks-container">
+			<div class="container desktop-wide:px-smaller-container">
 				<?php
 				if ( have_posts() ) :
 

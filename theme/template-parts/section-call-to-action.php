@@ -7,6 +7,7 @@
             class="hidden desktop:block absolute bottom-0 left-0 h-full z-50" 
             src="<?php echo get_template_directory_uri() . '/assets/svg/lines-right.svg' ?>" 
             alt="Decorations"
+            role="presentation"
         />
         <div class="container desktop:pl-72 flex flex-row flex-wrap desktop-wide:flex-no-wrap items-center">
             <?php

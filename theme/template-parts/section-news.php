@@ -6,7 +6,7 @@
       ></side-heading>
     <?php endif; ?>
 
-    <div class="guides left-minus-px right-auto bg-dark-blue"></div>
+    <div class="guides left-minus-px right-auto bg-dark-blue" role="presentation"></div>
         
     <div class="mt-12">
         <div class="relative desktop-wide:px-smaller-container flex flex-row">
@@ -15,6 +15,7 @@
                 src="<?php echo get_template_directory_uri() . '/assets/svg/news-dots.svg' ?>" 
                 alt="Decorations"
                 style="max-width: 95px;"
+                role="presentation"
             />
 
             <div class="flex-auto">
@@ -38,6 +39,7 @@
                 alt="Decorations"
                 width="352px"
                 height="379px"
+                role="presentation"
             />
         </div>
 
@@ -124,6 +126,7 @@
                 src="<?php echo get_template_directory_uri() . '/assets/svg/news-dots-2.svg' ?>" 
                 alt="Decorations"
                 style="max-width: 168px;"
+                role="presentation"
             />
             <div class="mx-auto max-w-885px">
                 <a class="pm-button pm-button--outline w-full text-center" href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" title="Zobacz kolejne wpisy">ZOBACZ KOLEJNE WPISY</a>
@@ -131,5 +134,5 @@
         </div>
     </div>
 
-    <div class="guides right-minus-px left-auto bg-dark-purple"></div>
+    <div class="guides right-minus-px left-auto bg-dark-purple" role="presentation"></div>
 </section>

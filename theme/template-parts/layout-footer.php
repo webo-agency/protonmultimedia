@@ -1,6 +1,6 @@
 <footer class="site-footer pm-footer pm-fade container">
 		<div class="px-4 desktop-wide:px-smaller-container pm-footer__content mx-0 w-full">
-			<img class="pm-footer__dots" src="<?php echo get_template_directory_uri() . '/assets/svg/dots-footer.svg' ?>" alt="Dekoracje"/>
+			<img class="pm-footer__dots" src="<?php echo get_template_directory_uri() . '/assets/svg/dots-footer.svg' ?>" alt="Dekoracje" role="presentation"/>
 			<div class="pm-footer__info">
 				<div class="pm-footer__info-inner">
 				<?php

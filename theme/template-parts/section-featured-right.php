@@ -7,6 +7,7 @@
         alt="Decorations"
         width="85px"
         height="275px"
+        role="presentation"
     />
   </div>
 
@@ -14,7 +15,7 @@
     data-text="<?php echo $args['side_description_string']; ?>"
   ></side-heading>
    
-  <div class="guides left-minus-px right-auto bg-gray-light"></div>
+  <div class="guides left-minus-px right-auto bg-gray-light" role="presentation"></div>
 
   <div class="container">
     <div class="desktop-wide:pl-smaller-container flex flex-row flex-wrap py-20">
@@ -55,5 +56,5 @@
     </div>
   </div>
 
-  <div class="guides right-minus-px left-auto bg-gray-light"></div>
+  <div class="guides right-minus-px left-auto bg-gray-light" role="presentation"></div>
 </section>

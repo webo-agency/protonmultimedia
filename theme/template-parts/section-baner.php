@@ -1,7 +1,4 @@
 <section id="baner" class="relative">
-
-   
-
     <baner-slider class="z-40">
         <ul class="swiper-wrapper h-screen min-h-900px">
             <?php
@@ -13,6 +10,7 @@
                                     src="<?php echo get_sub_field('front_slider_image')['url'] ?>" 
                                     alt="Background"
                                     class="object-cover absolute left-0 top-0 right-0 bottom-0 h-full w-full pb-40 pointer-events-none"
+                                    role="presentation"
                                 />
                                 <img 
                                     class="hidden tablet-wide:block absolute top-0 right-0 h-full z-50 w-auto pointer-events-none" 
@@ -20,8 +18,9 @@
                                     width="540px"
                                     height="700px"
                                     alt="Decorations"
+                                    role="presentation"
                                 />
-                                <div class="guides left-minus-px right-auto bg-dark-blue"></div>
+                                <div class="guides left-minus-px right-auto bg-dark-blue" role="presentation"></div>
                                 <div class="container absolute left-0 right-0 top-1/2 transform -translate-y-1/2 text-white z-30">
                                     <div class="desktop-wide:px-smaller-container">
                                         <h1 class="font-bold uppercase text-4xl tablet:text-baner mb-14 leading-tight">
@@ -55,7 +54,7 @@
                                         <div class="relative flex items-start swiper-pagination" data-baner-pagination></div>
                                     </div>
                                 </div>
-                                <div class="guides right-minus-px left-auto bg-dark-blue"></div>
+                                <div class="guides right-minus-px left-auto bg-dark-blue" role="presentation"></div>
                             </li>
                         <?php
                     endwhile;
