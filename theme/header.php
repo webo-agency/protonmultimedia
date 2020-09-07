@@ -23,4 +23,4 @@
 
 		<?php get_template_part( $sections_path, 'header' ); ?>
 
-		<div id="content" class="site-content">
+		<div id="content" class="relative site-content z-0">

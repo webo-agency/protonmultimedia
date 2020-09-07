@@ -18,7 +18,7 @@
   <div class="relative container max-w-none flex flex-row flex-wrap pb-16 z-30">
     <?php foreach($terms as $term): ?>
       <div class="w-full desktop:w-1/2 relative overflow-hidden border border-solid border-dark-blue-2">
-        <div class="relative flex flex-col items-start min-h-550px z-20 py-20 px-12">
+        <div class="relative flex flex-col items-start min-h-550px py-10 px-4 z-20 phone-wide:py-20 phone-wide:px-12">
           <h2 class="flex-initial uppercase text-white">
             <?php echo implode('<br/><span class="line-decorated bg-dark-blue-2 leading-tight">', explode(' ', trim($term->name) . ' </span>', 2)); ?>
           </h2>

@@ -2,20 +2,28 @@
 
 h1,
 h2{
-  @apply text-xl;
+  @apply text-lg;
   @apply font-semibold;
   @apply font-special;
   @apply mb-17;
+  
+  @screen phone-wide{
+    @apply text-xl;
+  }
 }
 
 h3,
 h4,
 h5,
 h6{
-  @apply text-lg;
+  @apply text-md;
   @apply font-semibold;
   @apply font-special;
   @apply mb-17;
+
+  @screen phone-wide{
+    @apply text-lg;
+  }
 }
 
 p {
@@ -47,6 +55,10 @@ p {
     @apply text-base;
     @apply mb-12;
   }
+}
+
+.current-page-item {
+  @apply text-primary;
 }
 
 @import "tailwindcss/components";
@@ -89,3 +101,6 @@ p br{
 @import "svg-fill-primary.css";
 @import "guides.css";
 @import "overlay-dark.css";
+@import "toggled.css";
+
+@import "tailwindcss/screens";

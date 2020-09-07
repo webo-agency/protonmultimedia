@@ -12,7 +12,7 @@
 		return;
 	}
 
-	button = document.querySelector( '.pm-menu-toggler' );
+	button = document.querySelector( '[data-menu]' );
 	if ( 'undefined' === typeof button ) {
 		return;
 	}
@@ -33,11 +33,11 @@
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
 			container.className = container.className.replace( ' toggled', '' );
 			button.setAttribute( 'aria-expanded', 'false' );
-			button.classList.remove('pm-menu-toggler--active');
+			button.classList.remove('active');
 		} else {
 			container.className += ' toggled';
 			button.setAttribute( 'aria-expanded', 'true' );
-			button.classList.add('pm-menu-toggler--active');
+			button.classList.add('active');
 		}
 	}
 

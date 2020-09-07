@@ -50,7 +50,7 @@
                                 ); 
                             ?>
                             <div class="relative flex-auto flex flex-col flex-end p-8 overflow-hidden z-30 justify-end group-hover:justify-start">
-                                <h3 class="relative mb-6 text-white mt-20">
+                                <h3 class="relative mb-0 phone-wide:mb-6 text-white mt-20">
                                     <?php 
                                         if(get_field('title_box')){
                                             $lines = explode(PHP_EOL, get_field('title_box'));
