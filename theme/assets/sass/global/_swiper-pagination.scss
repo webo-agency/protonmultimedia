@@ -12,3 +12,12 @@
         background: $color-primary;
     }
 }
+
+.bg-gray-lighter .swiper-pagination-bullet {
+    background: #D6D6D6;
+
+    &-active {
+        height: 8px;
+        background: $color-primary;
+    }
+}

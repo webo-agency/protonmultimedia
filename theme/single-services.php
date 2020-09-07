@@ -54,7 +54,7 @@ $sections_path = 'template-parts/section';
 			<?php endwhile; ?>
 	<?php endif; ?>
 
-	<?php get_template_part( $sections_path, 'realizations' ); ?>
+	<?php get_template_part( $sections_path, 'realizations-alternative' ); ?>
 
 	<?php get_template_part( $sections_path, 'news' , array('count_posts_int' => 2)); ?>
 

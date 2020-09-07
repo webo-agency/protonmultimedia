@@ -21,7 +21,7 @@
             <?php echo get_field('realization_description', 'option'); ?>
         </p>
 
-        <img 
+        <img
             class="hidden tablet:block absolute bottom-0 left-1/2 z-50 pointer-events-none mt-5 ml-40" 
             width="170px"
             height="116px"
@@ -50,7 +50,7 @@
                                 ); 
                             ?>
                             <div class="relative flex-auto flex flex-col flex-end p-8 overflow-hidden z-30 justify-end group-hover:justify-start">
-                                <h3 class="relative mb-6 text-white mt-24">
+                                <h3 class="relative mb-6 text-white mt-20">
                                     <?php 
                                         if(get_field('title_box')){
                                             $lines = explode(PHP_EOL, get_field('title_box'));

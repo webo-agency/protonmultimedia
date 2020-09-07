@@ -20,6 +20,7 @@ module.exports = {
       'gray-2': '#c9c9c9',
       'gray-light': '#EBEBEB',
       'gray-lighter': '#F5F5F5',
+      'gray-dark':'#D6D6D6',
       'primary': '#01B9C3',
       'dark-blue': '#110D25',
       'dark-blue-2': '#171131',
@@ -95,6 +96,7 @@ module.exports = {
       },
       maxHeight: {
         '550px': '550px',
+        '600px': '600px',
         '0': '0',
         '100%': '100%',
       },
