@@ -71,29 +71,8 @@
                                     <div class="text-base leading-tight text-dark-font">
                                         <?php echo the_content(); ?>
                                     </div>
-
-                                    <?php if(is_array(get_field('services', $_post))): ?>
-                                        <?php foreach(get_field('services', $_post) as $service): ?>
-                                            <ul class="mt-4">
-                                                <li class="">
-                                                    <a href="<?php echo get_permalink($service); ?>" class="mb-4 mr-4 rounded-md px-2 text-sm bg-white text-dark-font inline-block hover:text-black float-left">
-                                                        <?php echo get_the_title( $service ); ?>
-                                                    </a>
-                                                </li>
-                                                <?php foreach ( (get_the_category($service)) as $category ): ?>
-                                                    <?php echo $category->term_id; if($category->term_id !== 1): ?>
-                                                        <li class="bg-primary">
-                                                            <a href="<?php echo get_category_link($category); ?>" class="mb-4 mr-4 rounded-md px-2 text-sm bg-white text-dark-font inline-block hover:text-black float-left">
-                                                                <?php echo get_cat_name($category); ?>
-                                                            </a>
-                                                        </li>
-                                                    <?php endif; ?>
-                                                <?php endforeach; ?>
-                                            </ul>
-                                        <?php endforeach; ?>
-                                    <?php endif; ?>
                                 
-                                    <div class="flex items-center justify-between mb-0 mt-auto">
+                                    <div class="flex items-center justify-between mb-0 mt-auto ml-0 mr-auto">
                                         <div class="flex-initial px-4 py-8" data-realization-alternative-button-prev>
                                             <img 
                                                 class="block" 
@@ -103,7 +82,7 @@
                                                 alt="Left arrow"
                                             />  
                                         </div>
-                                        <div class="flex-1 px-4 py-8 relative h-10 flex items-center justify-center"><div class="swiper-pagination" data-realization-alternative-pagination></div></div>
+                                        <div class="flex-1 px-4 py-8 relative h-10 flex items-center justify-center"><div class="swiper-pagination relative" data-realization-alternative-pagination></div></div>
                                         <div class="flex-initial px-4 py-8" data-realization-alternative-button-next>
                                             <img 
                                                 class="block transform scale-x-flip scale-y-1" 

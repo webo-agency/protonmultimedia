@@ -1,6 +1,7 @@
-<footer class="site-footer pm-footer pm-fade container">
+<footer class="site-footer pm-footer pm-fade">
+	<div class="container">
 		<div class="px-4 desktop-wide:px-smaller-container pm-footer__content mx-0 w-full">
-			<img class="pm-footer__dots" src="<?php echo get_template_directory_uri() . '/assets/svg/dots-footer.svg' ?>" alt="Dekoracje" role="presentation"/>
+			<img class="pm-footer__dots" src="<?php echo get_template_directory_uri() . '/assets/svg/dots-footer.svg' ?>" alt="Dekoracje" ro/>
 			<div class="pm-footer__info">
 				<div class="pm-footer__info-inner">
 				<?php
@@ -78,4 +79,5 @@
 				</a>
 			</div>
 		</div>
-	</footer>
+	</div>
+</footer>
