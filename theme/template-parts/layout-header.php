@@ -9,7 +9,7 @@
 					<div class="w-8 h-1 bg-white rounded-lg mb-1"></div>
 					<div class="w-8 h-1 bg-white rounded-lg"></div>
 				</button>
-				<nav id="site-navigation" class="main-navigation fixed left-0 top-0 w-full h-full hidden desktop:flex items-center flex-auto z-20 desktop:relative desktop:w-auto desktop:h-auto bg-dark-blue desktop:bg-transparent">
+				<nav id="site-navigation" class="main-navigation fixed left-0 top-0 w-full h-full hidden flex-col desktop:flex-row desktop:flex items-center flex-auto z-20 desktop:relative desktop:w-auto desktop:h-auto bg-dark-blue desktop:bg-transparent">
 					<?php
 						wp_nav_menu(
 							array(
@@ -21,7 +21,7 @@
 							)
 						);
 					?>
-					<a class="hidden desktop:flex flex-initial whitespace-no-wrap pm-button pm-button--primary pm-button--small" href="#kontakt">Skontaktuj się</a>
+					<a class="hidden desktop:flex flex-initial whitespace-no-wrap pm-button pm-button--primary pm-button--small mb-12 desktop:mb-0" href="#kontakt">Skontaktuj się</a>
 				</nav>
 			</div>
 		</header>
