@@ -22,14 +22,16 @@ export default {
         onTop: true,
         toTop: false,
         scrollPosition: 0,
-        initialClass: 'on-scroll ',
-        scrollClass: '',
-        dynamicClass: ''
+        initialClass: ['on-scroll','is-show','is-top'],
+        scrollClass: [],
+        dynamicClass: []
       };
     },
     mounted: function() {
-      this.scrollClass = this.$attrs['data-scroll-class'].toString();
-      this.initialClass += this.$el.classList.toString();
+      this.scrollClass.push(this.$attrs['data-scroll-class'].toString());
+      this.initialClass = [...new Set([...Array.from(this.$el.classList), ...this.initialClass])];
+      this.dynamicClass = this.initialClass;
+      this.scrollPosition = 0;
       window.document.onscroll = () => {
           this.scrollPosition = window.scrollY;
       }
@@ -39,19 +41,22 @@ export default {
           this.dynamicClass = this.initialClass;
 
           if(val > 0){
-            this.dynamicClass += ' ' + this.scrollClass;
+            this.dynamicClass = [...this.dynamicClass, ...this.scrollClass, 'is-top'];
             this.onTop = false;
           } else {
-            this.dynamicClass += ' is-top ';
-             this.onTop = true;
+            this.dynamicClass.push('is-top');
+            this.onTop = true;
           }
 
           if(val < oldVal){
-            this.dynamicClass += ' is-show ';
+            this.dynamicClass.push('is-show');
             this.toBottom = true;
           } else {
-             this.toBottom = false;
+            this.dynamicClass.pop('is-top');
+            this.toBottom = false;
           }
+
+          this.dynamicClass = [...new Set([...this.dynamicClass])];
         }
     }
 }

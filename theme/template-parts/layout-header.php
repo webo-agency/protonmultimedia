@@ -12,20 +12,22 @@
 				<div class="w-8 h-1 bg-white rounded-lg mb-1"></div>
 				<div class="w-8 h-1 bg-white rounded-lg"></div>
 			</button>
-			<nav id="site-navigation" class="main-navigation fixed left-0 top-0 w-full h-full hidden flex-col desktop:flex-row desktop:flex items-center flex-auto z-20 desktop:relative desktop:w-auto desktop:h-auto bg-dark-blue desktop:bg-transparent">
-				<?php
-					wp_nav_menu(
-						array(
-							'menu_class' => 'flex flex-col desktop:flex-row desktop:items-center h-full pt-24 desktop:pt-0 desktop:p-0 w-full desktop:justify-end container desktop:justify-center',
-							'container' => false,
-							'theme_location' => 'menu-2',
-							'menu_id'        => 'primary-menu',
-							'add_li_class' => 'tablet:inline-block font-special mb-4 desktop:mb-0 hover:text-primary uppercase font-semibold text-base desktop:mr-6'
-						)
-					);
-				?>
-				<a class="hidden desktop:flex flex-initial whitespace-no-wrap pm-button pm-button--primary pm-button--small mb-12 desktop:mb-0" href="#kontakt">Skontaktuj się</a>
-			</nav>
+			<main-navigation>
+				<nav id="site-navigation" class="main-navigation fixed left-0 top-0 w-full h-full hidden flex-col desktop:flex-row desktop:flex items-center flex-auto z-20 desktop:relative desktop:w-auto desktop:h-auto bg-dark-blue desktop:bg-transparent">
+					<?php
+						wp_nav_menu(
+							array(
+								'menu_class' => 'flex flex-col desktop:flex-row desktop:items-center h-full pt-24 desktop:pt-0 desktop:p-0 w-full desktop:justify-end container desktop:justify-center',
+								'container' => false,
+								'theme_location' => 'menu-2',
+								'menu_id'        => 'primary-menu',
+								'add_li_class' => 'tablet:inline-block font-special mb-4 desktop:mb-0 hover:text-primary uppercase font-semibold text-base desktop:mr-6'
+							)
+						);
+					?>
+					<a class="hidden desktop:flex flex-initial whitespace-no-wrap pm-button pm-button--primary pm-button--small mb-12 desktop:mb-0" href="#kontakt">Skontaktuj się</a>
+				</nav>
+			</main-navigation>
 		</div>
 	</header>
 </on-scroll>

@@ -5,6 +5,7 @@ import RealizationAlternativeSlider from '../vue/realization-alternative-slider.
 import SideHeading from '../vue/side-heading.vue';
 import TagFilter from '../vue/filter.vue';
 import OnScroll from '../vue/on-scroll.vue';
+import MainNavigation from '../vue/main-navigation.vue';
 import VueAwesomeSwiper from "vue-awesome-swiper/dist/ssr";
 
 Vue.use(VueAwesomeSwiper);
@@ -15,6 +16,7 @@ Vue.component('realization-alternative-slider', RealizationAlternativeSlider);
 Vue.component('side-heading', SideHeading);
 Vue.component('tag-filter', TagFilter);
 Vue.component('on-scroll', OnScroll);
+Vue.component('main-navigation', MainNavigation);
 
 document.addEventListener('DOMContentLoaded', function() {
     new Vue({ 
@@ -24,7 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
             RealizationSlider,
             SideHeading,
             TagFilter,
-            OnScroll
+            OnScroll,
+            MainNavigation
         },
     });
 });
