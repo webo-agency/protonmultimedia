@@ -1,12 +1,12 @@
 
-.toggled,
-.hidden.toggled {
-    display: flex;
+.invisible.toggled {
+    visibility: visible;
+    opacity: 1;
 }
 
 @screen desktop{
-    .toggled,
-    .hidden.toggled {
-        display: flex;
+    .invisible.toggled {
+        visibility: visible;
+        opacity: 1;
     }
 }
