@@ -1,0 +1,13 @@
+.admin-bar .on-scroll{
+  margin-top: 32px;
+}
+
+@media screen and (max-width: 782px){
+  .admin-bar .on-scroll{
+    margin-top: 0;
+  }  
+
+  .admin-bar .on-scroll.is-top{
+    margin-top: 46px;
+  }  
+}

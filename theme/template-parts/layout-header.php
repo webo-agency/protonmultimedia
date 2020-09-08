@@ -1,5 +1,5 @@
 <on-scroll
-	class="fixed top-0 left-0 right-0 z-30 <?php echo is_admin_bar_showing() ? 'mt-12 tablet:mt-8' : 'mt-0'; ?>"
+	class="fixed top-0 left-0 right-0 z-30 on-scroll"
 	data-scroll-class="bg-dark-blue-2"
 >
 	<header id="masthead" class="container site-header py-4">
