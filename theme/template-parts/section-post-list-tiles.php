@@ -25,7 +25,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
 
   <?php if(count($args['filters_array'])): ?>
     <tag-filter>
-      <ul class="flex">
+      <ul class="ml-1 flex">
           <li class="mr-2" data-term="all">
             <span class="pm-taxonomy-pill text-white">Wszystkie</span>
           </li>
