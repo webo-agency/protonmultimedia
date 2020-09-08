@@ -1,4 +1,4 @@
-<div class="fixed top-0 left-0 right-0 bg-transparent z-30 <?php echo is_admin_bar_showing() ? 'mt-10' : 'mt-0'; ?>" data-header>
+<div class="fixed top-0 left-0 right-0 bg-transparent z-30 <?php echo is_admin_bar_showing() ? 'mt-12 tablet:mt-8' : 'mt-0'; ?>" data-header>
 		<header id="masthead" class="container site-header py-4">
 			<div class="desktop-wide:px-smaller-container flex justify-between items-center">
 				<div class="site-branding z-30 w-32">
@@ -13,7 +13,7 @@
 					<?php
 						wp_nav_menu(
 							array(
-								'menu_class' => 'flex flex-col desktop:flex-row desktop:items-center h-full pt-24 desktop:pt-0 desktop:p-0 w-full desktop:justify-end container desktop:justify-center',
+								'menu_class' => 'flex flex-col desktop:flex-row desktop:items-center h-full ' . is_admin_bar_showing() ? 'pt-40' : 'pt-24' . ' desktop:pt-0 desktop:p-0 w-full desktop:justify-end container desktop:justify-center',
 								'container' => false,
 								'theme_location' => 'menu-2',
 								'menu_id'        => 'primary-menu',
