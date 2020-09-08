@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "052cff37c6fa56274a46143ce2ddfab3",
+    "content-hash": "0b9dde1144ed166c61e08b058de3d4da",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -250,20 +250,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "5.5.0",
+            "version": "5.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "d8a952dd4aa7f7d4d8be6fa145840fde4e248450"
+                "reference": "0973abd5c01ecce0b60bc1c81a6dd072827de930"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/d8a952dd4aa7f7d4d8be6fa145840fde4e248450",
-                "reference": "d8a952dd4aa7f7d4d8be6fa145840fde4e248450",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/0973abd5c01ecce0b60bc1c81a6dd072827de930",
+                "reference": "0973abd5c01ecce0b60bc1c81a6dd072827de930",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "5.5.0",
+                "johnpbloch/wordpress-core": "5.5.1",
                 "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
                 "php": ">=5.6.20"
             },
@@ -285,20 +285,20 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2020-08-11T18:47:19+00:00"
+            "time": "2020-09-01T19:07:41+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.5.0",
+            "version": "5.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "c49d46de4e4c8972b8ed2aebe3e850f4f218186f"
+                "reference": "fa5bcb1579eae33baef6c04355f8d6657e5bd349"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/c49d46de4e4c8972b8ed2aebe3e850f4f218186f",
-                "reference": "c49d46de4e4c8972b8ed2aebe3e850f4f218186f",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/fa5bcb1579eae33baef6c04355f8d6657e5bd349",
+                "reference": "fa5bcb1579eae33baef6c04355f8d6657e5bd349",
                 "shasum": ""
             },
             "require": {
@@ -306,7 +306,7 @@
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.5.0"
+                "wordpress/core-implementation": "5.5.1"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -326,7 +326,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2020-08-11T18:47:13+00:00"
+            "time": "2020-09-01T19:07:35+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -588,7 +588,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v5.1.4",
+            "version": "v5.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -983,15 +983,15 @@
         },
         {
             "name": "wpackagist-plugin/acf-extended",
-            "version": "0.8.7.1",
+            "version": "0.8.7.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/acf-extended/",
-                "reference": "tags/0.8.7.1"
+                "reference": "tags/0.8.7.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/acf-extended.0.8.7.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/acf-extended.0.8.7.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1016,24 +1016,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/default-featured-image/"
-        },
-        {
-            "name": "wpackagist-plugin/radio-buttons-for-taxonomies",
-            "version": "2.0.8",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/radio-buttons-for-taxonomies/",
-                "reference": "tags/2.0.8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/radio-buttons-for-taxonomies.2.0.8.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/radio-buttons-for-taxonomies/"
         },
         {
             "name": "wpackagist-plugin/svg-support",
