@@ -1,5 +1,5 @@
 <on-scroll
-	class="fixed top-0 left-0 right-0 z-30 on-scroll"
+	class="on-scroll fixed top-0 left-0 right-0 z-30 on-scroll"
 	data-scroll-class="bg-dark-blue-2"
 >
 	<header id="masthead" class="container site-header py-4">
@@ -21,7 +21,7 @@
 								'container' => false,
 								'theme_location' => 'menu-2',
 								'menu_id'        => 'primary-menu',
-								'add_li_class' => 'tablet:inline-block font-special mb-4 desktop:mb-0 hover:text-primary uppercase font-semibold text-base desktop:mr-6'
+								'add_li_class' => 'transition-all duration-300 tablet:inline-block font-special mb-4 desktop:mb-0 hover:text-primary uppercase font-semibold text-base desktop:mr-6'
 							)
 						);
 					?>
