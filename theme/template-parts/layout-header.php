@@ -13,7 +13,7 @@
 					<?php
 						wp_nav_menu(
 							array(
-								'menu_class' => 'flex flex-col desktop:flex-row desktop:items-center h-full ' . is_admin_bar_showing() ? 'pt-40' : 'pt-24' . ' desktop:pt-0 desktop:p-0 w-full desktop:justify-end container desktop:justify-center',
+								'menu_class' => 'flex flex-col desktop:flex-row desktop:items-center h-full pt-24 desktop:pt-0 desktop:p-0 w-full desktop:justify-end container desktop:justify-center',
 								'container' => false,
 								'theme_location' => 'menu-2',
 								'menu_id'        => 'primary-menu',
