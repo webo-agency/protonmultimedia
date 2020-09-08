@@ -4,7 +4,7 @@
     class="pm-side-heading"
     :class="mainClass"
     >
-    <span class="block" v-for="letter in letters" :key="letter">{{ letter }}</span>
+    <span class="block" v-for="(letter, index) in letters" :key="index">{{ letter }}</span>
   </component>
 </template>
 
