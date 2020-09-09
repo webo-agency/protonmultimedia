@@ -1,5 +1,5 @@
 <section id="baner" class="relative">
-    <baner-slider class="mb-4 z-40">
+    <baner-slider class="mb-4 tablet:mb-0 z-40">
         <ul class="swiper-wrapper">
             <?php
                 if( have_rows('front_slider') ):
