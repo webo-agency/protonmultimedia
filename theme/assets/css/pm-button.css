@@ -14,7 +14,13 @@
       @apply text-white;
   }
 
-  @screen tablet {
+  @apply text-sm;
+
+  @screen phone-wide {
+    @apply text-sm-2;
+  }
+
+  @screen tablet-wide {
     @apply text-base;
   }
 
@@ -44,7 +50,7 @@
           background: darken($color-primary, 10%);
       }
 
-      @screen tablet {
+      @screen tablet-wide {
         padding: 22px 35px;
       }
   }

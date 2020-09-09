@@ -65,12 +65,25 @@ p {
 
 @import "tailwindcss/utilities";
 
+h1 br,
+h2 br,
 p br{
   display: none;
 
   @screen tablet-wide{
     display: block;
   }
+
+  @media(max-height: 361px){
+    display: none;
+  }
+}
+
+br + .line-decorated {
+  position: relative;
+  display: block;
+  z-index: -1;
+  width: fit-content;
 }
 
 .has-medium-font-size{

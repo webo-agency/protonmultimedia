@@ -137,7 +137,9 @@ module.exports = {
         '-61': '-61deg'
       },
       padding: {
-        'smaller-container': '11rem'
+        'smaller-container': '11rem',
+        'header': '70.06px',
+        'header-desktop': '82px',
       }
     },
   },
