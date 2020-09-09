@@ -9,6 +9,7 @@
     @apply z-10;
     @apply pointer-events-none;
     background-image: linear-gradient(rgba(1, 185, 195, 0.5), #171131 100%);
+    z-index: 1;
   }
   
   &>*{
