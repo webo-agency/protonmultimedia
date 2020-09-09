@@ -1,11 +1,9 @@
-@screen desktop{
-  .on-scroll{
-    transform: translateY(-100%);
-    transition: 0.3s;
-  }
+.on-scroll{
+  transform: translateY(-100%);
+  transition: 0.3s;
+}
 
-  .on-scroll.is-show,
-  .on-scroll.is-show.is-top{
-    transform: translateY(0);;
-  }
+.on-scroll.is-show,
+.on-scroll.is-show.is-top{
+  transform: translateY(0);;
 }

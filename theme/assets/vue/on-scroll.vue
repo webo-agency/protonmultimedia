@@ -38,21 +38,23 @@ export default {
     },
     watch: {
         scrollPosition: function(val, oldVal) {
-          this.dynamicClass = this.initialClass;
+          this.dynamicClass = this.initialClass.filter(function(value, index, arr){ return value != 'is-top' && value != 'is-show';});
 
           if(val > 0){
-            this.dynamicClass = [...this.dynamicClass, ...this.scrollClass, 'is-top'];
-            this.onTop = false;
-          } else {
+            this.dynamicClass = [...this.dynamicClass, ...this.scrollClass];
+          }
+
+          if(val == 0){
             this.dynamicClass.push('is-top');
             this.onTop = true;
+          } else {
+            this.onTop = false;
           }
 
           if(val < oldVal){
             this.dynamicClass.push('is-show');
             this.toBottom = true;
           } else {
-            this.dynamicClass.pop('is-top');
             this.toBottom = false;
           }
 
