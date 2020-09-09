@@ -7,7 +7,7 @@
 			<div class="site-branding z-30 w-32">
 				<?php the_custom_logo(); ?>
 			</div>
-			<button class="menu-toggle block desktop:hidden z-40" data-menu aria-controls="primary-menu" aria-expanded="false">
+			<button class="menu-toggle block desktop:hidden px-1 py-2 z-40" data-menu aria-controls="primary-menu" aria-expanded="false">
 				<div class="w-8 h-1 bg-white rounded-lg mb-1"></div>
 				<div class="w-8 h-1 bg-white rounded-lg mb-1"></div>
 				<div class="w-8 h-1 bg-white rounded-lg"></div>
