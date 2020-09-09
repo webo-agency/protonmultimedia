@@ -10,7 +10,7 @@
   @apply bg-primary;
   @apply mx-container;
 
-  @screen desktop{
+  @screen tablet-wide{
     @apply block;
   }
 }

@@ -23,7 +23,7 @@
                                 <div class="guides left-minus-px right-auto bg-dark-blue" role="presentation"></div>
                                 <div class="container h-auto min-h-screen pt-header desktop:pt-header-desktop pb-8 text-white z-30 flex flex-col">
                                     <div class="desktop-wide:px-smaller-container flex-auto flex flex-col items-start">
-                                        <h1 class="font-bold uppercase text-4xl tablet-wide:text-baner mt-auto mb-4 tablet:mb-8 desktop:mb-14 leading-tight z-10">
+                                        <h1 class="font-bold uppercase text-4xl tablet-wide:text-baner mt-auto mb-4 tablet:mb-8 desktop:mb-14 leading-tight z-10 tablet-wide:z-50">
                                             <?php 
                                                 $lines = explode(PHP_EOL, get_sub_field('front_slide_heading'));
                                                 foreach ( $lines as $line) {
