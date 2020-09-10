@@ -96,7 +96,9 @@ module.exports = {
         '900px': '900px',
       },
       maxHeight: {
-        '400px': '400px',
+        'none': 'none',
+        '300px': '300px',
+        '430px': '430px',
         '550px': '550px',
         '600px': '600px',
         '0': '0',
