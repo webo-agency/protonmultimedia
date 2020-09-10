@@ -89,12 +89,14 @@ module.exports = {
       },
       minHeight: {
         '200px': '200px',
+        '300px': '300px',
         '430px': '430px',
         '550px': '550px',
         '700px': '700px',
         '900px': '900px',
       },
       maxHeight: {
+        '400px': '400px',
         '550px': '550px',
         '600px': '600px',
         '0': '0',
@@ -105,7 +107,7 @@ module.exports = {
       },
       linearGradientColors: { // defaults to {}
         'transparent-primary-offset': ['transparent', 'transparent 50%', '#01B9C3'],
-        'transparent-dark-blue-2-offset': ['transparent', 'transparent 50%', '#171131'],
+        'transparent-dark-blue-2-offset': ['transparent', '#171131'],
         'transparent-dark-blue-offset': ['transparent', 'transparent 50%', '#110D25'],
         'dark-blue': ['rgb(23,17,49)', 'rgba(23,17,49,1) 0%', 'rgba(17,13,37,1) 100%'],
         'primary-transparent-offset': ['rgba(1,185,195, 0.6)', 'rgba(1,185,195, 0.4) 60%', 'rgba(1,185,195, 0.1) 80%']
