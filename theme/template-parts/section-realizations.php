@@ -42,7 +42,7 @@
             <realization-slider class="z-30">
                 <ul class="swiper-wrapper">
                     <?php while ( $loop->have_posts() ) : $loop->the_post(); $_post = get_post(); ?>
-                        <li class="w-full tablet:w-1/2 desktop:w-1/4 swiper-slide group overflow-hidden flex flex-col justify-end box-gradient-overlay min-h-700px">
+                        <li class="w-full tablet:w-1/2 desktop:w-1/4 swiper-slide group overflow-hidden flex flex-col justify-end box-gradient-overlay desktop:min-h-700px">
                             <?php echo get_the_post_thumbnail( 
                                     $_post->ID, 
                                     'slider-block',
@@ -50,7 +50,7 @@
                                 ); 
                             ?>
                             <div class="relative flex-auto flex flex-col flex-end p-8 overflow-hidden z-30 justify-end group-hover:justify-start">
-                                <h3 class="relative mb-0 phone-wide:mb-6 text-white mt-20">
+                                <h3 class="relative phone-wide:mb-6 text-white mb-8 desktop:mb-4 desktop:mt-20">
                                     <?php 
                                         if(get_field('title_box')){
                                             $lines = explode(PHP_EOL, get_field('title_box'));
@@ -63,7 +63,7 @@
                                         }
                                     ?>
                                 </h3>
-                                <div class="invisible flex-auto h-auto max-h-0 opacity-0 transition-all duration-300 group-hover:visible group-hover:max-h-full group-hover:opacity-100">
+                                <div class="max-h-full opacity-100 flex-auto h-auto desktop:max-h-0 desktop:opacity-0 transition-all duration-300 desktop:invisible group-hover:visible group-hover:max-h-full group-hover:opacity-100">
                                     
                                     <div class="text-base leading-tight text-white">
                                         <?php echo the_content(); ?>
