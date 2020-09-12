@@ -50,15 +50,15 @@
                     $post_image = get_the_post_thumbnail_url($featured_post->ID, array('400', '9999'));
                 ?>
                     <li class="phone-wide:flex-1/2 tablet:max-w-1/2 relative">
-                        <div class="box-gradient-overlay box-gradient-overlay--dark-blue-2 absolute top-0 bottom-0 left-0 w-full h-full -mb-1 z-10 opacity-50 desktop:opacity-100"></div>
+                        <div class="box-gradient-overlay box-gradient-overlay--dark-blue-2 absolute top-0 bottom-0 left-0 w-full h-full -mb-1 z-10"></div>
                         <img 
                             class="absolute object-cover h-full w-full min-h-full min-w-full" 
                             src="<?php echo $post_image; ?>" 
                             alt="<?php echo esc_html( $title ); ?>" 
                             title="<?php echo esc_html( $title ); ?>" 
                         />
-                        <article class="relative flex group w-full h-full z-10 p-5 desktop:py-8 desktop:px-12 desktop-wide:pr-32 full-hd:px-16 full-hd:pr-48 hover:bg-white">
-                            <div class="h-full w-full relative">
+                        <article class="relative min-h-300px flex group w-full h-full z-10 p-5 desktop:py-8 desktop:px-12 desktop-wide:pr-32 full-hd:px-16 full-hd:pr-48 desktop:hover:bg-white transition duration-300">
+                            <div class="h-full w-full relative mt-auto">
                                 <div class="relative flex flex-col justify-end desktop:group-hover:justify-between z-10 h-full w-full">
                                     <div class="desktop:sticky desktop:top-screen desktop:group-hover:top-auto">
                                         <span class="text-primary text-sm tablet:text-base leading-line-height-normal block mb-1 tablet:mb-2"><?php echo $post_date; ?></span>

@@ -39,15 +39,7 @@
   }
 
   &--dark-blue {
-    &:before{
-      @apply bg-gradient-b-transparent-dark-blue-offset;
-
-      @screen desktop{
-        @apply bg-transparent;
-        @apply opacity-0;
-      }  
-    }
-
+    
     &:after{
       @apply bg-gradient-b-transparent-dark-blue-offset;
     }
@@ -62,12 +54,8 @@
 
   &--dark-blue-2 {
     &:before{
-      @apply bg-gradient-b-transparent-dark-blue-2-offset;
-
-      @screen desktop{
-        @apply bg-transparent;
-        @apply opacity-0;
-      }  
+      @apply bg-transparent;
+      @apply opacity-0;
     }
 
     &:after{
