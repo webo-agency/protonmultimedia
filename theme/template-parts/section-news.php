@@ -32,15 +32,6 @@
                         <?php echo get_field('news_description', 'option'); ?>
                     </div>
                 </div>
-
-                <img    
-                    class="hidden desktop:block flex-initial mb-auto mt-0" 
-                    src="<?php echo get_template_directory_uri() . '/assets/svg/news-lines.svg' ?>" 
-                    alt="Decorations"
-                    width="352px"
-                    height="379px"
-                    role="presentation"
-                />
             </div>
 
             <?php
@@ -138,6 +129,15 @@
                 </div>
             </div>
         </div>
+
+        <img    
+            class="hidden desktop:block flex-initial mb-auto mt-0 absolute right-0 left-auto" 
+            src="<?php echo get_template_directory_uri() . '/assets/svg/news-lines.svg' ?>" 
+            alt="Decorations"
+            width="352px"
+            height="379px"
+            role="presentation"
+        />
 
         <div class="guides right-minus-px left-auto bg-dark-purple" role="presentation"></div>
     </div>

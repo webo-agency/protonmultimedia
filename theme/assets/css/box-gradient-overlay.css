@@ -14,23 +14,25 @@
     content: '';
     @apply absolute;
     @apply inset-0;
-    @apply opacity-50;
     @apply bg-primary;
     @apply z-20;
     @apply transition;
     @apply duration-300;
     @apply pointer-events-none;
+    @apply opacity-50;
 
-    @screen tablet {
+    @screen tablet{
       @apply bg-transparent;
-
-      &:hover:before{
-        @apply bg-primary;
-      }
-    }
+      @apply opacity-0;
+    }  
   }
 
-
+  @screen tablet{
+    &:hover:before{
+      @apply bg-primary;
+      @apply opacity-50;
+    }
+  }
 
   &>*{
     @apply z-20;
