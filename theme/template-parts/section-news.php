@@ -24,13 +24,13 @@
                             $news_title = get_field('news_title', 'option');
                             $news_lines = explode(PHP_EOL, $news_title);
                             foreach ( $news_lines as $line) {
-                                echo preg_replace("/\*(.+)\*/", '<span class="text-primary">$1</span>', $line);
+                                echo preg_replace("/\*(.+)\*/", '<span class="block text-primary">$1</span>', $line);
                             }
                         ?>
                     </h2>
-                    <div class="pb-10 tablet:pb-16">
+                    <p class="pb-10 tablet:pb-16">
                         <?php echo get_field('news_description', 'option'); ?>
-                    </div>
+                    </p>
                 </div>
             </div>
 
@@ -53,14 +53,14 @@
                     <li class="phone-wide:flex-1/2 tablet:max-w-1/2 relative">
                         <div class="box-gradient-overlay box-gradient-overlay--dark-blue-2 absolute top-0 bottom-0 left-0 w-full h-full -mb-1 z-10 opacity-50 desktop:opacity-100"></div>
                         <img 
-                            class="object-cover h-full w-full max-h-300px tablet:max-h-none" 
+                            class="object-cover h-full w-full max-h-300px desktop:max-h-none" 
                             src="<?php echo $post_image; ?>" 
                             alt="<?php echo esc_html( $title ); ?>" 
                             title="<?php echo esc_html( $title ); ?>" 
                         />
                         <article class="absolute left-0 top-0 flex pm-news-article group post-info min-h-200px full-hd:min-h-430px h-full w-full">
                             <div class="h-full w-full relative">
-                                <div class="flex flex-col justify-end group-hover:justify-between z-10 absolute h-full w-full">
+                                <div class="flex flex-col justify-end desktop:group-hover:justify-between z-10 absolute h-full w-full">
                                     <div>
                                         <span class="text-primary text-sm tablet:text-base leading-line-height-normal block mb-1 tablet:mb-2"><?php echo $post_date; ?></span>
                                         <h3 class="mb-4 full-hd:mb-6"><?php echo esc_html( $title ); ?></h3>
@@ -131,7 +131,7 @@
         </div>
 
         <img    
-            class="hidden desktop:block flex-initial mb-auto mt-0 absolute right-0 left-auto" 
+            class="hidden tablet:block flex-initial mb-auto mt-0 absolute top-0 right-0 left-auto" 
             src="<?php echo get_template_directory_uri() . '/assets/svg/news-lines.svg' ?>" 
             alt="Decorations"
             width="352px"
