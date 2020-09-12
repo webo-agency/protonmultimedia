@@ -60,9 +60,9 @@
                 ?>
                     
                     <li class="phone-wide:flex-1/2 tablet:max-w-1/2 relative">
-                        <div class="box-gradient-overlay box-gradient-overlay--dark-blue-2 absolute bottom-0 left-0 w-full h-full -mb-1"></div>
+                        <div class="box-gradient-overlay box-gradient-overlay--dark-blue-2 absolute top-0 bottom-0 left-0 w-full h-full -mb-1 z-10 opacity-50 desktop:opacity-100"></div>
                         <img 
-                            class="object-cover h-full w-full max-h-300px tablet:max-h-430px tablet:max-h-none" 
+                            class="object-cover h-full w-full max-h-300px tablet:max-h-none" 
                             src="<?php echo $post_image; ?>" 
                             alt="<?php echo esc_html( $title ); ?>" 
                             title="<?php echo esc_html( $title ); ?>" 
