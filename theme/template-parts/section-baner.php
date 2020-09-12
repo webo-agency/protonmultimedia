@@ -12,6 +12,7 @@
                                     class="object-cover absolute left-0 top-0 right-0 bottom-0 h-full w-full pointer-events-none"
                                     role="presentation"
                                 />
+                                <div class="image-overlay absolute top-0 bottom-0 left-0 w-full h-full -mb-1 z-10 pointer-events-none"></div>
                                 <img 
                                     class="hidden tablet-wide:block absolute top-0 right-0 h-full w-auto pointer-events-none z-0 desktop-wide:z-50 opacity-50 desktop-wide:opacity-100" 
                                     src="<?php echo get_template_directory_uri() . '/assets/svg/banner-lines.svg' ?>" 

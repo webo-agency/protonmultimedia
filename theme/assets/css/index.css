@@ -114,6 +114,7 @@ br + .line-decorated {
 @import "overlay-dark.css";
 @import "toggled.css";
 @import "on-scroll.css";
+@import "image-overlay.css";
 @import "admin-bar.css";
 
 @import "tailwindcss/screens";
