@@ -60,7 +60,7 @@
                         <article class="relative flex group w-full h-full z-10 p-5 desktop:py-8 desktop:px-12 desktop-wide:pr-32 full-hd:px-16 full-hd:pr-48 hover:bg-white">
                             <div class="h-full w-full relative">
                                 <div class="relative flex flex-col justify-end desktop:group-hover:justify-between z-10 h-full w-full">
-                                    <div class="desktop:sticky desktop:top-screen desktop:group-hover:top-0">
+                                    <div class="desktop:sticky desktop:top-screen desktop:group-hover:top-auto">
                                         <span class="text-primary text-sm tablet:text-base leading-line-height-normal block mb-1 tablet:mb-2"><?php echo $post_date; ?></span>
                                         <h3 class="mb-4 full-hd:mb-6 desktop:text-white desktop:group-hover:text-black"><?php echo esc_html( $title ); ?></h3>
                                     </div>
