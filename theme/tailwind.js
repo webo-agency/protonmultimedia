@@ -86,6 +86,7 @@ module.exports = {
         '100px': '100px',
         'full': '100%',
         '-1/2': '-50%',
+        'screen': '100vh'
       },
       minHeight: {
         '200px': '200px',
@@ -149,9 +150,11 @@ module.exports = {
     },
   },
   variants: {
+    textColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
     translate: ['responsive', 'hover', 'focus', 'group-hover'],
     visibility: ['responsive', 'hover', 'focus', 'group-hover'],
     maxHeight: ['responsive', 'group-hover'],
+    inset: ['responsive', 'group-hover'],
     opacity: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
     justifyContent: ['responsive', 'hover', 'focus', 'group-hover'],
   },

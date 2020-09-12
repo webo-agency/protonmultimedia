@@ -39,26 +39,46 @@
   }
 
   &--dark-blue {
-    
+    &:before{
+      @apply bg-gradient-b-transparent-dark-blue-offset;
+
+      @screen desktop{
+        @apply bg-transparent;
+        @apply opacity-0;
+      }  
+    }
+
     &:after{
       @apply bg-gradient-b-transparent-dark-blue-offset;
     }
 
-    &:hover:before {
-      @apply bg-dark-blue;
-      @apply opacity-50;
+    @screen desktop{
+      &:hover:before {
+        @apply bg-dark-blue;
+        @apply opacity-50;
+      }
     }
   }
 
   &--dark-blue-2 {
+    &:before{
+      @apply bg-gradient-b-transparent-dark-blue-2-offset;
+
+      @screen desktop{
+        @apply bg-transparent;
+        @apply opacity-0;
+      }  
+    }
 
     &:after{
       @apply bg-gradient-b-transparent-dark-blue-2-offset;
     }
 
-    &:hover:before {
-      @apply bg-dark-blue-2;
-      @apply opacity-50;
+    @screen desktop{
+      &:hover:before {
+        @apply bg-dark-blue-2;
+        @apply opacity-50;
+      }
     }
   }
 }
