@@ -21,6 +21,27 @@ export default {
         },
     },
     methods: {
+        initializeFilter(){
+            this.activeTerm = 'all';
+
+            Array.from(this.getFilters).forEach((filter, index) => {
+                if(index == 0){
+                filter.parentNode.childNodes.forEach(function(el){
+                    if(el.classList){el.classList.remove('is-active')}
+                });
+
+                if(filter.classList.contains('is-active')){
+                    filter.classList.remove('is-active');
+                } else {
+                    filter.classList.add('is-active');
+                }
+                
+                this.activeTerm = filter.dataset.term;
+                this.filterTerms();
+
+                }
+            });
+        },
         activateFilter() {
             Array.from(this.getFilters).forEach(filter => {
                 filter.addEventListener('click', (e) => {
@@ -47,7 +68,7 @@ export default {
                 
                 item.classList.add('order-1');
                 item.classList.add('opacity-0');
-                
+
                 const filtersDataset = item.dataset.terms.split(",");
                 const filtered = filtersDataset.map(el => {
                     if(el == this.activeTerm || this.activeTerm === 'all') {
@@ -63,6 +84,7 @@ export default {
         },
     },
     mounted() {
+        this.initializeFilter();
         this.activateFilter();
     }
 }
