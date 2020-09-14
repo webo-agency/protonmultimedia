@@ -53,7 +53,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
             $excerpt = get_the_excerpt( $post->ID);
             $post_image = get_the_post_thumbnail_url($post->ID,'medium_large');
             ?>
-            <a class="pm-category-item h-full w-full" href="<?php echo $permalink; ?>" title="<?php echo $title; ?>">
+            <a class="pm-category-item" href="<?php echo $permalink; ?>" title="<?php echo $title; ?>">
               <?php
                 if( $image = get_field('service_list_icon')) {
                 ?>
@@ -65,7 +65,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
                 <?php
                 }
               ?>
-              <span class="pm-category-item__title"><?php echo $title; ?></span>
+              <span class="font-special text-sm font-semibold bg-dark-blue px-4 py-4 w-full tablet:text-base desktop:px-8 desktop:text-md desktop-wide:text-lg desktop-wide:px-12"><?php echo $title; ?></span>
             </a>
           </li>
         <?php endforeach; ?>

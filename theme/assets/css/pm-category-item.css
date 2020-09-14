@@ -6,6 +6,8 @@
     @apply bg-dark-blue;
     @apply border-solid;
     @apply relative;
+    @apply h-full;
+    @apply w-full;
     border-top-color: transparent;
     border-left-color: transparent;
     border-right-color: transparent;
@@ -41,28 +43,6 @@
 
         @screen desktop {
             @apply p-10;
-        }
-    }
-
-    &__title {
-        @apply text-sm;
-        @apply font-semibold;
-        @apply bg-dark-blue;
-        @apply px-4;
-        @apply w-full;
-
-        @screen tablet {
-            @apply text-base;
-        }
-
-        @screen desktop {
-            @apply px-8;
-            @apply text-md;
-        }
-
-        @screen desktop-wide {
-            @apply px-12;
-            @apply text-lg;
         }
     }
 }
