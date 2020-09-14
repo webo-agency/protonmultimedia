@@ -16,16 +16,18 @@ function show_image( $image_id, $size = null, $attributes = null ) {
 	}
 }
 ?>
-<section class="container relative z-50">
-  <side-heading>
-    <h2><?php echo $args['section_name_string']; ?></h2>
-  </side-heading>
+reposni<section class="relative z-50">
+  <div class="container">
+    <side-heading>
+      <h2><?php echo $args['section_name_string']; ?></h2>
+    </side-heading>
 
-  <div class="guides left-minus-px right-auto bg-dark-blue" role="presentation"></div>
+    <div class="guides left-minus-px right-auto bg-dark-blue" role="presentation"></div>
+  </div>
 
   <?php if(count($args['filters_array'])): ?>
     <tag-filter>
-      <ul class="desktop-wide:px-smaller-container  ml-1 flex flex-wrap">
+      <ul class="container desktop-wide:px-smaller-container flex flex-wrap">
           <li class="mr-2" data-term="all">
             <span class="pm-taxonomy-pill text-white desktop:text-base">Wszystkie</span>
           </li>
@@ -38,7 +40,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
     <?php endif; ?>
     
     <?php if(count($args['list_post_array'])): ?>
-      <ul class="relative flex flex-row flex-wrap pt-12 tablet:pt-18 mb-10 z-50">
+      <ul class="relative px-4 flex flex-row flex-wrap pt-12 tablet:pt-18 mb-10 z-50">
         <?php foreach ($args['list_post_array'] as $index => $post): ?>
           <li
             class="w-full tablet:w-1/2 transition-all duration-300 order-1"
@@ -58,7 +60,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
               <?php
                 if( $image = get_field('service_list_icon')) {
                 ?>
-                <span class="pm-category-item__img svg-fill-primary">
+                <span class="pm-category-item__img svg-fill-primary mr-4">
                   <?php
                     echo show_image( $image, array('9999', '550'), "", array('class' => 'w-full h-full object-cover') );
                   ?>
@@ -66,7 +68,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
                 <?php
                 }
               ?>
-              <span class="font-special text-sm font-semibold bg-dark-blue px-4 py-4 w-full tablet:text-base desktop:px-8 desktop:text-md desktop-wide:text-lg desktop-wide:px-12"><?php echo $title; ?></span>
+              <span class="font-special text-sm font-semibold bg-dark-blue px-4 py-4 w-full tablet:text-md desktop:px-8 desktop:text-md desktop-wide:text-lg desktop-wide:px-12"><?php echo $title; ?></span>
             </a>
           </li>
         <?php endforeach; ?>
@@ -74,5 +76,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
     </tag-filter>
   <?php endif; ?>
 
-  <div class="guides right-minus-px left-auto bg-dark-blue" role="presentation"></div>
+  <div class="container">
+    <div class="guides right-minus-px left-auto bg-dark-blue" role="presentation"></div>
+  </div>
 </section>

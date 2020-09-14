@@ -18,7 +18,7 @@
         @apply block;
         width: 20px;
         height: 2px;
-        @apply mr-6;
+        @apply mr-4;
     }
 
     &:hover {
@@ -30,7 +30,7 @@
         @apply p-4;
 
         svg {
-            width: 20px;
+            width: 30px;
 
             @screen desktop {
                 width: 35px;
