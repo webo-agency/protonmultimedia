@@ -41,11 +41,21 @@ export default {
         },
         filterTerms() {
             Array.from(this.getItems).forEach(item => {
-                item.classList.add('hidden')
+                item.classList.add('invisible');
+                item.classList.remove('opacity-100');
+                item.classList.remove('order-0');
+                
+                item.classList.add('order-1');
+                item.classList.add('opacity-0');
+                
                 const filtersDataset = item.dataset.terms.split(",");
                 const filtered = filtersDataset.map(el => {
                     if(el == this.activeTerm || this.activeTerm === 'all') {
-                        item.classList.remove('hidden');
+                        item.classList.remove('invisible');
+                        item.classList.remove('opacity-0');
+                        item.classList.remove('order-1');
+                        item.classList.add('order-0');
+                        item.classList.add('opacity-100');
                     }
                 });
                 return filtered;

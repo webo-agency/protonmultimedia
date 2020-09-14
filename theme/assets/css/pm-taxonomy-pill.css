@@ -8,6 +8,8 @@
     @apply leading-line-height-sm;
     @apply inline-block;
     @apply cursor-pointer;
+    @apply transition;
+    @apply duration-500;
     padding: 0.3rem .5rem;
 
     @screen desktop {

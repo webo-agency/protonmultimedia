@@ -38,9 +38,10 @@ function show_image( $image_id, $size = null, $attributes = null ) {
     <?php endif; ?>
     
     <?php if(count($args['list_post_array'])): ?>
-      <ul class="relative grid grid-cols-1 phone-wide:grid-cols-2 pt-12 tablet:pt-18 mb-10 z-50">
+      <ul class="relative flex flex-row flex-wrap pt-12 tablet:pt-18 mb-10 z-50">
         <?php foreach ($args['list_post_array'] as $index => $post): ?>
           <li
+            class="w-full phone-wide:w-1/2 transition-all duration-300 order-1"
             data-terms="<?php $allterms = wp_get_post_terms( $post->ID, 'services_category'); 
                 foreach($allterms as $term) {
                   echo $term->term_id.',';
