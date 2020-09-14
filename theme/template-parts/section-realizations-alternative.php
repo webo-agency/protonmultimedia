@@ -59,7 +59,7 @@
                                     ?>
                                 </div>
                                 <div class="w-full tablet:w-1/2 relative flex-auto flex flex-col flex-end p-4 desktop:pl-24 desktop:pr-32 desktop:pt-12 overflow-hidden z-30 justify-start">
-                                    <h3 class="relative mb-6 text-dark-font">
+                                    <h3 class="relative mb-6 text-dark-font flex flex-col items-start desktop:mb-20">
                                         <?php 
                                             if(get_field('title_box')){
                                                 $lines = explode(PHP_EOL, get_field('title_box'));

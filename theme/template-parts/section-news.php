@@ -8,7 +8,7 @@
 
         <div class="guides left-minus-px right-auto bg-dark-blue" role="presentation"></div>
             
-        <div class="mt-4 phone-wide:mt-12">
+        <div class="pt-4 phone-wide:pt-12">
             <div class="relative desktop-wide:px-smaller-container flex flex-row">
                 <img    
                     class="hidden desktop-wide:block absolute left-0 bottom-0 flex-initial mb-0 mt-auto" 
