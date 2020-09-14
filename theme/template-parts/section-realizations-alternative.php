@@ -46,7 +46,7 @@
         ?>
         <div class="pb-32">
             <?php if( $loop->have_posts() ): ?>
-                <realization-alternative-slider class="desktop:max-h-600px z-30">
+                <realization-alternative-slider class="z-30">
                     <ul class="swiper-wrapper">
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); $_post = get_post(); ?>
                             <li class="w-full h-auto swiper-slide flex flex-row flex-wrap">
@@ -54,7 +54,7 @@
                                     <?php echo get_the_post_thumbnail( 
                                             $_post->ID, 
                                             'slider-block',
-                                            array( 'class' => 'absolute inset-0 min-h-full min-w-full transform desktop:-translate-y-1/2 object-cover' )
+                                            array( 'class' => 'min-h-full min-w-full object-cover' )
                                         ); 
                                     ?>
                                 </div>
