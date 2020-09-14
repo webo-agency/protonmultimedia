@@ -1,16 +1,23 @@
-<section class="relative flex flex-col bg-white text-black">
-  <side-heading 
+<section class="relative flex flex-col bg-white text-black overflow-hidden">
+  <side-heading
+      class="z-20"
       data-text="<?php echo $args['side_description_string']; ?>"
   ></side-heading>
 
   <div class="guides left-minus-px right-auto bg-gray-light" role="presentation"></div>
 
+  <?php
+      if( $image = $args['background_id']) {
+        echo wp_get_attachment_image( $image, array('9999', '550'), "", array('class' => 'absolute top-0 left-0 right-0 bottom-0 min-w-full min-h-full object-cover z-10') );
+      }
+  ?>
+  
   <div class="hidden desktop-wide:flex absolute top-0 right-420px left-auto z-20 w-40 flex-row overflow-hidden max-h-140px items-end">
     <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/dots-pattern.svg'); ?>
     <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/dots-pattern.svg'); ?>
   </div>
 
-  <div class="container flex flex-col items-center py-20">
+  <div class="container flex flex-col items-center py-20  z-20">
     <div class="desktop:max-w-1/2 flex flex-col justify-center flex-wrap flex-auto text-center pr-16 desktop:mb-0">
       <h2 class="uppercase">
         <?php 
@@ -27,7 +34,7 @@
     </div>
   </div>
 
-  <div class="relative container flex flex-row mb-20">
+  <div class="relative container flex flex-row pb-16 mb-2 z-20">
     <?php if( is_array($args['highlighted_array']) && !empty($args['highlighted_array']) ): ?>
       <ul class="w-full flex flex-row flex-wrap">
         <?php $i = 0; foreach ($args['highlighted_array'] as $key => $field): $i++; if($i>4){ break; } ?>
@@ -54,17 +61,16 @@
                 $args["highlighted_icon_center_id"], 
                 array('9999', '479'), 
                 "", 
-                array('class' => 'object-cover', 'role' => 'presentation') ); 
+                array('class' => 'object-cover min-w-479px', 'role' => 'presentation') ); 
               ?>
       </div>
     <?php endif; ?>
-
-  </div>
-
-  <?php if( is_array($args['highlighted_array']) && !empty($args['highlighted_array']) ): ?>
-      <ul class="w-full flex flex-row flex-wrap">
+    
+    <?php if( is_array($args['highlighted_array']) && !empty($args['highlighted_array']) ): ?>
+      <ul class="container w-full flex flex-row flex-wrap justify-center">
         <?php $i = 0; foreach ($args['highlighted_array'] as $key => $field): $i++; if($i>4): ?>
           <li class="flex flex-row-reverse desktop:flex-row w-full desktop:w-1/2 items-center mb-10 desktop:mb-0 justify-end">
+            <div class="w-6 h-2 bg-primary mx-4"></div>  
             <h3 class="desktop:w-full mb-0 font-normal">
               <?php 
                 $lines = explode(PHP_EOL, $field['highlighted_title']);
@@ -73,12 +79,13 @@
                 }
               ?>
             </h3>
-            <div class="w-6 h-2 bg-primary mx-4"></div>
+            
           </li>
           <?php endif; ?>
         <?php endforeach; ?>
       </ul>
     <?php endif; ?>
+  </div>
 
   <div class="guides right-minus-px left-auto bg-gray-light" role="presentation"></div>
 </section>
