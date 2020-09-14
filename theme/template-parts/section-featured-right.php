@@ -30,7 +30,8 @@ function show_image( $image_id, $size = null, $attributes = null ) {
   </div>
 
   <div class="container">
-    <div class="desktop-wide:pl-smaller-container flex flex-row flex-wrap py-40 mt-2">
+    <div class="desktop-wide:pl-smaller-container flex flex-row flex-wrap pt-40 pb-16 mb-2 mt-2">
+      
       <div class="desktop:max-w-1/2 flex flex-col flex-wrap flex-auto pr-32 mb-12 desktop:mb-0">
         <h2 class="uppercase desktop:text-lg">
           <?php 
@@ -49,7 +50,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
       <?php if(count($args['highlighted_array'])): ?>
         <ul class="desktop:w-1/2 flex flex-row flex-wrap">
           <?php foreach ($args['highlighted_array'] as $index => $value): ?>   
-            <li class="flex flex-col items-start w-full tablet:w-1/2 tablet:pr-20 mb-14">
+            <li class="flex flex-col items-start w-full tablet:w-1/2 tablet:pr-20">
               <div class="mb-8 w-20 svg-fill-primary">
                 <?php echo show_image( 
                     $value["highlighted_icon"], 
@@ -59,7 +60,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
                 ?>
               </div>
               
-              <h3 class="font-special font-bold text-lg">
+              <h3 class="font-special font-bold text-lg mb-14">
                 <?php echo $value["highlighted_title"]; ?>
               </h3>
             </li>
