@@ -11,6 +11,8 @@
     border-top-color: transparent;
     border-left-color: transparent;
     border-right-color: transparent;
+    @apply transition-all;
+    @apply duration-300;
 
     &:after {
         content: '';

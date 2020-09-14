@@ -27,7 +27,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
 
   <?php if(count($args['filters_array'])): ?>
     <tag-filter>
-      <ul class="container desktop-wide:px-smaller-container flex flex-wrap">
+      <ul class="container desktop-wide:px-smaller-container flex flex-wrap pb-4 sticky top-0 z-20 bg-dark-blue">
           <li class="mr-2" data-term="all">
             <span class="pm-taxonomy-pill text-white desktop:text-base">Wszystkie</span>
           </li>
@@ -40,7 +40,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
     <?php endif; ?>
     
     <?php if(count($args['list_post_array'])): ?>
-      <ul class="relative px-4 flex flex-row flex-wrap pt-12 tablet:pt-18 mb-10 z-50">
+      <ul class="relative px-4 flex flex-row flex-wrap pt-4 tablet:pt-18 mb-10 z-20 mt-4">
         <?php foreach ($args['list_post_array'] as $index => $post): ?>
           <li
             class="w-full tablet:w-1/2 transition-all duration-300 order-1"
