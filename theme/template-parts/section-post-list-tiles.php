@@ -60,7 +60,7 @@ reposni<section class="relative z-50">
               <?php
                 if( $image = get_field('service_list_icon')) {
                 ?>
-                <span class="pm-category-item__img svg-fill-primary mr-4">
+                <span class="pm-category-item__img h-full svg-fill-primary mr-4">
                   <?php
                     echo show_image( $image, array('9999', '550'), "", array('class' => 'w-full h-full object-cover') );
                   ?>
@@ -68,7 +68,7 @@ reposni<section class="relative z-50">
                 <?php
                 }
               ?>
-              <span class="font-special text-sm font-semibold bg-dark-blue px-4 py-4 w-full tablet:text-md desktop:px-8 desktop:text-md desktop-wide:text-lg desktop-wide:px-12"><?php echo $title; ?></span>
+              <span class="font-special text-sm font-semibold bg-dark-blue px-4 py-4 w-full tablet:text-md tablet:leading-tight desktop:px-8 desktop:text-md desktop-wide:text-lg desktop-wide:px-12"><?php echo $title; ?></span>
             </a>
           </li>
         <?php endforeach; ?>

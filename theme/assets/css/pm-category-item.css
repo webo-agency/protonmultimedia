@@ -30,15 +30,15 @@
         @apply p-4;
 
         svg {
-            width: 30px;
-
+            width: 50px;
+/* 
             @screen desktop {
                 width: 35px;
             }
 
             @screen desktop-wide {
                 width: 50px;
-            }
+            } */
         }
 
         @screen desktop {
