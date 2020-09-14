@@ -50,7 +50,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
         <ul class="desktop:w-1/2 flex flex-row flex-wrap">
           <?php foreach ($args['highlighted_array'] as $index => $value): ?>   
             <li class="flex flex-col items-start w-full tablet:w-1/2 tablet:pr-20 mb-14">
-              <div class="w-20 svg-fill-primary">
+              <div class="mb-8 w-20 svg-fill-primary">
                 <?php echo show_image( 
                     $value["highlighted_icon"], 
                     array('9999', '70'), 
