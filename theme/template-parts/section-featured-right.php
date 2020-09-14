@@ -30,7 +30,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
   </div>
 
   <div class="container">
-    <div class="desktop-wide:pl-smaller-container flex flex-row flex-wrap py-32">
+    <div class="desktop-wide:pl-smaller-container flex flex-row flex-wrap py-40 mt-2">
       <div class="desktop:max-w-1/2 flex flex-col flex-wrap flex-auto pr-32 mb-12 desktop:mb-0">
         <h2 class="uppercase desktop:text-lg">
           <?php 
