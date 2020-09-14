@@ -17,18 +17,17 @@ function show_image( $image_id, $size = null, $attributes = null ) {
 }
 ?>
 <section class="relative flex flex-col bg-gray-lighter text-black">
+  <side-heading 
+    data-text="<?php echo $args['side_description_string']; ?>"
+  ></side-heading>
+   
+  <div class="guides left-minus-px right-auto bg-gray-light" role="presentation"></div>
 
   <div class="flex-initial flex flex-row items-center">
     <div class="hidden desktop-wide:block absolute ml-container top-0 bottom-0 left-1px my-auto z-20 w-24">
       <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/dots-block.svg'); ?>
     </div>
   </div>
-
-  <side-heading 
-    data-text="<?php echo $args['side_description_string']; ?>"
-  ></side-heading>
-   
-  <div class="guides left-minus-px right-auto bg-gray-light" role="presentation"></div>
 
   <div class="container">
     <div class="desktop-wide:pl-smaller-container flex flex-row flex-wrap py-20">
@@ -51,12 +50,14 @@ function show_image( $image_id, $size = null, $attributes = null ) {
         <ul class="desktop:w-1/2 flex flex-row flex-wrap">
           <?php foreach ($args['highlighted_array'] as $index => $value): ?>   
             <li class="flex flex-col items-start w-full tablet:w-1/2 tablet:pr-20 mb-14">
-              <?php echo wp_get_attachment_image( 
-                $value["highlighted_icon"], 
-                array('9999', '70'), 
-                "", 
-                array('class' => 'object-cover mb-4') ); 
-              ?>
+              <div class="w-20 svg-fill-primary">
+                <?php echo show_image( 
+                    $value["highlighted_icon"], 
+                    array('9999', '70'), 
+                    "", 
+                    array('class' => 'object-cover mb-4') ); 
+                ?>
+              </div>
               
               <h3 class="font-special font-bold text-lg">
                 <?php echo $value["highlighted_title"]; ?>

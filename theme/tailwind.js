@@ -77,16 +77,17 @@ module.exports = {
         '17': '4.375rem'
       },
       inset: {
-        '0': '0',
         'minus-px': '-1px',
-        '1px': '1px',
+        '-1/2': '-50%',
         '-40%': '-40%',
+        '0': '0',
         '1/2': '50%',
+        'full': '100%',
+        '1px': '1px',
         '50px': '50px',
         '100px': '100px',
-        'full': '100%',
-        '-1/2': '-50%',
-        'screen': '100vh'
+        '420px': '420px',
+        'screen': '100vh',
       },
       minHeight: {
         '200px': '200px',
@@ -98,6 +99,7 @@ module.exports = {
       },
       maxHeight: {
         'none': 'none',
+        '140px': '140px',
         '300px': '300px',
         '430px': '430px',
         '550px': '550px',

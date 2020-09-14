@@ -5,6 +5,11 @@
 
   <div class="guides left-minus-px right-auto bg-gray-light" role="presentation"></div>
 
+  <div class="hidden desktop-wide:flex absolute top-0 right-420px left-auto z-20 w-40 flex-row overflow-hidden max-h-140px items-end">
+    <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/dots-pattern.svg'); ?>
+    <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/dots-pattern.svg'); ?>
+  </div>
+
   <div class="container flex flex-col items-center py-20">
     <div class="desktop:max-w-1/2 flex flex-col justify-center flex-wrap flex-auto text-center pr-16 desktop:mb-0">
       <h2 class="uppercase">
