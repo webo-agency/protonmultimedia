@@ -53,8 +53,8 @@
                                 <div class="w-full tablet:w-1/2 overflow-hidden relative min-h-200px">
                                     <?php echo get_the_post_thumbnail( 
                                             $_post->ID, 
-                                            'slider-block',
-                                            array( 'class' => 'min-h-full min-w-full object-cover' )
+                                            'slider-block-alternative',
+                                            array( 'class' => 'max-h-600px min-w-full object-cover' )
                                         ); 
                                     ?>
                                 </div>
