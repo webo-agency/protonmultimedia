@@ -52,7 +52,7 @@
       <div class="container absolute inset-0 m-auto items-center justify-center pointer-events-none hidden desktop:flex">
         <?php echo wp_get_attachment_image( 
                 $args["highlighted_icon_center_id"], 
-                array('9999', '374'), 
+                array('9999', '479'), 
                 "", 
                 array('class' => 'object-cover', 'role' => 'presentation') ); 
               ?>
@@ -61,9 +61,24 @@
 
   </div>
 
-  <div>
-    <!-- next after 4 -->
-  </div>
+  <?php if( is_array($args['highlighted_array']) && !empty($args['highlighted_array']) ): ?>
+      <ul class="w-full flex flex-row flex-wrap">
+        <?php $i = 0; foreach ($args['highlighted_array'] as $key => $field): $i++; if($i>4): ?>
+          <li class="flex flex-row-reverse desktop:flex-row w-full desktop:w-1/2 items-center mb-10 desktop:mb-0 justify-end">
+            <h3 class="desktop:w-full mb-0 font-normal">
+              <?php 
+                $lines = explode(PHP_EOL, $field['highlighted_title']);
+                foreach ( $lines as $line) {
+                    echo preg_replace("/\*(.+)\*/", '<span class="font-bold">$1</span>', $line);
+                }
+              ?>
+            </h3>
+            <div class="w-6 h-2 bg-primary mx-4"></div>
+          </li>
+          <?php endif; ?>
+        <?php endforeach; ?>
+      </ul>
+    <?php endif; ?>
 
   <div class="guides right-minus-px left-auto bg-gray-light" role="presentation"></div>
 </section>
