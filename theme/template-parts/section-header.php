@@ -1,5 +1,6 @@
-<header class="relative overflow-hidden overlay-dark">
+<header class="relative overflow-hidden">
   <div class="container">
+    <div class="image-overlay absolute top-0 bottom-0 left-0 w-full h-full -mb-1 z-10 pointer-events-none"></div>
     <div class="desktop-wide:px-smaller-container relative max-w-5xl flex flex-col justify-center pt-40 pb-40 z-30">
       <h2 class="font-bold uppercase mb-4 tablet:mb-14 leading-tight">
         <?php 
