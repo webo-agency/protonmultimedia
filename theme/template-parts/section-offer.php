@@ -19,7 +19,7 @@
     <?php foreach($terms as $index => $term): ?>
       <div class="w-full tablet:w-1/2 relative overflow-hidden <?php echo ($index%2) ? '' : 'border-r-2 border-solid border-dark-blue-2'; ?>">
         <div class="relative flex flex-col items-start h-full tablet:min-h-550px py-10 px-4 z-20 phone-wide:py-20 phone-wide:px-12">
-          <h2 class="flex-initial uppercase text-white mb-8 phone-wide:mb-12 text-md phone-wide:text-lg desktop:text-xl">
+          <h2 class="flex-initial uppercase text-white mb-8 phone-wide:mb-12 text-md phone:text-lg desktop:text-xl">
             <?php echo implode('<br/><span class="line-decorated bg-dark-blue-2 leading-tight">', explode(' ', trim($term->name) . ' </span>', 2)); ?>
           </h2>
 
