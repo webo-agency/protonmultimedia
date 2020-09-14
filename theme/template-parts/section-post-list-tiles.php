@@ -60,7 +60,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
               <?php
                 if( $image = get_field('service_list_icon')) {
                 ?>
-                <span class="pm-category-item__img h-full svg-fill-primary mr-4">
+                <span class="pm-category-item__img h-full svg-fill-primary">
                   <?php
                     echo show_image( $image, array('9999', '550'), "", array('class' => 'w-full h-full object-cover') );
                   ?>

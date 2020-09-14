@@ -26,23 +26,26 @@
     }
 
     &__img {
+        display: block;
+        position: relative;
+        width: 20%;
+
+
         @apply bg-dark-blue-2;
         @apply p-4;
 
         svg {
-            width: 50px;
-/* 
+            position: absolute;
+            max-width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: auto;
+            padding: 20px;
+
             @screen desktop {
-                width: 35px;
+                padding: 45px;
             }
-
-            @screen desktop-wide {
-                width: 50px;
-            } */
-        }
-
-        @screen desktop {
-            @apply p-10;
         }
     }
 }
