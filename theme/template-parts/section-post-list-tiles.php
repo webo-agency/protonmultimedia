@@ -16,7 +16,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
 	}
 }
 ?>
-reposni<section class="relative z-50">
+<section class="relative z-50">
   <div class="container">
     <side-heading>
       <h2><?php echo $args['section_name_string']; ?></h2>
