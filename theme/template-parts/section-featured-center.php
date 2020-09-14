@@ -17,7 +17,7 @@
     <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/dots-pattern.svg'); ?>
   </div>
 
-  <div class="container flex flex-col items-center py-20  z-20">
+  <div class="container flex flex-col items-center py-20 z-20">
     <div class="desktop:max-w-1/2 flex flex-col justify-center flex-wrap flex-auto text-center pr-16 desktop:mb-0">
       <h2 class="uppercase">
         <?php 
@@ -34,8 +34,8 @@
     </div>
   </div>
 
-  <div class="container pb-16 mb-2">
-    <div class="relative flex flex-row z-20">
+  <div class="container pb-16 mb-2 z-20">
+    <div class="relative flex flex-row">
       <?php if( is_array($args['highlighted_array']) && !empty($args['highlighted_array']) ): ?>
         <ul class="w-full flex flex-row flex-wrap">
           <?php $i = 0; foreach ($args['highlighted_array'] as $key => $field): $i++; if($i>4){ break; } ?>
