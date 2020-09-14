@@ -33,6 +33,11 @@
             />  
         </header>
 
+        <div class="hidden desktop-wide:flex absolute top-0 right-0 left-auto z-20 w-40 flex-row overflow-hidden max-h-140px items-end">
+            <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/dots-pattern.svg'); ?>
+            <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/dots-pattern.svg'); ?>
+        </div>
+
         <?php
             $loop = new WP_Query( array(
                 'post_type' => 'realizations',
@@ -63,7 +68,7 @@
                                             }
                                             
                                             foreach ( $lines as $line) {
-                                                echo preg_replace("/\*(.+)\*/", '<span class="line-decorated bg-dark-blue-2">$1</span>', $line);
+                                                echo preg_replace("/\*(.+)\*/", '<span class="line-decorated bg-primary text-white">$1</span>', $line);
                                             }
                                         ?>
                                     </h3>
