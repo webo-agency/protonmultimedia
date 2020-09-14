@@ -13,7 +13,7 @@
 				<div class="w-8 h-1 bg-white rounded-lg"></div>
 			</button>
 			<main-navigation>
-				<nav id="site-navigation" class="main-navigation fixed left-0 top-0 w-full h-full transition-all duration-500 invisible opacity-0 desktop:opacity-100 desktop:visible flex flex-col desktop:flex-row desktop:flex items-center flex-auto z-20 desktop:relative desktop:w-auto desktop:h-auto bg-dark-blue desktop:bg-transparent">
+				<nav id="site-navigation" class="main-navigation fixed left-0 top-0 w-full h-screen transition-all duration-500 invisible opacity-0 desktop:opacity-100 desktop:visible flex flex-col desktop:flex-row desktop:flex items-center flex-auto z-20 desktop:relative desktop:w-auto desktop:h-auto bg-dark-blue desktop:bg-transparent">
 					<?php
 						wp_nav_menu(
 							array(
