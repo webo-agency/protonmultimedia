@@ -12,5 +12,6 @@
 
     @screen desktop {
         @apply text-black;
+        @apply text-md;
     }
 }
