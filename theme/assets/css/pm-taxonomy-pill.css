@@ -13,5 +13,10 @@
     @screen desktop {
         @apply text-black;
         @apply text-md;
+        @apply leading-tight;
+    }
+
+    .is-active > &{
+        @apply bg-primary;
     }
 }

@@ -23,7 +23,17 @@ export default {
     methods: {
         activateFilter() {
             Array.from(this.getFilters).forEach(filter => {
-                filter.addEventListener('click', () => {
+                filter.addEventListener('click', (e) => {
+                    filter.parentNode.childNodes.forEach(function(el){
+                        if(el.classList){el.classList.remove('is-active')}
+                    });
+
+                    if(filter.classList.contains('is-active')){
+                        filter.classList.remove('is-active');
+                    } else {
+                        filter.classList.add('is-active');
+                    }
+                    
                     this.activeTerm = filter.dataset.term;
                     this.filterTerms();
                 })
@@ -34,11 +44,8 @@ export default {
                 item.classList.add('hidden')
                 const filtersDataset = item.dataset.terms.split(",");
                 const filtered = filtersDataset.map(el => {
-                    if(el == this.activeTerm) {
-                        item.classList.remove('hidden')
-                    }
-                    else if(this.activeTerm === 'all') {
-                        item.classList.remove('hidden')
+                    if(el == this.activeTerm || this.activeTerm === 'all') {
+                        item.classList.remove('hidden');
                     }
                 });
                 return filtered;

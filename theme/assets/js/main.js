@@ -3,7 +3,7 @@ import BanerSlider from '../vue/baner-slider.vue';
 import RealizationSlider from '../vue/realization-slider.vue';
 import RealizationAlternativeSlider from '../vue/realization-alternative-slider.vue';
 import SideHeading from '../vue/side-heading.vue';
-import TagFilter from '../vue/filter.vue';
+import TagFilter from '../vue/tag-filter.vue';
 import OnScroll from '../vue/on-scroll.vue';
 import MainNavigation from '../vue/main-navigation.vue';
 import VueAwesomeSwiper from "vue-awesome-swiper/dist/ssr";
