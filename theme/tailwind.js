@@ -145,6 +145,9 @@ module.exports = {
       rotate: {
         '-61': '-61deg'
       },
+      opacity: {
+        'point': '0.1'
+      },
       padding: {
         'smaller-container': '11rem',
         'header': '70.06px',
@@ -166,6 +169,7 @@ module.exports = {
   },
   plugins: [
     require('tailwindcss-gradients'),
+    require('tailwindcss-blend-mode')(),
     function ({ addComponents }) {
       addComponents({
         '.container': {

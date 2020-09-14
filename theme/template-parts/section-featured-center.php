@@ -8,7 +8,7 @@
 
   <?php
       if( $image = $args['background_id']) {
-        echo wp_get_attachment_image( $image, array('9999', '550'), "", array('class' => 'absolute top-0 left-0 right-0 bottom-0 min-w-full min-h-full object-cover z-10') );
+        echo wp_get_attachment_image( $image, array('9999', '550'), "", array('class' => 'absolute top-0 left-0 right-0 bottom-0 min-w-full min-h-full object-cover opacity-point blend-luminosity z-10') );
       }
   ?>
   
