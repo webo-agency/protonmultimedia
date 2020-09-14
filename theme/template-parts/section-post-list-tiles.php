@@ -25,13 +25,13 @@ function show_image( $image_id, $size = null, $attributes = null ) {
 
   <?php if(count($args['filters_array'])): ?>
     <tag-filter>
-      <ul class="ml-1 flex flex-wrap">
+      <ul class="desktop-wide:px-smaller-container  ml-1 flex flex-wrap">
           <li class="mr-2" data-term="all">
-            <span class="pm-taxonomy-pill text-white desktop:text-md">Wszystkie</span>
+            <span class="pm-taxonomy-pill text-white desktop:text-base">Wszystkie</span>
           </li>
         <?php foreach ($args['filters_array'] as $index => $term): ?>
           <li class="mr-2" data-term="<?php echo $term->term_id; ?>">
-            <span class="pm-taxonomy-pill text-white desktop:text-md"><?php echo $term->name; ?></span>
+            <span class="pm-taxonomy-pill text-white desktop:text-base"><?php echo $term->name; ?></span>
           </li>
         <?php endforeach; ?>
       </ul>
