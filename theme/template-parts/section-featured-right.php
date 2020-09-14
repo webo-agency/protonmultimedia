@@ -1,14 +1,27 @@
+<?php
+/*** Function to show images whether SVG or non SVG ***/
+/*** $size & $attribute both can hold array if you want ***/
+function show_image( $image_id, $size = null, $attributes = null ) {
+	//first lets get the file info sto understand what kind of file it is
+	//as for svg file we will take different approach
+	$file_info = pathinfo( wp_get_attachment_url( $image_id ) );
+
+	//so, if the file type is SVG
+	if ( $file_info['extension'] === 'svg' ) {
+		return file_get_contents( wp_get_attachment_url( $image_id ) );
+	} else {
+		//for any other type of images i.e. JPG, PNG, GIF
+		//we can just simply use the wp_get_attachment_image() stock function
+		return wp_get_attachment_image( $image_id, $size, false, $attributes );
+	}
+}
+?>
 <section class="relative flex flex-col bg-gray-lighter text-black">
 
   <div class="flex-initial flex flex-row items-center">
-    <img    
-        class="hidden desktop-wide:block absolute ml-container top-0 bottom-0 left-0 my-auto" 
-        src="<?php echo get_template_directory_uri() . '/assets/svg/about-dots.svg' ?>" 
-        alt="Decorations"
-        width="85px"
-        height="275px"
-        role="presentation"
-    />
+    <div class="hidden desktop-wide:block absolute ml-container top-0 bottom-0 left-1px my-auto z-20 w-24">
+      <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/dots-block.svg'); ?>
+    </div>
   </div>
 
   <side-heading 
