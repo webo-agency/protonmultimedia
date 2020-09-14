@@ -68,7 +68,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
                 <?php
                 }
               ?>
-              <span class="font-special text-sm font-semibold bg-dark-blue px-4 py-4 w-full tablet:text-md tablet:leading-tight desktop:px-8 desktop:text-md desktop-wide:text-lg desktop-wide:px-12"><?php echo $title; ?></span>
+              <span class="font-special text-base font-semibold bg-dark-blue px-4 py-4 w-full tablet:text-md tablet:leading-tight desktop:px-8 desktop:text-md desktop-wide:text-lg desktop-wide:px-12"><?php echo $title; ?></span>
             </a>
           </li>
         <?php endforeach; ?>
