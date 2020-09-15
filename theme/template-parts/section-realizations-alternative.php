@@ -22,18 +22,11 @@
             <p class="pb-12 text-dark-font">
                 <?php echo get_field('realization_description', 'option'); ?>
             </p>
-
-            <img
-                class="hidden tablet:block absolute bottom-0 left-1/2 z-50 pointer-events-none mt-5 ml-40" 
-                width="170px"
-                height="116px"
-                src="<?php echo get_template_directory_uri() . '/assets/svg/dots-footer.svg' ?>" 
-                alt="Decorations"
-                role="presentation"
-            />  
         </header>
 
-        <div class="hidden desktop-wide:flex absolute top-0 right-0 left-auto z-20 w-40 flex-row overflow-hidden max-h-140px items-end">
+        <div class="hidden desktop-wide:flex absolute top-0 right-0 left-auto z-20 flex-row overflow-hidden items-end mt-72" style="right: 78px;width: 300px;">
+            <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/dots-pattern.svg'); ?>
+            <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/dots-pattern.svg'); ?>
             <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/dots-pattern.svg'); ?>
             <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/dots-pattern.svg'); ?>
         </div>
