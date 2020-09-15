@@ -41,10 +41,10 @@
           <?php $i = 0; foreach ($args['highlighted_array'] as $key => $field): $i++; if($i>4){ break; } ?>
             <li class="flex flex-row-reverse desktop:flex-row w-full desktop:w-1/2 items-center mb-10 desktop:mb-0 justify-end
               <?php echo ($i % 2) ? 'text-right' : 'text-left desktop:flex-row-reverse'; ?>  
-              <?php echo ($i == 1) ? 'desktop:pr-20 desktop:pb-12' : ''; ?> 
-              <?php echo ($i == 2) ? 'desktop:pl-20 desktop:pb-24' : ''; ?> 
-              <?php echo ($i == 3) ? 'desktop:pr-20 desktop:pb-10 desktop:pt-20' : ''; ?> 
-              <?php echo ($i == 4) ? 'desktop:pl-20 desktop:pt-0 desktop:pb-8' : ''; ?>">
+              <?php echo ($i == 1) ? 'desktop:pr-40 desktop:pb-12' : ''; ?> 
+              <?php echo ($i == 2) ? 'desktop:pl-40 desktop:pb-24' : ''; ?> 
+              <?php echo ($i == 3) ? 'desktop:pr-40 desktop:pb-10 desktop:pt-20' : ''; ?> 
+              <?php echo ($i == 4) ? 'desktop:pl-40 desktop:pt-40 desktop:pb-8' : ''; ?>">
               <h3 class="desktop:w-full mb-0 font-normal">
                 <?php 
                   $lines = explode(PHP_EOL, $field['highlighted_title']);
@@ -62,7 +62,7 @@
                   $args["highlighted_icon_center_id"], 
                   array('9999', '479'), 
                   "", 
-                  array('class' => 'object-cover min-w-479px', 'role' => 'presentation') ); 
+                  array('class' => 'object-cover max-w-479px w-full', 'role' => 'presentation') ); 
                 ?>
         </div>
       <?php endif; ?>
