@@ -34,7 +34,7 @@
     </div>
   </div>
 
-  <div class="container pb-16 mb-2 z-20">
+  <div class="container pb-40 mb-2 z-20">
     <div class="relative flex flex-row">
       <?php if( is_array($args['highlighted_array']) && !empty($args['highlighted_array']) ): ?>
         <ul class="w-full flex flex-row flex-wrap">
@@ -87,6 +87,15 @@
         </ul>
       <?php endif; ?>
   </div>
+
+  <img 
+      class="hidden tablet-wide:block absolute top-auto bottom-0 left-0 right-auto h-auto max-w-340px transform scale-flip pointer-events-none z-0 -mb-32" 
+      src="<?php echo get_template_directory_uri() . '/assets/svg/header-lines.svg' ?>" 
+      width="400px"
+      height="400px"
+      alt="Decorations"
+      role="presentation"
+  />
 
   <div class="guides right-minus-px left-auto bg-gray-light" role="presentation"></div>
 </section>

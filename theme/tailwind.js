@@ -178,7 +178,7 @@ module.exports = {
           marginRight: 'auto',
           paddingLeft: '1rem',
           paddingRight: '1rem',
-
+          
           '@screen phone': {
             maxWidth: '100%',
             paddingLeft: '1rem',
