@@ -1,5 +1,5 @@
-<section class="relative bg-gray-lighter">
-    <div class="container">
+<section class="bg-gray-lighter">
+    <div class="container relative">
         <?php if(get_field('realization_side_title', 'option')): ?>
         <side-heading
             class="text-dark-font"
