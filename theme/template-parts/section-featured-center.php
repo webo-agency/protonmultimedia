@@ -39,7 +39,7 @@
       <?php if( is_array($args['highlighted_array']) && !empty($args['highlighted_array']) ): ?>
         <ul class="w-full flex flex-row flex-wrap">
           <?php $i = 0; foreach ($args['highlighted_array'] as $key => $field): $i++; if($i>4){ break; } ?>
-            <li class="flex flex-row-reverse desktop:flex-row w-full desktop:w-1/2 items-center mb-10 desktop:mb-0 desktop:justify-end
+            <li class="flex flex-row-reverse desktop:flex-row w-full desktop:w-1/2 items-center mb-10 desktop:mb-0 justify-end
               <?php echo ($i % 2) ? 'desktop:text-right' : 'text-left desktop:flex-row-reverse'; ?>  
               <?php echo ($i == 1) ? 'desktop:pr-40 desktop:pb-12' : ''; ?> 
               <?php echo ($i == 2) ? 'desktop:pl-40 desktop:pb-24' : ''; ?> 
@@ -70,7 +70,7 @@
     <?php if( is_array($args['highlighted_array']) && !empty($args['highlighted_array']) ): ?>
         <ul class="w-full flex flex-row flex-wrap justify-center">
           <?php $i = 0; foreach ($args['highlighted_array'] as $key => $field): $i++; if($i>4): ?>
-            <li class="flex flex-row-reverse desktop:flex-row w-full desktop:w-1/2 items-center mb-10 desktop:mb-0 desktop:justify-end">
+            <li class="flex flex-row-reverse desktop:flex-row w-full desktop:w-1/2 items-center mb-10 desktop:mb-0 justify-end">
               <h3 class="desktop:w-full mb-0 font-normal">
                 <?php 
                   $lines = explode(PHP_EOL, $field['highlighted_title']);
