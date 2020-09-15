@@ -18,7 +18,7 @@
   </div>
 
   <div class="container flex flex-col items-center py-20 z-20">
-    <div class="desktop:max-w-1/2 flex flex-col justify-center flex-wrap flex-auto text-center pr-16 desktop:mb-0">
+    <div class="desktop:max-w-1/2 flex flex-col justify-center flex-wrap flex-auto text-center desktop:pr-16 desktop:mb-0">
       <h2 class="uppercase">
         <?php 
           $lines = explode(PHP_EOL, $args['title_string']);
@@ -39,8 +39,8 @@
       <?php if( is_array($args['highlighted_array']) && !empty($args['highlighted_array']) ): ?>
         <ul class="w-full flex flex-row flex-wrap">
           <?php $i = 0; foreach ($args['highlighted_array'] as $key => $field): $i++; if($i>4){ break; } ?>
-            <li class="flex flex-row-reverse desktop:flex-row w-full desktop:w-1/2 items-center mb-10 desktop:mb-0 justify-end
-              <?php echo ($i % 2) ? 'text-right' : 'text-left desktop:flex-row-reverse'; ?>  
+            <li class="flex flex-row-reverse desktop:flex-row w-full desktop:w-1/2 items-center mb-10 desktop:mb-0 desktop:justify-end
+              <?php echo ($i % 2) ? 'desktop:text-right' : 'text-left desktop:flex-row-reverse'; ?>  
               <?php echo ($i == 1) ? 'desktop:pr-40 desktop:pb-12' : ''; ?> 
               <?php echo ($i == 2) ? 'desktop:pl-40 desktop:pb-24' : ''; ?> 
               <?php echo ($i == 3) ? 'desktop:pr-40 desktop:pb-10 desktop:pt-20' : ''; ?> 
@@ -68,10 +68,9 @@
       <?php endif; ?>
     </div>
     <?php if( is_array($args['highlighted_array']) && !empty($args['highlighted_array']) ): ?>
-        <ul class="container w-full flex flex-row flex-wrap justify-center">
+        <ul class="w-full flex flex-row flex-wrap justify-center">
           <?php $i = 0; foreach ($args['highlighted_array'] as $key => $field): $i++; if($i>4): ?>
-            <li class="flex flex-row-reverse desktop:flex-row w-full desktop:w-1/2 items-center mb-10 desktop:mb-0 justify-end">
-              <div class="w-6 h-2 bg-primary mx-4"></div>  
+            <li class="flex flex-row-reverse desktop:flex-row w-full desktop:w-1/2 items-center mb-10 desktop:mb-0 desktop:justify-end">
               <h3 class="desktop:w-full mb-0 font-normal">
                 <?php 
                   $lines = explode(PHP_EOL, $field['highlighted_title']);
@@ -80,7 +79,7 @@
                   }
                 ?>
               </h3>
-              
+              <div class="w-6 h-2 bg-primary mx-4 desktop:order-first"></div>  
             </li>
             <?php endif; ?>
           <?php endforeach; ?>

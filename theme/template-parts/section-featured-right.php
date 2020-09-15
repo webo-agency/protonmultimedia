@@ -32,7 +32,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
   <div class="container">
     <div class="desktop-wide:pl-smaller-container flex flex-row flex-wrap pt-40 pb-16 mb-2 mt-2">
       
-      <div class="desktop:max-w-1/2 flex flex-col flex-wrap flex-auto pr-32 mb-12 desktop:mb-0">
+      <div class="desktop:max-w-1/2 flex flex-col flex-wrap flex-auto desktop:pr-32 mb-12 desktop:mb-0">
         <h2 class="uppercase desktop:text-lg">
           <?php 
             $lines = explode(PHP_EOL, $args['title_string']);
