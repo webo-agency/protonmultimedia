@@ -27,6 +27,8 @@ export default {
     data() {
       return {
         sliderOptionsBaner: {
+          effect: "fade",
+          fadeEffect: { crossFade: true },
           preloadImages: false,
           pagination: {
               el: '[data-realization-alternative-pagination]',
