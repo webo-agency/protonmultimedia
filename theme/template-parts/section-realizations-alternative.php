@@ -37,7 +37,7 @@
                 'posts_per_page' => -1
             ));
         ?>
-        <div class="pb-32">
+        <div class="desktop:pb-32">
             <?php if( $loop->have_posts() ): ?>
                 <realization-alternative-slider class="z-30">
                     <ul class="swiper-wrapper">
