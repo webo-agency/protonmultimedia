@@ -115,6 +115,7 @@ br + .line-decorated {
 @import "toggled.css";
 @import "on-scroll.css";
 @import "image-overlay.css";
+@import "menu-toggle.css";
 @import "admin-bar.css";
 
 @import "tailwindcss/screens";

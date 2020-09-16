@@ -8,9 +8,9 @@
 				<?php the_custom_logo(); ?>
 			</div>
 			<button class="menu-toggle block desktop:hidden px-1 py-2 z-40" data-menu aria-controls="primary-menu" aria-expanded="false">
-				<div class="w-8 h-1 bg-white rounded-lg mb-1"></div>
-				<div class="w-8 h-1 bg-white rounded-lg mb-1"></div>
-				<div class="w-8 h-1 bg-white rounded-lg"></div>
+				<div class="menu-toggle__first w-8 h-1 bg-white rounded-lg mb-1"></div>
+				<div class="menu-toggle__middle w-8 h-1 bg-white rounded-lg mb-1"></div>
+				<div class="menu-toggle__last w-8 h-1 bg-white rounded-lg"></div>
 			</button>
 			<main-navigation>
 				<nav id="site-navigation" class="main-navigation fixed left-0 top-0 w-full h-screen transition-all duration-500 invisible opacity-0 desktop:opacity-100 desktop:visible flex flex-col desktop:flex-row desktop:flex items-center flex-auto z-20 desktop:relative desktop:w-auto desktop:h-auto bg-dark-blue desktop:bg-transparent">
