@@ -79,7 +79,7 @@
                   }
                 ?>
               </h3>
-              <div class="w-6 h-2 bg-primary mx-4 desktop:order-first"></div>  
+              <div class="flex-0 w-6 h-2 bg-primary mx-4 desktop:order-first"></div>  
             </li>
             <?php endif; ?>
           <?php endforeach; ?>

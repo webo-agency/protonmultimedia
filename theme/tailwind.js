@@ -121,6 +121,7 @@ module.exports = {
         'transparent': 'transparent',
       },
       flex: {
+        '0': '0 0 auto',
         '1/2': '0 0 50%',
       },
       maxWidth: {
@@ -178,7 +179,7 @@ module.exports = {
           marginRight: 'auto',
           paddingLeft: '1rem',
           paddingRight: '1rem',
-          
+
           '@screen phone': {
             maxWidth: '100%',
             paddingLeft: '1rem',
