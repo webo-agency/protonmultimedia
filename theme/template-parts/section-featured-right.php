@@ -32,7 +32,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
   <div class="container">
     <div class="desktop-wide:pl-smaller-container flex flex-row flex-wrap pt-24 desktop:pt-40 pb-16 mb-2 mt-2">
       
-      <div class="desktop:max-w-1/2 flex flex-col flex-wrap flex-auto desktop:pr-32 mb-12 desktop:mb-0">
+      <div class="desktop:max-w-1/2 flex flex-col flex-wrap flex-auto desktop:pr-32 mb-12 desktop:mb-0 items-center text-center tablet:items-start tablet:text-left">
         <h2 class="uppercase desktop:text-lg">
           <?php 
             $lines = explode(PHP_EOL, $args['title_string']);
@@ -50,7 +50,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
       <?php if(count($args['highlighted_array'])): ?>
         <ul class="desktop:w-1/2 flex flex-row flex-wrap">
           <?php foreach ($args['highlighted_array'] as $index => $value): ?>   
-            <li class="flex flex-col items-start w-full tablet:w-1/2 tablet:pr-20">
+            <li class="flex flex-col w-full tablet:w-1/2 tablet:pr-20 text-center items-center tablet:items-start tablet:text-left">
               <div class="mb-8 w-20 svg-fill-primary">
                 <?php echo show_image( 
                     $value["highlighted_icon"], 
