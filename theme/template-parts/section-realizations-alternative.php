@@ -70,7 +70,7 @@
                                         <?php echo the_content(); ?>
                                     </div>
                                 
-                                    <div class="flex items-center justify-between mb-0 mt-auto ml-0 mr-auto">
+                                    <div class="flex items-center justify-between mb-0 mt-auto mx-auto desktop:ml-0 desktop:mr-auto">
                                         <div class="flex-initial px-4 py-8" data-realization-alternative-button-prev>
                                             <img 
                                                 class="block" 
