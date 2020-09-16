@@ -1,4 +1,4 @@
-<section class="bg-gray-lighter">
+<section class="relative bg-gray-lighter">
     <div class="container">
         <?php if(get_field('realization_side_title', 'option')): ?>
         <side-heading
