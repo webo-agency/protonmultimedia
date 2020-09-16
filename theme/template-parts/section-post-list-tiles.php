@@ -16,18 +16,17 @@ function show_image( $image_id, $size = null, $attributes = null ) {
 	}
 }
 ?>
-<section class="relative z-50">
-  <div class="container">
-    <side-heading>
-      <h2><?php echo $args['section_name_string']; ?></h2>
-    </side-heading>
+<section class="container relative z-50">
 
-    <div class="guides left-minus-px right-auto bg-dark-blue" role="presentation"></div>
-  </div>
+  <side-heading>
+    <h2><?php echo $args['section_name_string']; ?></h2>
+  </side-heading>
+
+  <div class="guides left-minus-px right-auto bg-dark-blue" role="presentation"></div>
 
   <?php if(count($args['filters_array'])): ?>
     <tag-filter>
-      <ul class="container desktop-wide:px-smaller-container flex flex-wrap pb-4 sticky top-0 z-20 bg-dark-blue">
+      <ul class="container desktop-wide:px-smaller-container flex flex-wrap pb-4 sticky top-0 z-50 bg-dark-blue">
           <li class="mr-2" data-term="all">
             <span class="pm-taxonomy-pill text-white desktop:text-base">Wszystkie</span>
           </li>
