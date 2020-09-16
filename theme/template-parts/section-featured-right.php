@@ -30,7 +30,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
   </div>
 
   <div class="container">
-    <div class="desktop-wide:pl-smaller-container flex flex-row flex-wrap pt-40 pb-16 mb-2 mt-2">
+    <div class="desktop-wide:pl-smaller-container flex flex-row flex-wrap pt-24 desktop:pt-40 pb-16 mb-2 mt-2">
       
       <div class="desktop:max-w-1/2 flex flex-col flex-wrap flex-auto desktop:pr-32 mb-12 desktop:mb-0">
         <h2 class="uppercase desktop:text-lg">
@@ -60,7 +60,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
                 ?>
               </div>
               
-              <h3 class="font-special font-bold text-lg mb-14">
+              <h3 class="font-special font-bold desktop:text-md desktop-wide:text-lg mb-14">
                 <?php echo $value["highlighted_title"]; ?>
               </h3>
             </li>
