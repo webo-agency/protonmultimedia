@@ -18,20 +18,29 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div class="relative desktop-wide:px-smaller-container flex flex-row">
-				<div class="flex-auto">
-					<h2 class="uppercase mb-14 mt-20 desktop:mt-40">
-						<?php
-							$news_title = "Newsy";
-							$news_lines = explode(PHP_EOL, $news_title);
-							foreach ( $news_lines as $line) {
-								echo preg_replace("/\*(.+)\*/", '<span class="block text-primary">$1</span>', $line);
-							}
-						?>
-					</h2>
-					<p class="pb-10 tablet:pb-16">
-						<?php echo get_field('news_description', 'option'); ?>
-					</p>
+				<div class="container z-10">
+					<div class="flex-auto">
+						<h2 class="font-bold uppercase mb-14 mt-20 desktop:mt-40">
+							<?php
+								$news_title = get_field('news_title', 'option');;
+								$news_lines = explode(PHP_EOL, $news_title);
+								foreach ( $news_lines as $line) {
+									echo preg_replace("/\*(.+)\*/", '<span class="block line-decorated bg-primary">$1</span>', $line);
+								}
+							?>
+						</h2>
+						<p class="pb-10 tablet:pb-16">
+							<?php echo get_field('news_description', 'option'); ?>
+						</p>
+					</div>
 				</div>
+				<?php $news_bg = get_field('news_background', 'option'); ?>
+				<img 
+					src="<?php echo $news_bg['url'] ?>" 
+					alt="Background"
+					class="object-cover absolute left-0 top-0 right-0 bottom-0 h-full w-full pointer-events-none"
+					role="presentation"
+				/>
 			</div>
 			<div class="container">
 				<section class="relative bg-dark-blue-2">
