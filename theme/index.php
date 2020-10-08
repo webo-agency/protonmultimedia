@@ -44,7 +44,7 @@ get_header();
 			</div>
 			<div class="container">
 				<section class="relative bg-dark-blue-2">
-					<div class="pt-4 phone-wide:pt-12">
+					<div>
 			
 						<?php
 						if ( have_posts() ) :
