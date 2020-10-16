@@ -25,7 +25,17 @@
 							)
 						);
 					?>
-					<a class="hidden desktop:flex flex-initial whitespace-no-wrap pm-button pm-button--primary pm-button--small mb-12 desktop:mb-0" href="#kontakt">Skontaktuj się</a>
+				
+					<?php
+            $button_cta = get_field('button_link', 'option');
+          ?>
+					<a 
+						class="hidden desktop:flex flex-initial whitespace-no-wrap pm-button pm-button--primary pm-button--small mb-12 desktop:mb-0" 
+						href="<?php echo $button_cta['url'] ?>"
+            target="<?php echo $button_cta['target'] ?>"
+					>
+						<?php echo $button_cta['title'] ?>
+					</a>
 				</nav>
 			</main-navigation>
 		</div>
