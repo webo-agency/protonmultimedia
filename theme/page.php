@@ -14,8 +14,20 @@
 
 	get_header();
 
-	get_template_part( 'template-parts/section', 'baner' );
+	$sections_path = 'template-parts/section';
+
+	$id = get_queried_object_id();
+
+	$post = get_post($id);
 ?>
+	<?php get_template_part( $sections_path, 'header', 
+			array( 
+				'title_string' => get_the_title($id), 
+				'description_string' => apply_filters('the_content', $post->post_content),
+				'background_id' => get_post_thumbnail_id($id)
+			)
+		);
+	?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
@@ -27,17 +39,12 @@
 
 						get_template_part( 'template-parts/content', 'page' );
 
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) :
-							comments_template();
-						endif;
-
-					endwhile; // End of the loop.
+					endwhile;
 					?>
 				</div>
 			</div>
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 <?php
 get_footer();
