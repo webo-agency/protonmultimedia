@@ -23,7 +23,7 @@ $sections_path = 'template-parts/section';
 
 	<?php get_template_part( $sections_path, 'call-to-action' ); ?>
 
-	<!-- TEST deploy 2 -->
+	<!-- TEST deploy 3 -->
 
 <?php
 get_footer();
