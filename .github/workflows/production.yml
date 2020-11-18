@@ -39,6 +39,17 @@ jobs:
           ACF_PRO_KEY: ${{ secrets.ACF_PRO_KEY }}
           COMPOSER_MIRROR_PATH_REPOS: 1
 
+      - name: Deploy to Server
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          ARGS: "--dry-run -rltgoDzvO --delete"
+          SOURCE: ${{ secrets.SOURCE }}
+          TARGET: ${{ secrets.TARGET }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@3.0.0
         with:
