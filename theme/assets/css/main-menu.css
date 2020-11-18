@@ -1,0 +1,12 @@
+@screen tablet{
+  .pm-header .menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pm-header .menu ul li{
+    padding: 0 10px;
+  }
+}
+

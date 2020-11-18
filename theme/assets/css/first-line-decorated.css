@@ -1,0 +1,19 @@
+.first-line-decorated{
+  &:first-line{
+    @apply bg-dark-blue-2;
+    outline: 1px solid #0f0;
+  }  
+
+  &:before{
+    content: '';
+    @apply absolute;
+    @apply bg-dark-blue-2;
+    top: 0;
+    right: auto;
+    left: -5rem;
+    bottom: auto;
+    height: 2.8rem;
+    z-index: -1;
+    min-width: 50%;
+  }
+}

@@ -1,0 +1,61 @@
+{
+    "key": "group_5f89606790160",
+    "title": "Kontakt - wybrany formularz kontaktowy",
+    "fields": [
+        {
+            "key": "field_5f896105cef1b",
+            "label": "Formularz",
+            "name": "contact_form",
+            "type": "acfe_forms",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "forms": "",
+            "field_type": "select",
+            "default_value": "",
+            "return_format": "id",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "post_type": [],
+            "choices": [],
+            "ajax": 0,
+            "placeholder": "",
+            "layout": "",
+            "toggle": 0,
+            "allow_custom": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "contact.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1602842779
+}
