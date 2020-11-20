@@ -25,7 +25,7 @@
 		);
 	?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="x-contact content-area">
 		<main id="main" class="site-main">
 			<div class="container">
 				<div class="desktop-wide:px-smaller-container">

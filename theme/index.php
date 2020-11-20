@@ -15,7 +15,7 @@
 get_header();
 ?>
 	
-	<div id="primary" class="content-area">
+	<div id="primary" class="x-index content-area">
 		<main id="main" class="site-main">
 			<div class="relative desktop-wide:px-smaller-container flex flex-row">
 				<div class="container z-10">

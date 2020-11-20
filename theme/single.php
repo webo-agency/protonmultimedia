@@ -12,7 +12,7 @@
   $sections_path = 'template-parts/section';
 ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="x-single content-area">
 		<main id="main" class="site-main">
 
 		<?php
