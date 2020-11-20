@@ -105,7 +105,9 @@
                                     <div class="flex-1 hidden desktop:block desktop:invisible desktop:group-hover:visible text-sm full-hd:text-base text-black">
                                         <p class="mb-6 full-hd:mb-14"><?php echo $excerpt; ?></p>
                                     </div>
-                                    <a class="desktop:invisible desktop:group-hover:visible pm-button pm-button--text-primary" href="<?php echo esc_url( $permalink ); ?>">Czytaj całość</a>
+                                    <a class="desktop:invisible desktop:group-hover:visible pm-button pm-button--text-primary" href="<?php echo esc_url( $permalink ); ?>">
+                                        <?php echo $news_title = get_field('news_read_more', 'option'); ?>
+                                    </a>
                                 </div>
                             </div>
                         </article>
@@ -123,7 +125,10 @@
                     role="presentation"
                 />
                 <div class="mx-auto max-w-885px">
-                    <a class="pm-button pm-button--outline w-full text-center" href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" title="Zobacz kolejne wpisy">ZOBACZ KOLEJNE WPISY</a>
+                    <?php $news_title = get_field('news_show_all', 'option'); ?>
+                    <a class="pm-button pm-button--outline w-full text-center uppercase" href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" title="<?php echo $news_title; ?>">
+                        <?php echo $news_title; ?>
+                    </a>
                 </div>
             </div>
         </div>
