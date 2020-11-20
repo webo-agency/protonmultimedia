@@ -1,5 +1,7 @@
 <?php 
 	get_header();
+
+	$sections_path = 'template-parts/section';
 ?>
 	
 	<div id="primary" class="x-home content-area">
@@ -35,10 +37,10 @@
 			
 						<?php
 						if ( have_posts() ) :
-						$list_of_posts = get_posts( array(
-							'sort_order' => 'desc',
-							'posts_per_page' => 10,
-						));
+							$list_of_posts = get_posts( array(
+								'sort_order' => 'desc',
+								'posts_per_page' => 10,
+							));
 						if( $list_of_posts ): ?>
 						<ul class="w-full flex-auto flex flex-col tablet:flex-row tablet:flex-wrap">
 							<?php foreach( $list_of_posts as $featured_post ): 
