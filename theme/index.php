@@ -135,10 +135,9 @@ get_header();
 				?>
 			</div>
 			</section>
+			
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-	<?php get_template_part( $sections_path, 'call-to-action' ); ?>
 
 <?php
 get_footer();
