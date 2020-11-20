@@ -1,13 +1,5 @@
 <?php 
-/* 
- * Template Name: Nowości
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package ProtonMultimedia
- */
-
-get_header();
+	get_header();
 ?>
 	
 	<div id="primary" class="content-area">
