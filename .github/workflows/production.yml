@@ -31,15 +31,13 @@ jobs:
       - name: Install dependency in theme
         run: cd theme && npm install && npm run generate && rm -rf node_modules && cd ../
 
-      - name: Copy to public folder / No Composer
-        run: cp -avr ./dist ./public
-      # - name: Composer run
-      #   uses: MilesChou/composer-action@master
-      #   with:
-      #     args: install
-      #   env:
-      #     ACF_PRO_KEY: ${{ secrets.ACF_PRO_KEY }}
-      #     COMPOSER_MIRROR_PATH_REPOS: 1
+      - name: Composer run
+        uses: MilesChou/composer-action@master
+        with:
+          args: install
+        env:
+          ACF_PRO_KEY: ${{ secrets.ACF_PRO_KEY }}
+          COMPOSER_MIRROR_PATH_REPOS: 1
 
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@v2.1.5
