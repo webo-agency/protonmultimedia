@@ -82,7 +82,8 @@
       "../public/wp-content/themes/twentynineteen",
       "../public/wp-content/themes/twentyseventeen",
       "../public/wp-content/themes/twentytwenty/package.json",
-      "../public/wp-content/themes/twentytwenty/package-lock.json"
+      "../public/wp-content/themes/twentytwenty/package-lock.json",
+      "../public/wp-content/themes/protonmultimedia-theme/node_modules"
     ]
   }
 }

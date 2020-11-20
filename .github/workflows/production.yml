@@ -47,7 +47,7 @@ jobs:
           node-version: 12.x
 
       - name: Install dependency in theme
-        run: cd theme && npm install && npm run generate && rm -rf node_modules && cd ../
+        run: cd theme && npm install && npm run generate && cd ../
 
       - name: Composer run
         uses: MilesChou/composer-action@master
@@ -56,6 +56,9 @@ jobs:
         env:
           ACF_PRO_KEY: ${{ secrets.ACF_PRO_KEY }}
           COMPOSER_MIRROR_PATH_REPOS: 1
+
+      - name: Remove node
+        run: cd public/wp-content/themes/protonmultimedia-theme && rm -rf node_modules && cd ../ && cd ../ && cd ../ && cd ../      
 
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@v2.1.5
