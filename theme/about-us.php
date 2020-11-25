@@ -26,6 +26,12 @@
 		);
 	?>
 
+	<main id="main">
+		<?php
+		 	the_content();
+		?>
+	</main>
+
   <?php get_template_part( $sections_path, 'call-to-action' ); ?>
 
 <?php
