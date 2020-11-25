@@ -27,9 +27,11 @@
 	?>
 
 	<main id="main">
-		<?php
-		 	the_content();
-		?>
+		<div class="desktop-wide:px-smaller-container">
+			<?php
+				the_content();
+			?>
+		</div>
 	</main>
 
   <?php get_template_part( $sections_path, 'call-to-action' ); ?>
