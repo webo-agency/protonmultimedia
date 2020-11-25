@@ -7,56 +7,45 @@
  * @package ProtonMultimedia
  */
 
-get_header();
+	get_header();
+
+	$sections_path = 'template-parts/section';
+
+	$id = get_queried_object_id();
+
+	$post = get_post($id); 
 ?>
 
-	<div id="primary" class="x-404 content-area">
+	<?php get_template_part( $sections_path, 'header', 
+			array( 
+				'title_string' => esc_html( 'Oops! That page can&rsquo;t be found.', 'protonmultimedia-theme' ), 
+				'description_string' => false,
+        'background_id' => false,
+        'align_canter_boolean' => true
+			)
+		);
+	?>
+
+	<div class="desktop-wide:px-smaller-container">
 		<main id="main" class="site-main">
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'swistak-theme' ); ?></h1>
+					<h1 class="page-title"><?php esc_html( 'Oops! That page can&rsquo;t be found.', 'proton-theme' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'swistak-theme' ); ?></p>
+					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'protonmultimedia-theme' ); ?></p>
 
 					<?php
-					get_search_form();
-
-					the_widget( 'WP_Widget_Recent_Posts' );
+						get_search_form();
 					?>
 
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'swistak-theme' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories(
-								array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
-								)
-							);
-							?>
-						</ul>
-					</div><!-- .widget -->
+				</div>
+			</section>
 
-					<?php
-					/* translators: %1$s: smiley */
-					$protonmultimedia_theme_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'swistak-theme' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$protonmultimedia_theme_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 <?php
 get_footer();
