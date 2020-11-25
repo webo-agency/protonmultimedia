@@ -11,7 +11,7 @@
 
   $sections_path = 'template-parts/section';
 ?>
-		<main id="main" class="desktop-wide:px-smaller-container">
+		<main id="main">
 
 			<?php
 				while ( have_posts() ) :
