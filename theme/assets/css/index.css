@@ -98,6 +98,11 @@ br + .line-decorated {
   }
 }
 
+.content p{
+  @apply mb-8;
+  @apply pb-2;
+}
+
 .content ul,
 .content ol{
   @apply ml-6;

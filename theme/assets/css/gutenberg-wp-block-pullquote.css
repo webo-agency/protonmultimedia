@@ -1,0 +1,7 @@
+.wp-block-pullquote{
+  @apply border-gray;
+  @apply border-solid;
+  @apply border-t;
+  @apply border-b;
+  @apply mb-16;
+}
