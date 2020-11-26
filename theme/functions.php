@@ -172,7 +172,7 @@ add_filter('excerpt_length', 'new_excerpt_length');
 
 function wporg_block_wrapper( $block_content, $block ) {
 
-	$content = '<div class="max-w-900px">';
+	$content = '<div class="mx-auto max-w-900px">';
 	$content .= $block_content;
 	$content .= '</div>';
 
