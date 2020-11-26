@@ -157,3 +157,14 @@ add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
 
 add_filter( 'wpcf7_load_js', '__return_false' ); 
 add_filter( 'wpcf7_load_css', '__return_false' );
+
+
+function new_excerpt_more( $more ) {
+	return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+function new_excerpt_length($length) {
+	return 80;
+}
+add_filter('excerpt_length', 'new_excerpt_length');
