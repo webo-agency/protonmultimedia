@@ -28,7 +28,7 @@
 			);
 		?>
 
-		<main id="main" class="bg-white text-black">
+		<main id="main" class="container bg-white text-black">
 			<?php get_template_part( 'template-parts/content', get_post_type() );	?>
 		</main>
 	<?php endwhile;	?>
