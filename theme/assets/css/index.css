@@ -107,7 +107,7 @@ br + .line-decorated {
 .content ol{
   @apply ml-6;
   @apply leading-4;
-  @apply mb-4;
+  @apply mb-8;
 }
 
 .content ul ul,
