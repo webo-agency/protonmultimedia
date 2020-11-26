@@ -172,7 +172,7 @@ add_filter('excerpt_length', 'new_excerpt_length');
 
 function wporg_block_wrapper( $block_content, $block ) {
 
-	$content = '<div class="container desktop-wide:px-post-container">';
+	$content = '<div class="desktop-wide:px-post-container">';
 	$content .= $block_content;
 	$content .= '</div>';
 
