@@ -2,9 +2,13 @@
   <div class="container">
     <div class="image-overlay absolute top-0 bottom-0 left-0 w-full h-full -mb-1 z-20 pointer-events-none"></div>
     <div class="desktop-wide:px-smaller-container relative max-w-5xl flex flex-col justify-center pt-40 pb-40 z-30">
-      <h2 class="font-bold uppercase mb-4 tablet:mb-14 leading-tight">
+      
+      <span class="text-primary text-sm tablet:text-base leading-line-height-normal block mb-1 tablet:mb-2"><?php echo $args['post_date_string']; ?></span>
+
+      <h2 class="mb-4 full-hd:mb-6 desktop:text-white desktop:group-hover:text-black">
         <?php echo $args['title_string']; ?>
       </h2>
+
       <div class="w-full leading-relaxed">
         <div class="text-base tablet-wide:text-md tablet-wide:mb-5">
           <?php echo $args['description_string']; ?>

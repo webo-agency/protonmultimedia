@@ -17,6 +17,7 @@
 			get_template_part( $sections_path, 'post-header', 
 				array( 
 					'title_string' => get_the_title('', false), 
+					'post_date_string' => get_the_date( 'd / m / Y' ),
 					'description_string' => get_the_excerpt(),
 					'background_id' => get_post_thumbnail_id(),
 				)
