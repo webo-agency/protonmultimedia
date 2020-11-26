@@ -98,6 +98,19 @@ br + .line-decorated {
   }
 }
 
+ul,ol{
+  @apply ml-6;
+  @apply leading-4;
+}
+
+ul{
+  @apply list-disc;
+}
+
+ol{
+  @apply list-decimal;
+}
+
 @import "line-decorated.css";
 @import "box-overlay.css";
 @import "box-gradient-overlay.css";
