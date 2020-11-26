@@ -218,7 +218,7 @@ function proton_allowed_block_types( $allowed_block_types, $post ) {
 		'core/reusableBlock',
 		'core/separator',
 		'core/shortcode',
-		'core/spacer',
+	//	'core/spacer',
 		'core/subhead',
 		'core/table',
 		'core/textColumns',
