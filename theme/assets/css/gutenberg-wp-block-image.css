@@ -1,8 +1,21 @@
-.wp-block-image.is-style-default{
+/* Full size */
+.wp-block-image.size-full {
     @apply max-w-full;
     @apply mx-auto;
 }
 
-.wp-block-image.is-style-default img{
+.wp-block-image.size-full img{
     @apply w-full;
+}
+
+.wp-block-image.size-full  img{
+    @apply w-full;
+}
+
+/* Signature */
+.wp-block-image figcaption{
+    @apply text-center;
+    @apply text-gray-2;
+    @apply text-sm;
+    @apply capitalize;
 }

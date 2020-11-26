@@ -111,6 +111,11 @@ ol{
   @apply list-decimal;
 }
 
+a{
+  @apply text-primary;
+  @apply underline;
+}
+
 @import "line-decorated.css";
 @import "box-overlay.css";
 @import "box-gradient-overlay.css";
