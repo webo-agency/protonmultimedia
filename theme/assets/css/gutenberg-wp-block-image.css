@@ -1,3 +1,8 @@
-.wp-block-image .is-style-default img{
+.wp-block-image.is-style-default{
+    @apply max-w-full;
+    @apply mx-auto;
+}
+
+.wp-block-image.is-style-default img{
     @apply w-full;
 }
