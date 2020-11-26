@@ -183,7 +183,7 @@ function wporg_block_wrapper( $block_content, $block ) {
 			return $content;
 	} 
 
-	if( $block['blockName'] === 'social-link') {
+	if( $block['blockName'] === 'core/social-link') {
 		return $content;
 	}
 	
@@ -226,6 +226,7 @@ function proton_allowed_block_types( $allowed_block_types, $post ) {
 		'core/subhead',
 		'core/table',
 		'core/textColumns',
+		'core/social-link',
 	//	'core/verse',
 		'core/video',
 	);
