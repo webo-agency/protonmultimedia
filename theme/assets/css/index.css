@@ -98,28 +98,28 @@ br + .line-decorated {
   }
 }
 
-ul,
-ol{
+.content ul,
+.content ol{
   @apply ml-6;
   @apply leading-4;
 }
 
-ul ul,
-ul li,
-ol ol,
-ol li{
+.content ul ul,
+.content ul li,
+.content ol ol,
+.content ol li{
   @apply mb-4;
 }
 
-ul{
+.content ul{
   @apply list-disc;
 }
 
-ol{
+.content ol{
   @apply list-decimal;
 }
 
-a{
+.content a{
   @apply text-primary;
   @apply underline;
 }

@@ -29,9 +29,7 @@
 		?>
 
 		<main id="main" class="bg-white text-black desktop:py-32">
-			<div class="container">
-				<?php get_template_part( 'template-parts/content', get_post_type() );	?>
-			</div>
+			<?php get_template_part( 'template-parts/content', get_post_type() );	?>
 		</main>
 	<?php endwhile;	?>
 
