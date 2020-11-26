@@ -182,6 +182,10 @@ function wporg_block_wrapper( $block_content, $block ) {
 			$content .= '</div>';
 			return $content;
 	}
+
+	if ( $block['blockName'] === 'core/social-links' ) {
+		return $block_content;
+	}
 	
 	return $content;
 }
