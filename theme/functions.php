@@ -176,12 +176,17 @@ function wporg_block_wrapper( $block_content, $block ) {
 			$content .= $block_content;
 			$content .= '</div>';
 			return $content;
-	} else {
-			$content = '<div class="desktop-wide:px-smaller-container">';
+	} elseif( $block['blockName'] === 'core/gallery' ) {
+			$content = '<div class="desktop-wide:px-smaller-container mx-4">';
 			$content .= $block_content;
 			$content .= '</div>';
 			return $content;
-	}
+	} else {
+		$content = '<div class="desktop-wide:px-smaller-container">';
+		$content .= $block_content;
+		$content .= '</div>';
+		return $content;
+}
 }
 
 add_filter( 'render_block', 'wporg_block_wrapper', 10, 2 );
