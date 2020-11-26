@@ -229,3 +229,12 @@ function proton_allowed_block_types( $allowed_block_types, $post ) {
 }
 
 add_filter( 'allowed_block_types', 'proton_allowed_block_types', 10, 2 );
+
+
+
+function remove_h1_from_heading($args) {
+	// Just omit h1 from the list
+	$args['block_formats'] = 'Paragraph=p;Heading 2=h2;Heading 3=h3;Heading 4=h4;Heading 5=h5;Heading 6=h6;Pre=pre';
+	return $args;
+}
+add_filter('tiny_mce_before_init', 'remove_h1_from_heading' );
