@@ -151,6 +151,7 @@ module.exports = {
       },
       padding: {
         'smaller-container': '11rem',
+        'post-container': '25rem',
         'header': '70.06px',
         'header-desktop': '82px',
       }
