@@ -168,3 +168,20 @@ function new_excerpt_length($length) {
 	return 80;
 }
 add_filter('excerpt_length', 'new_excerpt_length');
+
+
+function wporg_block_wrapper( $block_content, $block ) {
+	if ( $block['blockName'] === 'core/image' ) {
+			$content = '<div class="block-image xxx">';
+			$content .= $block_content;
+			$content .= '</div>';
+			return $content;
+	} else {
+			$content = '<div class="test">';
+			$content .= $block_content;
+			$content .= '</div>';
+			return $content;
+	}
+}
+
+add_filter( 'render_block', 'wporg_block_wrapper', 10, 2 );
