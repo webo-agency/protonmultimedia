@@ -1,7 +1,7 @@
 <header class="relative overflow-hidden">
   <div class="container">
     <div class="image-overlay absolute top-0 bottom-0 left-0 w-full h-full -mb-1 z-20 pointer-events-none"></div>
-    <div class="desktop-wide:px-post-container relative flex flex-col justify-center pt-40 pb-40 z-30">
+    <div class="max-w-900px relative flex flex-col justify-center pt-40 pb-40 z-30">
       
       <span class="text-primary text-sm tablet:text-base leading-line-height-normal block mb-1 tablet:mb-2"><?php echo $args['post_date_string']; ?></span>
 
