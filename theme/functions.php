@@ -171,22 +171,19 @@ add_filter('excerpt_length', 'new_excerpt_length');
 
 
 function wporg_block_wrapper( $block_content, $block ) {
+
+	$content = '<div class="container desktop-wide:px-smaller-container">';
+	$content .= $block_content;
+	$content .= '</div>';
+
 	if ( $block['blockName'] === 'core/image' ) {
 			$content = '<div class="mx-auto w-auto max-w-full">';
 			$content .= $block_content;
 			$content .= '</div>';
 			return $content;
-	} elseif( $block['blockName'] === 'core/gallery' ) {
-			$content = '<div class="desktop-wide:px-smaller-container mx-4">';
-			$content .= $block_content;
-			$content .= '</div>';
-			return $content;
-	} else {
-		$content = '<div class="desktop-wide:px-smaller-container">';
-		$content .= $block_content;
-		$content .= '</div>';
-		return $content;
-}
+	} 
+	
+	return $content;
 }
 
 add_filter( 'render_block', 'wporg_block_wrapper', 10, 2 );
