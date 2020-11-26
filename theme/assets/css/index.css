@@ -130,18 +130,11 @@ br + .line-decorated {
   @apply underline;
 }
 
-.content h4{
+.content h4,
+.content h5,
+.content h6{
   @apply text-base;
 }
-
-.content h5{
-  @apply text-sm;
-}
-
-.content h6{
-  @apply text-sm;
-}
-
 
 @import "line-decorated.css";
 @import "box-overlay.css";
