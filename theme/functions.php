@@ -172,7 +172,7 @@ add_filter('excerpt_length', 'new_excerpt_length');
 
 function wporg_block_wrapper( $block_content, $block ) {
 
-	$content = '<div class="desktop-wide:px-post-container">';
+	$content = '<div class="max-w-900px">';
 	$content .= $block_content;
 	$content .= '</div>';
 
@@ -181,10 +181,6 @@ function wporg_block_wrapper( $block_content, $block ) {
 			$content .= $block_content;
 			$content .= '</div>';
 			return $content;
-	} 
-
-	if( $block['blockName'] === 'core/social-links') {
-		return $content;
 	}
 	
 	return $content;
