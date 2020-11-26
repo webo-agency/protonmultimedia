@@ -9,6 +9,18 @@
         <?php echo $args['title_string']; ?>
       </h2>
 
+      <div class="mb-6">
+        <?php
+          foreach($args['post_terms_terms'] as $term) {
+            ?>
+              <a class="pm-taxonomy-pill" href="<?php echo $term->link; ?>" title="<?php echo $term->name; ?>">
+                  <?php echo $term->name; ?>
+              </a>
+            <?php
+          }
+        ?>
+      </div>
+
       <div class="w-full leading-relaxed">
         <div class="text-base tablet-wide:text-md tablet-wide:mb-5">
           <?php echo $args['description_string']; ?>

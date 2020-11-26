@@ -18,6 +18,10 @@
 				array( 
 					'title_string' => get_the_title('', false), 
 					'post_date_string' => get_the_date( 'd / m / Y' ),
+					'post_terms_terms' => get_terms( array(
+						'taxonomy' => 'post_tag',
+						'hide_empty' => true,
+					)),
 					'description_string' => get_the_excerpt(),
 					'background_id' => get_post_thumbnail_id(),
 				)
