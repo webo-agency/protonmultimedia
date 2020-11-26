@@ -294,7 +294,7 @@ function custom_register_block_core_social_link() {
 	register_block_type( $block );
 }
 
-add_action( 'after_setup_theme', 'custom_register_block_core_social_link', 99 );
+//add_action( 'after_setup_theme', 'custom_register_block_core_social_link', 99 );
 
 
 
