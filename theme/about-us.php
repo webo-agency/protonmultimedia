@@ -21,7 +21,7 @@
 				'title_string' => get_the_title($id), 
 				'description_string' => apply_filters('the_content', $post->post_content),
         'background_id' => get_post_thumbnail_id($id),
-        'align_canter_boolean' => true
+        'align_center_boolean' => true
 			)
 		);
 	?>

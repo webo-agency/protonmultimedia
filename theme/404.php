@@ -21,7 +21,7 @@
 				'title_string' => esc_html( 'Oops! That page can&rsquo;t be found.', 'protonmultimedia-theme' ), 
 				'description_string' => false,
         'background_id' => false,
-        'align_canter_boolean' => true
+        'align_center_boolean' => true
 			)
 		);
 	?>
