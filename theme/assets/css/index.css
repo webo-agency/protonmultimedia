@@ -98,9 +98,15 @@ br + .line-decorated {
   }
 }
 
-ul,ol{
+ul,
+ol{
   @apply ml-6;
   @apply leading-4;
+}
+
+ul li,
+ol li{
+  @apply mb-4;
 }
 
 ul{
