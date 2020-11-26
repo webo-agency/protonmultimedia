@@ -172,12 +172,12 @@ add_filter('excerpt_length', 'new_excerpt_length');
 
 function wporg_block_wrapper( $block_content, $block ) {
 	if ( $block['blockName'] === 'core/image' ) {
-			$content = '<div class="block-image xxx">';
+			$content = '<div class="mx-auto w-auto max-w-full">';
 			$content .= $block_content;
 			$content .= '</div>';
 			return $content;
 	} else {
-			$content = '<div class="test">';
+			$content = '<div class="desktop-wide:px-smaller-container">';
 			$content .= $block_content;
 			$content .= '</div>';
 			return $content;
