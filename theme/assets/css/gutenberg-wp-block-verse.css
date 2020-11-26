@@ -1,0 +1,3 @@
+.wp-block-verse{
+  @apply break-words;
+}
