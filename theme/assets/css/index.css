@@ -133,6 +133,7 @@ a{
 @import "pm-category-item.css";
 @import "gutenberg-wp-block-image.css";
 @import "gutenberg-wp-block-verse.css";
+@import "gutenberg-wp-block-embed.css";
 @import "filter-shadow.css";
 @import "box-gradient-overlay-top.css";
 @import "svg-fill-primary.css";
