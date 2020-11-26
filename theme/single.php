@@ -14,12 +14,11 @@
 	<?php while ( have_posts() ) : the_post(); ?>
 	
 		<?php
-			get_template_part( $sections_path, 'header', 
+			get_template_part( $sections_path, 'post-header', 
 				array( 
 					'title_string' => get_the_title('', false), 
 					'description_string' => get_the_excerpt(),
 					'background_id' => get_post_thumbnail_id(),
-					'align_canter_boolean' => true
 				)
 			);
 		?>
