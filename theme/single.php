@@ -28,8 +28,10 @@
 			);
 		?>
 
-		<main id="main" class="container bg-white text-black">
-			<?php get_template_part( 'template-parts/content', get_post_type() );	?>
+		<main id="main" class="bg-white text-black">
+			<div class="container">
+				<?php get_template_part( 'template-parts/content', get_post_type() );	?>
+			</div>
 		</main>
 	<?php endwhile;	?>
 
