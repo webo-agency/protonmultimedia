@@ -192,8 +192,8 @@ add_filter( 'render_block', 'wporg_block_wrapper', 10, 2 );
 function proton_allowed_block_types( $allowed_block_types, $post ) {
 	return array(
 	//	'core/archives',
-		'core/audio',
-		'core/button',
+	//	'core/audio',
+	//	'core/button',
 	//	'core/categories',
 	//	'core/code',
 	//	'core/column',
@@ -201,13 +201,13 @@ function proton_allowed_block_types( $allowed_block_types, $post ) {
 		'core/coverImage',
 		'core/embed',
 		'core/file',
-		'core/freeform',
+	//	'core/freeform',
 		'core/gallery',
 		'core/heading',
-		'core/html',
+	//	'core/html',
 		'core/image',
-		'core/latestComments',
-		'core/latestPosts',
+	//	'core/latestComments',
+	//	'core/latestPosts',
 		'core/list',
 		'core/more',
 		'core/nextpage',
@@ -222,7 +222,7 @@ function proton_allowed_block_types( $allowed_block_types, $post ) {
 		'core/subhead',
 		'core/table',
 		'core/textColumns',
-		'core/verse',
+	//	'core/verse',
 		'core/video',
 	);
 }
