@@ -28,7 +28,7 @@
 			);
 		?>
 
-		<main id="main" class="bg-white text-black">
+		<main id="main" class="bg-white text-black desktop:py-32">
 			<div class="container">
 				<?php get_template_part( 'template-parts/content', get_post_type() );	?>
 			</div>
