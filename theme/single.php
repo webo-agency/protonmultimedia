@@ -17,7 +17,7 @@
 			get_template_part( $sections_path, 'header', 
 				array( 
 					'title_string' => get_the_title('', false), 
-					'description_string' => get_the_content(),
+					'description_string' => get_the_excerpt(),
 					'background_id' => get_post_thumbnail_id(),
 					'align_canter_boolean' => true
 				)
