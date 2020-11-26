@@ -280,12 +280,22 @@ function custom_render_block_core_social_link( $attributes ) {
  * Override the `core/social-link` blocks.
  */
 function custom_register_block_core_social_link() {
-	register_block_type( 'core/social-link', array(
-		'render_callback' => 'custom_render_block_core_social_link',
-	) );
+	// register_block_type( 'core/social-link', array(
+	// 	'render_callback' => 'custom_render_block_core_social_link',
+	// ) );
+
+	// Get instance of the block
+	$block = WP_Block_Type_Registry::get_instance()->get_registered( 'core/social-link' );
+	// Change render callback
+	$block->render_callback = 'custom_render_block_core_social_link';
+	// Unregister first to avoid warning
+	unregister_block_type( 'core/social-link' );
+	// Reregister
+	register_block_type( $block );
 }
 
 add_action( 'after_setup_theme', 'custom_register_block_core_social_link', 99 );
+
 
 
 /**
