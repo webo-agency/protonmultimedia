@@ -104,7 +104,9 @@ ol{
   @apply leading-4;
 }
 
+ul ul,
 ul li,
+ol ol,
 ol li{
   @apply mb-4;
 }
