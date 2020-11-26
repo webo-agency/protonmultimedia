@@ -294,7 +294,7 @@ function custom_register_block_core_social_link() {
 	register_block_type( $block );
 }
 
-//add_action( 'after_setup_theme', 'custom_register_block_core_social_link', 99 );
+add_action( 'after_setup_theme', 'custom_register_block_core_social_link', 99 );
 
 
 
@@ -321,7 +321,7 @@ function custom_block_core_social_link_get_icon( $service ) {
  *
  * @return string Brand label.
  */
-function block_core_social_link_get_name( $service ) {
+function custom_block_core_social_link_get_name( $service ) {
 	$services = custom_block_core_social_link_services();
 	if ( isset( $services[ $service ] ) && isset( $services[ $service ]['name'] ) ) {
 		return $services[ $service ]['name'];
