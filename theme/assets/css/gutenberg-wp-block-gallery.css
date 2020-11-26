@@ -1,0 +1,7 @@
+/* Signature */
+.wp-block-gallery figcaption{
+  @apply text-center;
+  @apply text-gray-2;
+  @apply text-sm;
+  @apply capitalize;
+}
