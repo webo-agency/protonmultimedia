@@ -1,4 +1,4 @@
-.wp-block-blockquote{
+.wp-block-quote{
   @apply border-gray;
   @apply border-solid;
   @apply border-t;
