@@ -18,7 +18,7 @@
         <?php echo $args['title_string']; ?>
       </h2>
 
-      <div class="mb-6">
+      <div class="mb-16 pb-4">
         <?php
           foreach($args['post_terms_terms'] as $term) {
             ?>
