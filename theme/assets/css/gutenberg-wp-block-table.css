@@ -1,3 +1,11 @@
 .wp-block-table td{
   @apply p-1;
 }
+
+/* Signature */
+.wp-block-table figcaption{
+  @apply text-center;
+  @apply text-gray-2;
+  @apply text-sm;
+  @apply capitalize;
+}
