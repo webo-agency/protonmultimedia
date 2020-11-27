@@ -32,7 +32,7 @@
 
       <div class="w-full leading-relaxed">
         <div class="text-base tablet-wide:text-md tablet-wide:mb-5">
-          <?php echo $args['description_string']; ?>
+          <?php echo nl2br($args['description_string']); ?>
         </div>
       </div>
     </div>
