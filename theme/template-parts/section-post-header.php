@@ -1,5 +1,11 @@
 <header class="relative overflow-hidden">
   <div class="container">
+
+    <side-heading
+        class="z-20"
+        data-text="Blog"
+    ></side-heading>
+
     <div class="guides left-minus-px right-auto bg-dark-blue" role="presentation"></div>
 
     <div class="image-overlay absolute top-0 bottom-0 left-0 w-full h-full -mb-1 z-20 pointer-events-none"></div>
