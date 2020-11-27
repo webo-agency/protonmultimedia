@@ -1,7 +1,17 @@
+.wp-block-gallery{
+  @apply mb-4;
+}
+
+.wp-block-gallery .blocks-gallery-grid{
+  @apply m-0;
+}
+
 /* Signature */
+.wp-block-gallery .blocks-gallery-caption,
 .wp-block-gallery figcaption{
   @apply text-center;
   @apply text-gray-2;
   @apply text-sm;
   @apply capitalize;
+  @apply mx-auto;
 }
