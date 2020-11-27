@@ -13,7 +13,7 @@
         <?php
           foreach($args['post_terms_terms'] as $term) {
             ?>
-              <a class="pm-taxonomy-pill" href="<?php echo $term->link; ?>" title="<?php echo $term->name; ?>">
+              <a class="pm-taxonomy-pill text-white" href="<?php echo $term->link; ?>" title="<?php echo $term->name; ?>">
                   <?php echo $term->name; ?>
               </a>
             <?php
