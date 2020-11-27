@@ -214,7 +214,7 @@ function proton_allowed_block_types( $allowed_block_types, $post ) {
 	//	'core/latestPosts',
 		'core/list',
 		'core/more',
-		'core/nextpage',
+	//	'core/nextpage',
 		'core/paragraph',
 		'core/preformatted',
 		'core/pullquote',
