@@ -8,7 +8,7 @@
     content: '';
     @apply block;
     @apply absolute;
-    @apply w-full;
+    width: 999%;
     @apply h-full;
     background: inherit;
     top: 0;
