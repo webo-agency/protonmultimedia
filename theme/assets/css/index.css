@@ -151,6 +151,7 @@ br + .line-decorated {
 @import "gutenberg-wp-block-pullquote.css";
 /* @import "gutenberg-wp-block-verse.css"; */
 @import "gutenberg-wp-block-social-links.css";
+@import "gutenberg-wp-block-table.css";
 @import "filter-shadow.css";
 @import "box-gradient-overlay-top.css";
 @import "svg-fill-primary.css";

@@ -1,0 +1,3 @@
+.wp-block-table td{
+  @apply p-1;
+}
