@@ -1,5 +1,5 @@
 /* Full size */
-.wp-block-image.size-full {
+.wp-block-image {
     @apply max-w-full;
     @apply mx-auto;
 }
@@ -8,7 +8,7 @@
     @apply w-full;
 }
 
-.wp-block-image.size-full  img{
+.wp-block-image.size-full img{
     @apply w-full;
 }
 
