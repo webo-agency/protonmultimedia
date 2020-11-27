@@ -51,11 +51,11 @@
 			);
 		?>
 
-		<main id="main" class="bg-white text-black desktop:py-32">
+		<main id="main" class="relative bg-white text-black desktop:py-32">
 			<?php get_template_part( 'template-parts/content', get_post_type() );	?>
 
 			<aside class="container">
-				<div class="guides left-minus-px right-auto bg-dark-blue" role="presentation"></div>
+				<div class="guides left-minus-px right-auto bg-gray-light" role="presentation"></div>
 
 				<div class="mx-auto max-w-900px">
 					<div class="mb-6">
@@ -105,7 +105,7 @@
 				</div>
 			</aside>
 
-			<div class="guides right-minus-px left-auto bg-dark-blue" role="presentation"></div>
+			<div class="guides right-minus-px left-auto bg-gray-light" role="presentation"></div>
 		</main>
 	<?php endwhile;	?>
 

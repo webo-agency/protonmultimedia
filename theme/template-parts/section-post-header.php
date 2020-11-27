@@ -1,6 +1,6 @@
 <header class="relative overflow-hidden">
   <div class="container">
-    <div class="guides left-minus-px right-auto bg-gray-light" role="presentation"></div>
+    <div class="guides left-minus-px right-auto bg-dark-blue" role="presentation"></div>
 
     <div class="image-overlay absolute top-0 bottom-0 left-0 w-full h-full -mb-1 z-20 pointer-events-none"></div>
     
@@ -44,6 +44,6 @@
         role="presentation"
     />
 
-    <div class="guides right-minus-px left-auto bg-gray-light" role="presentation"></div>
+    <div class="guides right-minus-px left-auto bg-dark-blue" role="presentation"></div>
   </div>
 </header>
