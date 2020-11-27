@@ -28,14 +28,6 @@
 								}
 						}
 						array_push($post_taxonomies, $service_tag);
-
-						foreach($post_taxonomies as $post_taxonomy) {
-								?>
-								<a class="pm-taxonomy-pill" href="<?php echo $post_taxonomy->link; ?>" title="<?php echo $post_taxonomy->name; ?>">
-										<?php echo $post_taxonomy->name; ?>
-								</a>
-								<?php
-						}
 				}
 		}?>
 																						
@@ -44,10 +36,7 @@
 				array( 
 					'title_string' => get_the_title('', false), 
 					'post_date_string' => get_the_date( 'd / m / Y' ),
-					'post_terms_terms' => get_terms( array(
-						'taxonomy' => 'post_category',
-						'hide_empty' => true,
-					)),
+					'post_terms_terms' => $post_taxonomies,
 					'description_string' => get_the_excerpt(),
 					'background_id' => get_post_thumbnail_id(),
 				)
@@ -56,6 +45,18 @@
 
 		<main id="main" class="bg-white text-black desktop:py-32">
 			<?php get_template_part( 'template-parts/content', get_post_type() );	?>
+
+			<div class="mb-6">
+        <?php
+          foreach($args['post_terms_terms'] as $term) {
+            ?>
+              <a class="pm-taxonomy-pill" href="<?php echo $term->link; ?>" title="<?php echo $term->name; ?>">
+                  <?php echo $term->name; ?>
+              </a>
+            <?php
+          }
+        ?>
+      </div>
 		</main>
 	<?php endwhile;	?>
 
