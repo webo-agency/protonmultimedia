@@ -70,7 +70,7 @@
 						?>
 					</div>
 
-					<h2 class="mt-24 mb-2 text-lg">
+					<h2 class="mt-24 mb-6 text-lg">
 						<?php 
                 $lines = explode(PHP_EOL, 'Podziel się *wpisem!*');
                 foreach ( $lines as $line) {
