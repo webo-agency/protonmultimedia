@@ -14,7 +14,7 @@
       
       <span class="text-primary text-sm tablet:text-base leading-line-height-normal block mb-1 tablet:mb-2"><?php echo $args['post_date_string']; ?></span>
 
-      <h2 class="mb-4 full-hd:mb-6 desktop:text-white desktop:group-hover:text-black">
+      <h2 class="mb-0 desktop:mb-4 full-hd:mb-6 desktop:text-white desktop:group-hover:text-black">
         <?php echo $args['title_string']; ?>
       </h2>
 

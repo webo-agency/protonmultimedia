@@ -51,7 +51,7 @@
 			);
 		?>
 
-		<main id="main" class="relative bg-white text-black desktop:py-32">
+		<main id="main" class="relative bg-white text-black py-32">
 			<?php get_template_part( 'template-parts/content', get_post_type() );	?>
 
 			<aside class="container">
@@ -62,7 +62,7 @@
 						<?php
 							foreach($post_taxonomies as $term) {
 								?>
-									<a class="pm-taxonomy-pill" href="<?php echo $term->link; ?>" title="<?php echo $term->name; ?>">
+									<a class="pm-taxonomy-pill text-black" href="<?php echo $term->link; ?>" title="<?php echo $term->name; ?>">
 											<?php echo $term->name; ?>
 									</a>
 								<?php
