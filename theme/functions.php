@@ -19,8 +19,8 @@ if ( ! function_exists( 'protonmultimedia_theme_setup' ) ) :
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Swistak Theme, use a find and replace
-		 * to change 'swistak-theme' to the name of your theme in all the template files.
+		 * If you're building a theme based on Protonmultimedia Theme, use a find and replace
+		 * to change 'protonmultimedia-theme' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'protonmultimedia_theme', get_template_directory() . '/languages' );
 

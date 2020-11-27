@@ -11,7 +11,7 @@
 
 <section class="no-results not-found container desktop-wide:px-smaller-container">
 	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'swistak-theme' ); ?></h1>
+		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'protonmultimedia-theme' ); ?></h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
@@ -21,7 +21,7 @@
 			printf(
 				'<p>' . wp_kses(
 					/* translators: 1: link to WP admin new post page. */
-					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'swistak-theme' ),
+					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'protonmultimedia-theme' ),
 					array(
 						'a' => array(
 							'href' => array(),
@@ -34,14 +34,14 @@
 		elseif ( is_search() ) :
 			?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'swistak-theme' ); ?></p>
+			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'protonmultimedia-theme' ); ?></p>
 			<?php
 			get_search_form();
 
 		else :
 			?>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'swistak-theme' ); ?></p>
+			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'protonmultimedia-theme' ); ?></p>
 			<?php
 			get_search_form();
 

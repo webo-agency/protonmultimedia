@@ -33,7 +33,7 @@ function protonmultimedia_theme_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'swistak-theme-style',
+				'stylesheet' => 'protonmultimedia-theme-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
