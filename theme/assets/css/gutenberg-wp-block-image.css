@@ -4,6 +4,10 @@
     @apply mx-auto;
 }
 
+.wp-block-image img{
+    @apply mx-auto;
+}
+
 .wp-block-image.size-full img{
     @apply w-full;
 }
