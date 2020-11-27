@@ -51,8 +51,8 @@
 			);
 		?>
 
-		<div class="bg-white text-black py-32">
-			<main id="main" class="relative mb-24">
+		<div class="relative bg-white text-black py-32">
+			<main id="main" class="mb-24">
 				<?php get_template_part( 'template-parts/content', get_post_type() );	?>
 			</main>
 
