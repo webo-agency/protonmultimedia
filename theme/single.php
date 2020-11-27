@@ -70,15 +70,11 @@
 
 					<h2 class="mt-24 mb-2 text-lg">
 						<?php 
-							$lines = explode(' ', 'Podziel się *wpisem!*');
-							$firstWord = array_slice($lines, 0, 1);
-							$restOfString = array_slice($lines, 1);
-							echo '<span class="line-decorated bg-primary">'.$firstWord[0].'</span>';
-							echo '<br>';
-							foreach ( $restOfString as $word) {
-								echo $word . ' ';
-							}
-						?>
+                $lines = explode(PHP_EOL, 'Podziel się *wpisem!*');
+                foreach ( $lines as $line) {
+                    echo preg_replace("/\*(.+)\*/", '<span class="text-primary">$1</span>', $line);
+                }
+            ?>
 				</h2>
 					
 					<ul class="wp-block-social-links">
