@@ -1,0 +1,4 @@
+.wp-block-social-links .wp-social-link{
+  @apply my-0;
+  @apply mb-4;
+}
