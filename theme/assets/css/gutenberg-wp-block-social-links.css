@@ -1,4 +1,20 @@
+.wp-block-social-links{
+  @apply mx-4;
+}
+
 .wp-block-social-links .wp-social-link{
   @apply my-0;
   @apply mb-4;
+}
+
+.wp-block-social-links:not(.is-style-logos-only) {
+  @apply border-0;
+}
+
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link {
+  @apply bg-transparent;
+}
+
+.wp-block-social-links .wp-social-link a{
+  @apply p-0;
 }
