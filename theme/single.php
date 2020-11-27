@@ -108,7 +108,7 @@
 			</aside>
 
 			<div class="guides right-minus-px left-auto bg-gray-light" role="presentation"></div>
-		</main>
+		</div>
 	<?php endwhile;	?>
 
 	<?php get_template_part( $sections_path, 'call-to-action' ); ?>
