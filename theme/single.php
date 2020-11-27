@@ -51,8 +51,10 @@
 			);
 		?>
 
-		<main id="main" class="relative bg-white text-black py-32">
-			<?php get_template_part( 'template-parts/content', get_post_type() );	?>
+		<div class="bg-white text-black py-32">
+			<main id="main" class="relative mb-24">
+				<?php get_template_part( 'template-parts/content', get_post_type() );	?>
+			</main>
 
 			<aside class="container">
 				<div class="guides left-minus-px right-auto bg-gray-light" role="presentation"></div>
