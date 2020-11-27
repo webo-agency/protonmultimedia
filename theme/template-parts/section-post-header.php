@@ -1,6 +1,9 @@
 <header class="relative overflow-hidden">
   <div class="container">
+    <div class="guides left-minus-px right-auto bg-gray-light" role="presentation"></div>
+
     <div class="image-overlay absolute top-0 bottom-0 left-0 w-full h-full -mb-1 z-20 pointer-events-none"></div>
+    
     <div class="max-w-900px mx-auto relative flex flex-col justify-center pt-40 pb-40 z-30">
       
       <span class="text-primary text-sm tablet:text-base leading-line-height-normal block mb-1 tablet:mb-2"><?php echo $args['post_date_string']; ?></span>
@@ -40,5 +43,7 @@
         alt="Decorations"
         role="presentation"
     />
+
+    <div class="guides right-minus-px left-auto bg-gray-light" role="presentation"></div>
   </div>
 </header>

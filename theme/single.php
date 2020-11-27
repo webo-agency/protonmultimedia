@@ -55,6 +55,8 @@
 			<?php get_template_part( 'template-parts/content', get_post_type() );	?>
 
 			<aside class="container">
+				<div class="guides left-minus-px right-auto bg-dark-blue" role="presentation"></div>
+
 				<div class="mx-auto max-w-900px">
 					<div class="mb-6">
 						<?php
@@ -102,6 +104,8 @@
 						</ul>
 				</div>
 			</aside>
+
+			<div class="guides right-minus-px left-auto bg-dark-blue" role="presentation"></div>
 		</main>
 	<?php endwhile;	?>
 
