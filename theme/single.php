@@ -51,12 +51,12 @@
 			);
 		?>
 
-		<div class="relative bg-white text-black">
+		<div class="relative bg-white text-black py-16 desktop:py-32">
 			<main id="main" class="mb-24">
 				<?php get_template_part( 'template-parts/content', get_post_type() );	?>
 			</main>
 
-			<aside class="container py-32">
+			<aside class="container">
 				<div class="guides left-minus-px right-auto bg-gray-light" role="presentation"></div>
 
 				<div class="mx-auto max-w-900px">
