@@ -114,7 +114,8 @@
 	<?php get_template_part( $sections_path, 'news' , 
 		array(
 			'count_posts_int' => 2,
-			'header_title_string' => 'Polecane wpisy',
+			'header_title_string' => 'Polecane 
+			*wpisy*',
 			'header_description_string' => ''
 		)
 	); ?>
