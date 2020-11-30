@@ -111,7 +111,13 @@
 		</div>
 	<?php endwhile;	?>
 
-	<?php get_template_part( $sections_path, 'news' , array('count_posts_int' => 2)); ?>
+	<?php get_template_part( $sections_path, 'news' , 
+		array(
+			'count_posts_int' => 2,
+			'header_title_string' => 'Polecane wpisy',
+			'header_description_string' => ''
+		)
+	); ?>
 
 	<?php get_template_part( $sections_path, 'call-to-action' ); ?>
 

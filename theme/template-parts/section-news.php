@@ -19,18 +19,39 @@
                 />
 
                 <div class="flex-auto">
-                    <h2 class="uppercase mb-14 mt-20 desktop:mt-40">
-                        <?php
-                            $news_title = get_field('news_title', 'option');
-                            $news_lines = explode(PHP_EOL, $news_title);
-                            foreach ( $news_lines as $line) {
-                                echo preg_replace("/\*(.+)\*/", '<span class="block text-primary">$1</span>', $line);
-                            }
-                        ?>
-                    </h2>
-                    <p class="pb-10 tablet:pb-16">
-                        <?php echo get_field('news_description', 'option'); ?>
-                    </p>
+                    <?php if(isset($args['header_title_string'])): ?>
+                        <h2 class="uppercase mb-14 mt-20 desktop:mt-40">
+                            <?php
+                                $news_title = $args['header_title_string'];
+                                $news_lines = explode(PHP_EOL, $news_title);
+                                foreach ( $news_lines as $line) {
+                                    echo preg_replace("/\*(.+)\*/", '<span class="block text-primary">$1</span>', $line);
+                                }
+                            ?>
+                        </h2>    
+                    <?php else: ?>
+                        <h2 class="uppercase mb-14 mt-20 desktop:mt-40">
+                            <?php
+                                $news_title = get_field('news_title', 'option');
+                                $news_lines = explode(PHP_EOL, $news_title);
+                                foreach ( $news_lines as $line) {
+                                    echo preg_replace("/\*(.+)\*/", '<span class="block text-primary">$1</span>', $line);
+                                }
+                            ?>
+                        </h2>
+                    <?php endif; ?>
+
+                    <?php if(isset($args['header_description_string'])): ?>
+                        <?php if($args['header_description_string'] !== ''): ?>
+                            <p class="pb-10 tablet:pb-16">
+                                <?php echo $args['header_description_string']; ?>
+                            </p>
+                        <?php endif; ?>
+                    <?php else: ?>
+                        <p class="pb-10 tablet:pb-16">
+                            <?php echo get_field('news_description', 'option'); ?>
+                        </p>
+                    <?php endif; ?>
                 </div>
             </div>
 
