@@ -115,7 +115,7 @@
 		array(
 			'count_posts_int' => 2,
 			'header_title_string' => 'Polecane 
-			*wpisy*',
+			*newsy*',
 			'header_description_string' => ''
 		)
 	); ?>
