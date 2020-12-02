@@ -45,11 +45,11 @@
 				</div>
 
 				<div class="desktop-wide:pl-smaller-container relative">
-					<h2 class="text-center">
+					<h2 class="text-center uppercase">
 						<?php
 							$lines = explode(PHP_EOL, get_the_title($id));
 							foreach ( $lines as $line) {
-									echo preg_replace("/\*(.+)\*/", '<span class="text-primary">$1</span>', $line);
+									echo preg_replace("/\*(.+)\*/", '<span class="block text-primary">$1</span>', $line);
 							}
 						?>
 					</h2>
