@@ -25,8 +25,6 @@
 			></side-heading>
 
 			<div class="guides left-minus-px right-auto bg-dark-blue" role="presentation"></div>
-
-			<div class="image-overlay absolute top-0 bottom-0 left-0 w-full h-full -mb-1 z-20 pointer-events-none"></div>
 			
 			<div class="max-w-900px mx-auto relative flex flex-col justify-center pt-40 pb-16 z-30">
 				
