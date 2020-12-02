@@ -25,6 +25,7 @@
 			></side-heading>
 
 			<div class="guides left-minus-px right-auto bg-dark-blue" role="presentation"></div>
+ 
 			
 			<div class="max-w-900px mx-auto relative flex flex-col justify-center pt-40 pb-16 z-30">
 				
@@ -56,7 +57,7 @@
 			</div>
 			
 			<img 
-				class="hidden tablet-wide:block absolute top-0 bottom-1/2 right-0 h-full transform -rotate-61 pointer-events-none z-20 -mt-64" 
+				class="hidden tablet-wide:block absolute top-0 bottom-auto right-0 transform -rotate-61 pointer-events-none z-20 -mt-12" 
 				src="<?php echo get_template_directory_uri() . '/assets/svg/header-lines.svg' ?>" 
 				width="400px"
 				height="400px"
