@@ -68,17 +68,15 @@
 
 			<div class="guides right-minus-px left-auto bg-dark-blue" role="presentation"></div>
 			
+			<main id="main" class="site-main">
+				<div class="desktop-wide:pl-smaller-container relative">
+					<div class="desktop-wide:px-smaller-container">
+						<?php echo do_shortcode('[acfe_form name="' . get_field('contact_form', $id) . '"]'); ?>
+					</div>
+				</div>
+			</main>
 
 		</div>
 	</div>
-
-	<main id="main" class="site-main container">
-		<div class="desktop-wide:pl-smaller-container relative">
-			<div class="desktop-wide:px-smaller-container">
-				<?php echo do_shortcode('[acfe_form name="' . get_field('contact_form', $id) . '"]'); ?>
-			</div>
-		</div>
-	</main>
-
 <?php
 get_footer();
