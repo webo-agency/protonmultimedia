@@ -16,24 +16,32 @@
 	$post = get_post($id); 
 ?>
 
-	<?php get_template_part( $sections_path, 'header', 
-			array( 
-				'title_string' => get_the_title($id), 
-				'description_string' => apply_filters('the_content', $post->post_content),
-				'background_id' => get_post_thumbnail_id($id)
-			)
-		);
-	?>
+	<header class="container">
+		<div class="desktop-wide:pl-smaller-container relative">
+			<h2 class="text-center">
+				<?php
+					$lines = explode(PHP_EOL, get_the_title($id));
+					foreach ( $lines as $line) {
+							echo preg_replace("/\*(.+)\*/", '<span class="text-primary">$1</span>', $line);
+					}
+				?>
+			</h2>
 
-	<div id="primary" class="x-contact content-area">
-		<main id="main" class="site-main">
-			<div class="container">
-				<div class="desktop-wide:px-smaller-container">
-					<?php echo do_shortcode('[acfe_form name="' . get_field('contact_form', $id) . '"]'); ?>
-				</div>
+			<p class="text-center">
+				<?php
+					apply_filters('the_content', $post->post_content)
+				?>
+			</p>
+		</div>
+	</header>
+
+	<main id="main" class="site-main container">
+		<div class="desktop-wide:pl-smaller-container relative">
+			<div class="desktop-wide:px-smaller-container">
+				<?php echo do_shortcode('[acfe_form name="' . get_field('contact_form', $id) . '"]'); ?>
 			</div>
-		</main>
-	</div>
+		</div>
+	</main>
 
 <?php
 get_footer();
