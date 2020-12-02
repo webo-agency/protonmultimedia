@@ -58,12 +58,12 @@
 			</div>
 			
 			<img 
-					class="hidden tablet-wide:block absolute top-0 bottom-1/2 right-0 h-full transform pointer-events-none z-20" 
-					src="<?php echo get_template_directory_uri() . '/assets/svg/header-lines.svg' ?>" 
-					width="250px"
-					height="250px"
-					alt="Decorations"
-					role="presentation"
+				class="hidden tablet-wide:block absolute top-0 bottom-1/2 right-0 h-full transform -rotate-61 pointer-events-none z-20 -mt-64" 
+				src="<?php echo get_template_directory_uri() . '/assets/svg/header-lines.svg' ?>" 
+				width="400px"
+				height="400px"
+				alt="Decorations"
+				role="presentation"
 			/>
 
 			<div class="guides right-minus-px left-auto bg-dark-blue" role="presentation"></div>
