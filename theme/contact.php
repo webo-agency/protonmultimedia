@@ -69,9 +69,7 @@
 			
 			<main id="main" class="site-main">
 				<div class="desktop-wide:pl-smaller-container relative">
-					<div class="desktop-wide:px-smaller-container">
-						<?php echo do_shortcode('[acfe_form name="' . get_field('contact_form', $id) . '"]'); ?>
-					</div>
+					<?php echo do_shortcode('[acfe_form name="' . get_field('contact_form', $id) . '"]'); ?>
 				</div>
 			</main>
 
