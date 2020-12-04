@@ -1,185 +1,352 @@
-{
-    "key": "group_5f896bec52e56",
-    "title": "Formularz kontaktowy",
-    "fields": [
-        {
-            "key": "field_5f896c0686cb7",
-            "label": "Typ usługi",
-            "name": "service_type",
-            "type": "checkbox",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "acfe_permissions": "",
-            "choices": {
-                "home": "Dom",
-                "business": "Biznes"
-            },
-            "allow_custom": 0,
-            "default_value": [],
-            "layout": "vertical",
-            "toggle": 0,
-            "return_format": "value",
-            "save_custom": 0
-        },
-        {
-            "key": "field_5f896cdf86cb8",
-            "label": "Wybierz usługi",
-            "name": "service_options",
-            "type": "select",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "acfe_permissions": "",
-            "choices": {
-                "none": "-",
-                "test": "Test 1",
-                "test2": "Test 2"
-            },
-            "default_value": "none",
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "return_format": "value",
-            "ajax": 0,
-            "placeholder": ""
-        },
-        {
-            "key": "field_5f896d75dcf3b",
-            "label": "Imię",
-            "name": "name",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "acfe_permissions": "",
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5f896d80dcf3c",
-            "label": "Nazwisko",
-            "name": "surname",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "acfe_permissions": "",
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5f896d89dcf3d",
-            "label": "E-mail",
-            "name": "email",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "acfe_permissions": "",
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5f896e2bdcf3e",
-            "label": "Numer telefonu",
-            "name": "telephone",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "acfe_permissions": "",
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5f896e59dcf3f",
-            "label": "Wiadomość",
-            "name": "message",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "acfe_permissions": "",
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": "",
-            "acfe_textarea_code": 0
-        }
-    ],
-    "location": [
-        [
+[
+    {
+        "key": "group_5f896bec52e56",
+        "title": "Formularz kontaktowy",
+        "fields": [
             {
-                "param": "page_template",
-                "operator": "==",
-                "value": "contact.php"
+                "key": "field_5fc8e376071a5",
+                "label": "Etykieta - Pierwsza grupa pól",
+                "name": "label_1",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "acfe_permissions": "",
+                "default_value": "Wybierz typ usługi:",
+                "placeholder": "",
+                "prepend": "",
+                "append": ":",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f896c0686cb7",
+                "label": "Typ usługi",
+                "name": "service_type",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "pm-button-switch",
+                    "id": ""
+                },
+                "acfe_permissions": "",
+                "choices": {
+                    "home": "Dom",
+                    "business": "Biznes"
+                },
+                "allow_null": 1,
+                "other_choice": 0,
+                "default_value": "Wybierz opcję",
+                "layout": "vertical",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_5fc8e445071a6",
+                "label": "Etykieta - Druga grupa pól",
+                "name": "label_2",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "acfe_permissions": "",
+                "default_value": "Wybierz usługę:",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f896cdf86cb8",
+                "label": "Wybierz usługi",
+                "name": "service_options",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "acfe_permissions": "",
+                "choices": {
+                    "none": "Wybierz usługę",
+                    "test": "Test 1",
+                    "test2": "Test 2"
+                },
+                "default_value": "none",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5fc8e8dd5d495",
+                "label": "Etykieta - Tel:",
+                "name": "label_tel",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "acfe_permissions": "",
+                "default_value": "Tel:",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5fc8e9575d497",
+                "label": "Link - telefon",
+                "name": "link_tel",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "acfe_permissions": "",
+                "default_value": "+48 768 293 617",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5fc8e92d5d496",
+                "label": "Etykieta - Mail:",
+                "name": "label_mail",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "acfe_permissions": "",
+                "default_value": "Mail:",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5fc8e96c5d498",
+                "label": "Link - mail",
+                "name": "link_mail",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "acfe_permissions": "",
+                "default_value": "kontakt@protonmultimedia.pl",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5fc8e8975d494",
+                "label": "Etykieta - Trzecia grupa pól",
+                "name": "label_3",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "acfe_permissions": "",
+                "default_value": "Wypełnij formularz:",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f896d75dcf3b",
+                "label": "Imię i nazwisko",
+                "name": "name_and_surname",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "acfe_permissions": "",
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f896d89dcf3d",
+                "label": "E-mail",
+                "name": "email",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "acfe_permissions": "",
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f896e2bdcf3e",
+                "label": "Numer telefonu",
+                "name": "telephone",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "acfe_permissions": "",
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f896e59dcf3f",
+                "label": "Wiadomość",
+                "name": "message",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "acfe_permissions": "",
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "",
+                "acfe_textarea_code": 0
+            },
+            {
+                "key": "field_5fc8ec2fc35b3",
+                "label": "Zgoda",
+                "name": "agreement_checkbox",
+                "type": "checkbox",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "acfe_permissions": "",
+                "choices": {
+                    "agree": "Wyrażam zgodę na przetwarzanie moich danych osobowych wyłącznie w celu \u2028kontaktu z serwisem Proton Multimedia. Gwarantujemy że Państwa dane \u2028nigdy nie zostaną nikomu udostępnione \u0003ani wykorzystane w sposób inny \u2028niż do kontaktu."
+                },
+                "allow_custom": 0,
+                "default_value": [],
+                "layout": "vertical",
+                "toggle": 0,
+                "return_format": "value",
+                "save_custom": 0
+            },
+            {
+                "key": "field_5fc8fd5adf5dc",
+                "label": "Przycisk - Wyślij wiadomość",
+                "name": "submit",
+                "type": "acfe_button",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "acfe_permissions": "",
+                "button_value": "Wyślij wiadomość  —",
+                "button_type": "submit",
+                "button_class": "flex-initial whitespace-no-wrap pm-button pm-button--primary pm-button--small mb-12",
+                "button_id": "",
+                "button_before": "",
+                "button_after": "",
+                "button_ajax": 0
             }
-        ]
-    ],
-    "menu_order": 99,
-    "position": "normal",
-    "style": "default",
-    "label_placement": "left",
-    "instruction_placement": "label",
-    "hide_on_screen": "",
-    "active": true,
-    "description": "Wykorzystywane do utworzenia formularza. Edytowalne w zakładce \"Własne pola\" - \"Grupy pól\"",
-    "acfe_display_title": "Formularz kontaktowy - Wykorzystywane do utworzenia formularza. Edytowalne w zakładce \"Własne pola\" - \"Grupy pól\"",
-    "acfe_autosync": [
-        "json"
-    ],
-    "acfe_permissions": "",
-    "acfe_form": 0,
-    "acfe_meta": "",
-    "acfe_note": "",
-    "modified": 1602842718
-}
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "contact.php"
+                }
+            ]
+        ],
+        "menu_order": 99,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "left",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "Wykorzystywane do utworzenia formularza. Edytowalne w zakładce \"Własne pola\" - \"Grupy pól\"",
+        "acfe_display_title": "Formularz kontaktowy - Wykorzystywane do utworzenia formularza. Edytowalne w zakładce \"Własne pola\" - \"Grupy pól\"",
+        "acfe_autosync": [
+            "json"
+        ],
+        "acfe_permissions": "",
+        "acfe_form": 0,
+        "acfe_meta": "",
+        "acfe_note": ""
+    }
+]
