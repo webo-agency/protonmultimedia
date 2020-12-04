@@ -35,7 +35,7 @@
 					<?php echo $args['title_string']; ?>
 				</h2>
 
-				<div class="desktop-wide:pl-smaller-container relative">
+				<div class="relative">
 					<h2 class="text-center uppercase">
 						<?php
 							$lines = explode(PHP_EOL, get_the_title($id));
