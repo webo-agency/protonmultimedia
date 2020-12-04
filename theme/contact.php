@@ -63,7 +63,7 @@
 			<div class="guides right-minus-px left-auto bg-dark-blue" role="presentation"></div>
 			
 			<main id="main" class="site-main">
-				<div class="desktop-wide:pl-smaller-container relative mb-48">
+				<div class="desktop-wide:pl-smaller-container relative mb-32">
 					<?php echo do_shortcode('[acfe_form name="' . get_field('contact_form', $id) . '"]'); ?>
 				</div>
 			</main>
