@@ -146,6 +146,8 @@ br + .line-decorated {
   }
 
   label{
+    @apply font-special;
+    @apply text-base;
     @apply border;
     @apply border-solid;
     @apply border-primary;
@@ -188,7 +190,6 @@ br + .line-decorated {
     @apply text-base;
     @apply px-8;
     @apply py-4;
-    @apply text-base;
     @apply bg-dark-blue;
     @apply text-white;
     @apply border-0;
@@ -204,6 +205,7 @@ br + .line-decorated {
   label{
     @apply absolute;
     @apply uppercase;
+    @apply font-special;
     @apply text-base;
     @apply pl-8;
   }
@@ -220,6 +222,7 @@ br + .line-decorated {
     @apply appearance-none;
     @apply px-8;
     @apply py-4;
+    @apply font-special;
     @apply text-base;
     @apply bg-dark-blue;
     @apply text-white;
