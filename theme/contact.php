@@ -35,14 +35,6 @@
 					<?php echo $args['title_string']; ?>
 				</h2>
 
-				<div class="w-full leading-relaxed">
-					<div class="text-base tablet-wide:text-md tablet-wide:mb-5 text-center">
-						<?php
-							apply_filters('the_content', $post->post_content)
-						?>
-					</div>
-				</div>
-
 				<div class="desktop-wide:pl-smaller-container relative">
 					<h2 class="text-center uppercase">
 						<?php
@@ -53,6 +45,9 @@
 						?>
 					</h2>
 
+					<p class="text-base tablet-wide:text-md tablet-wide:mb-5 text-center">
+						<?php the_content(); ?>
+					</p>
 				</div>
 			</div>
 			
