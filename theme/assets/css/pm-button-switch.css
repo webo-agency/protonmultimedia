@@ -1,0 +1,23 @@
+.pm-button-switch{
+
+  input{
+    @apply hidden;
+  }
+
+  label{
+    @apply border;
+    @apply border-solid;
+    @apply border-primary;
+    @apply py-4;
+    @apply px-12;
+    @apply rounded;
+    @apply uppercase;
+  }
+
+  label.selected{
+    @apply bg-primary;
+    @apply text-white;
+  }
+
+
+}
