@@ -24,11 +24,11 @@
     @apply text-base;
   }
 
-  /* &:after{
+  &:after{
     content: '—';
     font-weight: 700;
     padding-left: 10px;
-  } */
+  }
 
   &--small {
       @apply text-base;
