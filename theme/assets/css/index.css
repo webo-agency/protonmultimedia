@@ -258,8 +258,14 @@ br + .line-decorated {
   label{
     @apply relative;
     @apply flex;
-    @apply align-top;
+    @apply items-start;
     @apply text-sm;
+    @apply leading-tight;
+    @apply text-sm-2;
+    
+    @screen desktop{
+      @apply mr-8;
+    }
   }
 
   label:before{
@@ -271,6 +277,10 @@ br + .line-decorated {
     @apply border;
     @apply border-primary;
     @apply rounded;
+  }
+
+  label.selected:before{
+    @apply bg-primary;
   }
 
   
