@@ -136,6 +136,9 @@ br + .line-decorated {
   @apply text-base;
 }
 
+.acf-field{
+  @apply mb-8;
+}
 
 .acf-field-radio{
   input{
