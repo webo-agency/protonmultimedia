@@ -184,6 +184,8 @@ br + .line-decorated {
 .acf-field-textarea{
   input,
   textarea{
+    @apply font-special;
+    @apply text-base;
     @apply px-8;
     @apply py-4;
     @apply text-base;
