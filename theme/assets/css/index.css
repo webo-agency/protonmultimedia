@@ -170,7 +170,7 @@ br + .line-decorated {
     & > *{
       @apply flex;
       @apply px-2;
-      @apply mb-2;
+      @apply mb-4;
       @apply flex-1/2;
 
       & > *{
@@ -262,7 +262,6 @@ br + .line-decorated {
     @apply items-start;
     @apply text-sm;
     @apply leading-tight;
-    @apply text-sm-2;
     
     @screen desktop{
       @apply mr-8;
