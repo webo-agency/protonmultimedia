@@ -183,6 +183,7 @@ br + .line-decorated {
     @apply border-0;
     @apply border-b;
     @apply border-primary;
+    @apply w-full;
 
     &:focus{
       outline: none;
