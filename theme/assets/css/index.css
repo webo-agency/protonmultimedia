@@ -217,6 +217,15 @@ br + .line-decorated {
       outline: none;
     }
   }
+
+  .acf-input:after{
+    @apply absolute;
+    @apply left-auto;
+    @apply right-0;
+    @apply top-0;
+    @apply bottom-0;
+    @apply margin-auto;
+  }
 }
 
 .acf-field-checkbox{
