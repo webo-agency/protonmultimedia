@@ -170,7 +170,7 @@ br + .line-decorated {
       @apply flex;
       @apply px-2;
       @apply mb-2;
-      @apply flex-1\/2;
+      @apply flex-1/2;
 
       & > *{
         @apply w-full;
