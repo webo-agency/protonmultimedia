@@ -19,5 +19,16 @@
     @apply text-white;
   }
 
+}
 
+.pm-button-switch .acf-checkbox-list{
+  @apply flex;
+  @apply flex-row;
+  @apply flex-wrap;
+  @apply -mx-2;
+}
+
+.pm-button-switch .acf-checkbox-list > *{
+  @apply mx-2;
+  @apply mb-2;
 }

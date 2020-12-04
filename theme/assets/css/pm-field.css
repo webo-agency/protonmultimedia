@@ -2,8 +2,8 @@
   
 }
 
-.pm-field input,
-.pm-field textarea{
+[data-type="text"].pm-field input,
+[data-type="textarea"].pm-field textarea{
   @apply px-8;
   @apply py-4;
   @apply text-base;
@@ -18,13 +18,16 @@
   }
 }
 
-.pm-field label{
+[data-type="text"].pm-field label,
+[data-type="textarea"].pm-field label{
   @apply uppercase;
   @apply text-base;
   @apply pl-8;
 }
 
-.pm-field:focus-within label{
+
+[data-type="text"].pm-field:focus-within label,
+[data-type="textarea"].pm-field:focus-within label{
   @apply text-sm;
   @apply text-primary;
 }
