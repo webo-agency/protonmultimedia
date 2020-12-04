@@ -153,6 +153,7 @@ br + .line-decorated {
     @apply px-12;
     @apply rounded;
     @apply uppercase;
+    @apply text-center;
   }
 
   label.selected{
