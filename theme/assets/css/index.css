@@ -194,6 +194,7 @@ br + .line-decorated {
   }
 
   label{
+    @apply absolute;
     @apply uppercase;
     @apply text-base;
     @apply pl-8;
@@ -217,6 +218,7 @@ br + .line-decorated {
     @apply border;
     @apply border-primary;
     @apply rounded;
+    @apply w-full;
 
     &:focus{
       outline: none;
