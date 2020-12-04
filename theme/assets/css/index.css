@@ -239,6 +239,10 @@ br + .line-decorated {
     @apply hidden;
   }
 
+  label{
+    @apply text-sm;
+  }
+
   label:after{
     content: '';
     @apply block;
