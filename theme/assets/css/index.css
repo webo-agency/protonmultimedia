@@ -236,9 +236,22 @@ br + .line-decorated {
 
 .acf-field-checkbox{
   input{
+    @apply hidden;
+  }
+
+  label:after{
+    content: '';
+    @apply block;
+    @apply p-4;
+    @apply ml-8;
+    @apply mr-4;
     @apply border;
     @apply border-primary;
     @apply rounded;
+  }
+
+  &:focus-visible label:after{
+    @apply bg-primary;
   }
 
   input:checked{
