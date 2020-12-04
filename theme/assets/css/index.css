@@ -204,7 +204,7 @@ br + .line-decorated {
 }
 
 .acf-field-select{
-  input{
+  select{
     @apply px-8;
     @apply py-4;
     @apply text-base;
