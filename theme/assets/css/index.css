@@ -156,7 +156,7 @@ br + .line-decorated {
     @apply rounded;
     @apply uppercase;
     @apply text-center;
-    @apply font-medium;
+    @apply font-semibold;
   }
 
   label.selected{
@@ -232,7 +232,7 @@ br + .line-decorated {
     @apply rounded;
     @apply w-full;
     @apply uppercase;
-    @apply font-medium;
+    @apply font-semibold;
 
     &:focus{
       outline: none;
