@@ -256,10 +256,13 @@ br + .line-decorated {
   }
 
   label{
+    @apply relative;
+    @apply flex;
+    @apply align-top;
     @apply text-sm;
   }
 
-  label:after{
+  label:before{
     content: '';
     @apply block;
     @apply p-4;
@@ -270,13 +273,7 @@ br + .line-decorated {
     @apply rounded;
   }
 
-  &:focus-visible label:after{
-    @apply bg-primary;
-  }
-
-  input:checked{
-    @apply bg-primary;
-  }
+  
 }
 
 @import "line-decorated.css";
