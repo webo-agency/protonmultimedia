@@ -1,0 +1,30 @@
+.pm-field{
+  
+}
+
+.pm-field input,
+.pm-field textarea{
+  @apply px-8;
+  @apply py-4;
+  @apply text-base;
+  @apply bg-dark-blue;
+  @apply text-white;
+  @apply border-0;
+  @apply border-b-1;
+  @apply border-primary;
+
+  &:focus{
+    outline: none;
+  }
+}
+
+.pm-field label{
+  @apply uppercase;
+  @apply text-base;
+  @apply pl-8;
+}
+
+.pm-field:focus-within label{
+  @apply text-sm;
+  @apply text-primary;
+}
