@@ -136,6 +136,89 @@ br + .line-decorated {
   @apply text-base;
 }
 
+
+.acf-field-radio{
+  input{
+    @apply hidden;
+  }
+
+  label{
+    @apply border;
+    @apply border-solid;
+    @apply border-primary;
+    @apply py-4;
+    @apply px-12;
+    @apply rounded;
+    @apply uppercase;
+  }
+
+  label.selected{
+    @apply bg-primary;
+    @apply text-white;
+  }
+
+  .acf-radio-list{
+    @apply flex;
+    @apply flex-row;
+    @apply flex-wrap;
+    @apply -mx-2;
+
+    & > *{
+      @apply flex;
+      @apply mx-2;
+      @apply mb-2;
+    }
+  }
+}
+
+.acf-field-text,
+.acf-field-textarea{
+  input,
+  textarea{
+    @apply px-8;
+    @apply py-4;
+    @apply text-base;
+    @apply bg-dark-blue;
+    @apply text-white;
+    @apply border-0;
+    @apply border-b;
+    @apply border-primary;
+
+    &:focus{
+      outline: none;
+    }
+  }
+
+  label{
+    @apply uppercase;
+    @apply text-base;
+    @apply pl-8;
+  }
+
+
+  &:focus-within label{
+    @apply text-sm;
+    @apply text-primary;
+  }
+}
+
+.acf-field-select{
+  input{
+    @apply px-8;
+    @apply py-4;
+    @apply text-base;
+    @apply bg-dark-blue;
+    @apply text-white;
+    @apply border-0;
+    @apply border-b;
+    @apply border-primary;
+
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
 @import "line-decorated.css";
 @import "box-overlay.css";
 @import "box-gradient-overlay.css";
@@ -153,7 +236,6 @@ br + .line-decorated {
 @import "gutenberg-wp-block-social-links.css";
 @import "gutenberg-wp-block-table.css";
 @import "gutenberg-wp-block-quote.css";
-@import "pm-button-switch.css";
 @import "filter-shadow.css";
 @import "box-gradient-overlay-top.css";
 @import "svg-fill-primary.css";
@@ -164,5 +246,4 @@ br + .line-decorated {
 @import "image-overlay.css";
 @import "menu-toggle.css";
 @import "admin-bar.css";
-@import "pm-field.css";
 @import "tailwindcss/screens";
