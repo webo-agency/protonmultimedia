@@ -213,6 +213,7 @@ br + .line-decorated {
     @apply text-white;
     @apply border;
     @apply border-primary;
+    @apply rounded;
 
     &:focus{
       outline: none;
