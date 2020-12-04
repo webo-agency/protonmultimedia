@@ -221,6 +221,7 @@ br + .line-decorated {
   }
 
   .acf-input:after{
+    content: '—';
     @apply absolute;
     @apply left-auto;
     @apply right-0;
