@@ -210,13 +210,24 @@ br + .line-decorated {
     @apply text-base;
     @apply bg-dark-blue;
     @apply text-white;
-    @apply border-0;
-    @apply border-b;
+    @apply border;
     @apply border-primary;
 
     &:focus{
       outline: none;
     }
+  }
+}
+
+.acf-field-checkbox{
+  input{
+    @apply border;
+    @apply border-primary;
+    @apply rounded;
+  }
+
+  input:checked{
+    @apply bg-primary;
   }
 }
 
