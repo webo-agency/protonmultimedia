@@ -168,8 +168,13 @@ br + .line-decorated {
 
     & > *{
       @apply flex;
-      @apply mx-2;
+      @apply px-2;
       @apply mb-2;
+      @apply flex-1\/2;
+
+      & > *{
+        @apply w-full;
+      }
     }
   }
 }
@@ -219,20 +224,29 @@ br + .line-decorated {
     @apply border-primary;
     @apply rounded;
     @apply w-full;
+    @apply uppercase;
 
     &:focus{
       outline: none;
     }
   }
 
-  .acf-input:after{
-    content: '—';
-    @apply absolute;
-    @apply left-auto;
-    @apply right-0;
-    @apply top-0;
-    @apply bottom-0;
-    @apply m-auto;
+  .acf-input{
+    @apply relative;
+    
+    &:after{
+      content: '—';
+      @apply absolute;
+      @apply left-auto;
+      @apply right-0;
+      @apply top-0;
+      @apply bottom-0;
+      @apply m-auto;
+      @apply flex;
+      @apply items-center;
+      @apply justify-center;
+      @apply mx-8;
+    }
   }
 }
 
