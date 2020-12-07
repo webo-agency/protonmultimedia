@@ -279,7 +279,7 @@ br + .line-decorated {
     content: '';
     @apply block;
     @apply p-4;
-    @apply ml-8;
+    @apply desktop\:ml-8;
     @apply mr-4;
     @apply border;
     @apply border-primary;
