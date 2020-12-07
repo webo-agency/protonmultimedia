@@ -26,7 +26,6 @@
 
 			<div class="guides left-minus-px right-auto bg-dark-blue" role="presentation"></div>
  
-			
 			<div class="max-w-900px mx-auto relative flex flex-col justify-center pt-40 pb-16 z-30">
 
 				<div class="relative">
