@@ -210,6 +210,8 @@ br + .line-decorated {
     @apply font-special;
     @apply text-base;
     @apply pl-8;
+    @apply transition-all;
+    @apply duration-200;
   }
 
 
@@ -283,6 +285,8 @@ br + .line-decorated {
     @apply border;
     @apply border-primary;
     @apply rounded;
+    @apply transition-all;
+    @apply duration-200;
   }
 
   label.selected:before{
