@@ -316,7 +316,7 @@
                 "acfe_permissions": "",
                 "button_value": "Wyślij wiadomość  —",
                 "button_type": "submit",
-                "button_class": "flex-initial whitespace-no-wrap pm-button pm-button--primary mb-12 rounded mr-1",
+                "button_class": "block whitespace-no-wrap pm-button pm-button--primary mb-12 rounded ml-auto mr-0",
                 "button_id": "",
                 "button_before": "",
                 "button_after": "",
