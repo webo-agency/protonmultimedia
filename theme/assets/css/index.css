@@ -256,6 +256,7 @@ br + .line-decorated {
       @apply items-center;
       @apply justify-center;
       @apply mx-8;
+      @apply pointer-events-none;
     }
   }
 }
