@@ -277,12 +277,12 @@
                 "acfe_textarea_code": 0
             },
             {
-                "key": "field_5fc8ec2fc35b3",
+                "key": "field_5fce4c560f8da",
                 "label": "Zgoda",
                 "name": "agreement_checkbox",
                 "type": "checkbox",
                 "instructions": "",
-                "required": 0,
+                "required": 1,
                 "conditional_logic": 0,
                 "wrapper": {
                     "width": "",
@@ -301,7 +301,7 @@
                 "save_custom": 0
             },
             {
-                "key": "field_5fc8fd5adf5dc",
+                "key": "field_5fce4db40f8db",
                 "label": "Przycisk - Wyślij wiadomość",
                 "name": "submit",
                 "type": "acfe_button",
