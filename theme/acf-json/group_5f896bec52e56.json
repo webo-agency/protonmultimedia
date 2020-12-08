@@ -201,7 +201,7 @@
                 "name": "name_and_surname",
                 "type": "text",
                 "instructions": "",
-                "required": 0,
+                "required": 1,
                 "conditional_logic": 0,
                 "wrapper": {
                     "width": "",
@@ -219,9 +219,9 @@
                 "key": "field_5f896d89dcf3d",
                 "label": "E-mail",
                 "name": "email",
-                "type": "text",
+                "type": "email",
                 "instructions": "",
-                "required": 0,
+                "required": 1,
                 "conditional_logic": 0,
                 "wrapper": {
                     "width": "",
@@ -232,8 +232,7 @@
                 "default_value": "",
                 "placeholder": "",
                 "prepend": "",
-                "append": "",
-                "maxlength": ""
+                "append": ""
             },
             {
                 "key": "field_5f896e2bdcf3e",
@@ -261,7 +260,7 @@
                 "name": "message",
                 "type": "textarea",
                 "instructions": "",
-                "required": 0,
+                "required": 1,
                 "conditional_logic": 0,
                 "wrapper": {
                     "width": "",
