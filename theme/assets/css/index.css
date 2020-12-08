@@ -99,8 +99,8 @@ br + .line-decorated {
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px white inset;
-  box-shadow: 0 0 0 1000px white inset;
+  -webkit-box-shadow: 0 0 0 1000px theme('colors.dark-blue-2') inset;
+  box-shadow: 0 0 0 1000px theme('colors.dark-blue-2') inset;
   -webkit-text-fill-color: theme('colors.primary');
   text-fill-color: theme('colors.primary');
 }
