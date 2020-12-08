@@ -99,10 +99,11 @@ br + .line-decorated {
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px theme('colors.dark-blue-2') inset;
-  box-shadow: 0 0 0 1000px theme('colors.dark-blue-2') inset;
+  -webkit-box-shadow: 0 0 0 1000px theme('colors.dark-blue') inset;
+  box-shadow: 0 0 0 1000px theme('colors.dark-blue') inset;
   -webkit-text-fill-color: theme('colors.primary');
   text-fill-color: theme('colors.primary');
+  border-bottom-color: #dac900;
 }
 
 .content p{
