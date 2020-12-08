@@ -192,6 +192,7 @@ input:-webkit-autofill {
 }
 
 .acf-field-text,
+.acf-field-email,
 .acf-field-textarea{
   input,
   textarea{
