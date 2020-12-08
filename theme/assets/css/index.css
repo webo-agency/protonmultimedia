@@ -98,6 +98,13 @@ br + .line-decorated {
   }
 }
 
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  box-shadow: 0 0 0 1000px white inset;
+  -webkit-text-fill-color: theme('colors.primary');
+  text-fill-color: theme('colors.primary');
+}
+
 .content p{
   @apply mb-8;
   @apply pb-2;
