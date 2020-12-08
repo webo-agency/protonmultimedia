@@ -57,9 +57,7 @@
 
 			<main id="main">
 				<div class="desktop-wide:px-smaller-container">
-					<?php
-						the_content();
-					?>
+					...
 				</div>
 			</main>
 
