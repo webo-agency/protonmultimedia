@@ -320,6 +320,7 @@ input:-webkit-autofill {
 @import "gutenberg-wp-block-social-links.css";
 @import "gutenberg-wp-block-table.css";
 @import "gutenberg-wp-block-quote.css";
+@import "sub-menu.css";
 @import "filter-shadow.css";
 @import "box-gradient-overlay-top.css";
 @import "svg-fill-primary.css";
