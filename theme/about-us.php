@@ -16,23 +16,55 @@
 	$post = get_post($id); 
 ?>
 
-	<?php get_template_part( $sections_path, 'header', 
-			array( 
-				'title_string' => get_the_title($id), 
-				'description_string' => apply_filters('the_content', $post->post_content),
-        'background_id' => get_post_thumbnail_id($id),
-        'align_center_boolean' => true
-			)
-		);
-	?>
+	<div class="relative overflow-hidden">
+		<div class="container">
 
-	<main id="main">
-		<div class="desktop-wide:px-smaller-container">
-			<?php
-				the_content();
-			?>
+			<side-heading
+				class="z-40 text-white"
+				data-text="O nas"
+			></side-heading>
+
+			<div class="guides left-minus-px right-auto bg-dark-blue" role="presentation"></div>
+
+			<div class="max-w-900px mx-auto relative flex flex-col justify-center pt-40 pb-16 z-30">
+
+				<div class="relative">
+					<h2 class="text-center uppercase">
+						<?php
+							$lines = explode(PHP_EOL, get_the_title($id));
+							foreach ( $lines as $line) {
+									echo preg_replace("/\*(.+)\*/", '<span class="block text-primary">$1</span>', $line);
+							}
+						?>
+					</h2>
+
+					<p class="text-base tablet-wide:text-md tablet-wide:mb-5 text-center">
+						<?php the_content(); ?>
+					</p>
+				</div>
+			</div>
+			
+			<img 
+				class="hidden tablet-wide:block absolute top-0 bottom-auto right-0 transform -rotate-61 pointer-events-none z-30 -mt-12" 
+				src="<?php echo get_template_directory_uri() . '/assets/svg/header-lines.svg' ?>" 
+				width="400px"
+				height="400px"
+				alt="Decorations"
+				role="presentation"
+			/>
+
+			<div class="guides right-minus-px left-auto bg-dark-blue" role="presentation"></div>
+
+			<main id="main">
+				<div class="desktop-wide:px-smaller-container">
+					<?php
+						the_content();
+					?>
+				</div>
+			</main>
+
 		</div>
-	</main>
+	</div>
 
   <?php get_template_part( $sections_path, 'call-to-action' ); ?>
 
