@@ -26,26 +26,38 @@
 
 			<div class="guides left-minus-px right-auto bg-dark-blue" role="presentation"></div>
 
-			<div class="max-w-900px mx-auto relative flex flex-col justify-center pt-40 pb-16 z-30">
+			<div class="flex-initial flex flex-row items-center">
+				<div class="hidden desktop-wide:block absolute ml-container top-auto bottom-0 left-1px mb-32 z-20 w-24">
+					<?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/dots-block.svg'); ?>
+				</div>
+			</div>
 
-				<div class="relative">
+			<div class="max-w-900px mx-auto relative flex flex-col justify-center pt-56 pb-16 z-30">
+
+				<div class="relative flex flex-col items-center">
 					<h2 class="text-center uppercase">
 						<?php
-							$lines = explode(PHP_EOL, get_the_title($id));
+							$lines = explode(PHP_EOL, "Proton *Multimedia*");
 							foreach ( $lines as $line) {
 									echo preg_replace("/\*(.+)\*/", '<span class="block text-primary">$1</span>', $line);
 							}
 						?>
 					</h2>
 
-					<p class="text-base tablet-wide:text-md tablet-wide:mb-5 text-center">
+					<div class="text-base tablet-wide:text-md tablet-wide:mb-5 text-center">
 						<?php the_content(); ?>
-					</p>
+					</div>
 				</div>
 			</div>
+
+			<?php
+      if( $image = $args['background_id']) {
+        echo wp_get_attachment_image( $image, array('9999', '550'), "", array('class' => 'absolute left-0 top-0 w-full h-full object-cover z-10') );
+      }
+    	?>
 			
 			<img 
-				class="hidden tablet-wide:block absolute top-0 bottom-auto right-0 transform -rotate-61 pointer-events-none z-30 -mt-12" 
+				class="hidden tablet-wide:block absolute top-0 bottom-0 right-0 pointer-events-none z-30 w-64 my-auto" 
 				src="<?php echo get_template_directory_uri() . '/assets/svg/header-lines.svg' ?>" 
 				width="400px"
 				height="400px"
