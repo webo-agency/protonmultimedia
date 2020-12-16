@@ -63,6 +63,10 @@ function show_image( $image_id, $size = null, $attributes = null ) {
               <h3 class="font-special font-bold desktop:text-md desktop-wide:text-lg mb-14">
                 <?php echo $value["highlighted_title"]; ?>
               </h3>
+
+              <div class="mb-14">
+                <?php echo $value["highlighted_description"]; ?>
+              </div>
             </li>
           <?php endforeach; ?>
         </ul>
