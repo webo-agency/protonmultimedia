@@ -16,7 +16,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
 	}
 }
 ?>
-<section class="relative flex flex-col bg-gray-lighter text-black">
+<section class="relative flex flex-col <?php echo $args['section_class']; ?>">
   <side-heading 
     data-text="<?php echo $args['side_description_string']; ?>"
   ></side-heading>

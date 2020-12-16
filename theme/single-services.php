@@ -34,6 +34,7 @@ $sections_path = 'template-parts/section';
 								'description_string' => get_sub_field('description'),
 								'highlighted_array' => get_sub_field('highlighted'),
 								'side_description_string' => empty(get_sub_field('side_description')) ? get_sub_field('title') : get_sub_field('side_description')['title'],
+								'section_class' => 'bg-gray-lighter text-black'
 							)
 						); ?>
 							
