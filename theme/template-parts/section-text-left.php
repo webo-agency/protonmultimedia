@@ -1,12 +1,6 @@
 <section class="relative flex flex-col bg-gray-lighter text-black">
   <div class="guides left-minus-px right-auto bg-gray-light" role="presentation"></div>
 
-  <div class="flex-initial flex flex-row items-center">
-    <div class="hidden desktop-wide:block absolute ml-container top-0 bottom-0 left-1px my-auto z-20 w-24">
-      <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/dots-block.svg'); ?>
-    </div>
-  </div>
-
   <div class="container">
     <div class="desktop-wide:pl-smaller-container flex flex-row flex-wrap pt-24 desktop:pt-40 pb-16 mb-2 mt-2">
       
