@@ -26,7 +26,11 @@
       </div>
 
       <div class="desktop:w-1/2 flex flex-row flex-wrap">
-        <?php echo wp_get_attachment_image( $value["background_image"], array('9999', '550'), "", array('class' => 'absolute left-0 top-0 w-full h-full object-cover z-10') ); ?>
+        <?php 
+          if( $image = $args['background_id']) {
+            echo wp_get_attachment_image( $image, array('9999', '550'), "", array('class' => 'absolute left-0 top-0 w-full h-full object-cover z-10') ); 
+          }
+        ?>
       </div>
     </div>
   </div>

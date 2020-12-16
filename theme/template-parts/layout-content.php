@@ -58,7 +58,7 @@
 						array(
 							'title_string' => get_sub_field('title'),
 							'description_string' => get_sub_field('description'),
-							'background_image' => get_sub_field('background'),
+							'background_id' => get_sub_field('background'),
 						)
 					); ?>
 			<?php endif; ?>
