@@ -54,18 +54,20 @@
 
 			<?php if( get_row_layout() == 'text_left' ):  ?>
 					
-					<?php get_template_part( $sections_path, 'featured-center',
+					<?php get_template_part( $sections_path, 'text-left',
 						array(
-
+							'title_string' => 'Zorientowane *na klienta*',
+							'description_string' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore aliqua',
+							'cover_image' => wp_get_attachment_image( get_post_thumbnail_id($id), array('9999', '550'), "", array('class' => 'absolute left-0 top-0 w-full h-full object-cover z-10') )
 						)
 					); ?>
 			<?php endif; ?>
 			
 			<?php if( get_row_layout() == 'gallery' ):  ?>
 					
-					<?php get_template_part( $sections_path, 'featured-center',
+					<?php get_template_part( $sections_path, 'gallery',
 						array(
-
+							
 						)
 					); ?>
 
@@ -75,7 +77,7 @@
 					
 					<?php get_template_part( $sections_path, 'featured-center',
 						array(
-
+							
 						)
 					); ?>
 
