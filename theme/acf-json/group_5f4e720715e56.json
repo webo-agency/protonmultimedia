@@ -1,53 +1,55 @@
-{
-    "key": "group_5f4e720715e56",
-    "title": "Realizacje - tytuł na kafelce",
-    "fields": [
-        {
-            "key": "field_5f4e7213133e7",
-            "label": "Tytuł",
-            "name": "title_box",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "acfe_permissions": "",
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": "br",
-            "acfe_textarea_code": 0
-        }
-    ],
-    "location": [
-        [
+[
+    {
+        "key": "group_5f4e720715e56",
+        "title": "Realizacje - tytuł na kafelce",
+        "fields": [
             {
-                "param": "post_type",
-                "operator": "==",
-                "value": "realizations"
+                "key": "field_5f4e7213133e7",
+                "label": "Tytuł",
+                "name": "title_box",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "acfe_permissions": "",
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "br",
+                "acfe_textarea_code": 0
             }
-        ]
-    ],
-    "menu_order": 0,
-    "position": "normal",
-    "style": "default",
-    "label_placement": "left",
-    "instruction_placement": "label",
-    "hide_on_screen": "",
-    "active": true,
-    "description": "",
-    "acfe_display_title": "",
-    "acfe_autosync": [
-        "json"
-    ],
-    "acfe_permissions": "",
-    "acfe_form": 0,
-    "acfe_meta": "",
-    "acfe_note": "",
-    "modified": 1598976601
-}
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "realizations"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "left",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "acfe_display_title": "",
+        "acfe_autosync": [
+            "json"
+        ],
+        "acfe_permissions": "",
+        "acfe_form": 0,
+        "acfe_meta": "",
+        "acfe_note": "",
+        "modified": 1598976601
+    }
+]
