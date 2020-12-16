@@ -1,0 +1,59 @@
+[
+  {
+      "key": "group_5fcf9adf876e0",
+      "title": "Menu - ikona",
+      "fields": [
+          {
+              "key": "field_5fcf9ae7515d8",
+              "label": "Ikona",
+              "name": "menu_icon",
+              "type": "image",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                  "width": "",
+                  "class": "",
+                  "id": ""
+              },
+              "acfe_permissions": "",
+              "acfe_thumbnail": 1,
+              "return_format": "array",
+              "preview_size": "medium",
+              "library": "all",
+              "min_width": "",
+              "min_height": "",
+              "min_size": "",
+              "max_width": "",
+              "max_height": "",
+              "max_size": "",
+              "mime_types": "svg",
+              "uploader": "wp"
+          }
+      ],
+      "location": [
+          [
+              {
+                  "param": "nav_menu_item",
+                  "operator": "==",
+                  "value": "location\/menu-2"
+              }
+          ]
+      ],
+      "menu_order": 0,
+      "position": "normal",
+      "style": "default",
+      "label_placement": "left",
+      "instruction_placement": "label",
+      "hide_on_screen": "",
+      "active": true,
+      "description": "",
+      "acfe_display_title": "",
+      "acfe_autosync": [
+          "json"
+      ],
+      "acfe_form": 0,
+      "acfe_meta": "",
+      "acfe_note": ""
+  }
+]

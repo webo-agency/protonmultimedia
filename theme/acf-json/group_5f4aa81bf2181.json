@@ -74,6 +74,26 @@
                                 "acfe_textarea_code": 0
                             },
                             {
+                                "key": "field_5fda16bbe7219",
+                                "label": "Subtytuł",
+                                "name": "subtitle",
+                                "type": "textarea",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "maxlength": "",
+                                "rows": "",
+                                "new_lines": "br",
+                                "acfe_textarea_code": 0
+                            },
+                            {
                                 "key": "field_5f4aa9e48f4cc",
                                 "label": "Opis",
                                 "name": "description",
