@@ -31,7 +31,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
       <?php if(count($args['gallery_array'])): ?>
         <div class="desktop:w-1/2 flex flex-row flex-wrap relative">
           <ul class="relative px-4 flex flex-row flex-wrap pt-4 tablet:pt-18 mb-10 z-20 mt-4">
-            <?php foreach ($args['gallery_array'] as $index => $image): ?>
+            <?php foreach ($args['gallery_array'] as $image): ?>
               <?php var_dump($image); ?>
               <?php /*<li>
                   <?php
@@ -75,7 +75,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
         <?php if(count($args['highlighted_array'])): ?>
           <div class="desktop:w-1/2 flex flex-row flex-wrap relative">
             <ul class="relative px-4 flex flex-row flex-wrap pt-4 tablet:pt-18 mb-10 z-20 mt-4">
-              <?php foreach ($args['highlighted_array'] as $index => $point): ?>
+              <?php foreach ($args['highlighted_array'] as $point): ?>
                 <?php var_dump($point); ?>
                 <?php /*<li>
                     <?php
