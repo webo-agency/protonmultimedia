@@ -32,7 +32,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
         <div class="desktop:w-1/2 flex flex-row flex-wrap relative">
           <ul class="relative px-4 flex flex-row flex-wrap pt-4 tablet:pt-18 mb-10 z-20 mt-4">
             <?php foreach ($args['gallery_array'] as $index => $image): ?>
-              <?php echo $image; ?>
+              <?php var_dump($image); ?>
               <?php /*<li>
                   <?php
                     if( $image = get_field('service_list_icon')) {
@@ -76,7 +76,7 @@ function show_image( $image_id, $size = null, $attributes = null ) {
           <div class="desktop:w-1/2 flex flex-row flex-wrap relative">
             <ul class="relative px-4 flex flex-row flex-wrap pt-4 tablet:pt-18 mb-10 z-20 mt-4">
               <?php foreach ($args['highlighted_array'] as $index => $point): ?>
-                <?php echo $point; ?>
+                <?php var_dump($point); ?>
                 <?php /*<li>
                     <?php
                       if( $image = get_field('service_list_icon')) {
