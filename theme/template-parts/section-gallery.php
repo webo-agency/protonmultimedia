@@ -72,11 +72,11 @@ function show_image( $image_id, $size = null, $attributes = null ) {
           <?php echo $args['description_string']; ?>
         </div>
 
-        <?php if(count($args['gallery_array'])): ?>
+        <?php if(count($args['highlighted_array'])): ?>
           <div class="desktop:w-1/2 flex flex-row flex-wrap relative">
             <ul class="relative px-4 flex flex-row flex-wrap pt-4 tablet:pt-18 mb-10 z-20 mt-4">
-              <?php foreach ($args['gallery_array'] as $index => $image): ?>
-                <?php echo $image; ?>
+              <?php foreach ($args['highlighted_array'] as $index => $point): ?>
+                <?php echo $point; ?>
                 <?php /*<li>
                     <?php
                       if( $image = get_field('service_list_icon')) {
