@@ -68,7 +68,10 @@
 					
 					<?php get_template_part( $sections_path, 'gallery',
 						array(
-							
+							'title_string' => get_sub_field('title'),
+							'description_string' => get_sub_field('description'),
+							'highlighted_array' => get_sub_field('highlighted'),
+							'gallery_array' => get_sub_field('gallery'),
 						)
 					); ?>
 
@@ -78,7 +81,8 @@
 					
 					<?php get_template_part( $sections_path, 'featured-center',
 						array(
-							
+							'title_string' => get_sub_field('title'),
+							'review_array' => get_sub_field('review')
 						)
 					); ?>
 
