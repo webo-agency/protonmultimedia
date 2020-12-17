@@ -34,31 +34,15 @@ if (!function_exists('show_image')){
         <div class="desktop:w-1/2 flex flex-row flex-wrap relative">
           <ul class="relative px-4 flex flex-row flex-wrap pt-4 tablet:pt-18 mb-10 z-20 mt-4">
             <?php foreach ($args['gallery_array'] as $image): ?>
-              <?php var_dump($image); ?>
-              <?php /*<li>
-                  <?php
-                    if( $image = get_field('service_list_icon')) {
-                    ?>
-                    <span class="pm-category-item__img h-full svg-fill-primary">
-                      <?php
-                        echo show_image( $image, array('9999', '550'), "", array('class' => 'w-full h-full object-cover') );
-                      ?>
-                    </span>
-                    <?php
-                    }
-                  ?>
+              <li class="w-full tablet:w-1/2">
+                <?php
+                  echo show_image( $image, array('9999', '550'), "", array('class' => 'w-full h-full object-cover') );
+                ?>
               </li>
-                      <?php 
-          if( $image = $args['background_id']) {
-            echo wp_get_attachment_image( $image, array('9999', '550'), "", array('class' => 'absolute left-0 top-0 w-full h-full object-cover z-10') ); 
-          }
-        ?>
-              */ ?>
             <?php endforeach; ?>
           </ul>
         </div>
       <?php endif; ?>
-      
 
       <div class="desktop:max-w-1/2 flex flex-col flex-wrap flex-auto desktop:pr-32 mb-12 desktop:mb-0 items-center text-center tablet:items-start tablet:text-left">
         <h2 class="uppercase desktop:text-lg">
@@ -78,26 +62,9 @@ if (!function_exists('show_image')){
           <div class="desktop:w-1/2 flex flex-row flex-wrap relative">
             <ul class="relative px-4 flex flex-row flex-wrap pt-4 tablet:pt-18 mb-10 z-20 mt-4">
               <?php foreach ($args['highlighted_array'] as $point): ?>
-                <?php var_dump($point); ?>
-                <?php /*<li>
-                    <?php
-                      if( $image = get_field('service_list_icon')) {
-                      ?>
-                      <span class="pm-category-item__img h-full svg-fill-primary">
-                        <?php
-                          echo show_image( $image, array('9999', '550'), "", array('class' => 'w-full h-full object-cover') );
-                        ?>
-                      </span>
-                      <?php
-                      }
-                    ?>
+                <li>
+                    <?php echo $point["highlighted_title"]; ?>
                 </li>
-                <?php 
-                    if( $image = $args['background_id']) {
-                      echo wp_get_attachment_image( $image, array('9999', '550'), "", array('class' => 'absolute left-0 top-0 w-full h-full object-cover z-10') ); 
-                    }
-                  ?>
-                */ ?>
               <?php endforeach; ?>
             </ul>
           </div>
