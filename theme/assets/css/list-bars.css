@@ -15,6 +15,6 @@
   @apply inline-block;
   @apply w-5;
   @apply h-2;
-  @apply mr-5;
+  @apply mx-4;
   @apply bg-primary;
 }

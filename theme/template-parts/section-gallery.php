@@ -34,7 +34,7 @@
 
         <?php if(count($args['highlighted_array'])): ?>
           <div class="flex flex-row flex-wrap relative">
-            <ul class="relative px-4 flex flex-row flex-wrap pt-4 tablet:pt-18 mb-10 z-20 mt-4 list-bars">
+            <ul class="relative pr-4 flex flex-row flex-wrap pt-4 tablet:pt-18 mb-10 z-20 mt-4 list-bars">
               <?php foreach ($args['highlighted_array'] as $point): ?>
                 <li>
                     <?php echo $point["highlighted_title"]; ?>
