@@ -1,24 +1,4 @@
 <?php
-/*** Function to show images whether SVG or non SVG ***/
-/*** $size & $attribute both can hold array if you want ***/
-if (!function_exists('show_image')){
-  function show_image( $image_id, $size = null, $attributes = null ) {
-    //first lets get the file info sto understand what kind of file it is
-    //as for svg file we will take different approach
-    $file_info = pathinfo( wp_get_attachment_url( $image_id ) );
-
-    //so, if the file type is SVG
-    if ( $file_info['extension'] === 'svg' ) {
-      return file_get_contents( wp_get_attachment_url( $image_id ) );
-    } else {
-      //for any other type of images i.e. JPG, PNG, GIF
-      //we can just simply use the wp_get_attachment_image() stock function
-      return wp_get_attachment_image( $image_id, $size, false, $attributes );
-    }
-  }
-}
-?>
-<?php
   //'title_string' => get_sub_field('title'),
   //'description_string' => get_sub_field('description'),
   //'highlighted_array' => get_sub_field('highlighted'),
@@ -36,7 +16,7 @@ if (!function_exists('show_image')){
             <?php foreach ($args['gallery_array'] as $image): ?>
               <li class="w-full tablet:w-1/2">
                 <?php
-                  echo show_image( $image, array('9999', '550'), "", array('class' => 'w-full h-full object-cover') );
+                  echo wp_get_attachment_image( $image, array('9999', '550'), false, "", array('class' => 'w-full h-full object-cover') );
                 ?>
               </li>
             <?php endforeach; ?>
