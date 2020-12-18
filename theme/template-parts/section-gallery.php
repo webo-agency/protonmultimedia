@@ -8,7 +8,7 @@
         <div class="desktop:w-1/2 flex flex-row flex-wrap relative">
           <ul class="relative px-4 flex flex-row flex-wrap pt-4 tablet:pt-18 mb-10 z-20 mt-4">
             <?php foreach ($args['gallery_array'] as $image): ?>
-              <li class="w-full tablet:w-1/2 px-2">
+              <li class="w-full tablet:w-1/2 px-2 mb-2">
                 <?php
                   echo wp_get_attachment_image( $image, array('9999', '550'), false, array('class' => 'w-full h-72 object-cover') );
                 ?>
