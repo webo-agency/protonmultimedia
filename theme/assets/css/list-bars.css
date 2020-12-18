@@ -5,7 +5,7 @@
 .list-bars > *{
   @apply relative;
   @apply flex;
-  @apply items-start;
+  @apply items-center;
   @apply justify-start;
   @apply flex-row;
 }
@@ -16,5 +16,6 @@
   @apply w-5;
   @apply h-2;
   @apply mx-4;
+
   @apply bg-primary;
 }
