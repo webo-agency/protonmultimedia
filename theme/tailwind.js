@@ -157,7 +157,7 @@ module.exports = {
         'header-desktop': '82px',
       },
       listStyleType: {
-        'bars': 'bars'
+        'bars': 'none'
       }
     },
   },
