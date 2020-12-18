@@ -8,6 +8,7 @@
   @apply items-center;
   @apply justify-start;
   @apply flex-row;
+  @apply mb-4;
 }
 
 .list-bars > *:before{
@@ -16,6 +17,5 @@
   @apply w-5;
   @apply h-2;
   @apply mx-4;
-
   @apply bg-primary;
 }
