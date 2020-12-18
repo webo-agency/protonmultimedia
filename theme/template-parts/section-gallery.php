@@ -6,7 +6,7 @@
 
       <?php if(count($args['gallery_array'])): ?>
         <div class="desktop:w-1/2 flex flex-row flex-wrap relative">
-          <ul class="relative flex flex-row flex-wrap mb-10 z-20">
+          <ul class="relative flex flex-row flex-wrap tablet:pt-18 mb-10 z-20">
             <?php foreach ($args['gallery_array'] as $image): ?>
               <li class="w-full tablet:w-1/2">
                 <?php
