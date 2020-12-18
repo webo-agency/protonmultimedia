@@ -10,7 +10,7 @@
             <?php foreach ($args['gallery_array'] as $image): ?>
               <li class="w-full tablet:w-1/2">
                 <?php
-                  echo wp_get_attachment_image( $image, array('9999', '550'), false, "", array('class' => 'w-full h-full object-cover') );
+                  echo wp_get_attachment_image( $image, array('9999', '550'), false, array('class' => 'w-full h-full object-cover') );
                 ?>
               </li>
             <?php endforeach; ?>
