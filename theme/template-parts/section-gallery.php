@@ -18,7 +18,7 @@
         </div>
       <?php endif; ?>
 
-      <div class="desktop-wide:pl-smaller-container flex flex-col flex-wrap flex-auto desktop:pr-32 mb-12 desktop:mb-0 items-center text-center tablet:items-start tablet:text-left">
+      <div class="desktop-wide:pl-smaller-container desktop:w-1/2 flex flex-col flex-wrap flex-auto desktop:pr-32 mb-12 desktop:mb-0 items-center text-center tablet:items-start tablet:text-left">
         <h2 class="uppercase desktop:text-lg">
           <?php 
             $lines = explode(PHP_EOL, $args['title_string']);
@@ -33,7 +33,7 @@
         </div>
 
         <?php if(count($args['highlighted_array'])): ?>
-          <div class="desktop:w-1/2 flex flex-row flex-wrap relative">
+          <div class="flex flex-row flex-wrap relative">
             <ul class="relative px-4 flex flex-row flex-wrap pt-4 tablet:pt-18 mb-10 z-20 mt-4">
               <?php foreach ($args['highlighted_array'] as $point): ?>
                 <li>
