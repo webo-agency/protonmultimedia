@@ -2,13 +2,13 @@
   <div class="guides left-minus-px right-auto bg-gray-light" role="presentation"></div>
 
   <div class="container">
-    <div class="desktop-wide:pl-smaller-container flex flex-row flex-wrap pt-24 desktop:pt-40 pb-16 mb-2 mt-2">
+    <div class="flex flex-row flex-wrap pt-24 desktop:pt-40 pb-16 mb-2 mt-2">
 
       <?php if(count($args['gallery_array'])): ?>
         <div class="desktop:w-1/2 flex flex-row flex-wrap relative">
-          <ul class="relative px-4 flex flex-row flex-wrap pt-4 tablet:pt-18 mb-10 z-20 mt-4">
+          <ul class="relative flex flex-row flex-wrap mb-10 z-20">
             <?php foreach ($args['gallery_array'] as $image): ?>
-              <li class="w-full tablet:w-1/2 px-2 mb-2">
+              <li class="w-full tablet:w-1/2">
                 <?php
                   echo wp_get_attachment_image( $image, array('9999', '550'), false, array('class' => 'w-full h-72 object-cover') );
                 ?>
@@ -18,7 +18,7 @@
         </div>
       <?php endif; ?>
 
-      <div class="desktop:max-w-1/2 flex flex-col flex-wrap flex-auto desktop:pr-32 mb-12 desktop:mb-0 items-center text-center tablet:items-start tablet:text-left">
+      <div class="desktop-wide:pl-smaller-container flex flex-col flex-wrap flex-auto desktop:pr-32 mb-12 desktop:mb-0 items-center text-center tablet:items-start tablet:text-left">
         <h2 class="uppercase desktop:text-lg">
           <?php 
             $lines = explode(PHP_EOL, $args['title_string']);
