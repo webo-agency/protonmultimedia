@@ -1,9 +1,3 @@
-<?php
-  //'title_string' => get_sub_field('title'),
-  //'description_string' => get_sub_field('description'),
-  //'highlighted_array' => get_sub_field('highlighted'),
-?>
-
 <section class="relative flex flex-col bg-gray-lighter text-black">
   <div class="guides left-minus-px right-auto bg-gray-light" role="presentation"></div>
 
