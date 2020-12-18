@@ -1,0 +1,15 @@
+.list-bars{
+  list-style: none;
+}
+
+.list-bars > *{
+  @apply relative;
+}
+
+.list-bars > *:before{
+  content: '';
+  @apply inline-block;
+  @apply w-5;
+  @apply h-2;
+  @apply bg-primary;
+}
