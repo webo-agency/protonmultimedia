@@ -4,6 +4,10 @@
 
 .list-bars > *{
   @apply relative;
+  @apply flex;
+  @apply items-start;
+  @apply justify-start;
+  @apply flex-row;
 }
 
 .list-bars > *:before{
@@ -11,5 +15,6 @@
   @apply inline-block;
   @apply w-5;
   @apply h-2;
+  @apply mr-5;
   @apply bg-primary;
 }
