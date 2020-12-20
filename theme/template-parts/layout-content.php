@@ -79,8 +79,9 @@
 
 			<?php if( get_row_layout() == 'reviews' ):  ?>		
 					
-					<?php get_template_part( $sections_path, 'featured-center',
+					<?php get_template_part( $sections_path, 'reviews',
 						array(
+							'side_description_string' => '',
 							'title_string' => get_sub_field('title'),
 							'review_array' => get_sub_field('review')
 						)
