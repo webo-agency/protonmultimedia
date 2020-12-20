@@ -34,22 +34,18 @@
     </div>
   </div>
 
-  <div class="container pb-10 desktop:pb-40 mb-2 z-20">
+  <div class="container max-w-screen-tablet pb-10 desktop:pb-40 mb-2 z-20">
     <div class="relative flex flex-row">
       <?php if( is_array($args['review_array']) && !empty($args['review_array']) ): ?>
         <ul class="w-full flex flex-row flex-wrap">
           <?php foreach ($args['review_array'] as $key => $field): ?>
             <li class="flex flex-column flex-wrap mb-10">
               
-              <div class="w-full flex flex-row items-center text-center">
+              <div class="w-full flex flex-column justify-center mb-2">
                 <?php echo wp_get_attachment_image( $field["review_image"], array('9999', '479'), "", array('class' => 'object-cover w-12 rounded-full', 'role' => 'presentation') );  ?>
               </div>
-
-              <span class="w-full flex flex-row items-center text-center">
-                <?php echo $field['review_position']; ?>
-              </span>
             
-              <div class="w-full flex flex-row items-center text-center">
+              <div class="w-full flex flex-column justify-center">
                 <h3>
                   <?php 
                     $lines = explode(PHP_EOL, $field['review_title']);
@@ -58,6 +54,10 @@
                     }
                   ?>
                 </h3>
+
+                <p class="text-gray-2">
+                  <?php echo $field['review_position']; ?>
+                </p>
               </div>
 
               <p class="w-full flex flex-row items-center text-center">
