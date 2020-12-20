@@ -45,8 +45,8 @@
                 <?php echo wp_get_attachment_image( $field["review_image"], array('9999', '479'), "", array('class' => 'object-cover w-12 rounded-full', 'role' => 'presentation') );  ?>
               </div>
             
-              <div class="w-full flex flex-column justify-center">
-                <h3>
+              <div class="w-full flex flex-column flex-wrap justify-center">
+                <h3 class="w-full mb-2">
                   <?php 
                     $lines = explode(PHP_EOL, $field['review_title']);
                     foreach ( $lines as $line) {
