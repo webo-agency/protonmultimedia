@@ -39,24 +39,28 @@
       <?php if( is_array($args['review_array']) && !empty($args['review_array']) ): ?>
         <ul class="w-full flex flex-row flex-wrap">
           <?php foreach ($args['review_array'] as $key => $field): ?>
-            <li class="flex flex-row-reverse desktop:flex-row w-full desktop:w-1/2 items-center mb-10 desktop:mb-0 justify-end">
+            <li class="flex flex-column flex-wrap mb-10">
               
-              <?php echo wp_get_attachment_image( $field["review_image"], array('9999', '479'), "", array('class' => 'object-cover max-w-479px w-full', 'role' => 'presentation') );  ?>
-            
-              <h3>
-                <?php 
-                  $lines = explode(PHP_EOL, $field['review_title']);
-                  foreach ( $lines as $line) {
-                      echo preg_replace("/\*(.+)\*/", '<span class="text-primary">$1</span>', $line);
-                  }
-                ?>
-              </h3>
+              <div class="w-full flex flex-row items-center text-center">
+                <?php echo wp_get_attachment_image( $field["review_image"], array('9999', '479'), "", array('class' => 'object-cover w-12 rounded-full', 'role' => 'presentation') );  ?>
+              </div>
 
-              <span>
+              <span class="w-full flex flex-row items-center text-center">
                 <?php echo $field['review_position']; ?>
               </span>
+            
+              <div class="w-full flex flex-row items-center text-center">
+                <h3>
+                  <?php 
+                    $lines = explode(PHP_EOL, $field['review_title']);
+                    foreach ( $lines as $line) {
+                        echo preg_replace("/\*(.+)\*/", '<span class="text-primary">$1</span>', $line);
+                    }
+                  ?>
+                </h3>
+              </div>
 
-              <p>
+              <p class="w-full flex flex-row items-center text-center">
                 <?php echo $field['review_ description']; ?>
               </p>
             </li>
