@@ -46,7 +46,7 @@
               </div>
             
               <div class="w-full flex flex-column flex-wrap justify-center">
-                <h3 class="w-full mb-2">
+                <h3 class="w-full mb-2 text-center">
                   <?php 
                     $lines = explode(PHP_EOL, $field['review_title']);
                     foreach ( $lines as $line) {
