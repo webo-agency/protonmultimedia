@@ -37,36 +37,38 @@
   <div class="container max-w-screen-tablet pb-10 desktop:pb-40 mb-2 z-20">
     <div class="relative flex flex-row">
       <?php if( is_array($args['review_array']) && !empty($args['review_array']) ): ?>
-        <ul class="w-full flex flex-row flex-wrap">
-          <?php foreach ($args['review_array'] as $key => $field): ?>
-            <li class="flex flex-column flex-wrap mb-10">
+        <reviews-slider class="mb-4 tablet:mb-0 z-40">
+          <ul class="w-full flex flex-row flex-wrap">
+            <?php foreach ($args['review_array'] as $key => $field): ?>
+              <li class="swiper-slide overflow-hidden mb-10">
+                
+                <div class="w-full flex flex-column justify-center mb-2">
+                  <?php echo wp_get_attachment_image( $field["review_image"], array('9999', '479'), "", array('class' => 'object-cover w-12 rounded-full', 'role' => 'presentation') );  ?>
+                </div>
               
-              <div class="w-full flex flex-column justify-center mb-2">
-                <?php echo wp_get_attachment_image( $field["review_image"], array('9999', '479'), "", array('class' => 'object-cover w-12 rounded-full', 'role' => 'presentation') );  ?>
-              </div>
-            
-              <div class="w-full flex flex-column flex-wrap justify-center">
-                <h3 class="w-full mb-2 text-center">
-                  <?php 
-                    $lines = explode(PHP_EOL, $field['review_title']);
-                    foreach ( $lines as $line) {
-                        echo preg_replace("/\*(.+)\*/", '<span class="text-primary">$1</span>', $line);
-                    }
-                  ?>
-                </h3>
+                <div class="w-full flex flex-column flex-wrap justify-center">
+                  <h3 class="w-full mb-2 text-center">
+                    <?php 
+                      $lines = explode(PHP_EOL, $field['review_title']);
+                      foreach ( $lines as $line) {
+                          echo preg_replace("/\*(.+)\*/", '<span class="text-primary">$1</span>', $line);
+                      }
+                    ?>
+                  </h3>
 
-                <p class="text-gray-2">
-                  <?php echo $field['review_position']; ?>
+                  <p class="text-gray-2">
+                    <?php echo $field['review_position']; ?>
+                  </p>
+                </div>
+
+                <p class="w-full flex flex-row items-center text-center">
+                  <?php echo $field['review_ description']; ?>
                 </p>
-              </div>
-
-              <p class="w-full flex flex-row items-center text-center">
-                <?php echo $field['review_ description']; ?>
-              </p>
-            </li>
-            
-          <?php endforeach; ?>
-        </ul>
+              </li>
+              
+            <?php endforeach; ?>
+          </ul>
+        </reviews-slider>
       <?php endif; ?>
     </div>
   </div>
