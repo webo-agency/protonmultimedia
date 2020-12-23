@@ -5,6 +5,7 @@ import RealizationAlternativeSlider from '../vue/realization-alternative-slider.
 import SideHeading from '../vue/side-heading.vue';
 import TagFilter from '../vue/tag-filter.vue';
 import OnScroll from '../vue/on-scroll.vue';
+import ReviewsSlider from '../vue/reviews-slider.vue';
 import MainNavigation from '../vue/main-navigation.vue';
 import VueAwesomeSwiper from "vue-awesome-swiper/dist/ssr";
 
@@ -12,6 +13,7 @@ Vue.use(VueAwesomeSwiper);
 
 Vue.component('baner-slider', BanerSlider);
 Vue.component('realization-slider', RealizationSlider);
+Vue.component('reviews-slider', ReviewsSlider);
 Vue.component('realization-alternative-slider', RealizationAlternativeSlider);
 Vue.component('side-heading', SideHeading);
 Vue.component('tag-filter', TagFilter);
@@ -24,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         components: {
             BanerSlider,
             RealizationSlider,
+            ReviewsSlider,
             SideHeading,
             TagFilter,
             OnScroll,
