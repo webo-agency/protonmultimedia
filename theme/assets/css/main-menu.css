@@ -10,3 +10,26 @@
   }
 }
 
+.menu a:hover{
+  @apply text-primary;
+}
+
+.sub-menu{
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-top: 25px;
+  @apply bg-dark-blue-2;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sub-menu li{
+  width: 25%;
+  margin: 0;
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
