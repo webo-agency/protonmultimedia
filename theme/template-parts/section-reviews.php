@@ -37,8 +37,8 @@
   <div class="container pb-10 desktop:pb-40 mb-2 z-20">
     <div class="relative flex flex-row">
       <?php if( is_array($args['review_array']) && !empty($args['review_array']) ): ?>
-        <reviews-slider class="mb-4 tablet:mb-0 z-40">
-          <ul class="swiper-wrapper max-w-screen-tablet z-20">
+        <reviews-slider class="mb-4 w-full tablet:mb-0 z-40">
+          <ul class="swiper-wrapper max-w-screen-tablet overflow-hidden z-20">
             <?php foreach ($args['review_array'] as $key => $field): ?>
               <li class="swiper-slide w-full overflow-hidden mb-10">
                 
