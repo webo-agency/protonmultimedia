@@ -31,8 +31,6 @@ export default {
           pagination: {
               el: '[data-reviews-pagination]',
               clickable: true,
-              bulletClass: 'swiper-pagination-bullet bg-gray-dark',
-              bulletActiveClass: 'swiper-pagination-bullet-active bg-primary'
           },
           navigation: {
             nextEl: '[data-reviews-button-next]',
@@ -47,5 +45,10 @@ export default {
 </script>
 
 <style>
-
+  [data-reviews-pagination] .swiper-pagination-bullet{
+    background-color: #d6d6d6;
+  }
+  [data-reviews-pagination] .swiper-pagination-bullet-active{
+    background: #01b9c3;
+  }
 </style>
