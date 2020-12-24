@@ -3,7 +3,7 @@
     :is="mainTag"
     class="swiper-container relative overflow-hidden"
     :class="mainClass"
-    v-swiper:baner="sliderOptionsBaner"
+    v-swiper:reviews="sliderOptionsBaner"
   >
     <slot />
   </component>
@@ -29,12 +29,15 @@ export default {
         sliderOptionsBaner: {
           preloadImages: false,
           pagination: {
-              el: '[data-baner-pagination]',
+              el: '[data-reviews-pagination]',
               clickable: true,
           },
+          navigation: {
+            nextEl: '[data-reviews-button-next]',
+            prevEl: '[data-reviews-button-prev]',
+          },
           autoplay: 2000,
-          slidesPerView: 1,
-          loop: true
+          slidesPerView: 'auto',
         }
       };
     },
