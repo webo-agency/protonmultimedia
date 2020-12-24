@@ -31,6 +31,7 @@ export default {
           pagination: {
               el: '[data-reviews-pagination]',
               clickable: true,
+              bulletClass: 'swiper-pagination-bullet bg-gray-dark'
           },
           navigation: {
             nextEl: '[data-reviews-button-next]',
