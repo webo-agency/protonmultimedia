@@ -38,7 +38,7 @@
     <div class="relative flex flex-row">
       <?php if( is_array($args['review_array']) && !empty($args['review_array']) ): ?>
         <reviews-slider class="mb-4 tablet:mb-0 z-40">
-          <ul class="swiper-wrapper">
+          <ul class="swiper-wrapper z-20">
             <?php foreach ($args['review_array'] as $key => $field): ?>
               <li class="swiper-slide w-full overflow-hidden mb-10">
                 
@@ -68,8 +68,8 @@
               
             <?php endforeach; ?>
           </ul>
-          <div class="flex items-center justify-between">
-            <div class="flex-initial px-4 py-8" data-reviews-button-prev>
+          <div class="flex items-center justify-between z-30">
+            <div class="flex-initial px-4 absolute inset-0 mx-auto mt-24 mb-auto" data-reviews-button-prev>
                 <img 
                     class="block" 
                     width="20px"
@@ -79,7 +79,7 @@
                 />  
             </div>
             <div class="flex-1 px-4 py-8 relative h-10 flex items-center justify-center"><div class="swiper-pagination" data-reviews-pagination></div></div>
-            <div class="flex-initial px-4 py-8" data-reviews-button-next>
+            <div class="flex-initial px-4 absolute inset-0 mx-auto mt-24 mb-auto" data-reviews-button-next>
                 <img 
                     class="block transform scale-x-flip scale-y-1" 
                     width="20px"
