@@ -43,7 +43,7 @@
               <li class="swiper-slide overflow-hidden mb-10">
                 
                 <div class="w-full flex flex-column justify-center mb-2">
-                  <?php echo wp_get_attachment_image( $field["review_image"], array('9999', '479'), "", array('class' => 'object-cover w-12 rounded-full', 'role' => 'presentation') );  ?>
+                  <?php echo wp_get_attachment_image( $field["review_image"], array('9999', '479'), "", array('class' => 'object-cover w-12 h-12 rounded-full', 'role' => 'presentation') );  ?>
                 </div>
               
                 <div class="w-full flex flex-column flex-wrap justify-center">
@@ -68,6 +68,27 @@
               
             <?php endforeach; ?>
           </ul>
+          <div class="flex items-center justify-between">
+            <div class="flex-initial px-4 py-8" data-reviews-button-prev>
+                <img 
+                    class="block" 
+                    width="20px"
+                    height="20px"
+                    src="<?php echo get_template_directory_uri() . '/assets/svg/arrow.svg' ?>" 
+                    alt="Left arrow"
+                />  
+            </div>
+            <div class="flex-1 px-4 py-8 relative h-10 flex items-center justify-center"><div class="swiper-pagination" data-reviews-pagination></div></div>
+            <div class="flex-initial px-4 py-8" data-reviews-button-next>
+                <img 
+                    class="block transform scale-x-flip scale-y-1" 
+                    width="20px"
+                    height="20px"
+                    src="<?php echo get_template_directory_uri() . '/assets/svg/arrow.svg' ?>" 
+                    alt="Right arrow"
+                />  
+            </div>
+        </div>
         </reviews-slider>
       <?php endif; ?>
     </div>
