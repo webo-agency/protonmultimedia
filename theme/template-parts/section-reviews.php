@@ -34,13 +34,13 @@
     </div>
   </div>
 
-  <div class="container max-w-screen-tablet pb-10 desktop:pb-40 mb-2 z-20">
+  <div class="container pb-10 desktop:pb-40 mb-2 z-20">
     <div class="relative flex flex-row">
       <?php if( is_array($args['review_array']) && !empty($args['review_array']) ): ?>
         <reviews-slider class="mb-4 tablet:mb-0 z-40">
           <ul class="swiper-wrapper z-20">
             <?php foreach ($args['review_array'] as $key => $field): ?>
-              <li class="swiper-slide w-full overflow-hidden mb-10">
+              <li class="swiper-slide max-w-screen-tablet w-full overflow-hidden mb-10">
                 
                 <div class="w-full flex flex-column justify-center mb-2">
                   <?php echo wp_get_attachment_image( $field["review_image"], array('9999', '479'), "", array('class' => 'object-cover w-12 h-12 rounded-full', 'role' => 'presentation') );  ?>
