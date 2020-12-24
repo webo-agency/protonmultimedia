@@ -16,6 +16,7 @@ a:hover + .sub-menu,
 a + .sub-menu:hover{
   visibility: visible;
   opacity: 1;
+  transition: .25s ease-in-out 0s; 
 }
 
 .sub-menu li{
