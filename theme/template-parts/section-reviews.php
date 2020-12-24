@@ -42,12 +42,12 @@
             <?php foreach ($args['review_array'] as $key => $field): ?>
               <li class="swiper-slide w-full mb-10">
                 
-                <div class="w-full max-w-screen-tablet flex flex-column justify-center mb-2">
+                <div class="w-full max-w-screen-tablet mx-auto flex flex-column justify-center mb-2">
                   <?php echo wp_get_attachment_image( $field["review_image"], array('9999', '479'), "", array('class' => 'object-cover w-12 h-12 rounded-full', 'role' => 'presentation') );  ?>
                 </div>
               
-                <div class="w-full max-w-screen-tablet flex flex-column flex-wrap justify-center">
-                  <h3 class="w-full max-w-screen-tablet mb-2 text-center">
+                <div class="w-full max-w-screen-tablet mx-auto flex flex-column flex-wrap justify-center">
+                  <h3 class="w-full mb-2 text-center">
                     <?php 
                       $lines = explode(PHP_EOL, $field['review_title']);
                       foreach ( $lines as $line) {
@@ -61,7 +61,7 @@
                   </p>
                 </div>
 
-                <p class="w-full max-w-screen-tablet flex flex-row items-center text-center">
+                <p class="w-full max-w-screen-tablet mx-auto flex flex-row items-center text-center">
                   <?php echo $field['review_ description']; ?>
                 </p>
               </li>
@@ -69,16 +69,24 @@
             <?php endforeach; ?>
           </ul>
           <div class="flex items-center justify-between z-30">
-
+            <div class="flex-initial px-4 absolute inset-0 mr-auto ml-0 mt-24 mb-auto w-12 swiper-button-disabled" data-reviews-button-prev>
+              <img 
+                  class="block" 
+                  width="20px"
+                  height="20px"
+                  src="<?php echo get_template_directory_uri() . '/assets/svg/arrow.svg' ?>" 
+                  alt="Left arrow"
+              />  
+            </div>
             <div class="flex-1 px-4 py-8 relative h-10 flex items-center justify-center"><div class="swiper-pagination" data-reviews-pagination></div></div>
-            <div class="flex-initial px-4 absolute inset-0 mx-auto mt-24 mb-auto" data-reviews-button-next>
-                <img 
-                    class="block transform scale-x-flip scale-y-1" 
-                    width="20px"
-                    height="20px"
-                    src="<?php echo get_template_directory_uri() . '/assets/svg/arrow.svg' ?>" 
-                    alt="Right arrow"
-                />  
+            <div class="flex-initial px-4 absolute inset-0 ml-auto mr-0 mt-24 mb-auto w-12" data-reviews-button-next>
+              <img 
+                  class="block transform scale-x-flip scale-y-1" 
+                  width="20px"
+                  height="20px"
+                  src="<?php echo get_template_directory_uri() . '/assets/svg/arrow.svg' ?>" 
+                  alt="Right arrow"
+              />  
             </div>
         </div>
         </reviews-slider>
