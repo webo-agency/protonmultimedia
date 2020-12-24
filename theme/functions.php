@@ -414,20 +414,10 @@ add_filter( 'jcs/menu_level_class', 'add_sub_menu_class', 10, 2 ); // Where $pri
 
 
 function jcs_menu_item_args($args, $item){
-	var_dump($item);
-	switch($item->object){
-		case 'page':
-				// add blue 10 pixel image before the menu item name
-				$args->link_before = '<img alt="" src="http://placehold.it/10x10/0000FF" />';
-		break;
-		case 'term':
-				// add green 10 pixel image before the menu item name
-				$args->link_before = '<img alt="" src="http://placehold.it/10x10/00FF00" />';
-		break;
-		case 'post':
-				// add red 10 pixel image before the menu item name
-				$args->link_before = '<img alt="" src="http://placehold.it/10x10/FF0000" />';
-		break;
+	//var_dump($item);
+	$args->link_before = '<img alt="" src="http://placehold.it/10x10/00FF00" />';
+
+	switch($item->post_type){
 		case 'services':
 			// add red 10 pixel image before the menu item name
 			$args->link_before = '<img alt="" src="http://placehold.it/10x10/FFF000" />';
