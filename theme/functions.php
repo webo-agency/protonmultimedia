@@ -409,3 +409,28 @@ function add_sub_menu_class($submenu_classes, $depth, $args) {
 	return $submenu_classes;
 }
 add_filter( 'jcs/menu_level_class', 'add_sub_menu_class' ); // Where $priority is default 10, $accepted_args is default 1.
+
+
+
+function jcs_menu_item_args($args, $item){
+	switch($item->object){
+		case 'page':
+				// add blue 10 pixel image before the menu item name
+				$args->link_before = '<img alt="" src="http://placehold.it/10x10/0000FF" />';
+		break;
+		case 'term':
+				// add green 10 pixel image before the menu item name
+				$args->link_before = '<img alt="" src="http://placehold.it/10x10/00FF00" />';
+		break;
+		case 'post':
+				// add red 10 pixel image before the menu item name
+				$args->link_before = '<img alt="" src="http://placehold.it/10x10/FF0000" />';
+		break;
+		case 'services':
+			// add red 10 pixel image before the menu item name
+			$args->link_before = '<img alt="" src="http://placehold.it/10x10/FFF000" />';
+	break;
+	}
+	return $args;
+}
+add_filter( 'jcs/menu_item_args', 'jcs_menu_item_args', 10, 2);
