@@ -69,7 +69,7 @@
             <?php endforeach; ?>
           </ul>
           <div class="flex items-center justify-between z-30">
-            <div class="flex-initial px-4 absolute inset-0 mr-auto ml-0 mt-24 mb-auto w-12 swiper-button-disabled" data-reviews-button-prev>
+            <div class="flex-initial px-4 absolute left-0 right-auto top-0 bottom-auto mt-24 mb-auto w-12" data-reviews-button-prev>
               <img 
                   class="block" 
                   width="20px"
@@ -79,7 +79,7 @@
               />  
             </div>
             <div class="flex-1 px-4 py-8 relative h-10 flex items-center justify-center"><div class="swiper-pagination" data-reviews-pagination></div></div>
-            <div class="flex-initial px-4 absolute inset-0 ml-auto mr-0 mt-24 mb-auto w-12" data-reviews-button-next>
+            <div class="flex-initial px-4 absolute left-auto right-0 top-0 bottom-auto mt-24 mb-auto w-12" data-reviews-button-next>
               <img 
                   class="block transform scale-x-flip scale-y-1" 
                   width="20px"
