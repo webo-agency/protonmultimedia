@@ -408,7 +408,7 @@ function add_sub_menu_class($submenu_classes, $depth, $args) {
 
 	return $submenu_classes;
 }
-add_filter( 'jcs/menu_level_class', 'add_sub_menu_class' ); // Where $priority is default 10, $accepted_args is default 1.
+add_filter( 'jcs/menu_level_class', 'add_sub_menu_class', 10, 2 ); // Where $priority is default 10, $accepted_args is default 1.
 
 
 
