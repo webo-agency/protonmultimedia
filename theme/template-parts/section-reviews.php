@@ -37,17 +37,17 @@
   <div class="container pb-10 desktop:pb-40 mb-2 z-20">
     <div class="relative flex flex-row">
       <?php if( is_array($args['review_array']) && !empty($args['review_array']) ): ?>
-        <reviews-slider class="mb-4 w-full tablet:mb-0 z-40">
-          <ul class="swiper-wrapper max-w-screen-tablet overflow-hidden z-20">
+        <reviews-slider class="w-3/5 mb-4 w-full tablet:mb-0 z-40">
+          <ul class="swiper-wrapper overflow-hidden z-20">
             <?php foreach ($args['review_array'] as $key => $field): ?>
-              <li class="swiper-slide w-full overflow-hidden mb-10">
+              <li class="swiper-slide w-full mb-10">
                 
-                <div class="w-full flex flex-column justify-center mb-2">
+                <div class="w-full max-w-screen-tablet flex flex-column justify-center mb-2">
                   <?php echo wp_get_attachment_image( $field["review_image"], array('9999', '479'), "", array('class' => 'object-cover w-12 h-12 rounded-full', 'role' => 'presentation') );  ?>
                 </div>
               
-                <div class="w-full flex flex-column flex-wrap justify-center">
-                  <h3 class="w-full mb-2 text-center">
+                <div class="w-full max-w-screen-tablet flex flex-column flex-wrap justify-center">
+                  <h3 class="w-full max-w-screen-tablet mb-2 text-center">
                     <?php 
                       $lines = explode(PHP_EOL, $field['review_title']);
                       foreach ( $lines as $line) {
@@ -61,7 +61,7 @@
                   </p>
                 </div>
 
-                <p class="w-full flex flex-row items-center text-center">
+                <p class="w-full max-w-screen-tablet flex flex-row items-center text-center">
                   <?php echo $field['review_ description']; ?>
                 </p>
               </li>
@@ -69,15 +69,7 @@
             <?php endforeach; ?>
           </ul>
           <div class="flex items-center justify-between z-30">
-            <div class="flex-initial px-4 absolute inset-0 mx-auto mt-24 mb-auto" data-reviews-button-prev>
-                <img 
-                    class="block" 
-                    width="20px"
-                    height="20px"
-                    src="<?php echo get_template_directory_uri() . '/assets/svg/arrow.svg' ?>" 
-                    alt="Left arrow"
-                />  
-            </div>
+
             <div class="flex-1 px-4 py-8 relative h-10 flex items-center justify-center"><div class="swiper-pagination" data-reviews-pagination></div></div>
             <div class="flex-initial px-4 absolute inset-0 mx-auto mt-24 mb-auto" data-reviews-button-next>
                 <img 
