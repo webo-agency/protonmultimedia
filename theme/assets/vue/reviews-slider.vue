@@ -51,4 +51,9 @@ export default {
   [data-reviews-pagination] .swiper-pagination-bullet-active{
     background: #01b9c3;
   }
+
+  .swiper-button-disabled[data-reviews-button-prev],
+  .swiper-button-disabled[data-reviews-button-next]{
+    background-color: #d6d6d6;
+  }
 </style>
