@@ -400,3 +400,12 @@ function add_menu_link_class( $atts, $item, $args ) {
   return $atts;
 }
 add_filter( 'nav_menu_link_attributes', 'add_menu_link_class', 1, 3 );
+
+
+function add_sub_menu_class($submenu_classes, $depth, $args) {
+
+	$submenu_classes[] = 'sub-menu group container';
+
+	return $submenu_classes;
+}
+add_filter( 'jcs/menu_level_class', 'add_sub_menu_class' ); // Where $priority is default 10, $accepted_args is default 1.
