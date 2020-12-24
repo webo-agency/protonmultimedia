@@ -413,17 +413,17 @@ add_filter( 'jcs/menu_level_class', 'add_sub_menu_class', 10, 3 ); // Where $pri
 
 
 
-function add_menu_link_icon($args, $item){
+function add_menu_link_icon($title, $item_id, $item_type){
 	//var_dump($item);
-	$args->link_before = '<img alt="" src="http://placehold.it/10x10/00FF00" />' . $args->title;
+	$title = '<img alt="" src="http://placehold.it/10x10/00FF00" />' . $title;
 
-	switch($item->object){
+	switch($item_type){
 		case 'post'://services
 			// add red 10 pixel image before the menu item name
-			$args->link_before = '<img alt="" src="http://placehold.it/10x10/FFF000" />' . $args->title;
+			$title = '<img alt="" src="http://placehold.it/10x10/FFF000" />' . $title;
 		break;
 	}
 
-	return $args;
+	return $title;
 }
-add_filter( 'jcs/menu_item_args', 'add_menu_link_icon', 20, 2 );
+add_filter( 'jcs/item_title', 'add_menu_link_icon', 20, 3 );
