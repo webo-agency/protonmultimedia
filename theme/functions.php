@@ -404,7 +404,7 @@ add_filter( 'nav_menu_link_attributes', 'add_menu_link_class', 1, 3 );
 
 function add_sub_menu_class($classes, $args) {
 
-	$submenu_classes[] = $classes;
+	$submenu_classes = array_merge([], $classes);
 	$submenu_classes[] = 'sub-menu group container';
 
 	return $submenu_classes;
@@ -414,6 +414,7 @@ add_filter( 'jcs/menu_level_class', 'add_sub_menu_class', 10, 2 ); // Where $pri
 
 
 function jcs_menu_item_args($args, $item){
+	var_dump($item);
 	switch($item->object){
 		case 'page':
 				// add blue 10 pixel image before the menu item name
