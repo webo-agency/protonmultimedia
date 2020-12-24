@@ -425,4 +425,4 @@ function add_menu_link_icon($args, $item){
 	}
 	return $args;
 }
-add_filter( 'jcs/menu_item_args', 'add_menu_link icon', 2, 2 );
+add_filter( 'jcs/menu_item_args', 'add_menu_link_icon', 2, 2 );
