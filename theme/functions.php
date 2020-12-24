@@ -402,10 +402,8 @@ function add_menu_link_class( $atts, $item, $args ) {
 add_filter( 'nav_menu_link_attributes', 'add_menu_link_class', 1, 3 );
 
 
-function add_sub_menu_class($classes, $depth, $args) {
+function add_sub_menu_class($classes, $args) {
 
-	var_dump($depth);
-	var_dump($args);
 	$submenu_classes[] = $classes;
 	$submenu_classes[] = 'sub-menu group container';
 
