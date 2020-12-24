@@ -18,7 +18,7 @@
   </div>
 
   <div class="container flex flex-col items-center pt-20 py-8 desktop:py-20 z-20">
-    <div class="desktop:max-w-1/2 flex flex-col justify-center flex-wrap flex-auto text-center desktop:pr-16 desktop:mb-0">
+    <div class="desktop:max-w-1/2 flex flex-col justify-center flex-wrap flex-auto text-center desktop:mb-0">
       <h2 class="uppercase">
         <?php 
           $lines = explode(PHP_EOL, $args['title_string']);
