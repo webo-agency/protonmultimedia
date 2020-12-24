@@ -39,7 +39,7 @@ export default {
             prevEl: '[data-reviews-button-prev]',
           },
           autoplay: 2000,
-          slidesPerView: 'auto',
+          slidesPerView: 1,
         }
       };
     },
