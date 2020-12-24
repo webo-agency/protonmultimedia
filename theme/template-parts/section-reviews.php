@@ -37,7 +37,7 @@
   <div class="container pb-10 desktop:pb-40 mb-2 z-20">
     <div class="relative flex flex-row">
       <?php if( is_array($args['review_array']) && !empty($args['review_array']) ): ?>
-        <reviews-slider class="w-3/5 mb-4 tablet:mb-0 h-full z-40">
+        <reviews-slider class="w-full tablet:w-3/5 mb-4 tablet:mb-0 h-full z-40">
           <ul class="swiper-wrapper z-20">
             <?php foreach ($args['review_array'] as $key => $field): ?>
               <li class="swiper-slide w-full mb-10">
@@ -69,7 +69,7 @@
             <?php endforeach; ?>
           </ul>
           <div class="flex items-center justify-between z-30">
-            <div class="flex-initial px-4 absolute left-0 right-auto top-0 bottom-auto mt-24 mb-auto w-12" data-reviews-button-prev>
+            <div class="flex-initial px-4 tablet:absolute left-0 right-auto top-0 bottom-auto mt-auto tablet:mt-24 mb-auto w-12" data-reviews-button-prev>
               <img 
                   class="block" 
                   width="20px"
@@ -79,7 +79,7 @@
               />  
             </div>
             <div class="flex-1 px-4 py-8 relative h-10 flex items-center justify-center"><div class="swiper-pagination" data-reviews-pagination></div></div>
-            <div class="flex-initial px-4 absolute left-auto right-0 top-0 bottom-auto mt-24 mb-auto w-12" data-reviews-button-next>
+            <div class="flex-initial px-4 tablet:absolute left-auto right-0 top-0 bottom-auto mt-auto tablet:mt-24 mb-auto w-12" data-reviews-button-next>
               <img 
                   class="block transform scale-x-flip scale-y-1" 
                   width="20px"
