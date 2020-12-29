@@ -439,7 +439,8 @@ function jcs_menu_item_args($args, $item, $depth){
 		
 		$image = show_image( $image_id, array('9999', '30'), array('class' => 'w-full h-full object-cover') );
 		
-		$args->link_before = $image;
+		$args->link_before = '<span class="flex justify-start items-center p-8">' . $image;
+		$args->link_after = '</span>';
 	}
 	return $args;
 	
