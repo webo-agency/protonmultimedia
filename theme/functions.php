@@ -442,6 +442,10 @@ function jcs_menu_item_args($args, $item, $depth){
 		$args->link_before = '<span class="flex justify-start items-center p-8"><span class="flex items-center mr-8 h-8 flex-initial">' . $image . '</span>';
 		$args->link_after = '</span>';
 	}
+
+	if($depth > 0){
+		$args->link_class .= ' text-sm-2 font-semibold leading-tight';
+	}
 	return $args;
 	
 }
