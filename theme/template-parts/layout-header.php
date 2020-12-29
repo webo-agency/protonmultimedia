@@ -22,7 +22,7 @@
 								'theme_location' => 'menu-2',
 								'menu_id'        => 'primary-menu',
 								'add_li_class' => 'transition-all duration-300 tablet:inline-block font-special mb-4 desktop:mb-0 uppercase font-semibold text-base desktop:mr-6',
-								'link_class'   => 'hover:text-primary transition-colors duration-300'
+								'link_class'   => 'hover:text-primary transition-colors duration-300 text-sm-2 font-semibold'
 							)
 						);
 					?>
