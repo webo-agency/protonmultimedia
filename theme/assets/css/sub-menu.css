@@ -26,9 +26,16 @@ a + .sub-menu:hover{
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  @apply border;
+  @apply border-dark-blue-2;
+  @apply border-solid;
 }
 
 .sub-menu svg{
-  fill: theme('colors.primary');
+  fill: theme('colors.white');
   width: auto;
+
+  &:hover{
+    fill: theme('colors.primary');
+  }
 }
