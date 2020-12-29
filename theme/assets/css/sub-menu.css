@@ -29,6 +29,5 @@ a + .sub-menu:hover{
 }
 
 .sub-menu svg{
-  @apply mr-8;
   fill: theme('colors.primary');
 }
