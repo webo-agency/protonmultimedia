@@ -27,3 +27,7 @@ a + .sub-menu:hover{
   align-items: center;
   justify-content: flex-start;
 }
+
+.sub-menu svg{
+  @apply mr-8;
+}

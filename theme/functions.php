@@ -412,17 +412,35 @@ function add_sub_menu_class($classes, $depth, $args) {
 add_filter( 'jcs/menu_level_class', 'add_sub_menu_class', 10, 3 ); // Where $priority is default 10, $accepted_args is default 1.
 
 
-// function add_menu_link_icon($args, $item){
-// 	//var_dump($item);
-// 	$args->link_before = '<img alt="" src="http://placehold.it/10x10/00FF00" />' . $args->title;
+/*** Function to show images whether SVG or non SVG ***/
+/*** $size & $attribute both can hold array if you want ***/
+if (!function_exists('show_image')){
+  function show_image( $image_id, $size = null, $attributes = null ) {
+    //first lets get the file info sto understand what kind of file it is
+    //as for svg file we will take different approach
+    $file_info = pathinfo( wp_get_attachment_url( $image_id ) );
 
-// 	switch($item->object){
-// 		case 'post'://services
-// 			// add red 10 pixel image before the menu item name
-// 			$args->link_before = '<img alt="" src="http://placehold.it/10x10/FFF000" />' . $args->title;
-// 		break;
-// 	}
+    //so, if the file type is SVG
+    if ( $file_info['extension'] === 'svg' ) {
+      return file_get_contents( wp_get_attachment_url( $image_id ) );
+    } else {
+      //for any other type of images i.e. JPG, PNG, GIF
+      //we can just simply use the wp_get_attachment_image() stock function
+      return wp_get_attachment_image( $image_id, $size, false, $attributes );
+    }
+  }
+}
 
-// 	return $args;
-// }
-// add_filter( 'jcs/menu_item_args', 'add_menu_link_icon', 20, 2 );
+add_filter( 'nav_menu_item_args', 'jcs_menu_item_args', 10, 3);
+function jcs_menu_item_args($args, $item, $depth){
+
+	if($depth > 0 && ( ! in_array( 'service_list_icon', get_post_custom_keys( '1' ) ) ) ){
+		$image_id = get_post_meta($item->ID, 'service_list_icon', true);
+		
+		$image = show_image( $image_id, array('9999', '30'), array('class' => 'w-full h-full object-cover') );
+		
+		$args->link_before = $image;
+	}
+	return $args;
+	
+}
