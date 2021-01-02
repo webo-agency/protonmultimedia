@@ -42,7 +42,7 @@
 								'posts_per_page' => -1,
 							));
 						if( $list_of_posts ): ?>
-						<ul class="w-full flex-auto flex flex-col tablet:flex-row tablet:flex-wrap">
+						<ul class="w-full flex-auto flex flex-col tablet:flex-row tablet:flex-wrap box-shadow-bottom">
 									<?php foreach( $list_of_posts as $featured_post ): 
 										$post_date = get_the_date( 'd / m / Y' ); 
 										$permalink = get_permalink( $featured_post->ID );
