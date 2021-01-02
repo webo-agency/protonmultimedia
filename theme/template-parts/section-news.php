@@ -62,7 +62,7 @@
             ));
 
             if( $post_list ): ?>
-            <ul class="w-full flex-auto flex flex-col tablet:flex-row tablet:flex-wrap">
+            <ul class="w-full flex-auto flex flex-col tablet:flex-row tablet:flex-wrap box-shadow-bottom">
                 <?php foreach( $post_list as $featured_post ): 
                     $post_date = get_the_date( 'd / m / Y' ); 
                     $permalink = get_permalink( $featured_post->ID );
