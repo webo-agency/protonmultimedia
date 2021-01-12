@@ -46,8 +46,9 @@
                                 <div class="w-full desktop:w-1/2 overflow-hidden relative min-h-200px max-h-300px desktop:max-h-none">
                                     <?php echo get_the_post_thumbnail( 
                                             $_post->ID, 
+                                            'full',
                                             'slider-block-alternative',
-                                            array( 'class' => 'max-h-600px min-w-full object-cover' )
+                                            array( 'class' => 'min-w-full object-cover' )
                                         ); 
                                     ?>
                                 </div>
