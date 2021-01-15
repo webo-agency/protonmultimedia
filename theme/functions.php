@@ -100,7 +100,7 @@ if ( ! function_exists( 'protonmultimedia_theme_setup' ) ) :
 			)
 		);
 
-		add_image_size( 'slider-block', 9999, 500, true );
+		add_image_size( 'slider-block', 9999, 700, true );
 		add_image_size( 'slider-block-alternative', 9999, 600, true );
 	}
 endif;
