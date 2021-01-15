@@ -39,10 +39,10 @@
     ?>
     <div class="">
         <?php if( $loop->have_posts() ): ?>
-            <realization-slider class="z-30">
+            <realization-slider class="desktop:min-h-500px z-30">
                 <ul class="swiper-wrapper">
                     <?php while ( $loop->have_posts() ) : $loop->the_post(); $_post = get_post(); ?>
-                        <li class="w-full tablet:w-1/2 desktop:w-1/4 swiper-slide group overflow-hidden flex flex-col justify-end box-gradient-overlay h-auto desktop:min-h-700px">
+                        <li class="w-full tablet:w-1/2 desktop:w-1/4 swiper-slide group overflow-hidden flex flex-col justify-end box-gradient-overlay h-auto">
                             <?php echo get_the_post_thumbnail( 
                                     $_post->ID, 
                                     'slider-block',
