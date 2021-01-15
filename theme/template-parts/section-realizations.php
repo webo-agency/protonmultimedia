@@ -66,7 +66,7 @@
                                 <div class="max-h-full opacity-100 flex-auto h-auto desktop:max-h-0 desktop:opacity-0 transition-all duration-300 desktop:invisible group-hover:visible group-hover:max-h-full group-hover:opacity-100">
                                     
                                     <div class="text-base leading-tight text-white">
-                                        <?php echo the_content(); ?>
+                                        <?php echo the_excerpt(); ?>
                                     </div>
 
                                     <?php if(is_array(get_field('services', $_post))): ?>
