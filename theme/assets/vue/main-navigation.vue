@@ -11,7 +11,7 @@ export default {
     mounted() {
         ( function() {
           var container, button, menu, links, i, len;
-
+          debugger;
           container = document.getElementById( 'site-navigation' );
           if ( ! container ) {
             return;
@@ -84,7 +84,7 @@ export default {
           /**
            * Toggles `focus` class to allow submenu access on tablets.
            */
-          ( function() {
+          ( function(container) {
             var touchStartFn,
               parentLink = container.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
 
