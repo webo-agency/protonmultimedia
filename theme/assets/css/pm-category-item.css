@@ -44,7 +44,8 @@
         }
 
         @screen desktop {
-            @apply p-10;
+            @apply px-10;
+            @apply py-4;
         }
     }
 }
