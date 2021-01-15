@@ -13,6 +13,7 @@
     border-right-color: transparent;
     @apply transition-all;
     @apply duration-300;
+    min-height: 116px;
 
     &:after {
         content: '';
