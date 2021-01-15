@@ -2,7 +2,7 @@
   "name": "protonmultimedia-theme",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
+  "main": "webpack --mode production",
   "scripts": {
     "dev-server": "webpack-dev-server --mode development",
     "webpack-build": "webpack",
