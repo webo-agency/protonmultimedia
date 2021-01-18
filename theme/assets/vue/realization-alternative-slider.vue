@@ -39,7 +39,7 @@ export default {
             nextEl: '[data-realization-alternative-button-next]',
             prevEl: '[data-realization-alternative-button-prev]',
           },
-          autoplay: 2000,
+          autoplay: false,
           slidesPerView: 1,
           loop: true
         }
