@@ -6,7 +6,7 @@
       <div v-show="toggled">
         <slot name="content"></slot>
       </div>
-      <a href="javascript:void(0)" @click="toggle">
+      <a href="javascript:void(0)" @click="toggle" :class="linkClass">
           {{ toggled ? lessText : moreText }}
       </a>
   </div>
@@ -16,28 +16,26 @@
 export default {
   name: 'read-more',
   props: {
-    text: { type: String, required: true },
-    limit: { type: Number, default: 25 },
-    moreText: { type: String, default: 'Czytaj więcej' },
-    lessText: { type: String, default: 'Czytaj mniej' },
+    moreText: { type: String, default: 'Read more' },
+    lessText: { type: String, default: 'Read less' },
+    linkClass: { type: String },
   },
   data() {
     return { toggled: false };
   },
-  computed: {
-    truncatedText() {
-      if (this.text.length < this.limit) { return this.text; }
-      for (let i = this.limit; i > 0; i--) {
-        const currChar = this.text.charAt(i);
-        const prevChar = this.text.chartAt(i - 1);
-        const prevCharNotPunc = [',', ';', '.'].some(c => c !== prevChar);
-        if (currChar === ' ' && prevCharNotPunc) {
-          return `${this.text.substring(0, i)}...`;
-        }
-      }
-    }
-  },
   methods: {
+    beforeEnter: function(el) {
+      el.style.height = '0';
+    },
+    enter: function(el) {
+      el.style.height = el.scrollHeight + 'px';
+    },
+    beforeLeave: function(el) {
+      el.style.height = el.scrollHeight + 'px';
+    },
+    leave: function(el) {
+      el.style.height = '0';
+    },
     toggle() { this.toggled = !this.toggled; },
   },
 };

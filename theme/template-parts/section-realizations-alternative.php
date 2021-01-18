@@ -83,7 +83,7 @@
                                     </h3>
                                         
                                     <div class="text-base leading-tight text-dark-font">
-                                        <read-more more-text="Czytaj więcej" less-text="Czytaj mniej">
+                                        <read-more data-more-text="Czytaj więcej" data-less-text="Czytaj mniej" data-link-class="text-primary">
                                             <template v-slot:excerpt>
                                                 <?php echo the_excerpt(); ?>
                                             </template>
