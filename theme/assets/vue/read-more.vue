@@ -1,7 +1,11 @@
 <template>
   <div class="readmore">
-      <slot name="excerpt" v-show="!toggled" ></slot>
-      <slot name="content" v-show="toggled"></slot>
+      <div v-show="!toggled">
+        <slot name="excerpt"></slot>
+      </div>
+      <div v-show="toggled">
+        <slot name="content"></slot>
+      </div>
       <a href="javascript:void(0)" @click="toggle">
           {{ toggled ? lessText : moreText }}
       </a>
