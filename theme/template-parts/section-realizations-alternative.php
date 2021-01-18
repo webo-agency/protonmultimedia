@@ -43,7 +43,7 @@
                     <ul class="swiper-wrapper">
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); $_post = get_post(); ?>
                             <li class="w-full h-auto swiper-slide flex flex-row flex-wrap">
-                                <div class="w-full desktop:w-1/2 overflow-hidden relative min-h-200px">
+                                <div class="w-full desktop:w-1/2 overflow-hidden relative min-h-200px max-h-430px desktop:max-h-none object-bottom object-cover">
                                     <?php 
                                     $images = get_field('gallery_box');
                                     if( $images ): ?>
