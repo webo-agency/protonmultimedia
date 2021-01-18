@@ -31,8 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
             BanerSlider,
             RealizationSlider,
             ReviewsSlider,
-            RealizationAlternativeSlider,
-            RealizationAlternativeGallery,
             SideHeading,
             TagFilter,
             OnScroll,
