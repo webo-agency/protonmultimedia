@@ -84,12 +84,13 @@
                                         
                                     <div class="text-base leading-tight text-dark-font">
                                         <read-more more-text="Czytaj więcej" less-text="Czytaj mniej">
-                                            <slot name="excerpt">
+                                            <template v-slot:excerpt>
                                                 <?php echo the_excerpt(); ?>
-                                            </slot>
-                                            <slot name="content">
-                                                <?php echo the_content(); ?>
-                                            </slot>
+                                            </template>
+
+                                            <template v-slot:content>
+                                                <?php echo the_excerpt(); ?>
+                                            </template>
                                         </read-more>
                                         
                                     </div>
