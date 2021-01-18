@@ -14,8 +14,8 @@ export default {
   props: {
     text: { type: String, required: true },
     limit: { type: Number, default: 25 },
-    moreText: { type: String, default: 'Show more' },
-    lessText: { type: String, default: 'Show less' },
+    moreText: { type: String, default: 'Czytaj więcej' },
+    lessText: { type: String, default: 'Czytaj mniej' },
   },
   data() {
     return { toggled: false };

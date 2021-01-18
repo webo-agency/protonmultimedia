@@ -83,14 +83,14 @@
                                     </h3>
                                         
                                     <div class="text-base leading-tight text-dark-font">
-                                        <readmore more-text="Czytaj więcej" less-text="Czytaj mniej">
+                                        <read-more more-text="Czytaj więcej" less-text="Czytaj mniej">
                                             <slot name="excerpt">
                                                 <?php echo the_excerpt(); ?>
                                             </slot>
                                             <slot name="content">
                                                 <?php echo the_content(); ?>
                                             </slot>
-                                        </readmore>
+                                        </read-more>
                                         
                                     </div>
                                 
