@@ -83,7 +83,15 @@
                                     </h3>
                                         
                                     <div class="text-base leading-tight text-dark-font">
-                                        <?php echo the_content(); ?>
+                                        <readmore :text="message" more-text="Read More" less-text="Read Less">
+                                            <slot name="excerpt">
+                                                <?php echo the_excerpt(); ?>
+                                            </slot>
+                                            <slot name="content">
+                                                <?php echo the_content(); ?>
+                                            </slot>
+                                        </readmore>
+                                        
                                     </div>
                                 
                                     <div class="flex items-center justify-between mb-0 mt-auto mx-auto desktop:ml-0 desktop:mr-auto">

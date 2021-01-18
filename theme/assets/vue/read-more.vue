@@ -1,6 +1,7 @@
 <template>
   <p class="readmore">
-    {{ toggled ? text : truncatedText }}
+    <template v-slot:excerpt v-show="!toggled" />
+    <template v-slot:content v-show="toggled"  />
     <a href="javascript:void(0)" @click="toggle">
         {{ toggled ? lessText : moreText }}
     </a>
