@@ -45,7 +45,7 @@
                             <li class="w-full h-auto swiper-slide flex flex-row flex-wrap">
                                 <div class="w-full desktop:w-1/2 overflow-hidden relative min-h-200px max-h-300px desktop:max-h-none">
                                     <?php 
-                                    $images = get_field('gallery');
+                                    $images = get_field('gallery_box');
                                     if( $images ): ?>
                                         <realization-alternative-gallery>
                                             <ul class="swiper-wrapper">
