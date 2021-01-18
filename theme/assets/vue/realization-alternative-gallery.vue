@@ -32,7 +32,7 @@ export default {
           preloadImages: false,
           pagination: false,
           navigation: false,
-          autoplay: 2000,
+          autoplay: 500,
           slidesPerView: 1,
           loop: true
         }
