@@ -33,7 +33,7 @@ export default {
           pagination: false,
           navigation: false,
           autoplay: {
-            delay: 1000,
+            delay: 2000,
           },
           slidesPerView: 1,
           loop: true
