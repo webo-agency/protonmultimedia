@@ -89,7 +89,7 @@
                                             </template>
 
                                             <template v-slot:content>
-                                                <?php echo the_excerpt(); ?>
+                                                <?php echo the_content(); ?>
                                             </template>
                                         </read-more>
                                         
