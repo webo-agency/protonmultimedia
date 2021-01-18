@@ -44,13 +44,28 @@
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); $_post = get_post(); ?>
                             <li class="w-full h-auto swiper-slide flex flex-row flex-wrap">
                                 <div class="w-full desktop:w-1/2 overflow-hidden relative min-h-200px max-h-300px desktop:max-h-none">
-                                    <?php echo get_the_post_thumbnail( 
-                                            $_post->ID, 
-                                            'full',
-                                            'slider-block-alternative',
-                                            array( 'class' => 'min-w-full object-cover' )
-                                        ); 
-                                    ?>
+                                    <?php 
+                                    $images = get_field('gallery');
+                                    if( $images ): ?>
+                                        <realization-alternative-gallery>
+                                            <ul class="swiper-wrapper">
+                                                <?php foreach( $images as $image_id ): ?>
+                                                    <li class="w-full h-auto swiper-slide">
+                                                        <?php echo wp_get_attachment_image( $image_id, 'full' ); ?>
+                                                    </li>
+                                                <?php endforeach; ?>
+                                            </ul>
+                                        </realization-alternative-gallery>
+                                    <?php else: ?>
+                                        <?php 
+                                            echo get_the_post_thumbnail( 
+                                                $_post->ID, 
+                                                'full',
+                                                'slider-block-alternative',
+                                                array( 'class' => 'min-w-full object-cover' )
+                                            ); 
+                                        ?>
+                                    <?php endif; ?>
                                 </div>
                                 <div class="w-full desktop:w-1/2 relative flex-auto flex flex-col flex-end p-4 desktop:pl-24 desktop:pr-32 desktop:pt-12 overflow-hidden z-30 justify-start">
                                     <h3 class="relative mb-6 text-dark-font flex flex-col items-start desktop:mb-20">

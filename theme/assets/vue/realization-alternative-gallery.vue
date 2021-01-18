@@ -11,7 +11,7 @@
 
 <script>
 export default {
-    name: 'realization-alternative-slider',
+    name: 'realization-alternative-gallery',
     props: {
       mainTag: {
         type: String,
@@ -30,15 +30,8 @@ export default {
           effect: "fade",
           fadeEffect: { crossFade: true },
           preloadImages: false,
-          allowTouchMove: false,
-          pagination: {
-              el: '[data-realization-alternative-pagination]',
-              clickable: true,
-          },
-          navigation: {
-            nextEl: '[data-realization-alternative-button-next]',
-            prevEl: '[data-realization-alternative-button-prev]',
-          },
+          pagination: false,
+          navigation: false,
           autoplay: 2000,
           slidesPerView: 1,
           loop: true
