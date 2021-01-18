@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
         components: {
             BanerSlider,
             RealizationSlider,
+            RealizationAlternativeSlider,
+            RealizationAlternativeGallery,
             ReviewsSlider,
             SideHeading,
             TagFilter,
