@@ -8,6 +8,7 @@ import TagFilter from '../vue/tag-filter.vue';
 import OnScroll from '../vue/on-scroll.vue';
 import ReviewsSlider from '../vue/reviews-slider.vue';
 import MainNavigation from '../vue/main-navigation.vue';
+import ReadMore from '../vue/read-more.vue';
 import VueAwesomeSwiper from "vue-awesome-swiper/dist/ssr";
 
 Vue.use(VueAwesomeSwiper);
@@ -20,6 +21,7 @@ Vue.component('realization-alternative-gallery', RealizationAlternativeGallery);
 Vue.component('side-heading', SideHeading);
 Vue.component('tag-filter', TagFilter);
 Vue.component('on-scroll', OnScroll);
+Vue.component('read-more', ReadMore);
 Vue.component('main-navigation', MainNavigation);
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -29,9 +31,12 @@ document.addEventListener('DOMContentLoaded', function() {
             BanerSlider,
             RealizationSlider,
             ReviewsSlider,
+            RealizationAlternativeSlider,
+            RealizationAlternativeGallery,
             SideHeading,
             TagFilter,
             OnScroll,
+            ReadMore,
             MainNavigation
         },
     });
