@@ -68,9 +68,11 @@
                                             <?php
                                                 echo get_the_post_thumbnail( 
                                                     $_post->ID, 
-                                                    'full',
-                                                    'slider-block-alternative',
-                                                    array( 'class' => 'min-w-full object-cover' )
+                                                    array('9999', '700'), 
+                                                    "", 
+                                                    array(
+                                                        'class' => 'w-full h-full object-cover object-left object-top max-w-full max-h-700px m-auto'
+                                                    )
                                                 ); 
                                             ?>
                                         <?php endif; ?>
