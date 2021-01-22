@@ -43,7 +43,7 @@
                     <ul class="swiper-wrapper h-auto">
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); $_post = get_post(); ?>
                             <li class="w-full h-auto swiper-slide flex flex-row flex-wrap tablet:block float-left">
-                                <div class="w-full desktop:w-1/2 overflow-hidden relative min-h-200px max-h-430px desktop:max-h-none object-bottom object-cover">
+                                <div class="w-full desktop:w-1/2 overflow-hidden relative min-h-200px max-h-430px desktop:max-h-none object-bottom object-cover desktop:float-left">
                                     <?php 
                                     $images = get_field('gallery_box');
                                     if( $images ): ?>
@@ -106,16 +106,16 @@
                                 </div>
 
                                 <div class="text-base leading-tight text-dark-font">
-                                        <read-more more-text="Czytaj więcej" less-text="Czytaj mniej" link-class="text-primary">
-                                            <template v-slot:excerpt>
-                                                <?php echo the_excerpt(); ?>
-                                            </template>
+                                    <read-more more-text="Czytaj więcej" less-text="Czytaj mniej" link-class="text-primary">
+                                        <template v-slot:excerpt>
+                                            <?php echo the_excerpt(); ?>
+                                        </template>
 
-                                            <template v-slot:content>
-                                                <?php echo the_content(); ?>
-                                            </template>
-                                        </read-more>
-                                    </div>
+                                        <template v-slot:content>
+                                            <?php echo the_content(); ?>
+                                        </template>
+                                    </read-more>
+                                </div>
                             </li>
                         <?php endwhile; ?>
                     </ul>
