@@ -19,7 +19,7 @@ export default {
     moreText: { type: String, default: 'Read more' },
     lessText: { type: String, default: 'Read less' },
     linkClass: { type: String },
-    bus : { type: Vue }
+    bus : { validator: v => true }
   },
   data() {
     return { toggled: false };
