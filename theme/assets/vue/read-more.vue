@@ -19,6 +19,7 @@ export default {
     moreText: { type: String, default: 'Read more' },
     lessText: { type: String, default: 'Read less' },
     linkClass: { type: String },
+    'bus'
   },
   data() {
     return { toggled: false };
