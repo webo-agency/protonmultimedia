@@ -43,7 +43,7 @@
                     <ul class="swiper-wrapper h-auto">
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); $_post = get_post(); ?>
                             <li class="w-full h-auto swiper-slide flex flex-row flex-wrap tablet:block float-left">
-                                <div class="w-full desktop:w-1/2 object-bottom object-cover desktop:float-left desktop:pr-24 desktop:pb-12">
+                                <div class="w-full desktop:w-1/2 object-bottom object-cover desktop:float-left desktop:pr-24 desktop:pb-24">
                                     <div class="overflow-hidden relative min-h-200px max-h-430px desktop:max-h-700px">
                                         <?php 
                                         $images = get_field('gallery_box');
