@@ -41,7 +41,10 @@ export default {
           },
           autoplay: false,
           slidesPerView: 1,
-          loop: true
+          loop: true,
+          onSlideChange:function(){
+             this.$emit('realization-alternative-slider', 'change');
+          }
         }
       };
     },

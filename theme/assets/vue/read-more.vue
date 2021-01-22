@@ -24,6 +24,11 @@ export default {
     return { toggled: false };
   },
   methods: {
+    created() {
+      this.$root.$on('realization-alternative-slider', (e) => {
+        this.close();
+      })
+    },
     beforeEnter: function(el) {
       el.style.height = '0';
     },
@@ -36,7 +41,12 @@ export default {
     leave: function(el) {
       el.style.height = '0';
     },
-    toggle() { this.toggled = !this.toggled; },
+    toggle(state) { 
+      this.toggled = !this.toggled; 
+    },
+    close() { 
+      this.toggled = false;
+    }
   },
 };
 </script>
