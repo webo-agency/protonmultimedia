@@ -44,47 +44,49 @@
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); $_post = get_post(); ?>
                             <li class="w-full h-auto swiper-slide flex flex-row flex-wrap tablet:block float-left">
                                 <div class="w-full desktop:w-1/2 overflow-hidden relative min-h-200px max-h-430px desktop:max-h-none object-bottom object-cover desktop:float-left desktop:pr-12">
-                                    <?php 
-                                    $images = get_field('gallery_box');
-                                    if( $images ): ?>
-                                        <realization-alternative-gallery>
-                                            <ul class="swiper-wrapper">
-                                                <?php foreach( $images as $image_id ): ?>
-                                                    <li class="w-full h-auto swiper-slide">
-                                                        <?php echo wp_get_attachment_image( $image_id, 'full' ); ?>
-                                                    </li>
-                                                <?php endforeach; ?>
-                                            </ul>
-                                        </realization-alternative-gallery>
-                                    <?php else: ?>
+                                    <div class="relative">
                                         <?php 
-                                            echo get_the_post_thumbnail( 
-                                                $_post->ID, 
-                                                'full',
-                                                'slider-block-alternative',
-                                                array( 'class' => 'min-w-full object-cover' )
-                                            ); 
-                                        ?>
-                                    <?php endif; ?>
+                                        $images = get_field('gallery_box');
+                                        if( $images ): ?>
+                                            <realization-alternative-gallery>
+                                                <ul class="swiper-wrapper">
+                                                    <?php foreach( $images as $image_id ): ?>
+                                                        <li class="w-full h-auto swiper-slide">
+                                                            <?php echo wp_get_attachment_image( $image_id, 'full' ); ?>
+                                                        </li>
+                                                    <?php endforeach; ?>
+                                                </ul>
+                                            </realization-alternative-gallery>
+                                        <?php else: ?>
+                                            <?php 
+                                                echo get_the_post_thumbnail( 
+                                                    $_post->ID, 
+                                                    'full',
+                                                    'slider-block-alternative',
+                                                    array( 'class' => 'min-w-full object-cover' )
+                                                ); 
+                                            ?>
+                                        <?php endif; ?>
 
-                                    <div class="flex items-center justify-between mb-0 mt-auto mx-auto desktop:ml-0 desktop:mr-auto">
-                                        <div class="flex-initial px-4 py-4 bg-gray" data-realization-alternative-button-prev>
-                                            <img 
-                                                class="block" 
-                                                width="20px"
-                                                height="20px"
-                                                src="<?php echo get_template_directory_uri() . '/assets/svg/arrow.svg' ?>" 
-                                                alt="Left arrow"
-                                            />  
-                                        </div>
-                                        <div class="flex-initial px-4 py-4 bg-gray" data-realization-alternative-button-next>
-                                            <img 
-                                                class="block transform scale-x-flip scale-y-1" 
-                                                width="20px"
-                                                height="20px"
-                                                src="<?php echo get_template_directory_uri() . '/assets/svg/arrow.svg' ?>" 
-                                                alt="Right arrow"
-                                            />  
+                                        <div class="flex items-center justify-between mb-0 mt-auto mx-auto desktop:ml-0 desktop:mr-auto absolute bottom-0 right-0">
+                                            <div class="flex-initial px-4 py-4 bg-gray" data-realization-alternative-button-prev>
+                                                <img 
+                                                    class="block" 
+                                                    width="20px"
+                                                    height="20px"
+                                                    src="<?php echo get_template_directory_uri() . '/assets/svg/arrow.svg' ?>" 
+                                                    alt="Left arrow"
+                                                />  
+                                            </div>
+                                            <div class="flex-initial px-4 py-4 bg-gray" data-realization-alternative-button-next>
+                                                <img 
+                                                    class="block transform scale-x-flip scale-y-1" 
+                                                    width="20px"
+                                                    height="20px"
+                                                    src="<?php echo get_template_directory_uri() . '/assets/svg/arrow.svg' ?>" 
+                                                    alt="Right arrow"
+                                                />  
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
