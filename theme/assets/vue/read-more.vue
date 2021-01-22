@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     created() {
-      this.$root.$on('realization-alternative-slider', (e) => {
+      this.bus.$on('realization-alternative-slider', (e) => {
         this.close();
       })
     },

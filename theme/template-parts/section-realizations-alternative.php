@@ -107,7 +107,7 @@
                                 </div>
 
                                 <div class="text-base leading-tight text-dark-font">
-                                    <read-more more-text="Czytaj więcej" less-text="Czytaj mniej" link-class="block text-primary">
+                                    <read-more more-text="Czytaj więcej" less-text="Czytaj mniej" link-class="block text-primary" :bus="bus">
                                         <template v-slot:excerpt>
                                             <?php echo the_excerpt(); ?>
                                         </template>

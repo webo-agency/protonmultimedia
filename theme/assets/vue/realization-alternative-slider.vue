@@ -27,6 +27,7 @@ export default {
     },
     data() {
       return {
+        bus: new Vue(),
         sliderOptionsBaner: {
           effect: "fade",
           fadeEffect: { crossFade: true },
@@ -48,7 +49,7 @@ export default {
     },
     methods: {
       onSlideChange:function(){
-          this.$emit('realization-alternative-slider', 'change');
+        this.bus.$emit('realization-alternative-slider', 'change');
       }
     }
 }
