@@ -49,7 +49,7 @@ export default {
     },
     methods: {
       onSlideChange:function(){
-        this.bus.$emit('realization-alternative-slider', 'change');
+        this.$root.$emit('realization-alternative-slider', 'change');
       }
     }
 }

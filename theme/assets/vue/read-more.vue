@@ -18,15 +18,14 @@ export default {
   props: {
     moreText: { type: String, default: 'Read more' },
     lessText: { type: String, default: 'Read less' },
-    linkClass: { type: String },
-    bus : { validator: v => true }
+    linkClass: { type: String }
   },
   data() {
     return { toggled: false };
   },
   methods: {
     created() {
-      this.bus.$on('realization-alternative-slider', (e) => {
+      this.$root.$on('realization-alternative-slider', (e) => {
         this.close();
       })
     },
