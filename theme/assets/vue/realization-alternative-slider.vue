@@ -4,6 +4,7 @@
     class="swiper-container relative overflow-hidden mx-0"
     :class="mainClass"
     v-swiper:realization="sliderOptionsBaner"
+    @slideChange="onSlideChange"
   >
     <slot />
   </component>
@@ -41,13 +42,16 @@ export default {
           },
           autoplay: false,
           slidesPerView: 1,
-          loop: true,
-          onSlideChange:function(){
-             this.$emit('realization-alternative-slider', 'change');
-          }
+          loop: true
         }
       };
     },
+    methods: {
+      onSlideChange:function(swiper){
+          console.log(`current slide is now ${swiper.realIndex}`);
+          this.$emit('realization-alternative-slider', 'change');
+      }
+    }
 }
 </script>
 
