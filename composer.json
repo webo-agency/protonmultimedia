@@ -22,7 +22,7 @@
         "require": {
           "johnpbloch/wordpress" : "^5.5.0",
           "composer/installers": "^1.4",
-          "ffraenz/private-composer-installer": "^5.2"
+          "ffraenz/private-composer-installer": "^5"
         }
       }
     },
@@ -50,7 +50,6 @@
     "webo/protonmultimedia-theme": "^0",
     "wpackagist-plugin/svg-support": "^2.3",
     "wpackagist-theme/twentytwenty":"^1.4",
-    "full/composer-rm-plugin": "^1.0",
     "wp-cli/wp-cli": "^2.4",
     "wpackagist-plugin/wordpress-importer": "^0.7.0",
     "wpackagist-plugin/default-featured-image": "^1.6"
@@ -77,6 +76,7 @@
   },
   "config": {
     "rm-paths": [
+      "full/composer-rm-plugin",
       "../public/wp-content/plugins/hello.php",
       "../public/wp-content/plugins/akismet",
       "../public/wp-content/themes/twentynineteen",
