@@ -1,5 +1,5 @@
 <template>
-  <div class="readmore">
+  <div class="readmore mx-auto max-w-900px">
       <div v-show="!toggled">
         <slot name="excerpt"></slot>
       </div>
