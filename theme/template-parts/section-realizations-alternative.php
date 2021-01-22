@@ -49,7 +49,7 @@
                                         $images = get_field('gallery_box');
                                         if( $images ): ?>
                                             <realization-alternative-gallery>
-                                                <ul class="swiper-wrapper h-auto">
+                                                <ul class="swiper-wrapper">
                                                     <?php foreach( $images as $image_id ): ?>
                                                         <li class="w-full h-auto swiper-slide">
                                                             <?php echo wp_get_attachment_image( $image_id, 'full' ); ?>
