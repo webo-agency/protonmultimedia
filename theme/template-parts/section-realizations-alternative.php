@@ -43,7 +43,7 @@
                     <ul class="swiper-wrapper h-auto">
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); $_post = get_post(); ?>
                             <li class="w-full h-auto swiper-slide flex flex-row flex-wrap tablet:block float-left">
-                                <div class="w-full desktop:w-1/2 overflow-hidden relative min-h-200px max-h-430px desktop:max-h-none object-bottom object-cover desktop:float-left desktop:pr-12 dekstop:pb-12">
+                                <div class="w-full desktop:w-1/2 overflow-hidden relative min-h-200px max-h-430px desktop:max-h-none object-bottom object-cover desktop:float-left desktop:pr-24 dekstop:pb-12">
                                     <div class="relative">
                                         <?php 
                                         $images = get_field('gallery_box');
@@ -90,7 +90,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w-full desktop:w-1/2 relative flex-auto flex flex-col flex-end p-4 desktop:pl-24 desktop:pr-32 desktop:pt-12 overflow-hidden z-30 justify-start">
+                                <div class="w-full desktop:w-1/2 relative flex-auto flex flex-col flex-end p-4 desktop:pl-24 desktop:pr-32 desktop:pt-12 overflow-hidden z-30 justify-start desktop:float-left -ml-24">
                                     <h3 class="relative mb-6 text-dark-font flex flex-col items-start desktop:mb-20">
                                         <?php 
                                             if(get_field('title_box')){
