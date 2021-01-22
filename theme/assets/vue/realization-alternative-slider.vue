@@ -47,8 +47,8 @@ export default {
       };
     },
     methods: {
-      onSlideChange:function(swiper){
-          console.log(`current slide is now ${swiper.realIndex}`);
+      onSlideChange:function(){
+          console.log(`current slide is now ${this.swiper.realIndex}`);
           this.$emit('realization-alternative-slider', 'change');
       }
     }
