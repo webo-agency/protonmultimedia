@@ -52,13 +52,20 @@
                                                 <ul class="swiper-wrapper">
                                                     <?php foreach( $images as $image_id ): ?>
                                                         <li class="w-full h-auto swiper-slide">
-                                                            <?php echo wp_get_attachment_image( $image_id, 'full' ); ?>
+                                                            <?php echo wp_get_attachment_image( 
+                                                                $image_id, 
+                                                                array('9999', '700'), 
+                                                                "", 
+                                                                array(
+                                                                    'class' => 'w-full h-full object-cover object-left object-top max-w-full max-h-700px m-auto'
+                                                                ) 
+                                                            ); ?>
                                                         </li>
                                                     <?php endforeach; ?>
                                                 </ul>
                                             </realization-alternative-gallery>
                                         <?php else: ?>
-                                            <?php 
+                                            <?php
                                                 echo get_the_post_thumbnail( 
                                                     $_post->ID, 
                                                     'full',
