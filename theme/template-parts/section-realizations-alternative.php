@@ -43,8 +43,8 @@
                     <ul class="swiper-wrapper h-auto">
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); $_post = get_post(); ?>
                             <li class="w-full h-auto swiper-slide flex flex-row flex-wrap tablet:block float-left">
-                                <div class="w-full desktop:w-1/2 overflow-hidden relative min-h-200px max-h-430px desktop:max-h-700px object-bottom object-cover desktop:float-left desktop:pr-24 desktop:pb-12">
-                                    <div class="relative">
+                                <div class="w-full desktop:w-1/2 object-bottom object-cover desktop:float-left desktop:pr-24 desktop:pb-12">
+                                    <div class="overflow-hidden relative min-h-200px max-h-430px desktop:max-h-700px">
                                         <?php 
                                         $images = get_field('gallery_box');
                                         if( $images ): ?>
@@ -68,7 +68,7 @@
                                             ?>
                                         <?php endif; ?>
 
-                                        <div class="flex items-center justify-between mb-0 mt-auto mx-auto desktop:ml-0 desktop:mr-auto absolute bottom-0 right-0 z-10">
+                                        <div class="flex items-center justify-between mb-0 mt-auto mx-auto desktop:ml-0 desktop:mr-auto absolute top-0 right-0 z-10">
                                             <div class="flex-initial px-4 py-4 bg-gray" data-realization-alternative-button-prev>
                                                 <img 
                                                     class="block" 
