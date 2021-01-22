@@ -68,7 +68,7 @@
                                             ?>
                                         <?php endif; ?>
 
-                                        <div class="flex items-center justify-between mb-0 mt-auto mx-auto desktop:ml-0 desktop:mr-auto absolute bottom-0 right-0">
+                                        <div class="flex items-center justify-between mb-0 mt-auto mx-auto desktop:ml-0 desktop:mr-auto absolute bottom-0 right-0 z-10">
                                             <div class="flex-initial px-4 py-4 bg-gray" data-realization-alternative-button-prev>
                                                 <img 
                                                     class="block" 
