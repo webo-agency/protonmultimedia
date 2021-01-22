@@ -27,7 +27,6 @@ export default {
     },
     data() {
       return {
-        bus: new Vue(),
         sliderOptionsBaner: {
           effect: "fade",
           fadeEffect: { crossFade: true },
