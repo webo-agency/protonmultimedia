@@ -58,7 +58,7 @@ jobs:
           COMPOSER_MIRROR_PATH_REPOS: 1
 
       - name: Remove node
-        run: cd public/wp-content/themes/protonmultimedia-theme && rm -rf node_modules && cd ../ && cd ../ && cd ../ && cd ../      
+        run: cd public/wp-content/themes/protonmultimedia-theme && sudo rm -rf node_modules && cd ../ && cd ../ && cd ../ && cd ../      
 
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@v2.1.5
