@@ -24,7 +24,7 @@ export default {
     return { toggled: false };
   },
   methods: {
-    created() {
+    mounted() {
       console.log(this.$store.state.slide);
 
       this.$store.subscribe((mutation, state) => {
