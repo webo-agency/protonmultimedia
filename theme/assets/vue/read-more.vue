@@ -23,16 +23,16 @@ export default {
   data() {
     return { toggled: false };
   },
+  mounted: function() {
+    this.$store.subscribe((mutation, state) => {
+      console.log(mutation);
+      console.log('test');
+      if(mutation === 'slidePrev' || mutation === 'slideNext' || mutation === 'slideReset'){
+          this.close();
+      }
+    });
+  },
   methods: {
-    mounted: function() {
-      this.$store.subscribe((mutation, state) => {
-        console.log(mutation);
-        console.log('test');
-        if(mutation === 'slidePrev' || mutation === 'slideNext' || mutation === 'slideReset'){
-           this.close();
-        }
-      });
-    },
     beforeEnter: function(el) {
       el.style.height = '0';
     },
