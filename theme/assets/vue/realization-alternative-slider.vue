@@ -4,6 +4,7 @@
     class="swiper-container relative overflow-hidden mx-0"
     :class="mainClass"
     v-swiper:realization="sliderOptionsBaner"
+    :slideNext="test"
     @slidePrevTransitionStart="slidePrevTransitionStart"
     @slideNextTransitionStart="slideNextTransitionStart"
     @slideResetTransitionStart="slideResetTransitionStart"
@@ -76,6 +77,9 @@ export default {
       slideResetTransitionStart:function(){
         this.$store.commit('slideReset');
       },
+      test:function(){
+        debugger;
+      }
     }
 }
 </script>
