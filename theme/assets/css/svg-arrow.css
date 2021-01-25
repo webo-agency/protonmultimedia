@@ -1,0 +1,11 @@
+.svg-arrow{
+  path{
+    fill: theme('colors.white');
+  }
+}
+
+.svg-arrow:hover{
+  path{
+    fill: theme('colors.primary');
+  }
+}

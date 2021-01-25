@@ -332,6 +332,7 @@ input:-webkit-autofill {
 @import "menu-toggle.css";
 @import "admin-bar.css";
 @import "list-bars.css";
+@import "svg-arrow.css";
 @import "tailwindcss/screens";
 
 [data-reviews-pagination] .swiper-pagination-bullet{
