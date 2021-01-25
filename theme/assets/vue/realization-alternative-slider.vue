@@ -4,6 +4,7 @@
     class="swiper-container relative overflow-hidden mx-0"
     :class="mainClass"
     v-swiper:realization="sliderOptionsBaner"
+    :instanceName="slider.realizations.alternative"
     @slideChange="onSlideChange"
   >
     <slot />
@@ -46,7 +47,21 @@ export default {
           },
           autoplay: false,
           slidesPerView: 1,
-          loop: false
+          loop: false,
+          slideNext() {
+            if (data[swiper.realIndex + 1]) {
+              swiper.slideNext(500)
+            } else {
+              swiper.slideToLoop(0)
+            }
+          },
+          slidePrev() {
+            if (data[swiper.realIndex - 1]) {
+              swiper.slidePrev(500)
+            } else {
+              swiper.slideToLoop(data.length - 1)
+            }
+          }
         }
       };
     },
