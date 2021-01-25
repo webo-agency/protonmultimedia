@@ -3,7 +3,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 const jsConfig = {
-    mode: 'development',
     target: "web",
     entry: {
         Main: ['./assets/js/main.js'],
