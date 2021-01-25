@@ -416,6 +416,16 @@ add_filter( 'jcs/menu_level_class', 'add_sub_menu_class', 10, 3 ); // Where $pri
 /*** $size & $attribute both can hold array if you want ***/
 if (!function_exists('show_image')){
   function show_image( $image_id, $size = null, $attributes = null ) {
+
+		if(!wp_attachment_is_image( $url = $image_id )){
+			$file_info = pathinfo( $url );
+			if ( $file_info['extension'] === 'svg' ) {
+				return file_get_contents( $url , $size);
+			} else {
+				return $url;
+			}
+		}
+
     //first lets get the file info sto understand what kind of file it is
     //as for svg file we will take different approach
     $file_info = pathinfo( wp_get_attachment_url( $image_id ) );
@@ -429,6 +439,80 @@ if (!function_exists('show_image')){
       return wp_get_attachment_image( $image_id, $size, false, $attributes );
     }
   }
+}
+
+if (!function_exists('show_image')){
+	function get_img($url, $size) {
+		$html  = '';
+
+			list( $src, $width, $height ) = $url;
+
+			$hwstring   = image_hwstring( $width, $height );
+			$size_class = $size;
+
+			if ( is_array( $size_class ) ) {
+					$size_class = implode( 'x', $size_class );
+			}
+
+			$default_attr = array(
+					'src'   => $src,
+					'class' => "attachment-$size_class size-$size_class",
+			);
+
+			// Add `loading` attribute.
+			if ( wp_lazy_loading_enabled( 'img', 'wp_get_attachment_image' ) ) {
+					$default_attr['loading'] = 'lazy';
+			}
+
+			$attr = wp_parse_args( $attr, $default_attr );
+
+			// If the default value of `lazy` for the `loading` attribute is overridden
+			// to omit the attribute for this image, ensure it is not included.
+			if ( array_key_exists( 'loading', $attr ) && ! $attr['loading'] ) {
+					unset( $attr['loading'] );
+			}
+
+			// Generate 'srcset' and 'sizes' if not already present.
+			if ( empty( $attr['srcset'] ) ) {
+					$image_meta = wp_get_attachment_metadata( $attachment_id );
+
+					if ( is_array( $image_meta ) ) {
+							$size_array = array( absint( $width ), absint( $height ) );
+							$srcset     = wp_calculate_image_srcset( $size_array, $src, $image_meta, $attachment_id );
+							$sizes      = wp_calculate_image_sizes( $size_array, $src, $image_meta, $attachment_id );
+
+							if ( $srcset && ( $sizes || ! empty( $attr['sizes'] ) ) ) {
+									$attr['srcset'] = $srcset;
+
+									if ( empty( $attr['sizes'] ) ) {
+											$attr['sizes'] = $sizes;
+									}
+							}
+					}
+			}
+
+			/**
+			 * Filters the list of attachment image attributes.
+			 *
+			 * @since 2.8.0
+			 *
+			 * @param string[]     $attr       Array of attribute values for the image markup, keyed by attribute name.
+			 *                                 See wp_get_attachment_image().
+			 * @param WP_Post      $attachment Image attachment post.
+			 * @param string|int[] $size       Requested image size. Can be any registered image size name, or
+			 *                                 an array of width and height values in pixels (in that order).
+			 */
+			$attr = apply_filters( 'wp_get_attachment_image_attributes', $attr, $attachment, $size );
+
+			$attr = array_map( 'esc_attr', $attr );
+			$html = rtrim( "<img $hwstring" );
+
+			foreach ( $attr as $name => $value ) {
+					$html .= " $name=" . '"' . $value . '"';
+			}
+
+			$html .= ' />';
+	}
 }
 
 add_filter( 'nav_menu_item_args', 'jcs_menu_item_args', 10, 3);

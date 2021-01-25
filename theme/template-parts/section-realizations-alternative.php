@@ -95,6 +95,12 @@
                                                     src="<?php echo get_template_directory_uri() . '/assets/svg/arrow.svg' ?>" 
                                                     alt="Right arrow"
                                                 />  
+                                                <?php echo show_image( 
+                                                    get_template_directory_uri() . '/assets/svg/arrow.svg', 
+                                                    array('9999', '70'), 
+                                                    "", 
+                                                    array('class' => 'object-cover mb-4') ); 
+                                                ?>
                                             </div>
                                         </div>
                                     </div>

@@ -1,23 +1,3 @@
-<?php
-/*** Function to show images whether SVG or non SVG ***/
-/*** $size & $attribute both can hold array if you want ***/
-if (!function_exists('show_image')){
-  function show_image( $image_id, $size = null, $attributes = null ) {
-    //first lets get the file info sto understand what kind of file it is
-    //as for svg file we will take different approach
-    $file_info = pathinfo( wp_get_attachment_url( $image_id ) );
-
-    //so, if the file type is SVG
-    if ( $file_info['extension'] === 'svg' ) {
-      return file_get_contents( wp_get_attachment_url( $image_id ) );
-    } else {
-      //for any other type of images i.e. JPG, PNG, GIF
-      //we can just simply use the wp_get_attachment_image() stock function
-      return wp_get_attachment_image( $image_id, $size, false, $attributes );
-    }
-  }
-}
-?>
 <section class="relative flex flex-col <?php echo $args['section_class']; ?>">
   <side-heading 
     data-text="<?php echo $args['side_description_string']; ?>"
