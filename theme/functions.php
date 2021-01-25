@@ -417,14 +417,14 @@ add_filter( 'jcs/menu_level_class', 'add_sub_menu_class', 10, 3 ); // Where $pri
 if (!function_exists('show_image')){
   function show_image( $image_id, $size = null, $attributes = null ) {
 
-		if(!wp_attachment_is_image( $url = $image_id )){
-			$file_info = pathinfo( $url );
-			if ( $file_info['extension'] === 'svg' ) {
-				return file_get_contents( $url , $size);
-			} else {
-				return $url;
-			}
-		}
+		// if(!wp_attachment_is_image( $url = $image_id )){
+		// 	$file_info = pathinfo( $url );
+		// 	if ( $file_info['extension'] === 'svg' ) {
+		// 		return file_get_contents( $url , $size);
+		// 	} else {
+		// 		return $url;
+		// 	}
+		// }
 
     //first lets get the file info sto understand what kind of file it is
     //as for svg file we will take different approach

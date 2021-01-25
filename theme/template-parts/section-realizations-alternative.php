@@ -51,7 +51,7 @@
                                             <realization-alternative-gallery>
                                                 <ul class="swiper-wrapper">
                                                     <?php foreach( $images as $image_id ): ?>
-                                                        <li class="w-full swiper-slide">
+                                                        <li class="w-full h-auto swiper-slide">
                                                             <?php echo wp_get_attachment_image( 
                                                                 $image_id, 
                                                                 array('9999', '700'), 
@@ -79,28 +79,14 @@
 
                                         <div class="flex items-center justify-between mb-0 mt-auto mx-auto desktop:ml-0 desktop:mr-auto absolute bottom-0 right-0 z-10">
                                             <div class="flex-initial px-4 py-4 bg-dark-blue-2" data-realization-alternative-button-prev>
-                                                <img 
-                                                    class="block" 
-                                                    width="20px"
-                                                    height="20px"
-                                                    src="<?php echo get_template_directory_uri() . '/assets/svg/arrow.svg' ?>" 
-                                                    alt="Left arrow"
-                                                />  
+                                                <div class="block">
+                                                    <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/arrow.svg'); ?>
+                                                </div>
                                             </div>
                                             <div class="flex-initial px-4 py-4 bg-dark-blue-2" data-realization-alternative-button-next>
-                                                <img 
-                                                    class="block transform scale-x-flip scale-y-1" 
-                                                    width="20px"
-                                                    height="20px"
-                                                    src="<?php echo get_template_directory_uri() . '/assets/svg/arrow.svg' ?>" 
-                                                    alt="Right arrow"
-                                                />  
-                                                <?php echo show_image( 
-                                                    get_template_directory_uri() . '/assets/svg/arrow.svg', 
-                                                    array('9999', '70'), 
-                                                    "", 
-                                                    array('class' => 'object-cover mb-4') ); 
-                                                ?>
+                                                <div class="block transform scale-x-flip scale-y-1">
+                                                    <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/arrow.svg'); ?>
+                                                </div>            
                                             </div>
                                         </div>
                                     </div>

@@ -32,6 +32,7 @@ export default {
           preloadImages: false,
           pagination: false,
           navigation: false,
+          nested: true,
           autoplay: {
             delay: 5000,
           },

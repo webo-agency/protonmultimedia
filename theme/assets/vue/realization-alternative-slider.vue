@@ -32,6 +32,7 @@ export default {
           fadeEffect: { crossFade: true },
           preloadImages: false,
           allowTouchMove: false,
+          observer: true,
           pagination: {
               el: '[data-realization-alternative-pagination]',
               clickable: true,
