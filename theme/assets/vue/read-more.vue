@@ -24,10 +24,10 @@ export default {
     return { toggled: false };
   },
   methods: {
-    mounted() {
-      console.log(this.$store.state.slide);
-
+    created() {
       this.$store.subscribe((mutation, state) => {
+        console.log(mutation);
+        console.log('test');
         if(mutation === 'slidePrev' || mutation === 'slideNext' || mutation === 'slideReset'){
            this.close();
         }
