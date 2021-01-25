@@ -4,6 +4,8 @@
     class="swiper-container relative overflow-hidden mx-0"
     :class="mainClass"
     v-swiper:realization="sliderOptionsBaner"
+    @reachBeginning=""
+    @reachEnd=""
     @slidePrevTransitionStart="slidePrevTransitionStart"
     @slideNextTransitionStart="slideNextTransitionStart"
     @slideResetTransitionStart="slideResetTransitionStart"
@@ -45,10 +47,29 @@ export default {
           },
           autoplay: false,
           slidesPerView: 1,
-          loop: true,
-          loopedSlides: 0
+          loop: false,
+          slideNext(speed, runCallbacks) {
+            debugger;
+            if (data[this.swiper.realIndex + 1]) {
+              this.swiper.slideNext(500);
+            } else {
+              runCallbacks(false);
+              this.swiper.slideToLoop(0)
+            }
+          },
+          slidePrev(speed, runCallbacks) {
+            if (data[this.swiper.realIndex - 1]) {
+              this.swiper.slidePrev(500)
+            } else {
+              runCallbacks(false);
+              this.swiper.slideToLoop(data.length - 1)
+            }
+          }
         }
       };
+    },
+    beforeMount: function(){
+      debugger;
     },
     methods: {
       slidePrevTransitionStart:function(){
@@ -59,7 +80,7 @@ export default {
       },
       slideResetTransitionStart:function(){
         this.$store.commit('slideReset');
-      },
+      }
     }
 }
 </script>
