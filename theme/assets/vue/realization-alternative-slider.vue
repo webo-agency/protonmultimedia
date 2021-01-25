@@ -68,7 +68,7 @@ export default {
         }
       };
     },
-    beforeMount: function(){
+    mounted: function(){
       debugger;
     },
     methods: {
