@@ -51,7 +51,7 @@
                                             <realization-alternative-gallery>
                                                 <ul class="swiper-wrapper">
                                                     <?php foreach( $images as $image_id ): ?>
-                                                        <li class="w-full h-auto swiper-slide">
+                                                        <li class="w-full swiper-slide">
                                                             <?php echo wp_get_attachment_image( 
                                                                 $image_id, 
                                                                 array('9999', '700'), 
