@@ -4,7 +4,6 @@
     class="swiper-container relative overflow-hidden mx-0"
     :class="mainClass"
     v-swiper:realization="sliderOptionsBaner"
-    :instanceName="slider.realizations.alternative"
     @slideChange="onSlideChange"
   >
     <slot />
