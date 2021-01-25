@@ -45,19 +45,21 @@ export default {
           autoplay: false,
           slidesPerView: 1,
           loop: false,
-          slideNext(swiper) {
+          slideNext(speed, callback) {
             debugger;
-            if (data[swiper.realIndex + 1]) {
-              swiper.slideNext(500)
+            if (data[this.swiper.realIndex + 1]) {
+              this.swiper.slideNext(500);
             } else {
-              swiper.slideToLoop(0)
+              runCallbacks(false);
+              this.swiper.slideToLoop(0)
             }
           },
-          slidePrev(swiper) {
-            if (data[swiper.realIndex - 1]) {
-              swiper.slidePrev(500)
+          slidePrev(speed, callback) {
+            if (data[this.swiper.realIndex - 1]) {
+              this.swiper.slidePrev(500)
             } else {
-              swiper.slideToLoop(data.length - 1)
+              runCallbacks(false);
+              this.swiper.slideToLoop(data.length - 1)
             }
           }
         }
