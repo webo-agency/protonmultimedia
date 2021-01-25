@@ -1,6 +1,9 @@
 .svg-arrow{
   path{
     fill: theme('colors.white');
+    @apply transition;
+    @apply duration-300; 
+    @apply ease-in-out;
   }
 }
 
