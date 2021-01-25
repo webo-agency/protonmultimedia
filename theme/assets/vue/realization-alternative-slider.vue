@@ -45,7 +45,7 @@ export default {
           autoplay: false,
           slidesPerView: 1,
           loop: false,
-          slideNext(speed, callback) {
+          slideNext(speed, runCallbacks) {
             debugger;
             if (data[this.swiper.realIndex + 1]) {
               this.swiper.slideNext(500);
@@ -54,7 +54,7 @@ export default {
               this.swiper.slideToLoop(0)
             }
           },
-          slidePrev(speed, callback) {
+          slidePrev(speed, runCallbacks) {
             if (data[this.swiper.realIndex - 1]) {
               this.swiper.slidePrev(500)
             } else {
