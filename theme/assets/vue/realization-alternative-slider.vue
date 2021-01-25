@@ -4,7 +4,9 @@
     class="swiper-container relative overflow-hidden mx-0"
     :class="mainClass"
     v-swiper:realization="sliderOptionsBaner"
-    @slideChange="onSlideChange"
+    @slidePrevTransitionStart="slidePrevTransitionStart"
+    @slideNextTransitionStart="slideNextTransitionStart"
+    @slideResetTransitionStart="slideResetTransitionStart"
   >
     <slot />
   </component>
