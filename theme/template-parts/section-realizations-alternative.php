@@ -57,7 +57,7 @@
                                                                 array('9999', '700'), 
                                                                 "", 
                                                                 array(
-                                                                    'class' => 'w-full h-full object-cover object-left object-top max-w-full max-h-700px m-auto'
+                                                                    'class' => 'w-full h-full object-cover object-left object-top max-w-full desktop:min-h-700px desktop:max-h-700px m-auto'
                                                                 ) 
                                                             ); ?>
                                                         </li>
@@ -71,7 +71,7 @@
                                                     array('9999', '700'), 
                                                     "", 
                                                     array(
-                                                        'class' => 'w-full h-full object-cover object-left object-top max-w-full max-h-700px m-auto'
+                                                        'class' => 'w-full h-full object-cover object-left object-top max-w-full desktop:min-h-700px desktop:max-h-700px m-auto'
                                                     )
                                                 ); 
                                             ?>
