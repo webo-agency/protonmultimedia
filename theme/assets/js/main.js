@@ -10,8 +10,27 @@ import ReviewsSlider from '../vue/reviews-slider.vue';
 import MainNavigation from '../vue/main-navigation.vue';
 import ReadMore from '../vue/read-more.vue';
 import VueAwesomeSwiper from "vue-awesome-swiper/dist/ssr";
+import Vuex from "vuex";
 
+Vue.use(Vuex);
 Vue.use(VueAwesomeSwiper);
+
+const store = new Vuex.Store({
+    state: {
+        slide: 0
+    },
+    mutations: {
+        slidePrev (state) {
+         state.slide--;
+        },
+        slideNext (state) {
+         state.slide++;
+        },
+        slideReset (state) {
+         state.slide = 0;
+        }  
+    }
+})
 
 Vue.component('baner-slider', BanerSlider);
 Vue.component('realization-slider', RealizationSlider);
@@ -27,6 +46,7 @@ Vue.component('main-navigation', MainNavigation);
 document.addEventListener('DOMContentLoaded', function() {
     new Vue({ 
         el: '#page',
+        store: store,
         components: {
             BanerSlider,
             RealizationSlider,

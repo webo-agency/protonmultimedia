@@ -25,9 +25,13 @@ export default {
   },
   methods: {
     created() {
-      this.$root.$on('realization-alternative-slider', (e) => {
-        this.close();
-      })
+      console.log(this.$store.state.slide);
+
+      this.$store.subscribe((mutation, state) => {
+        if(mutation === 'slidePrev' || mutation === 'slideNext' || mutation === 'slideReset'){
+           this.close();
+        }
+      });
     },
     beforeEnter: function(el) {
       el.style.height = '0';

@@ -48,9 +48,15 @@ export default {
       };
     },
     methods: {
-      onSlideChange:function(){
-        this.$root.$emit('realization-alternative-slider', 'change');
-      }
+      slidePrevTransitionStart:function(){
+        this.$store.commit('slidePrev');
+      },
+      slideNextTransitionStart:function(){
+        this.$store.commit('slideNext');
+      },
+      slideResetTransitionStart:function(){
+        this.$store.commit('slideReset');
+      },
     }
 }
 </script>
