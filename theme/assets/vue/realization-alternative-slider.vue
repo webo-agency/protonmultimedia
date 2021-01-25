@@ -43,7 +43,7 @@ export default {
           },
           autoplay: false,
           slidesPerView: 1,
-          loop: true
+          loop: false
         }
       };
     },
