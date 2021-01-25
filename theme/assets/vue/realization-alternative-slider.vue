@@ -14,9 +14,6 @@
 <script>
 export default {
     name: 'realization-alternative-slider',
-    components: {
-      'read-more'
-    },
     props: {
       mainTag: {
         type: String,
