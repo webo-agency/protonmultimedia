@@ -25,9 +25,7 @@ export default {
   },
   mounted: function() {
     this.$store.subscribe((mutation, state) => {
-      console.log(mutation);
-      console.log('test');
-      if(mutation === 'slidePrev' || mutation === 'slideNext' || mutation === 'slideReset'){
+      if(mutation.type === 'slidePrev' || mutation.type === 'slideNext' || mutation.type === 'slideReset'){
           this.close();
       }
     });
@@ -35,7 +33,7 @@ export default {
   methods: {
     beforeEnter: function(el) {
       el.style.height = '0';
-    },
+    },a
     enter: function(el) {
       el.style.height = el.scrollHeight + 'px';
     },
