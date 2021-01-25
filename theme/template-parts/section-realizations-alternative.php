@@ -40,9 +40,9 @@
         <div class="desktop:pb-32">
             <?php if( $loop->have_posts() ): ?>
                 <realization-alternative-slider class="z-30">
-                    <ul class="swiper-wrapper h-auto">
+                    <ul class="swiper-wrapper">
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); $_post = get_post(); ?>
-                            <li class="w-full h-auto swiper-slide flex flex-row flex-wrap tablet:block float-left">
+                            <li class="w-full swiper-slide flex flex-row flex-wrap tablet:block float-left">
                                 <div class="w-full desktop:w-1/2 object-bottom object-cover desktop:float-left desktop:pr-24 desktop:pb-24">
                                     <div class="overflow-hidden relative min-h-200px max-h-430px desktop:max-h-700px">
                                         <?php 
