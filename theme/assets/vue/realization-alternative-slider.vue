@@ -48,14 +48,15 @@ export default {
           autoplay: false,
           slidesPerView: 1,
           loop: false,
-          slideNext() {
+          slideNext(swiper) {
+            debugger;
             if (data[swiper.realIndex + 1]) {
               swiper.slideNext(500)
             } else {
               swiper.slideToLoop(0)
             }
           },
-          slidePrev() {
+          slidePrev(swiper) {
             if (data[swiper.realIndex - 1]) {
               swiper.slidePrev(500)
             } else {
