@@ -24,7 +24,7 @@ export default {
     return { toggled: false };
   },
   methods: {
-    created() {
+    created: function() {
       this.$store.subscribe((mutation, state) => {
         console.log(mutation);
         console.log('test');
