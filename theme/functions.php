@@ -172,8 +172,6 @@ add_filter('excerpt_length', 'new_excerpt_length');
 
 function wporg_block_wrapper( $block_content, $block ) {
 
-	var_dump(get_post_type( get_the_ID()));
-
 	$content = '<div class="mx-auto max-w-900px">';
 	$content .= $block_content;
 	$content .= '</div>';
@@ -186,6 +184,10 @@ function wporg_block_wrapper( $block_content, $block ) {
 	}
 
 	if ( $block['blockName'] === 'core/social-link' ) {
+		return $block_content;
+	}
+
+	if ( get_post_type( get_the_ID()) == 'realizations' ) {
 		return $block_content;
 	}
 	
