@@ -45,7 +45,7 @@
                             <li class="w-full swiper-slide flex flex-row flex-wrap tablet:block float-left">
                                 <div class="w-full desktop:w-1/2 object-bottom object-cover desktop:float-left desktop:pr-24 desktop:pb-24">
                                     <div class="overflow-hidden relative min-h-200px max-h-430px desktop:min-h-700px">
-                                        <div class="absolute left-0 top-0">
+                                        <div class="absolute left-0 top-0 w-full h-full">
                                             <?php 
                                             $images = get_field('gallery_box');
                                             if( $images ): ?>
