@@ -46,7 +46,7 @@ export default {
           autoplay: false,
           slidesPerView: 1,
           loop: false,
-          slideNext(speed, runCallbacks) {
+          slideNext: function(speed, runCallbacks) {
             debugger;
             if (data[this.swiper.realIndex + 1]) {
               this.swiper.slideNext(500);
@@ -55,7 +55,7 @@ export default {
               this.swiper.slideToLoop(0)
             }
           },
-          slidePrev(speed, runCallbacks) {
+          slidePrev: function(speed, runCallbacks) {
             if (data[this.swiper.realIndex - 1]) {
               this.swiper.slidePrev(500)
             } else {
@@ -67,7 +67,7 @@ export default {
       };
     },
     mounted: function(){
-      debugger;
+
     },
     methods: {
       slidePrevTransitionStart:function(){
