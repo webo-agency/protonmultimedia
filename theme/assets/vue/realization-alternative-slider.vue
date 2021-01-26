@@ -33,7 +33,7 @@ export default {
           effect: "fade",
           fadeEffect: { crossFade: true },
           preloadImages: false,
-          allowTouchMove: false,
+          allowTouchMove: true,
           observer: true,
           pagination: {
               el: '[data-realization-alternative-pagination]',
@@ -46,6 +46,12 @@ export default {
           autoplay: false,
           slidesPerView: 1,
           loop: false,
+            breakpoints: {
+              // when window width is >= 1248
+              1248: {
+                allowTouchMove: false
+              },
+            },
           slideNext: function(speed, runCallbacks) {
             debugger;
             if (data[this.swiper.realIndex + 1]) {
