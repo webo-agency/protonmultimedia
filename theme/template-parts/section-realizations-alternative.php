@@ -48,7 +48,7 @@
                                         <?php 
                                         $images = get_field('gallery_box');
                                         if( $images ): ?>
-                                            <realization-alternative-gallery>
+                                            <realization-alternative-gallery class="absolute left-0 top-0">
                                                 <ul class="swiper-wrapper">
                                                     <?php foreach( $images as $image_id ): ?>
                                                         <li class="w-full h-auto swiper-slide">
@@ -58,7 +58,7 @@
                                                                     array('9999', '700'), 
                                                                     "", 
                                                                     array(
-                                                                        'class' => 'min-w-full min-h-full absolute left-0 top-0 object-left object-top desktop:min-h-700px'
+                                                                        'class' => 'min-w-full min-h-full object-left object-top desktop:min-h-700px'
                                                                     ) 
                                                                 ); ?>
                                                             </div>
