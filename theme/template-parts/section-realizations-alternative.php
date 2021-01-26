@@ -44,7 +44,7 @@
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); $_post = get_post(); ?>
                             <li class="w-full swiper-slide flex flex-row flex-wrap tablet:block float-left">
                                 <div class="w-full desktop:w-1/2 object-bottom object-cover desktop:float-left desktop:pr-24 desktop:pb-24">
-                                    <div class="overflow-hidden relative min-h-200px max-h-430px desktop:max-h-700px">
+                                    <div class="overflow-hidden relative min-h-200px max-h-430px desktop:min-h-700px">
                                         <?php 
                                         $images = get_field('gallery_box');
                                         if( $images ): ?>
@@ -58,7 +58,7 @@
                                                                     array('9999', '700'), 
                                                                     "", 
                                                                     array(
-                                                                        'class' => 'min-w-full min-h-full object-left object-top mr-auto'
+                                                                        'class' => 'min-w-full min-h-full object-left object-top mr-auto desktop:min-h-700px'
                                                                     ) 
                                                                 ); ?>
                                                             </div>
@@ -72,7 +72,7 @@
                                                     $_post->ID, 
                                                     array('9999', '700'),
                                                     array(
-                                                        'class' => 'min-w-full min-h-full object-left object-top mr-auto'
+                                                        'class' => 'min-w-full min-h-full object-left object-top mr-auto desktop:min-h-700px'
                                                     )
                                                 ); 
                                             ?>
