@@ -79,17 +79,17 @@
                                         </div>
 
                                         <div class="flex items-center justify-between mb-0 mt-auto mx-auto desktop:ml-0 desktop:mr-auto absolute bottom-0 right-0 z-10">
-                                                <div class="flex-initial px-4 py-4 bg-dark-blue-2" data-realization-alternative-button-prev>
-                                                    <div class="block h-6 w-6 svg-arrow">
-                                                        <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/arrow.svg'); ?>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-initial px-4 py-4 bg-dark-blue-2" data-realization-alternative-button-next>
-                                                    <div class="block h-6 w-6 transform scale-x-flip scale-y-1 svg-arrow">
-                                                        <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/arrow.svg'); ?>
-                                                    </div>            
+                                            <div class="flex-initial px-4 py-4 bg-dark-blue-2" data-realization-alternative-button-prev>
+                                                <div class="block h-6 w-6 svg-arrow">
+                                                    <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/arrow.svg'); ?>
                                                 </div>
                                             </div>
+                                            <div class="flex-initial px-4 py-4 bg-dark-blue-2" data-realization-alternative-button-next>
+                                                <div class="block h-6 w-6 transform scale-x-flip scale-y-1 svg-arrow">
+                                                    <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/arrow.svg'); ?>
+                                                </div>            
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="w-full desktop:w-1/2 relative flex-auto flex flex-col flex-end p-4 desktop:pl-24 desktop:pr-32 desktop:pt-12 overflow-hidden z-30 justify-start desktop:float-left -ml-24">
