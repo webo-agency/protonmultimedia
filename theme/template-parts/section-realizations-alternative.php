@@ -58,7 +58,7 @@
                                                                     array('9999', '700'), 
                                                                     "", 
                                                                     array(
-                                                                        'class' => 'min-w-full min-h-full object-left object-top mr-auto desktop:min-h-700px'
+                                                                        'class' => 'min-w-full min-h-full absolute left-0 top-0 object-left object-top desktop:min-h-700px'
                                                                     ) 
                                                                 ); ?>
                                                             </div>
@@ -72,7 +72,7 @@
                                                     $_post->ID, 
                                                     array('9999', '700'),
                                                     array(
-                                                        'class' => 'min-w-full min-h-full object-left object-top mr-auto desktop:min-h-700px'
+                                                        'class' => 'min-w-full min-h-full absolute left-0 top-0 object-left object-top desktop:min-h-700px'
                                                     )
                                                 ); 
                                             ?>
