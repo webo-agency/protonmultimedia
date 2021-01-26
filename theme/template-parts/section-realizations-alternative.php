@@ -45,49 +45,51 @@
                             <li class="w-full swiper-slide flex flex-row flex-wrap tablet:block float-left">
                                 <div class="w-full desktop:w-1/2 object-bottom object-cover desktop:float-left desktop:pr-24 desktop:pb-24">
                                     <div class="overflow-hidden relative min-h-200px max-h-430px desktop:min-h-700px">
-                                        <?php 
-                                        $images = get_field('gallery_box');
-                                        if( $images ): ?>
-                                            <realization-alternative-gallery class="absolute left-0 top-0">
-                                                <ul class="swiper-wrapper">
-                                                    <?php foreach( $images as $image_id ): ?>
-                                                        <li class="w-full h-auto swiper-slide">
-                                                            <div class="relative overflow-hidden">
-                                                                <?php echo wp_get_attachment_image( 
-                                                                    $image_id, 
-                                                                    array('9999', '700'), 
-                                                                    "", 
-                                                                    array(
-                                                                        'class' => 'min-w-full min-h-full object-left object-top desktop:min-h-700px'
-                                                                    ) 
-                                                                ); ?>
-                                                            </div>
-                                                        </li>
-                                                    <?php endforeach; ?>
-                                                </ul>
-                                            </realization-alternative-gallery>
-                                        <?php else: ?>
-                                            <?php
-                                                echo get_the_post_thumbnail( 
-                                                    $_post->ID, 
-                                                    array('9999', '700'),
-                                                    array(
-                                                        'class' => 'min-w-full min-h-full absolute left-0 top-0 object-left object-top desktop:min-h-700px'
-                                                    )
-                                                ); 
-                                            ?>
-                                        <?php endif; ?>
+                                        <div class="absolute left-0 top-0">
+                                            <?php 
+                                            $images = get_field('gallery_box');
+                                            if( $images ): ?>
+                                                <realization-alternative-gallery>
+                                                    <ul class="swiper-wrapper">
+                                                        <?php foreach( $images as $image_id ): ?>
+                                                            <li class="w-full h-auto swiper-slide">
+                                                                <div class="relative overflow-hidden">
+                                                                    <?php echo wp_get_attachment_image( 
+                                                                        $image_id, 
+                                                                        array('9999', '700'), 
+                                                                        "", 
+                                                                        array(
+                                                                            'class' => 'min-w-full min-h-full object-left object-top desktop:min-h-700px'
+                                                                        ) 
+                                                                    ); ?>
+                                                                </div>
+                                                            </li>
+                                                        <?php endforeach; ?>
+                                                    </ul>
+                                                </realization-alternative-gallery>
+                                            <?php else: ?>
+                                                <?php
+                                                    echo get_the_post_thumbnail( 
+                                                        $_post->ID, 
+                                                        array('9999', '700'),
+                                                        array(
+                                                            'class' => 'min-w-full min-h-full absolute left-0 top-0 object-left object-top desktop:min-h-700px'
+                                                        )
+                                                    ); 
+                                                ?>
+                                            <?php endif; ?>
 
-                                        <div class="flex items-center justify-between mb-0 mt-auto mx-auto desktop:ml-0 desktop:mr-auto absolute bottom-0 right-0 z-10">
-                                            <div class="flex-initial px-4 py-4 bg-dark-blue-2" data-realization-alternative-button-prev>
-                                                <div class="block h-6 w-6 svg-arrow">
-                                                    <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/arrow.svg'); ?>
+                                            <div class="flex items-center justify-between mb-0 mt-auto mx-auto desktop:ml-0 desktop:mr-auto absolute bottom-0 right-0 z-10">
+                                                <div class="flex-initial px-4 py-4 bg-dark-blue-2" data-realization-alternative-button-prev>
+                                                    <div class="block h-6 w-6 svg-arrow">
+                                                        <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/arrow.svg'); ?>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="flex-initial px-4 py-4 bg-dark-blue-2" data-realization-alternative-button-next>
-                                                <div class="block h-6 w-6 transform scale-x-flip scale-y-1 svg-arrow">
-                                                    <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/arrow.svg'); ?>
-                                                </div>            
+                                                <div class="flex-initial px-4 py-4 bg-dark-blue-2" data-realization-alternative-button-next>
+                                                    <div class="block h-6 w-6 transform scale-x-flip scale-y-1 svg-arrow">
+                                                        <?php echo file_get_contents(get_template_directory_uri() . '/assets/svg/arrow.svg'); ?>
+                                                    </div>            
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
