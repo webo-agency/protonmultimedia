@@ -53,16 +53,14 @@
                                                     <ul class="swiper-wrapper">
                                                         <?php foreach( $images as $image_id ): ?>
                                                             <li class="w-full h-auto swiper-slide">
-                                                                <div class="relative overflow-hidden">
-                                                                    <?php echo wp_get_attachment_image( 
-                                                                        $image_id, 
-                                                                        array('9999', '700'), 
-                                                                        "", 
-                                                                        array(
-                                                                            'class' => 'min-w-full min-h-full object-left object-top desktop:min-h-700px'
-                                                                        ) 
-                                                                    ); ?>
-                                                                </div>
+                                                                <?php echo wp_get_attachment_image( 
+                                                                    $image_id, 
+                                                                    array('9999', '700'), 
+                                                                    "", 
+                                                                    array(
+                                                                        'class' => 'min-w-full min-h-full object-cover object-left-top desktop:min-h-700px'
+                                                                    ) 
+                                                                ); ?>
                                                             </li>
                                                         <?php endforeach; ?>
                                                     </ul>
@@ -73,7 +71,7 @@
                                                         $_post->ID, 
                                                         array('9999', '700'),
                                                         array(
-                                                            'class' => 'min-w-full min-h-full absolute left-0 top-0 object-left object-top desktop:min-h-700px'
+                                                            'class' => 'min-w-full min-h-full object-cover object-left-top desktop:min-h-700px'
                                                         )
                                                     ); 
                                                 ?>
