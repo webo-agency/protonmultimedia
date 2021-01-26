@@ -6,10 +6,16 @@
   @apply bg-dark-blue-2;
   width: 100%;
   display: flex;
+  @apply flex-col;
   flex-wrap: wrap;
   visibility: hidden;
   opacity: 0;
   transition: all 300ms;
+
+  @screen desktop{
+    width: 25%;
+    @apply flex-row;
+  }
 }
 
 a:hover + .sub-menu,
@@ -20,7 +26,7 @@ a + .sub-menu:hover{
 }
 
 .sub-menu li{
-  width: 25%;
+  @apply w-full;
   margin: 0;
   min-height: 75px;
   display: flex;
@@ -29,7 +35,13 @@ a + .sub-menu:hover{
   @apply border;
   @apply border-dark-blue-2;
   @apply border-solid;
+
+  @screen desktop{
+    width: 25%;
+  }
 }
+
+
 
 .sub-menu svg{
   fill: theme('colors.white');
