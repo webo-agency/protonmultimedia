@@ -52,14 +52,16 @@
                                                 <ul class="swiper-wrapper">
                                                     <?php foreach( $images as $image_id ): ?>
                                                         <li class="w-full h-auto swiper-slide">
-                                                            <?php echo wp_get_attachment_image( 
-                                                                $image_id, 
-                                                                array('9999', '700'), 
-                                                                "", 
-                                                                array(
-                                                                    'class' => 'w-full h-full object-cover object-left object-top max-w-full desktop:min-h-700px desktop:max-h-700px m-auto'
-                                                                ) 
-                                                            ); ?>
+                                                            <div class="relative overflow-hidden">
+                                                                <?php echo wp_get_attachment_image( 
+                                                                    $image_id, 
+                                                                    array('9999', '700'), 
+                                                                    "", 
+                                                                    array(
+                                                                        'class' => 'min-w-full min-h-full object-left object-top mr-auto'
+                                                                    ) 
+                                                                ); ?>
+                                                            </div>
                                                         </li>
                                                     <?php endforeach; ?>
                                                 </ul>
@@ -70,7 +72,7 @@
                                                     $_post->ID, 
                                                     array('9999', '700'),
                                                     array(
-                                                        'class' => 'w-full h-full object-cover object-left object-top max-w-full desktop:min-h-700px desktop:max-h-700px m-auto'
+                                                        'class' => 'min-w-full min-h-full object-left object-top mr-auto'
                                                     )
                                                 ); 
                                             ?>
