@@ -20,9 +20,14 @@
 
 a:hover + .sub-menu,
 a + .sub-menu:hover{
+  position:relative;
   visibility: visible;
   opacity: 1;
   transition: .25s ease-in-out 0s; 
+
+  @screen desktop{
+    position:static;
+  }
 }
 
 .sub-menu li{
