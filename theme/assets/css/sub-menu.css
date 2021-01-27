@@ -20,13 +20,15 @@
 
 a:hover + .sub-menu,
 a + .sub-menu:hover{
-  position:relative;
   visibility: visible;
   opacity: 1;
   transition: .25s ease-in-out 0s; 
+}
 
-  @screen desktop{
-    position:static;
+@media only screen and (max-width: 1248px) {
+  a:hover + .sub-menu,
+  a + .sub-menu:hover{
+    position:relative;
   }
 }
 
