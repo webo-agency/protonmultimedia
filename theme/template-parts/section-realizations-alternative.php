@@ -58,7 +58,7 @@
                                                                     array('9999', '700'), 
                                                                     "", 
                                                                     array(
-                                                                        'class' => 'w-auto h-auto min-w-full min-h-430px desktop:min-h-full desktop:min-h-700px max-w-full desktop:max-w-none'
+                                                                        'class' => 'w-auto h-auto min-w-full min-h-430px desktop:min-h-full desktop:min-h-700px desktop:max-w-none'
                                                                     ) 
                                                                 ); ?>
                                                             </li>
@@ -71,7 +71,7 @@
                                                         $_post->ID, 
                                                         array('9999', '700'),
                                                         array(
-                                                            'class' => 'w-auto h-auto min-w-full min-h-430px desktop:min-h-full desktop:min-h-700px max-w-full desktop:max-w-none'
+                                                            'class' => 'w-auto h-auto min-w-full min-h-430px desktop:min-h-full desktop:min-h-700px desktop:max-w-none'
                                                         )
                                                     ); 
                                                 ?>
